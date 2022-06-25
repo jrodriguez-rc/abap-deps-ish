@@ -1,0 +1,484 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H ApplSettings: Management</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_AS_MASTER (master) is used to manage</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CL.CL_ISH_ASM_PARAM&gt; application settings&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>A master can be instantiated using the method</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CO.CL_ISH_AS_MASTER              CREATE&gt; CREATE&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The method &lt;DS:CO.CL_ISH_AS_MASTER              GET_PARAM&gt; GET_PARAM&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>determines an&lt;DS:CL.CL_ISH_ASM_PARAM&gt; application setting&lt;/&gt; for further</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>processing. Each application setting has methods to read or change its</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>values.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>The method &lt;DS:CO.CL_ISH_AS_MASTER              GET_VALUE_C&gt; GET_VALUE_C</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>&lt;/&gt; determines a value for a &lt;DS:CL.CL_ISH_ASM_PARAM_C&gt; client-specific,</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>time-independent application setting&lt;/&gt; directly.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>The method&lt;DS:CO.CL_ISH_AS_MASTER              SET_VALUE_C&gt; SET_VALUE_C</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>&lt;/&gt; changes a value for a client-specific, time-independent application</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>setting directly.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>All changed application settings are saved by calling the method</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>&lt;DS:CO.CL_ISH_AS_MASTER              SET_VALUE_C&gt; SAVE&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_AS_MASTER (Master) dient zur Verwaltung von</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_ASM_PARAM&gt;Applikationseinstellungen&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Durch Aufruf der Methode</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CO.CL_ISH_AS_MASTER              CREATE&gt;CREATE&lt;/&gt; kann ein Master</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>instanziert werden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Methode &lt;DS:CO.CL_ISH_AS_MASTER              GET_PARAM&gt;GET_PARAM&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>dient dazu, eine &lt;DS:CL.CL_ISH_ASM_PARAM&gt;Applikationseinstellung&lt;/&gt; zur</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>weiteren Verarbeitung zu ermitteln. Jede Applikationseinstellung verfügt</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>über Methoden, um deren Werte auszulesen oder zu verändern.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Über die Methode</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CO.CL_ISH_AS_MASTER              GET_VALUE_C&gt;GET_VALUE_C&lt;/&gt; kann ein</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Wert zu einer &lt;DS:CL.CL_ISH_ASM_PARAM_C&gt;mandantabhängigen,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>zeitunabhängigen Applikationseinstellung&lt;/&gt; direkt ermittelt werden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Über die Methode</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CO.CL_ISH_AS_MASTER              SET_VALUE_C&gt;SET_VALUE_C&lt;/&gt; kann ein</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Wert zu einer mandantabhängigen, zeitunabhängigen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Applikationseinstellung direkt verändert werden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Durch Aufruf der Methode</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CO.CL_ISH_AS_MASTER              SET_VALUE_C&gt;SAVE&lt;/&gt; werden</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>sämtliche geänderten Applikationseinstellungen gespeichert.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>CHECK</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Prüft die geänderten Daten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>CHECK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checks the Changed Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>CHECK</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Checks the Changed Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>CO_OTYPE_AS_MASTER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Objekttyp</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>CO_OTYPE_AS_MASTER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Object Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>CO_OTYPE_AS_MASTER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Object Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>CREATE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Instanziert das Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>CREATE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Instantiates the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>CREATE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Instantiates the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>DESTROY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Zerstört das Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>DESTROY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Destroys the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>DESTROY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Destroys the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>GET_PARAM</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert eine Parameterdefinition</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>GET_PARAM</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Gets a Parameter Definition</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>GET_PARAM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Gets a Parameter Definition</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>GET_VALUE_C</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert einen Parameterwert (Mandant zeitunabhängig)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>GET_VALUE_C</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Gets a Parameter Value (Client-Specific, Time-Independent)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>GET_VALUE_C</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Gets a Parameter Value (Client-Specific, Time-Independent)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>GR_LOADER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H ApplSettings: Ladeklasse</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>GR_LOADER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H ApplSettings: Load Class</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>GR_LOADER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H ApplSettings: Load Class</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>GT_PARAM</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H ApplSettings Verwaltung: Hash-Tabelle Parameterdefiniti</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>GT_PARAM</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H ApplSettings Management: Hash Table Param. Definitions</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>GT_PARAM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H ApplSettings Management: Hash Table Param. Definitions</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>INITIALIZE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Initialisiert das Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>INITIALIZE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Initializes the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>INITIALIZE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Initializes the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>IS_CHANGED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert ob Daten geändert wurden</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>IS_CHANGED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Whether Data Was Changed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>IS_CHANGED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Whether Data Was Changed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>LOCK_PARAM</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Sperrt eine Parameterdefinition</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>LOCK_PARAM</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Locks a Parameter Definition</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>LOCK_PARAM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Locks a Parameter Definition</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>PROCESS_AFTER_COMMIT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verarbeitung nach Commit</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>PROCESS_AFTER_COMMIT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Processing after Commit</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>PROCESS_AFTER_COMMIT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Processing after Commit</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>SAVE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Speichert die geänderten Daten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>SAVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Saves the Changed Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>SAVE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Saves the Changed Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>SET_VALUE_C</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt einen Parameterwert (Mandant zeitunabhängig)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>SET_VALUE_C</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets a Parameter Value (Client-Specific, Time-Independent)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>SET_VALUE_C</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets a Parameter Value (Client-Specific, Time-Independent)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>_PROCESS_AFTER_COMMIT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verarbeitung nach Commit (interne Verarbeitung)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>_PROCESS_AFTER_COMMIT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Processing after Commit (Internal Processing)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_MASTER</CLSNAME>
+     <CMPNAME>_PROCESS_AFTER_COMMIT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Processing after Commit (Internal Processing)</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

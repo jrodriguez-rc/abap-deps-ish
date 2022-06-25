@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_GC_SDY_COLLAPSIBLE</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: GUI - Controller Subscreen with Collapsible Area</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GC_SDY_COLLAPSIBLE</CLSNAME>
+     <CMPNAME>CREATE_AND_INITIALIZE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Instanziert und initialisiert das Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GC_SDY_COLLAPSIBLE</CLSNAME>
+     <CMPNAME>CREATE_AND_INITIALIZE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Instantiates and Initializes Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GC_SDY_COLLAPSIBLE</CLSNAME>
+     <CMPNAME>CREATE_AND_INITIALIZE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Instantiates and Initializes Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GC_SDY_COLLAPSIBLE</CLSNAME>
+     <CMPNAME>GET_SDY_COLLAPSIBLE_VIEW</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den Subscreen View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GC_SDY_COLLAPSIBLE</CLSNAME>
+     <CMPNAME>GET_SDY_COLLAPSIBLE_VIEW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Subscreen View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GC_SDY_COLLAPSIBLE</CLSNAME>
+     <CMPNAME>GET_SDY_COLLAPSIBLE_VIEW</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Subscreen View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GC_SDY_COLLAPSIBLE</CLSNAME>
+     <CMPNAME>INITIALIZE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Initialisiert das Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GC_SDY_COLLAPSIBLE</CLSNAME>
+     <CMPNAME>INITIALIZE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Initializes the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GC_SDY_COLLAPSIBLE</CLSNAME>
+     <CMPNAME>INITIALIZE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Initializes the Object</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

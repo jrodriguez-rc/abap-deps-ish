@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>N1GUI_TREE_SHOW_MAIN_MODEL</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>XFELD</DOMNAME>
+    <HEADLEN>01</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>14</SCRLEN2>
+    <SCRLEN3>40</SCRLEN3>
+    <DDTEXT>Tree View: Display Root Node Indicator</DDTEXT>
+    <REPTEXT>R</REPTEXT>
+    <SCRTEXT_S>Root node</SCRTEXT_S>
+    <SCRTEXT_M>Root Node</SCRTEXT_M>
+    <SCRTEXT_L>Display Root Node</SCRTEXT_L>
+    <DTELMASTER>D</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>D</LANGU>
+    <LANGU>S</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>Tree View: Kennzeichen Wurzelknoten anzeigen</DDTEXT>
+     <REPTEXT>W</REPTEXT>
+     <SCRTEXT_S>Wurzelkn.</SCRTEXT_S>
+     <SCRTEXT_M>Wurzelknoten</SCRTEXT_M>
+     <SCRTEXT_L>Wurzelknoten anzeigen</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>Vista de árbol: Indicador Visualizar nodo raíz</DDTEXT>
+     <REPTEXT>R</REPTEXT>
+     <SCRTEXT_S>Nodo raíz</SCRTEXT_S>
+     <SCRTEXT_M>Nodo raíz</SCRTEXT_M>
+     <SCRTEXT_L>Visualizar nodo raíz</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

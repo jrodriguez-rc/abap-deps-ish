@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_HASHED_ITAB</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: Hashed Table</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_HASHED_ITAB is a table class that is based on an</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>internal hashed table.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>For a general overview of table classes, see the documentation for the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>class &lt;DS:CL.CL_ISH_ITAB&gt; CL_ISH_ITAB&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Like with a hashed table, the entries of a hashed collection must be</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>unique.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>UT</TDFORMAT>
+     <TDLINE>Instantiation of the class</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_HASHED_ITAB can only be instantiated using the public</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>static method &lt;DS:CO.CL_ISH_HASHED_ITAB            CREATE_BY_TABNAME&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>CREATE_BY_TABNAME&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_HASHED_COLLECTION inherits from the class</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CL.CL_ISH_ITAB&gt;CL_ISH_ITAB&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The following subclasses exist:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;DS:CL.CL_ISH_HASHED_OBJECT_ITAB&gt;CL_ISH_HASHED_OBJECT_ITAB&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_HASHED_ITAB ist eine Tabellenklasse, die auf einer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>internen Hash-Tabelle basiert.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Eine generelle Übersicht zu Tabellenklassen finden Sie in der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Klassendokumentation zu &lt;DS:CL.CL_ISH_ITAB&gt;CL_ISH_ITAB&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Wie bei einer Hash-Tabelle müssen auch die Einträge einer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Hash-Kollektion eindeutig sein.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>Instanzierung der Klasse</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_HASHED_ITAB kann ausschließlich über die öffentliche</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>statische Methode</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CO.CL_ISH_HASHED_ITAB            CREATE_BY_TABNAME&gt;CREATE_BY_TABNAME</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>&lt;/&gt; instanziert werden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_HASHED_COLLECTION erbt von der Klasse</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_ITAB&gt;CL_ISH_ITAB&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Folgende Unterklassen existieren:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;DS:CL.CL_ISH_HASHED_OBJECT_ITAB&gt;CL_ISH_HASHED_OBJECT_ITAB&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HASHED_ITAB</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HASHED_ITAB</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HASHED_ITAB</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HASHED_ITAB</CLSNAME>
+     <CMPNAME>CO_OTYPE_HASHED_ITAB</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Objekttyp</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HASHED_ITAB</CLSNAME>
+     <CMPNAME>CO_OTYPE_HASHED_ITAB</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Object Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HASHED_ITAB</CLSNAME>
+     <CMPNAME>CO_OTYPE_HASHED_ITAB</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Object Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HASHED_ITAB</CLSNAME>
+     <CMPNAME>CREATE_BY_TABNAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Instanziert das Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HASHED_ITAB</CLSNAME>
+     <CMPNAME>CREATE_BY_TABNAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Instantiates the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HASHED_ITAB</CLSNAME>
+     <CMPNAME>CREATE_BY_TABNAME</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Instantiates the Object</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_GUI_TEXTEDIT_VIEW</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: GUI - Text Editor View</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_GUI_TEXTEDIT_VIEW is used to display a text edit in a</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:IF.IF_ISH_GUI_APPLICATION&gt;dialog application&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_GUI_TEXTEDIT_VIEW  inherits from the class</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CL.CL_ISH_GUI_CONTROL_VIEW&gt;CL_ISH_GUI_CONTROL_VIEW&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_GUI_TEXTEDIT_VIEW dient zur Darstellung eines</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Textedit-Controls in einer &lt;DS:IF.IF_ISH_GUI_APPLICATION&gt;Dialoganwendung</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_GUI_TEXTEDIT_VIEW erbt von der Klasse</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_GUI_CONTROL_VIEW&gt;CL_ISH_GUI_CONTROL_VIEW&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TEXTEDIT_VIEW</CLSNAME>
+     <CMPNAME>GET_TEXT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert Textstream</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TEXTEDIT_VIEW</CLSNAME>
+     <CMPNAME>GET_TEXT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Text Stream</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TEXTEDIT_VIEW</CLSNAME>
+     <CMPNAME>GET_TEXT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Text Stream</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TEXTEDIT_VIEW</CLSNAME>
+     <CMPNAME>GET_TEXTEDIT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert Texteditor</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TEXTEDIT_VIEW</CLSNAME>
+     <CMPNAME>GET_TEXTEDIT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Text Editor</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TEXTEDIT_VIEW</CLSNAME>
+     <CMPNAME>GET_TEXTEDIT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Text Editor</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TEXTEDIT_VIEW</CLSNAME>
+     <CMPNAME>G_FIELDNAME_TEXT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Feldname</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TEXTEDIT_VIEW</CLSNAME>
+     <CMPNAME>G_FIELDNAME_TEXT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Field Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TEXTEDIT_VIEW</CLSNAME>
+     <CMPNAME>G_FIELDNAME_TEXT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Field Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TEXTEDIT_VIEW</CLSNAME>
+     <CMPNAME>INITIALIZE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Initialisiert das Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TEXTEDIT_VIEW</CLSNAME>
+     <CMPNAME>INITIALIZE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Initializes the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TEXTEDIT_VIEW</CLSNAME>
+     <CMPNAME>INITIALIZE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Initializes the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TEXTEDIT_VIEW</CLSNAME>
+     <CMPNAME>ON_MODEL_CHANGED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Model wurde geändert</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TEXTEDIT_VIEW</CLSNAME>
+     <CMPNAME>ON_MODEL_CHANGED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Model Changed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TEXTEDIT_VIEW</CLSNAME>
+     <CMPNAME>ON_MODEL_CHANGED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Model Changed</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,896 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: Collection Owner</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_COLLECTION_OWNER makes it possible to provide a</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>collection with an owner and thus to control which actions can be p</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>erformed with the collection.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>For a general description of collections, see the documentation for the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>class &lt;DS:CL.CL_ISH_COLLECTION&gt;CL_ISH_COLLECTION&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>For a general description of the collection owner, see the documentation</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>for the interface &lt;DS:IF.IF_ISH_COLLECTION_OWNER&gt;IF_ISH_COLLECTION_OWNER</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_COLLECTION_OWNER makes it possible to deactivate all</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>checks and to activate them again.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>This is useful if the actual owner of the collection wishes to perform</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>prohibited actions.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The following sample code illustrates the use of the class</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>CL_ISH_COLLECTION_OWNER.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>In our scenario, a program creates a collection, calls a function module</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>to fill the collection, then removes specific entries, and calls a</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>function module to output the collection.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>data: lr_collection  type ref to cl_ish_standard_itab.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>data: lr_owner  type ref to cl_ish_collection_owner.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>* Create the collection owner.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>create object lr_owner.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>* Create the collection.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>lr_collection = cl_ish_standard_itab=&gt;create_by_tabname( i_tabname =</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&apos;ISHMED_T_PLANNING_DATA&apos;  ir_owner = lr_owner ).</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>check lr_collection is bound.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>* Call function to insert entries.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>* This function should only be allowed to insert entries, it must not</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>delete or update entries.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>lr_owner-&gt;allow_only_insert( ).</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>call function &apos;xxx_insert&apos;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>  exporting</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>    ir_collection = lr_collection.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>* Now eliminate the second entry of the collection.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>* To do so we have to temporary allow any actions..</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>lr_owner-&gt;deactivate( ).</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>lr_collection-&gt;remove_at( 2 ).</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>lr_owner-&gt;activate( ).</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>* Now call function to write the entries.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>* This function should only be allowed to read entries.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>lr_owner-&gt;forbid_all( ).</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>call function &apos;xxx_write&apos;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>  exporting</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>     ir_collection = lr_collection.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>* Destroy the collection after processing.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>lr_owner-&gt;deactivate( ).</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>lr_collection-&gt;destroy( ).</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_COLLECTION_OWNER bietet die Möglichkeit, eine</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Kollektion mit einem Eigentümer zu versorgen und somit zu steuern,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>welche Aktionen mit der Kollektion durchgeführt werden können.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Eine allgemeine Beschreibung zu Kollektionen finden Sie in der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Klassendokumentation zu &lt;DS:CL.CL_ISH_COLLECTION&gt;CL_ISH_COLLECTION&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Eine allgemeine Beschreibung zum Eigentümer einer Kollektion finden Sie</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>in der Interfacedokumentation zu</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_COLLECTION_OWNER&gt;IF_ISH_COLLECTION_OWNER&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_COLLECTION_OWNER bietet die Möglichkeit, sämtliche</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Prüfungen zu deaktivieren und wieder zu aktivieren.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Dies ist sinnvoll, wenn der eigentliche Eigentümer der Kollektion</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>verbotene Aktionen durchführen möchte..</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Folgendes Beispielcoding soll die Verwendung der Klasse</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>CL_ISH_COLLECTION_OWNER veranschaulichen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Wir gehen von einem Programm aus, welches eine Kollektion erzeugt,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>anschließend einen Funktionsbaustein zum befüllen der Kollektion</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>aufruft, danach bestimmte Einträge entfernt und danach einen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Funktionsbaustein zur Ausgabe der Kollektion aufruft.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>data: lr_collection  type ref to cl_ish_standard_itab.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>data: lr_owner  type ref to cl_ish_collection_owner.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>* Create the collection owner.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>create object lr_owner.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>* Create the collection.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>lr_collection = cl_ish_standard_itab=&gt;create_by_tabname( i_tabname =</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&apos;ISHMED_T_PLANNING_DATA&apos;  ir_owner = lr_owner ).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>check lr_collection is bound.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>* Call function to insert entries.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>* This function should only be allowed to insert entries, it must not</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>delete or update entries.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>lr_owner-&gt;allow_only_insert( ).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>call function &apos;xxx_insert&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>  exporting</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>    ir_collection = lr_collection.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>* Now eliminate the second entry of the collection.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>* To do so we have to temporary allow any actions..</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>lr_owner-&gt;deactivate( ).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>lr_collection-&gt;remove_at( 2 ).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>lr_owner-&gt;activate( ).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>* Now call function to write the entries.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>* This function should only be allowed to read entries.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>lr_owner-&gt;forbid_all( ).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>call function &apos;xxx_write&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>  exporting</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>     ir_collection = lr_collection.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>* Destroy the collection after processing.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>lr_owner-&gt;deactivate( ).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>lr_collection-&gt;destroy( ).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>ACTIVATE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Aktiviert das Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>ACTIVATE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Activates the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>ACTIVATE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Activates the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>ALLOW_ALL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Erlaubt alle Aktionen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>ALLOW_ALL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Allows All Actions</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>ALLOW_ALL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Allows All Actions</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>ALLOW_DELETE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Erlaubt das Entfernen von Einträgen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>ALLOW_DELETE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Allows Removal of Entries</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>ALLOW_DELETE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Allows Removal of Entries</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>ALLOW_INSERT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Erlaubt das Hinzufügen von Einträgen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>ALLOW_INSERT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Allows Creation of Entries</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>ALLOW_INSERT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Allows Creation of Entries</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>ALLOW_ONLY_DELETE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Erlaubt nur das Entfernen von Einträgen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>ALLOW_ONLY_DELETE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Allows Removal of Entries Only</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>ALLOW_ONLY_DELETE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Allows Removal of Entries Only</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>ALLOW_ONLY_INSERT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Erlaubt nur das Hinzufügen von Einträgen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>ALLOW_ONLY_INSERT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Allows Creation of Entries Only</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>ALLOW_ONLY_INSERT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Allows Creation of Entries Only</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>ALLOW_ONLY_READ</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Allows Reading of Entries Only</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>ALLOW_ONLY_READ</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Allows Reading of Entries Only</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>ALLOW_ONLY_UPDATE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Erlaubt nur das Modifizieren von Einträgen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>ALLOW_ONLY_UPDATE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Allows Modification of Entries Only</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>ALLOW_ONLY_UPDATE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Allows Modification of Entries Only</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>ALLOW_READ</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Allows Reading of Enties</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>ALLOW_READ</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Allows Reading of Enties</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>ALLOW_UPDATE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Erlaubt das Modifizieren von Einträgen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>ALLOW_UPDATE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Allows Modification of Entries</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>ALLOW_UPDATE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Allows Modification of Entries</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>DEACTIVATE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Deaktiviert das Objekt (alles erlaubt)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>DEACTIVATE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Deactivates the Object (Everything Allowed)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>DEACTIVATE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Deactivates the Object (Everything Allowed)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>FORBID_ALL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verbietet alle Aktionen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>FORBID_ALL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Prohibits All Actions</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>FORBID_ALL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Prohibits All Actions</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>FORBID_DELETE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verbietet das Entfernen von Einträgen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>FORBID_DELETE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Prohibits the Removal of Entries</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>FORBID_DELETE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Prohibits the Removal of Entries</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>FORBID_INSERT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verbietet das Hinzufügen von Einträgen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>FORBID_INSERT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Prohibits the Creation of Entries</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>FORBID_INSERT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Prohibits the Creation of Entries</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>FORBID_ONLY_DELETE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verbietet nur das Entfernen von Einträgen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>FORBID_ONLY_DELETE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Prohibits the Removal of Entries Only</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>FORBID_ONLY_DELETE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Prohibits the Removal of Entries Only</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>FORBID_ONLY_INSERT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verbietet nur das Hinzufügen von Einträgen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>FORBID_ONLY_INSERT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Prohibits the Creation of Entries Only</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>FORBID_ONLY_INSERT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Prohibits the Creation of Entries Only</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>FORBID_ONLY_READ</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Prohibits the Reading of Entries Only</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>FORBID_ONLY_READ</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Prohibits the Reading of Entries Only</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>FORBID_ONLY_UPDATE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verbietet nur das Modifizieren von Einträgen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>FORBID_ONLY_UPDATE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Prohibits the Modification of Entries Only</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>FORBID_ONLY_UPDATE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Prohibits the Modification of Entries Only</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>FORBID_READ</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Prohibits the Reading of Entries</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>FORBID_READ</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Prohibits the Reading of Entries</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>FORBID_UPDATE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verbietet das Modifizieren von Einträgen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>FORBID_UPDATE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Prohibits the Modification of Entries</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>FORBID_UPDATE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Prohibits the Modification of Entries</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>G_ACTIVE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>TRUE: Eigentümer ist aktiv</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>G_ACTIVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>TRUE: Owner Is Active</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>G_ACTIVE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>TRUE: Owner Is Active</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>G_ALLOW_DELETE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>TRUE: Entfernen von Einträgen erlaubt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>G_ALLOW_DELETE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>TRUE: Removal of Entries Allowed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>G_ALLOW_DELETE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>TRUE: Removal of Entries Allowed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>G_ALLOW_INSERT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>TRUE: Hinzufügen von Einträgen erlaubt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>G_ALLOW_INSERT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>TRUE: Creation of Entries Allowed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>G_ALLOW_INSERT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>TRUE: Creation of Entries Allowed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>G_ALLOW_READ</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>TRUE: Reading of Entries Allowed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>G_ALLOW_READ</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>TRUE: Reading of Entries Allowed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>G_ALLOW_UPDATE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>TRUE: Modifizieren von Einträgen erlaubt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>G_ALLOW_UPDATE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>TRUE: Modification of Entries Allowed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>G_ALLOW_UPDATE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>TRUE: Modification of Entries Allowed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>IS_ACTIVE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert ob das Objekt aktiv ist</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>IS_ACTIVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Whether the Object Is Active</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLECTION_OWNER</CLSNAME>
+     <CMPNAME>IS_ACTIVE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Whether the Object Is Active</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

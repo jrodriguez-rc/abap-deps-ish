@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>N1_REF_GRID_BUTTON</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>CL_ISH_GRID_BUTTON</DOMNAME>
+    <HEADLEN>10</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>14</SCRLEN2>
+    <SCRLEN3>20</SCRLEN3>
+    <DDTEXT>Reference to a CL_ISH_GRID_BUTTON Object</DDTEXT>
+    <REPTEXT>GridButton</REPTEXT>
+    <SCRTEXT_S>GridButton</SCRTEXT_S>
+    <SCRTEXT_M>GridButton</SCRTEXT_M>
+    <SCRTEXT_L>GridButton</SCRTEXT_L>
+    <DTELMASTER>D</DTELMASTER>
+    <DATATYPE>REF</DATATYPE>
+    <REFKIND>R</REFKIND>
+    <REFTYPE>C</REFTYPE>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>D</LANGU>
+    <LANGU>S</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>Referenz auf ein CL_ISH_GRID_BUTTON Objekt</DDTEXT>
+     <REPTEXT>GridButton</REPTEXT>
+     <SCRTEXT_S>GridButton</SCRTEXT_S>
+     <SCRTEXT_M>GridButton</SCRTEXT_M>
+     <SCRTEXT_L>GridButton</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>Referencia a un objeto CL_ISH_GRID_BUTTON</DDTEXT>
+     <REPTEXT>GridButton</REPTEXT>
+     <SCRTEXT_S>GridButton</SCRTEXT_S>
+     <SCRTEXT_M>GridButton</SCRTEXT_M>
+     <SCRTEXT_L>GridButton</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

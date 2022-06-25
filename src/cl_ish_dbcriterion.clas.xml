@@ -1,0 +1,559 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_DBCRITERION</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H DB: Criterion for Read Access</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+    <CLSSHAREDMEMORY>X</CLSSHAREDMEMORY>
+   </VSEOCLASS>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_DBCRITERION is the abstract base class for displaying a</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>selection criterion for database accesses.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Typically, selection criteria are classified in two groups:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>Single criteria</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Single criteria always relate to exactly one field.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>Compound criteria</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>A compound criterion is implemented using the class</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CL.CL_ISH_DBCRIT_ASSEMBLED&gt;CL_ISH_DBCRIT_ASSEMBLED&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>A compound criterion consists of two selection criteria (single</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>criterion or compound criterion) that are linked together using an o</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>perator (AND, OR, NOT).</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Each selection criterion can itself be displayed as a string that is</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>used as a WHERE clause in a SELECT statement.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>For more information, see the method</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CO.CL_ISH_DBCRITERION            AS_STRING&gt;AS_STRING&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The following methods are used to link two selection criterion:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;DS:CO.CL_ISH_DBCRITERION            AND&gt;AND&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;DS:CO.CL_ISH_DBCRITERION            OR&gt;OR&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;DS:CO.CL_ISH_DBCRITERION            NOT&gt;NOT&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The different characteristic values of a selection criterion are</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>implemented using the following subclasses:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;DS:CL.CL_ISH_DBCRIT_SINGLE&gt;CL_ISH_DBCRIT_SINGLE&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;DS:CL.CL_ISH_DBCRIT_INTERVAL&gt;CL_ISH_DBCRIT_INTERVAL&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;DS:CL.CL_ISH_DBCRIT_TABLE&gt;CL_ISH_DBCRIT_TABLE&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;DS:CL.CL_ISH_DBCRIT_RANGE&gt;CL_ISH_DBCRIT_RANGE&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;DS:CL.CL_ISH_DBCRIT_ASSEMBLED&gt;CL_ISH_DBCRIT_ASSEMBLED&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The following example illustrates the use of this class:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>You want to determine all the entries in the table NTMN for the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>organizational unit &apos;ZENDOLST&apos; in the period 01/01/2006 - 02/28/2006.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>HT</TDFORMAT>
+     <TDLINE>&lt;NP&gt;data: lr_crit  type ref to cl_ish_dbcriterion,&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>&lt;NP&gt;      lr_crit2 type ref to cl_ish_dbcriterion,&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>&lt;NP&gt;      l_where  type string,&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>&lt;NP&gt;      lt_ntmn  type table of ntmn.&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>&lt;NP&gt;lr_crit = cl_ish_dbcrit_single=&gt;create_eq(&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>&lt;NP&gt;            i_fieldname = &apos;TMNOE&apos;&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>&lt;NP&gt;            i_value     = &apos;ZENDOLST&apos; ).&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>&lt;NP&gt;lr_crit2 = cl_ish_dbcrit_interval=&gt;create_bt(&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>&lt;NP&gt;             i_fieldname  = &apos;TMNDT&apos;&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>&lt;NP&gt;             i_value_from = &apos;20060101&apos;&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>&lt;NP&gt;             i_value_to   = &apos;20060228&apos; ).&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>&lt;NP&gt;lr_crit = lr_crit-&gt;and( lr_crit2 ).&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>&lt;NP&gt;l_where = lr_crit-&gt;as_string( ).&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>&lt;NP&gt;select * from ntmn into table lt_ntmn where (l_where).&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_DBCRITERION ist die abstrakte Basisklasse zur</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Darstellung eines Selektionskriteriums für Datenbankzugriffe.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Selektionskriterien werden prinzipiell in zwei Gruppen unterteilt:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Einzelkriterien</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Einzelkriterien beziehen sich immer genau auf ein Feld.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Zusammengesetzte Kriterien</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Ein zusammengesetztes Kriterium wird durch die Klasse</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_DBCRIT_ASSEMBLED&gt;CL_ISH_DBCRIT_ASSEMBLED&lt;/&gt; implementiert.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Ein zusammengesetztes Kriterium besteht aus zwei Selektionskriterien</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(Einzelkriterium oder zusammengesetztes Kriterium), die durch einen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Operator (AND, OR, NOT) miteinander verknüpft werden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Jedes Selektionskriterium kann sich selbst als String darstellen,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>welcher als WHERE Klausel in einer SELECT Anweisung verwendet werden</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>kann.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Siehe dazu Methode</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CO.CL_ISH_DBCRITERION            AS_STRING&gt;AS_STRING&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Zur Verknüpfung zweier Selektionskriterien dienen die folgenden</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Methoden:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;DS:CO.CL_ISH_DBCRITERION            AND&gt;AND&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;DS:CO.CL_ISH_DBCRITERION            OR&gt;OR&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;DS:CO.CL_ISH_DBCRITERION            NOT&gt;NOT&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die verschiedenen Ausprägungen eines Selektionskriteriums werden durch</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>folgende Unterklassen implementiert:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;DS:CL.CL_ISH_DBCRIT_SINGLE&gt;CL_ISH_DBCRIT_SINGLE&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;DS:CL.CL_ISH_DBCRIT_INTERVAL&gt;CL_ISH_DBCRIT_INTERVAL&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;DS:CL.CL_ISH_DBCRIT_TABLE&gt;CL_ISH_DBCRIT_TABLE&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;DS:CL.CL_ISH_DBCRIT_RANGE&gt;CL_ISH_DBCRIT_RANGE&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;DS:CL.CL_ISH_DBCRIT_ASSEMBLED&gt;CL_ISH_DBCRIT_ASSEMBLED&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Anhand folgenden Beispiels soll die Verwendung veranschaulicht werden:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Es sollen alle NTMN-Einträge zur Organisationseinheit &apos;ZENDOLST&apos; im</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Zeitraum 01.01.2006 - 28.02.2006 ermittelt werden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>HT</TDFORMAT>
+       <TDLINE>&lt;NP&gt;data: lr_crit  type ref to cl_ish_dbcriterion,&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>&lt;NP&gt;      lr_crit2 type ref to cl_ish_dbcriterion,&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>&lt;NP&gt;      l_where  type string,&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>&lt;NP&gt;      lt_ntmn  type table of ntmn.&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>&lt;NP&gt;lr_crit = cl_ish_dbcrit_single=&gt;create_eq(&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>&lt;NP&gt;            i_fieldname = &apos;TMNOE&apos;&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>&lt;NP&gt;            i_value     = &apos;ZENDOLST&apos; ).&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>&lt;NP&gt;lr_crit2 = cl_ish_dbcrit_interval=&gt;create_bt(&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>&lt;NP&gt;             i_fieldname  = &apos;TMNDT&apos;&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>&lt;NP&gt;             i_value_from = &apos;20060101&apos;&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>&lt;NP&gt;             i_value_to   = &apos;20060228&apos; ).&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>&lt;NP&gt;lr_crit = lr_crit-&gt;and( lr_crit2 ).&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>&lt;NP&gt;l_where = lr_crit-&gt;as_string( ).&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>&lt;NP&gt;select * from ntmn into table lt_ntmn where (l_where).&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRITERION</CLSNAME>
+     <CMPNAME>AND</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Erzeugt ein zusammengesetztes Kriterium (Und-Verknüpfung)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRITERION</CLSNAME>
+     <CMPNAME>AND</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Creates a Compound Criterion (AND Operation)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRITERION</CLSNAME>
+     <CMPNAME>AND</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Creates a Compound Criterion (AND Operation)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRITERION</CLSNAME>
+     <CMPNAME>AS_STRING</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Stringifiziert das Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRITERION</CLSNAME>
+     <CMPNAME>AS_STRING</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Stringifies the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRITERION</CLSNAME>
+     <CMPNAME>AS_STRING</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Stringifies the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRITERION</CLSNAME>
+     <CMPNAME>CO_OTYPE_DBCRITERION</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Objekttyp</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRITERION</CLSNAME>
+     <CMPNAME>CO_OTYPE_DBCRITERION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Object Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRITERION</CLSNAME>
+     <CMPNAME>CO_OTYPE_DBCRITERION</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Object Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRITERION</CLSNAME>
+     <CMPNAME>IS_EMPTY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert ob das Objekt leer ist</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRITERION</CLSNAME>
+     <CMPNAME>IS_EMPTY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns whether the Object Is Empty</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRITERION</CLSNAME>
+     <CMPNAME>IS_EMPTY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns whether the Object Is Empty</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRITERION</CLSNAME>
+     <CMPNAME>NOT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Erzeugt ein zusammengesetztes Kriterium (Nicht-Verknüpfung)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRITERION</CLSNAME>
+     <CMPNAME>NOT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Creates a Compound Criterion (NOT Operation)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRITERION</CLSNAME>
+     <CMPNAME>NOT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Creates a Compound Criterion (NOT Operation)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRITERION</CLSNAME>
+     <CMPNAME>OR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Erzeugt ein zusammengesetztes Kriterium (Oder-Verknüpfung)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRITERION</CLSNAME>
+     <CMPNAME>OR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Creates a Compound Criterion (OR Operation)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRITERION</CLSNAME>
+     <CMPNAME>OR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Creates a Compound Criterion (OR Operation)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRITERION</CLSNAME>
+     <CMPNAME>PREPARE_STRINGIFICATION</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Vorbereiten für Stringifizierung</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRITERION</CLSNAME>
+     <CMPNAME>PREPARE_STRINGIFICATION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Prepare for Stringification</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRITERION</CLSNAME>
+     <CMPNAME>PREPARE_STRINGIFICATION</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Prepare for Stringification</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRITERION</CLSNAME>
+     <CMPNAME>_AS_STRING</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Stringifiziert das Objekt (interne Verarbeitung)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRITERION</CLSNAME>
+     <CMPNAME>_AS_STRING</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Stringifies the Object (Internal Processing)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRITERION</CLSNAME>
+     <CMPNAME>_AS_STRING</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Stringifies the Object (Internal Processing)</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

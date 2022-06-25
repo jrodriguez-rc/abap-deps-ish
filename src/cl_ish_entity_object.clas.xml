@@ -1,0 +1,1464 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: Entity Object</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_ENTITY_OBJECT is the abstract basic class for an entity</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>object.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Entity objects are managed by an &lt;DS:IF.IF_ISH_ENTITY_OBJECT_OWNER&gt;owner</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>The owner of an entity object is usually a</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE> &lt;DS:IF.IF_ISH_BUSINESS_OBJECT&gt;business object&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>Many entity objects are dependent on another entity object. In such</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>cases, the superordinate entity object assumes the role of the owner.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Entity objects manage &lt;DS:CL.CL_ISH_DBENTRY&gt;database entry objects&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>Each entity object has a main database entry object.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_ENTITY_OBJECT contains the interface</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:IF.IF_ISH_GUI_XSTRUCTURE_MODEL&gt;IF_ISH_GUI_XSTRUCTURE_MODEL&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_ENTITY_OBJECT contains the interface</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:IF.IF_ISH_DESTROYABLE&gt;IF_ISH_DESTROYABLE&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>UT</TDFORMAT>
+     <TDLINE>Methods:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>CHECK</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Checks the entity object.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>EO4OWNER_*</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>These methods may only be called by the owner.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_DFIES_BY_FIELDNAME</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the DDIC definitions for fields supported.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_EOID</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the key of the entity object.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_OWNER</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the owner.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>HAS_SNAPSHOT</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns whether the entity object has a specific snapshot.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>IS_CHANGED</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns whether the entity object is changed.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>An entity object is changed if at least one of its database entry</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>objects is changed.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>IS_DELETED</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns whether the entity object has been physically deleted from the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>database.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>An entity object is physically deleted from the database when it is</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>flagged for deletion and saved. Only the owner can do this.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>IS_FIELD_CHANGED</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns whether a particular field is changed.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>IS_MARKED_FOR_DELETION</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns whether the entity object is flagged for deletion.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>IS_NEW</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns whether the entity object is new.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>An entity object is new if it has no equivalent in the database.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>IS_TOUCHED</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns whether an entity object is affected.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>When a save is made, affected entity objects update the change data</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>(changed by, changed on, changed at) even if the entity object itself</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>has not changed.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>For more information about business objects, see the documentation for</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>the interface &lt;DS:IF.IF_ISH_BUSINESS_OBJECT&gt;IF_ISH_BUSINESS_OBJECT&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>For more information about database entry objects, see the documentation</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>for the class &lt;DS:CL.CL_ISH_DBENTRY&gt;CL_ISH_DBENTRY&lt;/&gt;.</TDLINE>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_ENTITY_OBJECT ist die abstrakte Basisklasse für ein</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Entitätsobjekt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Entitätsobjekte werden von einem</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_ENTITY_OBJECT_OWNER&gt;Eigentümer&lt;/&gt; verwaltet.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Der Eigentümer eines Entitätsobjekts ist normalerweise ein</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_BUSINESS_OBJECT&gt;Geschäftsobjekt&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Manche Entitätsobjekte sind von einem anderen Entitätsobjekt abhängig.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>In diesem Fall übernimmt das übergeordnete Entitätsobjekt die Rolle des</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Eigentümers.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Entitätsobjekte verwalten &lt;DS:CL.CL_ISH_DBENTRY&gt;Datenbankeintragsobjekte</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Jedes Entitätsobjekt hat ein Haupt-Datenbaneintragsobjekt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_ENTITY_OBJECT enthält das Interface</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_XSTRUCTURE_MODEL&gt;IF_ISH_GUI_XSTRUCTURE_MODEL&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_ENTITY_OBJECT enthält das Interface</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_DESTROYABLE&gt;IF_ISH_DESTROYABLE&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>Methoden:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>CHECK</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Prüft das Entitätsobjekt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>EO4OWNER_*</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Diese Methoden dürfen nur vom Eigentümer aufgerufen werden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_DFIES_BY_FIELDNAME</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert die DDIC-Definitionen zu allen unterstützten Feldern.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_EOID</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert den Schlüssel des Entitätsobjekts.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_OWNER</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert den Eigentümer.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>HAS_SNAPSHOT</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert, ob das Entitätsobjekt einen bestimmten Speicherabzug hat.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>IS_CHANGED</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert, ob das Entitätsobjekt geändert ist.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Ein Entitätsobjekt ist dann geändert, wenn mindestens eines seinder</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Datenbankeintragsobjekte geändert ist.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>IS_DELETED</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert, ob das Entitätsobjekt physisch aus der Datenbank gelöscht</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>wurde.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Ein Entitätsobjekt wird dann physisch aus der Datenbank gelöscht, wenn</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>es zur Löschung markiert und gesichert wird. Dies ist nur durch den</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Eigentümer möglich.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>IS_FIELD_CHANGED</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert, ob ein bestimmtes Feld geändert ist.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>IS_MARKED_FOR_DELETION</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert, ob das Entitätsobjekt zur Löschung markiert ist.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>IS_NEW</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert, ob das Entitätsobjekt neu ist.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Ein Enittätsobjekt ist dann neu, wenn es keine Entsprechung in der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Datenbank hat.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>IS_TOUCHED</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert, ob ein Enittätsobjekt berührt ist.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Berührte Entitätsobjekte aktualisieren beim Sichern auch dann die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Änderungsdaten (Änderungsbenutzer, Änderungsdatum, Änderungszeit), wenn</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>sich das Entitätsobjekt an sich nicht geändert hat.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Weitere Informationen zu Geschäftsobjekten finden Sie in der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Dokumentation zu Interface</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_BUSINESS_OBJECT&gt;IF_ISH_BUSINESS_OBJECT&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Weitere Informationen zu Datenbankeintragsobjekten finden Sie in der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Dokumentation zu Klasse &lt;DS:CL.CL_ISH_DBENTRY&gt;CL_ISH_DBENTRY&lt;/&gt;.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>CHECK</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Prüft das Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>CHECK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checks the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>CHECK</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Checks the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>CO_FIELDNAME_EOID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Feldname</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>CO_FIELDNAME_EOID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Field Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>CO_FIELDNAME_EOID</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Field Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_AFTER_COMMIT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verarbeitung nach COMMIT WORK</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_AFTER_COMMIT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Processing after COMMIT WORK</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_AFTER_COMMIT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Processing after COMMIT WORK</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_AFTER_ROLLBACK</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verarbeitung nach ROLLBACK WORK</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_AFTER_ROLLBACK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Processing after ROLLBACK WORK</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_AFTER_ROLLBACK</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Processing after ROLLBACK WORK</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_BEFORE_SAVE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verarbeitung vor Sichern (nach Prüfen)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_BEFORE_SAVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Processing Before Saving (After Check)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_BEFORE_SAVE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Processing Before Saving (After Check)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_CLEAR_ALL_SNAPSHOTS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Alle Snapshots löschen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_CLEAR_ALL_SNAPSHOTS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Delete All Snapshots</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_CLEAR_ALL_SNAPSHOTS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Delete All Snapshots</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_CLEAR_SNAPSHOT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Einen Snapshot löschen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_CLEAR_SNAPSHOT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Delete a Snapshot</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_CLEAR_SNAPSHOT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Delete a Snapshot</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_COLLECT_T_BO2SAVE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Sammeln von zu sichernden Geschäftsobjekten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_COLLECT_T_BO2SAVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Collect Business Objects to Be Saved</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_COLLECT_T_BO2SAVE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Collect Business Objects to Be Saved</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_MARK_FOR_DELETION</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Markiert das Objekt zur Löschung</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_MARK_FOR_DELETION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Flags the Object for Deletion</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_MARK_FOR_DELETION</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Flags the Object for Deletion</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_RELOAD</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt das Objekt auf den DB-Zustand</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_RELOAD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets Object to DB Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_RELOAD</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets Object to DB Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_RESET</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verwirft sämtliche Änderungen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_RESET</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Discards all Changes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_RESET</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Discards all Changes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_SAVE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Sichert das Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_SAVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Saves the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_SAVE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Saves the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_SNAPSHOT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Inhalt des Objekts temporär ablegen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_SNAPSHOT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Store Object Content Temporarily</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_SNAPSHOT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Store Object Content Temporarily</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_TOUCH</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Berührt das Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_TOUCH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Touches Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_TOUCH</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Touches Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_UNDO</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Temporär abgelegten Inhalt wieder aktivieren</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_UNDO</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Reactivate Content Stored Temporarily</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_UNDO</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Reactivate Content Stored Temporarily</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_UNTOUCH</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Berührung zurücknehmen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_UNTOUCH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Cancel Touch</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EO4OWNER_UNTOUCH</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Cancel Touch</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EV_G_MARKED_FOR_DEL_CHANGED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Löschmarkierung wurde geändert</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EV_G_MARKED_FOR_DEL_CHANGED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Deletion indicator changed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EV_G_MARKED_FOR_DEL_CHANGED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Deletion indicator changed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EV_STOKZ_CHANGED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Stornokennzeichen wurde geändert</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EV_STOKZ_CHANGED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Cancellation indicator changed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>EV_STOKZ_CHANGED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Cancellation indicator changed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>GET_DFIES_BY_FIELDNAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die DDIC-Definition zu einem Feld</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>GET_DFIES_BY_FIELDNAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the DDIC Definition for a Field</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>GET_DFIES_BY_FIELDNAME</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the DDIC Definition for a Field</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>GET_EOID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den Schlüssel</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>GET_EOID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>GET_EOID</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>GET_OWNER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den Eigentümer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>GET_OWNER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Owner</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>GET_OWNER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Owner</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>GR_CB_OBJ</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Objekt für Callback</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>GR_CB_OBJ</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Object for Callback</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>GR_CB_OBJ</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Object for Callback</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>GR_OWNER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Eigentümer eines Entitätsobjekts</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>GR_OWNER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Owner of an Entity Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>GR_OWNER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Owner of an Entity Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>GT_CHANGED_FIELD</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Geänderte Felder</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>GT_CHANGED_FIELD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Changed Fields</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>GT_CHANGED_FIELD</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Changed Fields</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>G_CB_DBENTRY_CONSTRUCTION</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Callback: Instanzierung eines Datenbankeintrags</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>G_CB_DBENTRY_CONSTRUCTION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Callback: Instantiate a Database Entry</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>G_CB_DBENTRY_CONSTRUCTION</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Callback: Instantiate a Database Entry</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>G_CB_DEPEO_CONSTRUCTION</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Callback: Instanzierung eines abhängigen Entitätsobjekts</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>G_CB_DEPEO_CONSTRUCTION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Callback: Instantiate a Dependent Entity Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>G_CB_DEPEO_CONSTRUCTION</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Callback: Instantiate a Dependent Entity Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>G_COLLECT_CHANGES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>abap_true: Änderungen puffern</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>G_COLLECT_CHANGES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>abap_true: Buffer Changes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>G_COLLECT_CHANGES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>abap_true: Buffer Changes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>G_DESTROY_MODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>abap_true: Objekt wird gerade zerstört</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>G_DESTROY_MODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>abap_true: Object Is Being Destroyed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>G_DESTROY_MODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>abap_true: Object Is Being Destroyed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>HAS_SNAPSHOT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert ob ein Snapshot vorhanden ist</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>HAS_SNAPSHOT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Whether a Snapshot Exists</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>HAS_SNAPSHOT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Whether a Snapshot Exists</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>IS_CHANGED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert ob das Objekt geändert ist</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>IS_CHANGED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns if Object Has Changed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>IS_CHANGED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns if Object Has Changed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>IS_DELETED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert ob das Objekt gelöscht ist</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>IS_DELETED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns if Object Is Deleted</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>IS_DELETED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns if Object Is Deleted</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>IS_FIELD_CHANGED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert ob ein Feldinhalt geändert ist</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>IS_FIELD_CHANGED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns if Field Content Has Been Changed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>IS_FIELD_CHANGED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns if Field Content Has Been Changed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>IS_MARKED_FOR_DELETION</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert ob das Objekt zur Löschung markiert ist</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>IS_MARKED_FOR_DELETION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns if Object Is Flagged for Deletion</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>IS_MARKED_FOR_DELETION</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns if Object Is Flagged for Deletion</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>IS_NEW</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert ob das Objekt neu ist</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>IS_NEW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Whether Object Is New</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>IS_NEW</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Whether Object Is New</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>IS_TOUCHED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert ob das Objekt berührt ist</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>IS_TOUCHED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Whether Object Is Touched</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>IS_TOUCHED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Whether Object Is Touched</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>ON_DBENTRY_AFTER_DESTROY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Datenbankeintrag wurde zerstört</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>ON_DBENTRY_AFTER_DESTROY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Database entry was destroyed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>ON_DBENTRY_AFTER_DESTROY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Database entry was destroyed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>ON_DBENTRY_CHANGED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Datenbankeintrag wurde geändert</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>ON_DBENTRY_CHANGED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Database entry was changed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>ON_DBENTRY_CHANGED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Database entry was changed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>ON_OWNER_DESTROYED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Eigentümer wurde zerstört</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>ON_OWNER_DESTROYED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Owner destroyed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>ON_OWNER_DESTROYED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Owner destroyed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_ACTIVATE_COLLECT_CHANGES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Aktiviert die Sammlung von Änderungen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_ACTIVATE_COLLECT_CHANGES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Activates Change Collection</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_ACTIVATE_COLLECT_CHANGES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Activates Change Collection</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_CHECK_DESTROYED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Prüft ob das Objekt zerstört ist</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_CHECK_DESTROYED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checks if the Object is Destroyed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_CHECK_DESTROYED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Checks if the Object is Destroyed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_DEACTIVATE_COLLECT_CHANGES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Deaktiviert die Sammlung von Änderungen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_DEACTIVATE_COLLECT_CHANGES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Deactivates Change Collection</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_DEACTIVATE_COLLECT_CHANGES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Deactivates Change Collection</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_DESTROY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Zerstört das Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_DESTROY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Destroys the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_DESTROY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Destroys the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_GET_DBENTRY4FIELDNAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den Datenbankeintrag zu einem Feldnamen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_GET_DBENTRY4FIELDNAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Database Entry for a Field Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_GET_DBENTRY4FIELDNAME</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Database Entry for a Field Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_GET_MAIN_DBENTRY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den Haupt-Datenbankeintrag</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_GET_MAIN_DBENTRY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Main Database Entry</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_GET_MAIN_DBENTRY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Main Database Entry</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_GET_T_DBENTRY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die zugehörigen Datenbankeinträge</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_GET_T_DBENTRY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Corresponding Database Entries</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_GET_T_DBENTRY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Corresponding Database Entries</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_GET_T_DBENTRY2SAVE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die zu sichernden Datenbankeinträge</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_GET_T_DBENTRY2SAVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Database Entries to Be Saved</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_GET_T_DBENTRY2SAVE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Database Entries to Be Saved</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_GET_T_DEPEO2SAVE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die zu sichernden abhängigen Entitätsobjekte</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_GET_T_DEPEO2SAVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Dependent Entity Objects to Be Saved</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_GET_T_DEPEO2SAVE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Dependent Entity Objects to Be Saved</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_GET_T_LOADED_DEPEO</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die geladenen abhängigen Entitätsobjekte</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_GET_T_LOADED_DEPEO</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Dependent Entity Objects to Be Loaded</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_GET_T_LOADED_DEPEO</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Dependent Entity Objects to Be Loaded</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_ON_DBENTRY_AFTER_DESTROY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Datenbankeintrag wurde zerstört</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_ON_DBENTRY_AFTER_DESTROY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Database entry was destroyed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_ON_DBENTRY_AFTER_DESTROY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Database entry was destroyed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_RAISE_EV_CHANGED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ereignis ev_changed auslösen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_RAISE_EV_CHANGED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Trigger Event ev_changed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_RAISE_EV_CHANGED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Trigger Event ev_changed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_REGISTER_DBENTRY_EVENTS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Registriert die Ereignisbehandler für einen Datenbankeintrag</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_REGISTER_DBENTRY_EVENTS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Registers Event Handler for a Database Entry</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_REGISTER_DBENTRY_EVENTS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Registers Event Handler for a Database Entry</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_RELOAD</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt das Objekt auf den DB-Zustand</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_RELOAD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets Object to DB Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_RELOAD</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets Object to DB Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_RESET</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verwirft sämtliche Änderungen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_RESET</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Discards all Changes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ENTITY_OBJECT</CLSNAME>
+     <CMPNAME>_RESET</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Discards all Changes</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

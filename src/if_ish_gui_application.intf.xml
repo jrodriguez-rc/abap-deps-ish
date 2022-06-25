@@ -1,0 +1,1546 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_INTF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOINTERF>
+    <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: GUI - Application</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <UNICODE>X</UNICODE>
+   </VSEOINTERF>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;MEANING&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The interface IF_ISH_GUI_APPLICATION defines the interface of a dialog</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>application.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The interface IF_ISH_GUI_APPLICATION contains the interface</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:IF.IF_ISH_GUI_ELEMENT&gt;IF_ISH_GUI_ELEMENT&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The interface IF_ISH_GUI_APPLICATION contains the interface</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:IF.IF_ISH_DESTROYABLE&gt;IF_ISH_DESTROYABLE&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>UT</TDFORMAT>
+     <TDLINE>Methods:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>BUILD_ALV_VARIANT_REPORT</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the program name for the ALV variant of an</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:IF.IF_ISH_GUI_VIEW&gt;interface object&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>See DDIC structure DISVARIANT.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>CANCEL_NEXT_MDYEVT_PROC</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Causes the dialog application not to process the next</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CL.CL_ISH_GUI_MDY_EVENT&gt;subscreen container request&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>CLEAR_CRSPOS_MESSAGE</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Causes the dialog application to delete the message recorded for a</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>cursor position.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_CRSPOS_MESSAGE</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the message recorded for a cursor position.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_FOCUSSED_VIEW</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the focused &lt;DS:IF.IF_ISH_GUI_VIEW&gt;interface object&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>See also method SET_FOCUSSED_VIEW.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_LAYOUT</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the &lt;DS:CL.CL_ISH_GUI_APPL_LAYOUT&gt;settings of the dialog</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>application&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_MAIN_CONTROLLER</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the &lt;DS:IF.IF_ISH_GUI_MAIN_CONTROLLER&gt;control object of the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:IF.IF_ISH_GUI_MDY_VIEW&gt;subscreen container interface object&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_VCODE</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the processing mode.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>IS_EMBEDDED</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns whether the dialog application is embedded in another subscreen</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>container.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>IS_INITIALIZED</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns whether the dialog application is already initialized.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>IS_IN_INITIALIZATION_MODE</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns whether the dialog application is being initialized.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>IS_NEXT_MDYEVT_PROC_CANCELLED</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns whether the next subscreen container request is not to be</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>processed.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>See also method CANCEL_NEXT_MDYEVT_PROC.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>IS_PAI_IN_PROCESS</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns whether PROCESS AFTER INPUT is being executed.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>IS_PBO_IN_PROCESS</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns whether PROCESS BEFORE OUTPUT is being executed.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>IS_RUNNING</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns whether the dialog application is executing.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>LOAD_LAYOUT</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Loads the settings of the dialog application from the database.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>LOAD_VIEW_LAYOUT</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Loads the settings of an interface object from the database.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>RUN</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Starts the dialog.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>SAVE_LAYOUT</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Saves the current settings of the dialog application in the database.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>SAVE_VIEW_LAYOUT</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Saves the current settings of an interface object in the database.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>SET_FOCUSSED_VIEW</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Sets the focused &lt;DS:IF.IF_ISH_GUI_VIEW&gt;interface object&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>If this is a &lt;DS:IF.IF_ISH_GUI_DYNPRO_VIEW&gt;dynpro interface object&lt;/&gt;,</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>the method sets the cursor on a field of the dynpro at the next PBO run.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>If this is a &lt;DS:IF.IF_ISH_GUI_CONTROL_VIEW&gt;control interface object&lt;/&gt;,</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>the method sets the cursor in the control immediately.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>SET_VCODE</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Sets the processing mode.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;USE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>UT</TDFORMAT>
+     <TDLINE>General information about the structure of a dialog application</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>A dialog application is started and managed by an IF_ISH_GUI_APPLICATION</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>object.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The interface of the contained interface objects is defined by the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>interface &lt;DS:IF.IF_ISH_GUI_VIEW&gt;IF_ISH_GUI_VIEW&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Interface objects are incorporated and managed by a control object. The</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>interface of a control object is defined by the interface</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:IF.IF_ISH_GUI_CONTROLLER&gt;IF_ISH_GUI_CONTROLLER&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Control objects and interface objects have a hierarchical structure</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Each control object has a parent control object and can have any number</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>of child control objects. The topmost control object (</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>&lt;DS:IF.IF_ISH_GUI_MAIN_CONTROLLER&gt;main control object&lt;/&gt;) constitutes an</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>exception. The main control object is assigned directly under the dialog</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>application and is instantiated and managed by this dialog application.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Each interface object has only one control object. Each interface object</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>has a parent interface object and can have any number of child interface</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>objects. The &lt;DS:IF.IF_ISH_GUI_MDY_VIEW&gt;subscreen container interface</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>object&lt;/&gt; constitutes an exception. The subscreen container interface</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>object does not have a child interface object. The control object of a</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>subscreen container interface object is a main control object.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>UT</TDFORMAT>
+     <TDLINE>General information about function processing</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>All types of functions are triggered from an interface object.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The interface object functions as the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:IF.IF_ISH_GUI_REQUEST_SENDER&gt;request sender&lt;/&gt;. The request sender</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>creates a &lt;DS:CL.CL_ISH_GUI_REQUEST&gt;request object&lt;/&gt; and entrusts a</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:IF.IF_ISH_GUI_REQUEST_PROCESSOR&gt;request processor&lt;/&gt; with the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>processing. Each request processor that processes a request creates a</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CL.CL_ISH_GUI_RESPONSE&gt;request result object&lt;/&gt;. The request result</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>object indicates who processed the request and with what result.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class &lt;DS:CL.CL_ISH_GUI_APPLICATION&gt;CL_ISH_GUI_APPLICATION&lt;/&gt; is the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>abstract basic class for a dialog application.</TDLINE>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;MEANING&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das Interface IF_ISH_GUI_APPLICATION definiert die Schnittstelle einer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Dialoganwendung.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das Interface IF_ISH_GUI_APPLICATION umfasst das Interface</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_ELEMENT&gt;IF_ISH_GUI_ELEMENT&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das Interface IF_ISH_GUI_APPLICATION umfasst das Interface</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_DESTROYABLE&gt;IF_ISH_DESTROYABLE&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>Methoden:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>BUILD_ALV_VARIANT_REPORT</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert den Programmnamen für die ALV-Variante eines</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_VIEW&gt;Oberflächenobjekts&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Siehe DDIC-Struktur DISVARIANT.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>CANCEL_NEXT_MDYEVT_PROC</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Veranlasst die Dialoganwendung, die nächste</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_GUI_MDY_EVENT&gt;Trägerdynpro-Anfrage&lt;/&gt; nicht zu</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>verarbeiten.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>CLEAR_CRSPOS_MESSAGE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Veranlasst die Dialoganwendung, die für eine Cursorpositionierung</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>gemerkte Meldung zu löschen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_CRSPOS_MESSAGE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert die für eine Cursorpositionierung gemerkte Meldung.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_FOCUSSED_VIEW</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert das fokussierte &lt;DS:IF.IF_ISH_GUI_VIEW&gt;Oberflächenobjekt&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Siehe auch Methode SET_FOCUSSED_VIEW.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_LAYOUT</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert die &lt;DS:CL.CL_ISH_GUI_APPL_LAYOUT&gt;Einstellungen der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Dialoganwendung&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_MAIN_CONTROLLER</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert das &lt;DS:IF.IF_ISH_GUI_MAIN_CONTROLLER&gt;Kontrollobjekt&lt;/&gt; des</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_MDY_VIEW&gt;Trägerdynpro-Oberflächenobjekts&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_VCODE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert den Verarbeitungsmodus.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>IS_EMBEDDED</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert, ob die Dialoganwendung in ein anderes Trägerdynpro</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>eingebunden ist.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>IS_INITIALIZED</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert, ob die Dialoganwendung bereits initialisiert ist.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>IS_IN_INITIALIZATION_MODE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert, ob die Dialoganwendung gerade initialisiert wird.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>IS_NEXT_MDYEVT_PROC_CANCELLED</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert, ob die nächste Trägerdynpro-Anfrage nicht zu verarbeiten</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ist.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Siehe auch Methode CANCEL_NEXT_MDYEVT_PROC.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>IS_PAI_IN_PROCESS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert, ob PROCESS AFTER INPUT gerade durchgeführt wird.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>IS_PBO_IN_PROCESS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert, ob PROCESS BEFORE OUTPUT gerade durchgeführt wird.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>IS_RUNNING</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert, ob die Dialoganwendung gerade durchgeführt wird.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>LOAD_LAYOUT</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Lädt die Einstellungen der Dialoganwendung aus der Datenbank.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>LOAD_VIEW_LAYOUT</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Lädt die Einstellungen eines Oberflächenobjekts aus der Datenbank.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>RUN</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Startet den Dialog.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>SAVE_LAYOUT</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Sichert die aktuellen Einstellungen der Dialoganwendung in der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Datenbank.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>SAVE_VIEW_LAYOUT</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Sichert die aktuellen Einstellungen eines Oberflächenobjekts in der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Datenbank.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>SET_FOCUSSED_VIEW</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Setzt das fokussierte &lt;DS:IF.IF_ISH_GUI_VIEW&gt;Oberflächenobjekt.&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Wenn es sich dabei um ein</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_DYNPRO_VIEW&gt;Dynpro-Oberflächenobjekt&lt;/&gt; handelt, wird</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>beim nächsten PBO-Durchlauf der Cursor auf ein Feld des Dynpros gesetzt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Wenn es sich dabei um ein</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_CONTROL_VIEW&gt;Control-Oberflächenobjekt&lt;/&gt; handelt,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>wird sofort der Cursor auf das Control gesetzt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>SET_VCODE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Setzt den Verarbeitungsmodus.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>Allgemeine Informationen über den Aufbau einer Dialoganwendung</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Eine Dialoganwendung wird durch ein IF_ISH_GUI_APPLICATION Objekt</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>gestartet und verwaltet.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Schnittstelle der enthaltenen Oberflächenobjekte werden durch das</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Interface &lt;DS:IF.IF_ISH_GUI_VIEW&gt;IF_ISH_GUI_VIEW&lt;/&gt; definiert.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Oberflächenobjekte werden durch ein Kontrollobjekt eingebunden und</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>verwaltet. Die Schnittstelle eines Kontrollobjekts wird durch das</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Interface &lt;DS:IF.IF_ISH_GUI_CONTROLLER&gt;IF_ISH_GUI_CONTROLLER&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>definiert.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Kontrollobjekte und Oberflächenobjekte sind hierarchisch aufgebaut.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Jedes Kontrollobjekt hat ein übergeordnetes Kontrollobjekt und kann</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>beliebig viele untergeordnete Kontrollobjekte haben. Eine Ausnahme ist</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>das oberste Kontrollobjekt (</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_MAIN_CONTROLLER&gt;Haupt-Kontrollobjekt&lt;/&gt;). Das</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Haupt-Kontrollobjekt hängt direkt unter der Dialoganwendung und wird von</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>dieser instanziert und verwaltet.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Jedes Oberflächenobjekt hat genau ein Kontrollobjekt. Jedes</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Oberflächenobjekt hat ein übergeordnetes Oberflächenobjekt und kann</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>beliebig viele untergeordnete Oberflächenobjekte haben. Eine Ausnahme</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ist das &lt;DS:IF.IF_ISH_GUI_MDY_VIEW&gt;Trägerdynpro-Oberflächenobjekt&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Das Trägerdynpro-Oberflächenobjekt hat kein übergeordnetes</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Oberflächenobjekt. Das Kontrollobjekt eines</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Trägerdynpro-Oberflächenobjekts ist ein Haupt-Kontrollobjekt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>Allgemeine Informationen über die Verarbeitung von Funktionen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Funktionen jeglicher Art werden ursprünglich von einem Oberflächenobjekt</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ausgelöst.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das Oberflächenobjekt fungiert hierbei als</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_REQUEST_SENDER&gt;Anfragesteller&lt;/&gt;. Der Anfragesteller</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>erzeugt ein &lt;DS:CL.CL_ISH_GUI_REQUEST&gt;Anfrageobjekt&lt;/&gt; und beauftragt</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>einen &lt;DS:IF.IF_ISH_GUI_REQUEST_PROCESSOR&gt;Anfrageverarbeiter&lt;/&gt; mit der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Verarbeitung. Jener Anfrageverarbeiter, der eine Anfrage verarbeitet,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>erzeugt ein &lt;DS:CL.CL_ISH_GUI_RESPONSE&gt;Anfrageergebnisobjekt&lt;/&gt;. Aus dem</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Anfrageergebnisobjekt ist ersichtlich, wer die Anfrage mit welchem</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Ergebnis verarbeitet hat.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse &lt;DS:CL.CL_ISH_GUI_APPLICATION&gt;CL_ISH_GUI_APPLICATION&lt;/&gt; ist</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>die abstrakte Basisklasse für eine Dialoganwendung.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>BUILD_ALV_VARIANT_REPORT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Erstellt den Programmnamen für eine ALV-Variante</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>BUILD_ALV_VARIANT_REPORT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Creates Program Name for an ALV Variant</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>BUILD_ALV_VARIANT_REPORT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Creates Program Name for an ALV Variant</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CANCEL_NEXT_MDYEVT_PROC</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verhindert die Verarbeitung der nächsten Trägerdynproanfrage</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CANCEL_NEXT_MDYEVT_PROC</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Prevents Processing of Next Subscreen Container Query</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CANCEL_NEXT_MDYEVT_PROC</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Prevents Processing of Next Subscreen Container Query</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CLEAR_CRSPOS_MESSAGE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Löscht die Meldung für die Cursorpositionierung</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CLEAR_CRSPOS_MESSAGE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Deletes the Cursor Positioning Message</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CLEAR_CRSPOS_MESSAGE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Deletes the Cursor Positioning Message</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CONFIG_LAYOUT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Starts Dialog for Processing Layout</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CONFIG_LAYOUT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Starts Dialog for Processing Layout</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CO_APPLMODE_FULLSCREEN</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Applikationsmodus: Fullscreen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CO_APPLMODE_FULLSCREEN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Application Mode: Fullscreen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CO_APPLMODE_FULLSCREEN</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Application Mode: Fullscreen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CO_APPLMODE_POPUP</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Applikationsmodus: Popup</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CO_APPLMODE_POPUP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Application Mode: Dialog Box</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CO_APPLMODE_POPUP</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Application Mode: Dialog Box</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CO_UCOMM_BACK</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Zurück</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CO_UCOMM_BACK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Back</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CO_UCOMM_BACK</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Back</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CO_UCOMM_CANCEL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Abbrechen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CO_UCOMM_CANCEL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Cancel</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CO_UCOMM_CANCEL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Cancel</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CO_UCOMM_CHECK</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Prüfen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CO_UCOMM_CHECK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CO_UCOMM_CHECK</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Check</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CO_UCOMM_CONFIG_LAYOUT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Layout bearbeiten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CO_UCOMM_CONFIG_LAYOUT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Edit Layout</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CO_UCOMM_CONFIG_LAYOUT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Edit Layout</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CO_UCOMM_DELETE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Löschen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CO_UCOMM_DELETE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Delete</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CO_UCOMM_DELETE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Delete</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CO_UCOMM_END</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Beenden</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CO_UCOMM_END</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Exit</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CO_UCOMM_END</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Exit</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CO_UCOMM_ENTER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>ENTER</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CO_UCOMM_ENTER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>ENTER</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CO_UCOMM_ENTER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>ENTER</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CO_UCOMM_SAVE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Sichern</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CO_UCOMM_SAVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Save</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CO_UCOMM_SAVE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Save</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CO_UCOMM_SWI2DIS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Wechsel in den Anzeigemodus</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CO_UCOMM_SWI2DIS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Switch to Display Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CO_UCOMM_SWI2DIS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Switch to Display Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CO_UCOMM_SWI2UPD</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Wechsel in den Änderungsmodus</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CO_UCOMM_SWI2UPD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Switch to Change Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CO_UCOMM_SWI2UPD</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Switch to Change Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CO_UCOMM_TRANSPORT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Transportieren</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CO_UCOMM_TRANSPORT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Transport</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>CO_UCOMM_TRANSPORT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Transport</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>GET_ALV_VARIANT_REPORT_PREFIX</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den Prefix für d. Programmname einer ALV-Variante</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>GET_ALV_VARIANT_REPORT_PREFIX</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Prefix for Program Name for an ALV Variant</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>GET_ALV_VARIANT_REPORT_PREFIX</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Prefix for Program Name for an ALV Variant</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>GET_APPLMODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den Applikationsmodus</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>GET_APPLMODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Application Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>GET_APPLMODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Application Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>GET_CRSPOS_MESSAGE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die Meldung für die Cursorpositionierung</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>GET_CRSPOS_MESSAGE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Cursor Positioning Message</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>GET_CRSPOS_MESSAGE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Cursor Positioning Message</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>GET_FOCUSSED_VIEW</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den fokussierten View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>GET_FOCUSSED_VIEW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Focused View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>GET_FOCUSSED_VIEW</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Focused View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>GET_LAYOUT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die Applikationseinstellungen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>GET_LAYOUT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Application Settings</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>GET_LAYOUT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Application Settings</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>GET_MAIN_CONTROLLER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den Hauptcontroller</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>GET_MAIN_CONTROLLER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Main Controller</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>GET_MAIN_CONTROLLER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Main Controller</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>GET_SETTINGS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die Applikationseinstellungen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>GET_SETTINGS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Application Settings</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>GET_SETTINGS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Application Settings</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>GET_STARTUP_SETTINGS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die Starteinstellungen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>GET_STARTUP_SETTINGS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Start Settings</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>GET_STARTUP_SETTINGS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Start Settings</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>GET_VCODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den Verarbeitungsmodus</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>GET_VCODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Processing Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>GET_VCODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Processing Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>IS_EMBEDDED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert ob die Applikation eingebunden ist</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>IS_EMBEDDED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Whether Application Is Included</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>IS_EMBEDDED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Whether Application Is Included</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>IS_INITIALIZED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert ob das Objekt initialisiert ist</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>IS_INITIALIZED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Whether the Object Is Initialized</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>IS_INITIALIZED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Whether the Object Is Initialized</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>IS_IN_INITIALIZATION_MODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert ob das Objekt gerade initialisiert wird</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>IS_IN_INITIALIZATION_MODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Whethre the Object Is Being Initialized</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>IS_IN_INITIALIZATION_MODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Whethre the Object Is Being Initialized</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>IS_ISH_SCRM_SUPPORTED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert ob IS-H Bildmodifikationen unterstützt werden</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>IS_ISH_SCRM_SUPPORTED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns if IS-H Screen Modifications Are Supported</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>IS_ISH_SCRM_SUPPORTED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns if IS-H Screen Modifications Are Supported</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>IS_NEXT_MDYEVT_PROC_CANCELLED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert ob die nächste Trägerdynproanfrage verarb. wird</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>IS_NEXT_MDYEVT_PROC_CANCELLED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns if Next Subscreen Container Query Will be Processed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>IS_NEXT_MDYEVT_PROC_CANCELLED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns if Next Subscreen Container Query Will be Processed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>IS_PAI_IN_PROCESS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert ob PAI-Verarbeitung durchgeführt wird</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>IS_PAI_IN_PROCESS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns if PAI Processing is Occurring</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>IS_PAI_IN_PROCESS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns if PAI Processing is Occurring</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>IS_PBO_IN_PROCESS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert ob PBO-Verarbeitung durchgeführt wird</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>IS_PBO_IN_PROCESS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns if PBO Processing is Occurring</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>IS_PBO_IN_PROCESS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns if PBO Processing is Occurring</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>IS_RUNNING</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert ob die Applikation gerade ausgeführt wird</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>IS_RUNNING</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Whether the Application Is Being Executed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>IS_RUNNING</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Whether the Application Is Being Executed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>LOAD_LAYOUT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Lädt ein Layout</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>LOAD_LAYOUT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Loads a Layout</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>LOAD_LAYOUT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Loads a Layout</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>LOAD_VIEW_LAYOUT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Lädt das Layout eines Views</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>LOAD_VIEW_LAYOUT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Loads Layout of a View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>LOAD_VIEW_LAYOUT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Loads Layout of a View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>RUN</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Führt die Applikation aus</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>RUN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Executes the Application</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>RUN</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Executes the Application</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>SAVE_LAYOUT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Sichert ein Layout</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>SAVE_LAYOUT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Saves a Layout</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>SAVE_LAYOUT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Saves a Layout</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>SAVE_VIEW_LAYOUT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Sichert das Layout eines Views</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>SAVE_VIEW_LAYOUT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Saves Layout of a View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>SAVE_VIEW_LAYOUT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Saves Layout of a View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>SET_FOCUSSED_VIEW</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt den fokussierten View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>SET_FOCUSSED_VIEW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the Focused View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>SET_FOCUSSED_VIEW</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the Focused View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>SET_VCODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt den Verarbeitungsmodus</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>SET_VCODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the Processing Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_APPLICATION</CLSNAME>
+     <CMPNAME>SET_VCODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the Processing Mode</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

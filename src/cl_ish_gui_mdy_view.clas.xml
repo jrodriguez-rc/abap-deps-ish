@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_GUI_MDY_VIEW</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: GUI - Subscreen Container View</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Class CL_ISH_GUI_MDY_VIEW is the abstract basic class for a subscreen</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>container interface object in a &lt;DS:IF.IF_ISH_GUI_APPLICATION&gt;dialog</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>application&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Class CL_ISH_GUI_MDY_VIEW inherits from class</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CL.CL_ISH_GUI_DYNPRO_VIEW&gt;CL_ISH_GUI_DYNPRO_VIEW&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The interface of a subscreen container interface object is defined by</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>the interface &lt;DS:IF.IF_ISH_GUI_MDY_VIEW&gt;IF_ISH_GUI_MDY_VIEW&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Class &lt;DS:CL.CL_ISH_GV_MDY_SIMPLE&gt;CL_ISH_GV_MDY_SIMPLE&lt;/&gt; is a simple</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>subscreen container interface object.</TDLINE>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_GUI_MDY_VIEW ist die abstrakte Basisklasse für ein</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Trägerdynpro-Oberflächenobjekt in einer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_APPLICATION&gt;Dialoganwendung&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_GUI_MDY_VIEW erbt von der Klasse</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_GUI_DYNPRO_VIEW&gt;CL_ISH_GUI_DYNPRO_VIEW&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Schnittstelle eines Trägerdynpro-Oberflächenobjekts wird durch die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Schnittstelle &lt;DS:IF.IF_ISH_GUI_MDY_VIEW&gt;IF_ISH_GUI_MDY_VIEW&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>definiert.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse &lt;DS:CL.CL_ISH_GV_MDY_SIMPLE&gt;CL_ISH_GV_MDY_SIMPLE&lt;/&gt; ist ein</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>einfaches Trägerdynpro-Oberflächenobjekt.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>GR_PFSTATUS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Aktueller GUI-Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>GR_PFSTATUS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Current GUI Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>GR_PFSTATUS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Current GUI Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>GR_TITLEBAR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Aktuelle Titelzeile</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>GR_TITLEBAR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Current Title Bar</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>GR_TITLEBAR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Current Title Bar</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>GT_PFSTATUS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verfügbare GUI-Stati</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>GT_PFSTATUS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Available GUI Statuses</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>GT_PFSTATUS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Available GUI Statuses</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>GT_TITLEBAR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verfügbare Titelzeilen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>GT_TITLEBAR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Available Title Bars</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>GT_TITLEBAR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Available Title Bars</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>_ADJUST_PFSTATUS_TO_VCODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Aktuellen GUI-Status an Verarbeitungsmodus anpassen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>_ADJUST_PFSTATUS_TO_VCODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Adjust Current GUI Status to Processing Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>_ADJUST_PFSTATUS_TO_VCODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Adjust Current GUI Status to Processing Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>_ADJUST_TITLEBAR_TO_VCODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Aktuelle Titelzeile an Verarbeitungsmodus anpassen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>_ADJUST_TITLEBAR_TO_VCODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Adjust Title Bar to Processing Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>_ADJUST_TITLEBAR_TO_VCODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Adjust Title Bar to Processing Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>_INIT_MDY_VIEW</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Initialisiert das Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>_INIT_MDY_VIEW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Initializes the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>_INIT_MDY_VIEW</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Initializes the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>_SET_PFSTATUS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt den GUI-Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>_SET_PFSTATUS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the GUI Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>_SET_PFSTATUS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the GUI Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>_SET_TITLEBAR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt die Titelzeile</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>_SET_TITLEBAR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets Title Bar</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>_SET_TITLEBAR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets Title Bar</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>__EXIT_COMMAND</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verarbeitung eines Exit-Commands (INTERNAL USE ONLY)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>__EXIT_COMMAND</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Processing of an Exit Command (INTERNAL USE ONLY)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>__EXIT_COMMAND</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Processing of an Exit Command (INTERNAL USE ONLY)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>__USER_COMMAND</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verarbeitung eines User-Commands (INTERNAL USE ONLY)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>__USER_COMMAND</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Processing of a User Command (INTERNAL USE ONLY)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>__USER_COMMAND</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Processing of a User Command (INTERNAL USE ONLY)</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

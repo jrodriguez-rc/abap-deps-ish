@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISHMED_UTL_WEBDYNPRO</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>ISHMED: Web Dynpro Functions</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_UTL_WEBDYNPRO</CLSNAME>
+     <CMPNAME>GR_CONFIG_EDITOR_WDCOMP</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Web Dynpro: Component</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_UTL_WEBDYNPRO</CLSNAME>
+     <CMPNAME>GR_CONFIG_EDITOR_WDCOMP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Web Dynpro: Component</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_UTL_WEBDYNPRO</CLSNAME>
+     <CMPNAME>GR_CONFIG_EDITOR_WDCOMP</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Web Dynpro: Component</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_UTL_WEBDYNPRO</CLSNAME>
+     <CMPNAME>IS_CONFIG_EDITOR_RUNNING</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert ob ein Konfigurationseditor ausgeführt wird</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_UTL_WEBDYNPRO</CLSNAME>
+     <CMPNAME>IS_CONFIG_EDITOR_RUNNING</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Whether a Configuration Editor Is Executed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_UTL_WEBDYNPRO</CLSNAME>
+     <CMPNAME>IS_CONFIG_EDITOR_RUNNING</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Whether a Configuration Editor Is Executed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_UTL_WEBDYNPRO</CLSNAME>
+     <CMPNAME>SET_CONFIG_EDITOR_RUNNING</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt dass ein Konfigurationseditor ausgeführt wird</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_UTL_WEBDYNPRO</CLSNAME>
+     <CMPNAME>SET_CONFIG_EDITOR_RUNNING</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determines That a Configuration Editor Is Executed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_UTL_WEBDYNPRO</CLSNAME>
+     <CMPNAME>SET_CONFIG_EDITOR_RUNNING</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determines That a Configuration Editor Is Executed</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

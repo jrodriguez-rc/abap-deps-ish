@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_STANDARD_ITAB</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: Standard Table</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_STANDARD_ITAB is an indexed table class that is based</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>on an internal standard table.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>For a general overview of indexed table classes, see the documentation</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>for the class &lt;DS:CL.CL_ISH_INDEXED_ITAB&gt;CL_ISH_INDEXED_ITAB&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>UT</TDFORMAT>
+     <TDLINE>Instantiation of the class</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_STANDARD_ITAB can only be instantiated using the public</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>static method &lt;DS:CO.CL_ISH_STANDARD_ITAB          CREATE_BY_TABNAME&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>CREATE_BY_TABNAME&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_STANDARD_ITAB inherits from the class</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>&lt;DS:CL.CL_ISH_INDEXED_ITAB&gt; CL_ISH_INDEXED_ITAB&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The following subclasses exist:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;DS:CL.CL_ISH_STANDARD_OBJECT_ITAB&gt;CL_ISH_STANDARD_OBJECT_ITAB&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_STANDARD_ITAB ist eine indizierte Tabellenklasse, die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>auf einer internen Standardtabelle basiert..</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Eine generelle Übersicht zu indizierten Tabellenklassen finden Sie in</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>der Klassendokumentation zu</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_INDEXED_ITAB&gt;CL_ISH_INDEXED_ITAB&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>Instanzierung der Klasse</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_STANDARD_ITAB kann ausschließlich über die öffentliche</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>statische Methode</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CO.CL_ISH_STANDARD_ITAB          CREATE_BY_TABNAME&gt;CREATE_BY_TABNAME</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>&lt;/&gt; instanziert werden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_STANDARD_ITAB erbt von der Klasse</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_INDEXED_ITAB&gt;CL_ISH_INDEXED_ITAB&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Folgende Unterklassen existieren:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;DS:CL.CL_ISH_STANDARD_OBJECT_ITAB&gt;CL_ISH_STANDARD_OBJECT_ITAB&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STANDARD_ITAB</CLSNAME>
+     <CMPNAME>APPEND</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Fügt einen Wert am Ende hinzu</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STANDARD_ITAB</CLSNAME>
+     <CMPNAME>APPEND</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Inserts a Value at End</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STANDARD_ITAB</CLSNAME>
+     <CMPNAME>APPEND</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Inserts a Value at End</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STANDARD_ITAB</CLSNAME>
+     <CMPNAME>APPEND_ITAB</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Fügt die Einträge einer internen Tabelle am Ende hinzu</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STANDARD_ITAB</CLSNAME>
+     <CMPNAME>APPEND_ITAB</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Inserts the Entries of an Internal Table at End</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STANDARD_ITAB</CLSNAME>
+     <CMPNAME>APPEND_ITAB</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Inserts the Entries of an Internal Table at End</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STANDARD_ITAB</CLSNAME>
+     <CMPNAME>CO_OTYPE_STANDARD_ITAB</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Objekttyp</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STANDARD_ITAB</CLSNAME>
+     <CMPNAME>CO_OTYPE_STANDARD_ITAB</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Object Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STANDARD_ITAB</CLSNAME>
+     <CMPNAME>CO_OTYPE_STANDARD_ITAB</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Object Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STANDARD_ITAB</CLSNAME>
+     <CMPNAME>CREATE_BY_TABNAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Instanziert das Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STANDARD_ITAB</CLSNAME>
+     <CMPNAME>CREATE_BY_TABNAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Instantiates the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STANDARD_ITAB</CLSNAME>
+     <CMPNAME>CREATE_BY_TABNAME</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Instantiates the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STANDARD_ITAB</CLSNAME>
+     <CMPNAME>INSERT_AT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Fügt einen Wert an einer bestimmten Position hinzu</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STANDARD_ITAB</CLSNAME>
+     <CMPNAME>INSERT_AT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Inserts a Value at a Given Position</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STANDARD_ITAB</CLSNAME>
+     <CMPNAME>INSERT_AT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Inserts a Value at a Given Position</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STANDARD_ITAB</CLSNAME>
+     <CMPNAME>INSERT_ITAB_AT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Fügt die Einträge einer internen Tabelle an einer bestimmten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STANDARD_ITAB</CLSNAME>
+     <CMPNAME>INSERT_ITAB_AT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Inserts the Entries of an Internal Table at a Given Position</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STANDARD_ITAB</CLSNAME>
+     <CMPNAME>INSERT_ITAB_AT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Inserts the Entries of an Internal Table at a Given Position</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STANDARD_ITAB</CLSNAME>
+     <CMPNAME>MOVE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verschiebt einen Eintrag</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STANDARD_ITAB</CLSNAME>
+     <CMPNAME>MOVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Moves an Entry</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STANDARD_ITAB</CLSNAME>
+     <CMPNAME>MOVE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Moves an Entry</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STANDARD_ITAB</CLSNAME>
+     <CMPNAME>MOVE_BOTTOM</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verschiebt einen Eintrag an das Ende</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STANDARD_ITAB</CLSNAME>
+     <CMPNAME>MOVE_BOTTOM</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Moves an Entry to the End</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STANDARD_ITAB</CLSNAME>
+     <CMPNAME>MOVE_BOTTOM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Moves an Entry to the End</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STANDARD_ITAB</CLSNAME>
+     <CMPNAME>MOVE_NEXT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verschiebt einen Eintrag um eine Position nach hinten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STANDARD_ITAB</CLSNAME>
+     <CMPNAME>MOVE_NEXT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Moves an Entry Back One Position</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STANDARD_ITAB</CLSNAME>
+     <CMPNAME>MOVE_NEXT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Moves an Entry Back One Position</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STANDARD_ITAB</CLSNAME>
+     <CMPNAME>MOVE_PREVIOUS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verschiebt einen Eintrag um eine Position nach vor</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STANDARD_ITAB</CLSNAME>
+     <CMPNAME>MOVE_PREVIOUS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Moves an Entry Forward One Position</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STANDARD_ITAB</CLSNAME>
+     <CMPNAME>MOVE_PREVIOUS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Moves an Entry Forward One Position</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STANDARD_ITAB</CLSNAME>
+     <CMPNAME>MOVE_TOP</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verschiebt einen Eintrag an den Beginn</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STANDARD_ITAB</CLSNAME>
+     <CMPNAME>MOVE_TOP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Moves an Entry to the Start</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STANDARD_ITAB</CLSNAME>
+     <CMPNAME>MOVE_TOP</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Moves an Entry to the Start</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STANDARD_ITAB</CLSNAME>
+     <CMPNAME>PREPEND</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Fügt einen Wert am Beginn hinzu</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STANDARD_ITAB</CLSNAME>
+     <CMPNAME>PREPEND</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Inserts a Value at the Start</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STANDARD_ITAB</CLSNAME>
+     <CMPNAME>PREPEND</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Inserts a Value at the Start</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STANDARD_ITAB</CLSNAME>
+     <CMPNAME>PREPEND_ITAB</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Fügt die Einträge einer internen Tabelle am Beginn hinzu</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STANDARD_ITAB</CLSNAME>
+     <CMPNAME>PREPEND_ITAB</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Inserts the Entries of an Internal Table at the Start</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STANDARD_ITAB</CLSNAME>
+     <CMPNAME>PREPEND_ITAB</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Inserts the Entries of an Internal Table at the Start</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

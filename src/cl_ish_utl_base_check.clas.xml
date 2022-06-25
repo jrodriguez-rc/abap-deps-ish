@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_UTL_BASE_CHECK</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: General Check Functions</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_CHECK</CLSNAME>
+     <CMPNAME>CHECK_CHANGES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Prüft ob und was sich in 2 Strukturen verändert hat.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_CHECK</CLSNAME>
+     <CMPNAME>CHECK_CHANGES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checks for Changes in 2 Structures</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_CHECK</CLSNAME>
+     <CMPNAME>CHECK_CHANGES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Checks for Changes in 2 Structures</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_CHECK</CLSNAME>
+     <CMPNAME>CHECK_FIXED_VALUES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Prüfen mit Festwerten der Domäne</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_CHECK</CLSNAME>
+     <CMPNAME>CHECK_FIXED_VALUES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check with Domain Fixed Values</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_CHECK</CLSNAME>
+     <CMPNAME>CHECK_FIXED_VALUES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Check with Domain Fixed Values</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_CHECK</CLSNAME>
+     <CMPNAME>CHECK_TIME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Prüft eine Zeitangabe auf richtiges Format</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_CHECK</CLSNAME>
+     <CMPNAME>CHECK_TIME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checks that Time Specification Has Correct Format</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_CHECK</CLSNAME>
+     <CMPNAME>CHECK_TIME</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Checks that Time Specification Has Correct Format</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

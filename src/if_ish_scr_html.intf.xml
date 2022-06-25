@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_INTF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOINTERF>
+    <CLSNAME>IF_ISH_SCR_HTML</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: Interface for HTML Control Screens</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <UNICODE>X</UNICODE>
+   </VSEOINTERF>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;MEANING&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The interface IF_ISH_SCR_HTML specifies the basic functionality for all</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>HTML classes (for example DYNAMIC DOCUMENT) that are embedded in a</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>container).</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>This interface contains the interface</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>&lt;DS:IF.IF_ISH_SCR_CONTROL&gt;IF_ISH_SCR_CONTROL&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The related basic class is &lt;DS:CL.CL_ISH_SCR_HTML&gt;CL_ISH_SCR_HTML&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;USE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;MEANING&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das Interface IF_ISH_SCR_HTML gibt Basisfunktionalität für alle</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>HTML-Klassen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE> ( z. B. DYNAMIC DOCUMENT) vor, die in einem Container eingebettet sind.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Dieses Interface enthält das Interface</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>&lt;DS:IF.IF_ISH_SCR_CONTROL&gt;IF_ISH_SCR_CONTROL&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die zugehörige Basisklasse ist &lt;DS:CL.CL_ISH_SCR_HTML&gt;CL_ISH_SCR_HTML&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_HTML</CLSNAME>
+     <CMPNAME>BUILD_UCOMM_LINK_CLICKED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Erstellt UserCommand Klick eines Links im Dynamischen Dokume</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_HTML</CLSNAME>
+     <CMPNAME>BUILD_UCOMM_LINK_CLICKED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Creates User Command Click of a Link in Dynamic Document</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_HTML</CLSNAME>
+     <CMPNAME>BUILD_UCOMM_LINK_CLICKED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Creates User Command Click of a Link in Dynamic Document</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_HTML</CLSNAME>
+     <CMPNAME>CO_UCOMM_LINK_CLICKED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>UserCommand Klick auf Link eines Dynamischen Dokuments</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_HTML</CLSNAME>
+     <CMPNAME>CO_UCOMM_LINK_CLICKED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>User Command Click on a Dynamic Document</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_HTML</CLSNAME>
+     <CMPNAME>CO_UCOMM_LINK_CLICKED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>User Command Click on a Dynamic Document</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_HTML</CLSNAME>
+     <CMPNAME>GET_CONFIG_HTML</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert das HTML-Konfigurationsobjekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_HTML</CLSNAME>
+     <CMPNAME>GET_CONFIG_HTML</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the HTML Configuration Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_HTML</CLSNAME>
+     <CMPNAME>GET_CONFIG_HTML</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the HTML Configuration Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_HTML</CLSNAME>
+     <CMPNAME>GET_DD_DOCUMENT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert das zugrundeliegende DynamicDocument Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_HTML</CLSNAME>
+     <CMPNAME>GET_DD_DOCUMENT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Related Dynamic Document Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_HTML</CLSNAME>
+     <CMPNAME>GET_DD_DOCUMENT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Related Dynamic Document Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_HTML</CLSNAME>
+     <CMPNAME>GET_UCOMM_KEYSTRING</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert den Keystring zum Link des Dnyamischen Dokuments</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_HTML</CLSNAME>
+     <CMPNAME>GET_UCOMM_KEYSTRING</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Key String for the Dynamic Document Link</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_HTML</CLSNAME>
+     <CMPNAME>GET_UCOMM_KEYSTRING</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Key String for the Dynamic Document Link</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

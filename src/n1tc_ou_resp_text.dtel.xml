@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>N1TC_OU_RESP_TEXT</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>N1TC_OU_RESP_TEXT</DOMNAME>
+    <HEADLEN>50</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>14</SCRLEN2>
+    <SCRLEN3>20</SCRLEN3>
+    <DDTEXT>Text for OU Jurisdiction</DDTEXT>
+    <REPTEXT>Text for OU Jurisdiction</REPTEXT>
+    <SCRTEXT_S>OU JurTxt</SCRTEXT_S>
+    <SCRTEXT_M>OU Jur. Text</SCRTEXT_M>
+    <SCRTEXT_L>OU Juris. Text</SCRTEXT_L>
+    <DTELMASTER>D</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>D</LANGU>
+    <LANGU>S</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>OE-Zuständigkeit Bezeichnung</DDTEXT>
+     <REPTEXT>OE-Zuständigkeit Bezeichnung</REPTEXT>
+     <SCRTEXT_S>OE-ZuBez.</SCRTEXT_S>
+     <SCRTEXT_M>OE-Zust. Bez.</SCRTEXT_M>
+     <SCRTEXT_L>OE-Zuständ. Bez.</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>Responsabilidad UO (denominación)</DDTEXT>
+     <REPTEXT>Denominación responsabilidad UO</REPTEXT>
+     <SCRTEXT_S>DenRespUO</SCRTEXT_S>
+     <SCRTEXT_M>Den.respons.UO</SCRTEXT_M>
+     <SCRTEXT_L>Denom.respons.UO</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

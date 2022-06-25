@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>N1PATEIN_ICON</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>TEXT50</DOMNAME>
+    <HEADLEN>04</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>14</SCRLEN2>
+    <SCRLEN3>20</SCRLEN3>
+    <DDTEXT>Patient Consent (Icon)</DDTEXT>
+    <REPTEXT>Cons</REPTEXT>
+    <SCRTEXT_S>Pat. Cons.</SCRTEXT_S>
+    <SCRTEXT_M>Pat. Consent</SCRTEXT_M>
+    <SCRTEXT_L>Patient Consent</SCRTEXT_L>
+    <DTELMASTER>D</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>D</LANGU>
+    <LANGU>S</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>Patient Einwilligung (Icon)</DDTEXT>
+     <REPTEXT>Einw</REPTEXT>
+     <SCRTEXT_S>Pat. Einw.</SCRTEXT_S>
+     <SCRTEXT_M>Pat. Einwill.</SCRTEXT_M>
+     <SCRTEXT_L>Patient Einwilligung</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>Consentimiento del paciente (icono)</DDTEXT>
+     <REPTEXT>Con.</REPTEXT>
+     <SCRTEXT_S>Cons.pcte.</SCRTEXT_S>
+     <SCRTEXT_M>Consent.pcte.</SCRTEXT_M>
+     <SCRTEXT_L>Consentim.paciente</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

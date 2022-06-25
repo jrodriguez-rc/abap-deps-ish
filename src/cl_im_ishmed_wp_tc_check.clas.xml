@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_IM_ISHMED_WP_TC_CHECK</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Class for BAdI Impl.: IM_ISHMED_WP_TC_CHECK</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_IM_ISHMED_WP_TC_CHECK</CLSNAME>
+     <CMPNAME>CHECK_VIEW_004</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Inhalte Klin. Auf. gemäß Behandlungsauftrag aufbereiten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_IM_ISHMED_WP_TC_CHECK</CLSNAME>
+     <CMPNAME>CHECK_VIEW_004</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Format Clin. Order Contents Acc. to Treatment Authorization</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_IM_ISHMED_WP_TC_CHECK</CLSNAME>
+     <CMPNAME>CHECK_VIEW_006</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Inhalt Dokumente gemäß Behandlungsauftrag aufbereiten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_IM_ISHMED_WP_TC_CHECK</CLSNAME>
+     <CMPNAME>CHECK_VIEW_006</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Format Document Contents According to Treatment Auth.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_IM_ISHMED_WP_TC_CHECK</CLSNAME>
+     <CMPNAME>CHECK_VIEW_007</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Inhalte Amb/Lst gemäß Behandlungsauftrag aufbereiten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_IM_ISHMED_WP_TC_CHECK</CLSNAME>
+     <CMPNAME>CHECK_VIEW_007</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Format Outpat/Svce Content acc. to Treatment Authorization</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_IM_ISHMED_WP_TC_CHECK</CLSNAME>
+     <CMPNAME>CHECK_VIEW_011</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Inhalte OP gemäß Behandlungsauftrag aufbereiten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_IM_ISHMED_WP_TC_CHECK</CLSNAME>
+     <CMPNAME>CHECK_VIEW_011</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Format Surgery Contents According to Treatment Authorization</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

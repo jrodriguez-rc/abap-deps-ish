@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>N1PATEIN_TXT</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>CHAR30K</DOMNAME>
+    <HEADLEN>10</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>14</SCRLEN2>
+    <SCRLEN3>30</SCRLEN3>
+    <DDTEXT>Text for Patient Consent</DDTEXT>
+    <REPTEXT>Pat. Cons.</REPTEXT>
+    <SCRTEXT_S>Pat. Cons.</SCRTEXT_S>
+    <SCRTEXT_M>Consent Exists</SCRTEXT_M>
+    <SCRTEXT_L>Consent Exists</SCRTEXT_L>
+    <DTELMASTER>D</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>D</LANGU>
+    <LANGU>S</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>Text zu Einwilligung des Patienten</DDTEXT>
+     <REPTEXT>Einw. Pat.</REPTEXT>
+     <SCRTEXT_S>Einw. Pat.</SCRTEXT_S>
+     <SCRTEXT_M>Einw. vorh.</SCRTEXT_M>
+     <SCRTEXT_L>Einwilligung vorhanden</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>Texto para el consentimiento del paciente</DDTEXT>
+     <REPTEXT>ConsenPcte</REPTEXT>
+     <SCRTEXT_S>ConsenPcte</SCRTEXT_S>
+     <SCRTEXT_M>Existe consen.</SCRTEXT_M>
+     <SCRTEXT_L>Existe consentimiento</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>DE</ID>
+      <OBJECT>N1PATEIN_TXT</OBJECT>
+      <LANGU>D</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0004</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00006</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>N1PATEIN_TXT</TDNAME>
+      <TDID>DE</TDID>
+      <TDSPRAS>D</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00004</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEFINITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Mit diesem Kennzeichen definieren Sie, dass der Patient seine</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Einwilligung für die Durchführung einer Maßnahme (z.B. einer Operation)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>gegeben hat.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Dieses Kennzeichen dient in erster Linie für Checklisten und</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Vollständigkeitsprüfungen, für dokumentarische Zwecke ist dieses</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Kennzeichen nicht geeignet.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>DE</ID>
+      <OBJECT>N1PATEIN_TXT</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0004</VERSION>
+      <TXTLINES>00004</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>N1PATEIN_TXT</TDNAME>
+      <TDID>DE</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00004</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEFINITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>This indicator shows that the patient has given his or her consent for</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>the performance of a procedure (surgery, for example).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>This indicator is primarily used for check lists and completeness</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>checks. It is not suitable for documentation purposes.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>DE</ID>
+      <OBJECT>N1PATEIN_TXT</OBJECT>
+      <LANGU>S</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0004</VERSION>
+      <TXTLINES>00006</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>N1PATEIN_TXT</TDNAME>
+      <TDID>DE</TDID>
+      <TDSPRAS>S</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00004</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEFINITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Mediante este indicador se define que el paciente ha entrado su</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>autorización para la ejecución de una medida (por ejemplo, una</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>intervención quirúrgica).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Este indicador sirve en primer lugar para las listas de verificación y</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>la verificación de totalidad pero no es apropiado para fines de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>documentación.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

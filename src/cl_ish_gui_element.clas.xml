@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_GUI_ELEMENT</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: Interface Element</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_GUI_ELEMENT is the abstract basic class for an object</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>in a &lt;DS:IF.IF_ISH_GUI_APPLICATION&gt;dialog application&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The following classes inherit from CL_ISH_GUI_ELEMENT:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;DS:CL.CL_ISH_GUI_APPLICATION&gt;CL_ISH_GUI_APPLICATION&lt;/&gt; (Dialog</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>Application)</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;DS:CL.CL_ISH_GUI_CONTROLLER&gt;CL_ISH_GUI_CONTROLLER&lt;/&gt; (Control Object)</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;DS:CL.CL_ISH_GUI_VIEW&gt;CL_ISH_GUI_VIEW&lt;/&gt; (Interface Object)</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The interface of an interface object is defined by the interface</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:IF.IF_ISH_GUI_ELEMENT&gt;IF_ISH_GUI_ELEMENT&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_GUI_ELEMENT ist die abstrakte Basisklasse für ein</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Objekt in einer &lt;DS:IF.IF_ISH_GUI_APPLICATION&gt;Dialoganwendung&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Folgende Klassen erben von CL_ISH_GUI_ELEMENT:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;DS:CL.CL_ISH_GUI_APPLICATION&gt;CL_ISH_GUI_APPLICATION&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(Dialoganwendung)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;DS:CL.CL_ISH_GUI_CONTROLLER&gt;CL_ISH_GUI_CONTROLLER&lt;/&gt; (Kontrollobjekt)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;DS:CL.CL_ISH_GUI_VIEW&gt;CL_ISH_GUI_VIEW&lt;/&gt; (Oberflächenobjekt)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Schnittstelle eines Oberflächenelements wird durch das Interface</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_ELEMENT&gt;IF_ISH_GUI_ELEMENT&lt;/&gt; definiert.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_ELEMENT</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_ELEMENT</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_ELEMENT</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_ELEMENT</CLSNAME>
+     <CMPNAME>CO_FIELDNAME_ELEMENT_ID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Feldname</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_ELEMENT</CLSNAME>
+     <CMPNAME>CO_FIELDNAME_ELEMENT_ID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Field Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_ELEMENT</CLSNAME>
+     <CMPNAME>CO_FIELDNAME_ELEMENT_ID</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Field Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_ELEMENT</CLSNAME>
+     <CMPNAME>CO_FIELDNAME_ELEMENT_NAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Feldname</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_ELEMENT</CLSNAME>
+     <CMPNAME>CO_FIELDNAME_ELEMENT_NAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Field Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_ELEMENT</CLSNAME>
+     <CMPNAME>CO_FIELDNAME_ELEMENT_NAME</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Field Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_ELEMENT</CLSNAME>
+     <CMPNAME>G_ELEMENT_ID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Eindeutige Identifikation eines Oberflächenelements</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_ELEMENT</CLSNAME>
+     <CMPNAME>G_ELEMENT_ID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Unique Identification of Interface Element</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_ELEMENT</CLSNAME>
+     <CMPNAME>G_ELEMENT_ID</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Unique Identification of Interface Element</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_ELEMENT</CLSNAME>
+     <CMPNAME>G_ELEMENT_NAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Name eines Oberflächenelements</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_ELEMENT</CLSNAME>
+     <CMPNAME>G_ELEMENT_NAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Name of Interface Element</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_ELEMENT</CLSNAME>
+     <CMPNAME>G_ELEMENT_NAME</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Name of Interface Element</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

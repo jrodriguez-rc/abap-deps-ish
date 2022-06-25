@@ -1,0 +1,575 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: GUI - Control View</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_GUI_CONTROL_VIEW is the abstract basic class for a</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>control interface object in a &lt;DS:IF.IF_ISH_GUI_APPLICATION&gt;dialog</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>application&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_GUI_CONTROL_VIEW inherits from the class</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CL.CL_ISH_GUI_VIEW&gt;CL_ISH_GUI_VIEW&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The following classes inherit from CL_ISH_GUI_CONTROL_VIEW:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;DS:CL.CL_ISH_GUI_CONTAINER_VIEW&gt;CL_ISH_GUI_CONTAINER_VIEW&lt;/&gt; (Container</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>Control)</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;DS:CL.CL_ISH_GUI_DD_VIEW&gt;CL_ISH_GUI_DD_VIEW&lt;/&gt; (Dynamic Document)</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;DS:CL.CL_ISH_GUI_GRID_VIEW&gt;CL_ISH_GUI_GRID_VIEW&lt;/&gt; (ALV Grid Control)</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;DS:CL.CL_ISH_GUI_HTML_VIEW&gt;CL_ISH_GUI_HTML_VIEW&lt;/&gt; (URL Control)</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;DS:CL.CL_ISH_GUI_TEXTEDIT_VIEW&gt;CL_ISH_GUI_TEXTEDIT_VIEW&lt;/&gt; (Text</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>Editor)</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;DS:CL.CL_ISH_GUI_TOOLBAR_VIEW&gt;CL_ISH_GUI_TOOLBAR_VIEW&lt;/&gt; (Toolbar</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>Control)</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;DS:CL.CL_ISH_GUI_TREE_VIEW&gt;CL_ISH_GUI_TREE_VIEW&lt;/&gt; (ALV Tree Control)</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The interface of a control interface object is defined by the interface</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:IF.IF_ISH_GUI_CONTROL_VIEW&gt;IF_ISH_GUI_CONTROL_VIEW&lt;/&gt;.</TDLINE>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_GUI_CONTROL_VIEW ist die abstrakte Basisklasse für ein</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Control-Oberflächenobjekt in einer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_APPLICATION&gt;Dialoganwendung&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_GUI_CONTROL_VIEW erbt von der Klasse</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_GUI_VIEW&gt;CL_ISH_GUI_VIEW&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Folgende Klassen erben von CL_ISH_GUI_CONTROL_VIEW:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;DS:CL.CL_ISH_GUI_CONTAINER_VIEW&gt;CL_ISH_GUI_CONTAINER_VIEW&lt;/&gt; (Container</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Control)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;DS:CL.CL_ISH_GUI_DD_VIEW&gt;CL_ISH_GUI_DD_VIEW&lt;/&gt; (Dynamisches Dokument)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;DS:CL.CL_ISH_GUI_GRID_VIEW&gt;CL_ISH_GUI_GRID_VIEW&lt;/&gt; (ALV-Grid Control)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;DS:CL.CL_ISH_GUI_HTML_VIEW&gt;CL_ISH_GUI_HTML_VIEW&lt;/&gt; (URL-Control)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;DS:CL.CL_ISH_GUI_TEXTEDIT_VIEW&gt;CL_ISH_GUI_TEXTEDIT_VIEW&lt;/&gt; (Texteditor)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;DS:CL.CL_ISH_GUI_TOOLBAR_VIEW&gt;CL_ISH_GUI_TOOLBAR_VIEW&lt;/&gt; (Toolbar</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Control)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;DS:CL.CL_ISH_GUI_TREE_VIEW&gt;CL_ISH_GUI_TREE_VIEW&lt;/&gt; (ALV-Tree Control)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Schnittstelle eines Control-Oberflächenobjekts wird durch das</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Interface &lt;DS:IF.IF_ISH_GUI_CONTROL_VIEW&gt;IF_ISH_GUI_CONTROL_VIEW&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>definiert.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>ACTIVATE_FLUSH_BUFFER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Aktiviert die Pufferung für Controls</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>ACTIVATE_FLUSH_BUFFER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Activates Buffering for Controls</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>ACTIVATE_FLUSH_BUFFER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Activates Buffering for Controls</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>DISPATCH</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Eingabeverarbeitung anstossen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>DISPATCH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Trigger Input Processing</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>DISPATCH</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Trigger Input Processing</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>EV_DISPATCH</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Control-Eingaben entgegennehmen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>EV_DISPATCH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Receive Control Entries</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>EV_DISPATCH</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Receive Control Entries</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>EV_FLUSH</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Control-Anzeige auffrischen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>EV_FLUSH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Refresh Control Display</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>EV_FLUSH</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Refresh Control Display</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>FLUSH</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anzeige aller gepufferten Controls auffrischen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>FLUSH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Refresh Display of All Buffered Controls</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>FLUSH</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Refresh Display of All Buffered Controls</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>GR_CONTROL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Proxy-Klasse für Control im GUI</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>GR_CONTROL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Proxy Class for Control in GUI</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>GR_CONTROL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Proxy Class for Control in GUI</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>G_FIRST_DISPLAY_DONE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>abap_true: Initial Display Was Performed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>G_FIRST_DISPLAY_DONE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>abap_true: Initial Display Was Performed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>G_FIRST_DISPLAY_MODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>abap_true: Initial Display Currently In Progress</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>G_FIRST_DISPLAY_MODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>abap_true: Initial Display Currently In Progress</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>G_FLUSH_BUFFER_ACTIVE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>abap_true: Auffrisch-Pufferung ist aktiv</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>G_FLUSH_BUFFER_ACTIVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>abap_true: Refresh Buffering Is Active</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>G_FLUSH_BUFFER_ACTIVE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>abap_true: Refresh Buffering Is Active</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>G_OWN_CONTROL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>abap_true: Control gehört self</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>G_OWN_CONTROL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>abap_true: Control Belongs to Self</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>G_OWN_CONTROL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>abap_true: Control Belongs to Self</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>G_REFRESH_MODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Aktualisierungsmodus für Control Views</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>G_REFRESH_MODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Refresh Mode for Control Views</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>G_REFRESH_MODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Refresh Mode for Control Views</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>G_VISIBLE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>abap_true: Control ist sichtbar</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>G_VISIBLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>abap_true: Control Is Visible</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>G_VISIBLE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>abap_true: Control Is Visible</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>IS_FLUSH_BUFFER_ACTIVE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert ob Control-Auffrischung gepuffert wird</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>IS_FLUSH_BUFFER_ACTIVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Whether Control Refresh Is Buffered</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>IS_FLUSH_BUFFER_ACTIVE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Whether Control Refresh Is Buffered</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>ON_CHILD_VISIBILITY_CHANGED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ereignisbehandler: Sichtbarkeit eines untergeordneten Views</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>ON_CHILD_VISIBILITY_CHANGED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Event Handler: Visibility of a Lower-Level View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>ON_CHILD_VISIBILITY_CHANGED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Event Handler: Visibility of a Lower-Level View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>ON_DISPATCH</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ereignisbehandler: Control-Eingaben entgegennehmen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>ON_DISPATCH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Event Handler: Receive Control Entries</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>ON_DISPATCH</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Event Handler: Receive Control Entries</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>_CREATE_CONTROL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Erzeugt das entsprechende Control (für Ableitungen)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>_CREATE_CONTROL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Creates the Relevant Control (for Derivations)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>_CREATE_CONTROL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Creates the Relevant Control (for Derivations)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>_CREATE_CONTROL_ON_DEMAND</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Erzeugt bzw. returniert das zugrundeliegende Control</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>_CREATE_CONTROL_ON_DEMAND</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Creates or Returns the Underlying Control</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>_CREATE_CONTROL_ON_DEMAND</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Creates or Returns the Underlying Control</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>_FIRST_DISPLAY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Führt die Erstanzeige durch (interne Verarbeitung)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>_FIRST_DISPLAY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Executes the Initial Display (Internal Processing)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>_FIRST_DISPLAY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Executes the Initial Display (Internal Processing)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>_INIT_CONTROL_VIEW</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Initialisiert das Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>_INIT_CONTROL_VIEW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Initializes the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>_INIT_CONTROL_VIEW</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Initializes the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>_REFRESH_DISPLAY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Aktualisiert die Anzeige (interne Verarbeitung)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>_REFRESH_DISPLAY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Refreshes the Display (Internal Processing)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_VIEW</CLSNAME>
+     <CMPNAME>_REFRESH_DISPLAY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Refreshes the Display (Internal Processing)</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

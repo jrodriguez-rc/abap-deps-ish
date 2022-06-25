@@ -1,0 +1,698 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: Referral Screen Class</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>Referral Type</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>002</KEY>
+     <ENTRY>Referral Type</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>003</KEY>
+     <ENTRY>Referral Type</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>004</KEY>
+     <ENTRY>Referring Physician</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>005</KEY>
+     <ENTRY>Referring Physician</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>006</KEY>
+     <ENTRY>Referring Physician</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>007</KEY>
+     <ENTRY>Family Physician</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>008</KEY>
+     <ENTRY>Referring Hospital</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>009</KEY>
+     <ENTRY>Referring Hospital</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>010</KEY>
+     <ENTRY>Referring Hospital</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+   </TPOOL>
+   <I18N_TPOOL>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Einweisungsart</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Überweisungsart</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>Einweisungsart/Überweisungsart</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>004</KEY>
+       <ENTRY>Einweis. Arzt</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>005</KEY>
+       <ENTRY>Überweis. Arzt</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>006</KEY>
+       <ENTRY>Einweis./Überweis. Arzt</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>007</KEY>
+       <ENTRY>Hausarzt</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>008</KEY>
+       <ENTRY>Einweis. KH</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>009</KEY>
+       <ENTRY>Überweis. KH</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>010</KEY>
+       <ENTRY>Einweis./Überweis. KH</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>S</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Clase de hospitalización</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Clase de transferencia</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>Clase hospitalización/Clase transferencia</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>004</KEY>
+       <ENTRY>Médico hospit.</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>005</KEY>
+       <ENTRY>Médico transf.</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>006</KEY>
+       <ENTRY>Médico que hospitaliza/transfiere</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>007</KEY>
+       <ENTRY>Médico de cabecera</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>008</KEY>
+       <ENTRY>Ce.san.hospit.</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>009</KEY>
+       <ENTRY>Ce.san.transf.</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>010</KEY>
+       <ENTRY>Centro sanitario que hospitaliza/transfiere</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+   </I18N_TPOOL>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>CO_DEFAULT_TABNAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Tabellenname</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>CO_DEFAULT_TABNAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>CO_DEFAULT_TABNAME</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Table Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>CO_OTYPE_SCR_REFERRAL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Screenklasse Ein-/Überweisungsdaten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>CO_OTYPE_SCR_REFERRAL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Screen Class: Referral Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>CO_OTYPE_SCR_REFERRAL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Screen Class: Referral Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>CREATE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Instanz des Screens erzeugen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>CREATE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Create Instance of Screen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>CREATE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Create Instance of Screen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>CREATE_LISTBOX_RFSRC</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Listbox für Einweisungsart befüllen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>CREATE_LISTBOX_RFSRC</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Fill List Box for Referral Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>CREATE_LISTBOX_RFSRC</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Fill List Box for Referral Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>FILL_LABEL_EAANS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Arztname und Arztanschrift für einweisenden Arzt ermitteln</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>FILL_LABEL_EAANS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Physician Name and Address for Referring Physician</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>FILL_LABEL_EAANS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Physician Name and Address for Referring Physician</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>FILL_LABEL_HAANS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Arztname und Arztanschrift für Hausarzt ermitteln</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>FILL_LABEL_HAANS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Physician Name and Address for Family Physician</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>FILL_LABEL_HAANS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Physician Name and Address for Family Physician</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>FILL_LABEL_KHANS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Krankenhausname und Anschrift für einweisendes KH ermitteln</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>FILL_LABEL_KHANS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Hospital Name and Address for Referring Hospital</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>FILL_LABEL_KHANS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Hospital Name and Address for Referring Hospital</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>FILL_LABEL_UAANS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Arztname und Arztanschrift für überweisenden Arzt ermitteln</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>FILL_LABEL_UAANS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Physician Name and Address for Referring Phy.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>FILL_LABEL_UAANS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Physician Name and Address for Referring Phy.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>GET_BEWTY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermitteln des Bewegungstyps</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>GET_BEWTY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Movement Category</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>GET_BEWTY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Movement Category</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>GET_CORDPOS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die zugehörige Auftragsposition.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>GET_CORDPOS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Corresponding Order Items</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>GET_CORDPOS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Corresponding Order Items</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>GS_SAVED_RFSRC</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>DB Gespeichert Einweisungsart</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>GS_SAVED_RFSRC</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Referral Type Stored in DB</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>GS_SAVED_RFSRC</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Referral Type Stored in DB</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>G_FIELDNAME_EAANS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feldname für Bezeichnung einweisender Arzt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>G_FIELDNAME_EAANS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Name for Referring Physician Designation</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>G_FIELDNAME_EAANS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Field Name for Referring Physician Designation</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>G_FIELDNAME_EARNR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feldname für einweisenden Arzt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>G_FIELDNAME_EARNR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Name for Referring Physician</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>G_FIELDNAME_EARNR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Field Name for Referring Physician</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>G_FIELDNAME_EXTKH</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feldname für einweisendes KH</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>G_FIELDNAME_EXTKH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Name for Referring Hospital</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>G_FIELDNAME_EXTKH</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Field Name for Referring Hospital</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>G_FIELDNAME_HAANS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feldname für Bezeichnung Hausarzt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>G_FIELDNAME_HAANS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Name for Family Physician Designation</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>G_FIELDNAME_HAANS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Field Name for Family Physician Designation</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>G_FIELDNAME_HARNR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feldname für Hausarzt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>G_FIELDNAME_HARNR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Name for Family Physician</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>G_FIELDNAME_HARNR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Field Name for Family Physician</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>G_FIELDNAME_KHANS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feldname für Krankenhausname &amp; Anschrift</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>G_FIELDNAME_KHANS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Name for Hospital Name and Address</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>G_FIELDNAME_KHANS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Field Name for Hospital Name and Address</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>G_FIELDNAME_RFSRC</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feldname für Einweisungsart</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>G_FIELDNAME_RFSRC</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Name for Referral Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>G_FIELDNAME_RFSRC</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Field Name for Referral Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>G_FIELDNAME_UAANS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feldname für Bezeichnung überweisender Arzt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>G_FIELDNAME_UAANS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Name for Referring Physician Designation</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>G_FIELDNAME_UAANS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Field Name for Referring Physician Designation</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>G_FIELDNAME_UARNR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feldname für überweisenden Arzt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>G_FIELDNAME_UARNR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Name for Referring Physician</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>G_FIELDNAME_UARNR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Field Name for Referring Physician</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>G_PREFIX_FIELDNAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Feldname</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>G_PREFIX_FIELDNAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Field Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>G_PREFIX_FIELDNAME</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Field Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>MODIFY_SCREEN_ATT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Modifizieren von Screen-Attributen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>MODIFY_SCREEN_ATT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Modification of Screen Attributes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>MODIFY_SCREEN_ATT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Modification of Screen Attributes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>VALUE_REQUEST_EARNR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>F4-Hilfe für einweisenden Arzt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>VALUE_REQUEST_EARNR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>F4 Help for Referring Physician</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>VALUE_REQUEST_EARNR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>F4 Help for Referring Physician</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>VALUE_REQUEST_EXTKH</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>F4-Hilfe für einweisendes KH</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>VALUE_REQUEST_EXTKH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>F4 Help for Referring Hospital</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>VALUE_REQUEST_EXTKH</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>F4 Help for Referring Hospital</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>VALUE_REQUEST_HARNR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>F4-Hilfe für Hausarzt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>VALUE_REQUEST_HARNR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>F4 Help for Family Physician</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>VALUE_REQUEST_HARNR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>F4 Help for Family Physician</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>VALUE_REQUEST_UARNR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>F4-Hilfe für überweisenden Arzt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>VALUE_REQUEST_UARNR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>F4 Help for Referring Physician</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_REFERRAL</CLSNAME>
+     <CMPNAME>VALUE_REQUEST_UARNR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>F4 Help for Referring Physician</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

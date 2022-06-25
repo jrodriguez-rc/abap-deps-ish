@@ -1,0 +1,770 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_INTF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOINTERF>
+    <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: Owner of Business Object</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <UNICODE>X</UNICODE>
+   </VSEOINTERF>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;DESCRIPTION&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Interface IF_ISH_BUSINESS_OBJECT_OWNER defines the interface for the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>owner of a &lt;DS:IF.IF_ISH_BUSINESS_OBJECT&gt;business object&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>A business object can have more than one owner.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Business objects include their owners in processing of certain functions</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>(callback mechanism). This means the owner can allow or prohibit certain</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>functions.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Interface IF_ISH_BUSINESS_OBJECT_OWNER includes the interface</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:IF.IF_ISH_CB_DESTROYABLE&gt;IF_ISH_CB_DESTROYABLE&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>UT</TDFORMAT>
+     <TDLINE>Methods:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>CB_AFTER_COMMIT</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>The business object calls this method after the COMMIT WORK.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>CB_AFTER_ROLLBACK</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>The business object calls this method after the ROLLBACK WORK.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>CB_CLEAR_ALL_SNAPSHOTS</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>The business object calls this method before all memory snapshots are</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>deleted.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>CB_CLEAR_SNAPSHOT</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>The business object calls this method before a memory snapshot is</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>deleted.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>CB_CONSTRUCTION</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>The business object calls this method at instantiation.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>CB_DEREGISTER_OWNER</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>The business object calls this method before an owner is deregistered.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>CB_MARK_FOR_DELETION</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>The business object calls this method before it is flagged for deletion.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>CB_READONLY</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>The business object calls this method to determine whether it is only</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>readable.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Note: The business object does not call this method if the business</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>object itself is only readable.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>CB_REGISTER_OWNER</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>The business object calls this method before an owner is registered.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>CB_RELOAD</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>The business object calls this method before reloading data from the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>database.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>CB_RESET</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>The business object calls this method before resetting.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>CB_SAVE</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>The system calls this method before saving a business object.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>CB_SNAPSHOT</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>The business object calls this method before taking a memory snapshot.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>CB_TOUCH</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>The business object calls this method before it is touched.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>CB_UNDO</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>The business object calls this method before restoring a memory snapshot</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>that was saved previously.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>CB_UNTOUCH</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>The business object calls this method before reversing the touch.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;USE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;MEANING&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das Interface IF_ISH_BUSINESS_OBJECT_OWNER definiert die Schnittstelle</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>eines Eigentümers eines &lt;DS:IF.IF_ISH_BUSINESS_OBJECT&gt;Geschäftsobjekts</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Ein Geschäftsobjekt kann mehrere Eigentümer haben.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Geschäftsobjekte beziehen deren Eigentümer bei verschiedenen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Funktionalitäten in die Verarbeitung ein (Callback-Mechanismus). Der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Eigentümer hat somit die Möglichkeit, bestimmte Funktionalitäten zu</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>erlauben oder zu verbieten.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das Interface IF_ISH_BUSINESS_OBJECT_OWNER umfaßt das Interface</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_CB_DESTROYABLE&gt;IF_ISH_CB_DESTROYABLE&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>Methoden:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>CB_AFTER_COMMIT</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Diese Methode wird vom Geschäftsobjekt nach COMMIT WORK aufgerufen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>CB_AFTER_ROLLBACK</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Diese Methode wird vom Geschäftsobjekt nach ROLLBACK WORK aufgerufen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>CB_CLEAR_ALL_SNAPSHOTS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Diese Methode wird vom Geschäftsobjekt aufgerufen, bevor alle</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Speicherabzüge gelöscht werden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>CB_CLEAR_SNAPSHOT</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Diese Methode wird vom Geschäftsobjekt aufgerufen, bevor ein</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Speicherabzug gelöscht wird.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>CB_CONSTRUCTION</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Diese Methode wird vom Geschäftsobjekt zum Zeitpunkt der Instanzierung</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>aufgerufen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>CB_DEREGISTER_OWNER</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Diese Methode wird vom Geschäftsobjekt aufgerufen, bevor ein Eigentümer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>deregistriert wird.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>CB_MARK_FOR_DELETION</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Diese Methode wird vom Geschäftsobjekt aufgerufen, bevor es zur Löschung</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>markiert wird.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>CB_READONLY</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Diese Methode wird vom Geschäftsobjekt aufgerufen um festzustellen, ob</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>es nur lesbar ist.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Hinweis: Diese Methode wird vom Geschäftsobjekt nicht aufgerufen, wenn</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>das Geschäftsobjekt an sich bereits nur lesbar ist.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>CB_REGISTER_OWNER</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Diese Methode wird vom Geschäftsobjekt aufgerufen, bevor ein Eigentümer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>registriert wird.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>CB_RELOAD</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Diese Methode wird vom Geschäftsobjekt vor dem erneuten Laden aus der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Datenbank aufgerufen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>CB_RESET</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Diese Methode wird vom Geschäftsobjekt vor dem Zurücksetzen aufgerufen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>CB_SAVE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Diese Methode wird vor dem Sichern eines Geschäftsobjekts aufgerufen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>CB_SNAPSHOT</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Diese Methode wird vom Geschäftsobjekt aufgerufen, bevor ein</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Speicherabzug gemacht wird.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>CB_TOUCH</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Diese Methode wird vom Geschäftsobjekt aufgerufen, bevor es berührt</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>wird.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>CB_UNDO</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Diese Methode wird vom Geschäftsobjekt aufgerufen, bevor ein zuvor</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>gesicherter Speicherabzug wiederhergestellt wird.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>CB_UNTOUCH</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Diese Methode wird vom Geschäftsobjekt aufgerufen, bevor die Berührung</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>rückgängig gemacht wird.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_AFTER_COMMIT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Callback: Verarbeitung nach COMMIT WORK</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_AFTER_COMMIT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Callback: Process After COMMIT WORK</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_AFTER_COMMIT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Callback: Process After COMMIT WORK</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_AFTER_ROLLBACK</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Callback: Verarbeitung nach ROLLBACK WOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_AFTER_ROLLBACK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Callback: Process After ROLLBACK WORK</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_AFTER_ROLLBACK</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Callback: Process After ROLLBACK WORK</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_CLEAR_ALL_SNAPSHOTS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Callback: Alle Snapshots löschen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_CLEAR_ALL_SNAPSHOTS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Callback: Delete All Snapshots</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_CLEAR_ALL_SNAPSHOTS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Callback: Delete All Snapshots</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_CLEAR_SNAPSHOT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Callback: Einen Snapshot löschen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_CLEAR_SNAPSHOT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Callback: Delete a Snapshot</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_CLEAR_SNAPSHOT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Callback: Delete a Snapshot</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_CONSTRUCTION</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Callback: Instanzierung eines Geschäftsobjekts</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_CONSTRUCTION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Callback: Instantiation of a Business Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_CONSTRUCTION</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Callback: Instantiation of a Business Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_DEREGISTER_OWNER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Callback: Eigentümer beim Geschäftsobjekt deregistrieren</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_DEREGISTER_OWNER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Callback: Deregister Owner for Business Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_DEREGISTER_OWNER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Callback: Deregister Owner for Business Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_MARK_FOR_DELETION</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Callback: Geschäftsobjekt zur Löschung markieren</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_MARK_FOR_DELETION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Callback: Flag Business Object for Deletion</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_MARK_FOR_DELETION</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Callback: Flag Business Object for Deletion</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_READONLY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Callback: Ist Geschäftsobjekt nur lesbar?</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_READONLY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Callback: Is Business Object Only Readable?</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_READONLY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Callback: Is Business Object Only Readable?</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_REGISTER_OWNER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Callback: Eigentümer beim Geschäftsobjekt registrieren</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_REGISTER_OWNER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Callback: Register Owner for Business Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_REGISTER_OWNER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Callback: Register Owner for Business Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_RELOAD</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Callback: Erneutes Laden eines Geschäftsobjekts</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_RELOAD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Callback: Reload Business Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_RELOAD</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Callback: Reload Business Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_RESET</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Callback: Zurücksetzen eines Geschäftsobjekts</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_RESET</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Callback: Reset Business Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_RESET</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Callback: Reset Business Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_SAVE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Callback: Sichern eines Geschäftsobjekts</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_SAVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Callback: Save Business Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_SAVE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Callback: Save Business Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_SNAPSHOT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Callback: Inhalt eines Geschäftsobjekts temporär ablegen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_SNAPSHOT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Callback: Store Content of Business Object Temporarily</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_SNAPSHOT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Callback: Store Content of Business Object Temporarily</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_TOUCH</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Callback: Berühren eines Geschäftsobjekts</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_TOUCH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Callback: Touch Business Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_TOUCH</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Callback: Touch Business Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_UNDO</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Callback: Temporär abgelegten Inhalt wieder aktivieren</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_UNDO</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Callback: Reactivate Content Stored Temporarily</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_UNDO</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Callback: Reactivate Content Stored Temporarily</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_UNTOUCH</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Callback: Berührung eines Geschäftsobjekts zurücknehmen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_UNTOUCH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Callback: Cancel Touch for Business Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_BUSINESS_OBJECT_OWNER</CLSNAME>
+     <CMPNAME>CB_UNTOUCH</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Callback: Cancel Touch for Business Object</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

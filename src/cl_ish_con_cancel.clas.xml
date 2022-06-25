@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Configuration Class for Cancellation</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The processing to change the cancellation main objects is performed in</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>this class.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>In der Klasse wird die Verarbeitung zur Änderung der StornoHauptobjekte</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>durchgeführt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>ADD_MAIN_OBJECTS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Hautobjekte hinzufügen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>ADD_MAIN_OBJECTS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Add Main Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>ADD_MAIN_OBJECTS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Add Main Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>CO_OTYPE_CON_CANCEL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Konfigurationsklasse Cancel</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>CO_OTYPE_CON_CANCEL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Configuration Class: Cancel</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>CO_OTYPE_CON_CANCEL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Configuration Class: Cancel</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>CREATE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Instanzierung der Konfig Klasse</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>CREATE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Instantiation of Configuration Class</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>CREATE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Instantiation of Configuration Class</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>DESTROY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Alle globalen Attribute initialisieren</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>DESTROY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Initialize All Global Attributes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>DESTROY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Initialize All Global Attributes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>GET_APP_FROM_OBJECT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Rückgabe Termininstanz (wenn möglich)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>GET_APP_FROM_OBJECT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Return Appointment Instance (if Possible)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>GET_APP_FROM_OBJECT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Return Appointment Instance (if Possible)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>GET_CANCEL_CHAIN_APPS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Gibt zurück ob Terminserie eines Termines stor. werden soll</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>GET_CANCEL_CHAIN_APPS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns whether Appt Series of an Appt Is to Be Canceled</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>GET_CANCEL_CHAIN_APPS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns whether Appt Series of an Appt Is to Be Canceled</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>GET_CHECK_PLANNING_COMPLETED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Git zurück ob Planung abgeschlossen geprüft werden soll</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>GET_CHECK_PLANNING_COMPLETED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns whether &quot;Planning Completed&quot; Is to Be Checked</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>GET_CHECK_PLANNING_COMPLETED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns whether &quot;Planning Completed&quot; Is to Be Checked</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>GET_REMOVEABLE_MAIN_OBJECTS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Gibt die Objekte zurück die Storniert werden sollen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>GET_REMOVEABLE_MAIN_OBJECTS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Objects That Are to Be Canceled</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>GET_REMOVEABLE_MAIN_OBJECTS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Objects That Are to Be Canceled</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>GET_TMP_OBJECTS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Temporäre Objekte zurück geben</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>GET_TMP_OBJECTS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Return Temporary Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>GET_TMP_OBJECTS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Return Temporary Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>GT_TMP_OBJECTS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Temporäre Objecte</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>GT_TMP_OBJECTS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Temporary Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>GT_TMP_OBJECTS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Temporary Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>G_CANCEL_CHAIN_APPS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Soll die Terminserie eines Termins storniert werden</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>G_CANCEL_CHAIN_APPS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Is the Appt Series of an Appt to Be Canceled</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>G_CANCEL_CHAIN_APPS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Is the Appt Series of an Appt to Be Canceled</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>G_CHECK_PLANNING_COMPLETED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Soll Planung abgeschlossen geprüft werden</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>G_CHECK_PLANNING_COMPLETED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Is &quot;Planning Completed&quot; to Be Checked</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>G_CHECK_PLANNING_COMPLETED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Is &quot;Planning Completed&quot; to Be Checked</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>RAISE_EXCEPTION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Trigger Exception</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>RAISE_EXCEPTION</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Trigger Exception</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>REMOVE_MAIN_OBJECTS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Hautobjekte enternen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>REMOVE_MAIN_OBJECTS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Remove Main Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>REMOVE_MAIN_OBJECTS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Remove Main Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>SET_CANCEL_CHAIN_APPS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzen ob Terminserie eines Termines storniert werden soll</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>SET_CANCEL_CHAIN_APPS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set whether Appt Series of an Appt Is to Be Canceled</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>SET_CANCEL_CHAIN_APPS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Set whether Appt Series of an Appt Is to Be Canceled</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>SET_CHECK_PLANNING_COMPETED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzen ob Planung abgeschlossen geprüft werden soll</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>SET_CHECK_PLANNING_COMPETED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set whether &quot;Planning Completed&quot; Is to Be Checked</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>SET_CHECK_PLANNING_COMPETED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Set whether &quot;Planning Completed&quot; Is to Be Checked</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>SET_TMP_OBJECTS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Temporäre Objekte setzen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>SET_TMP_OBJECTS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set Temporary Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CON_CANCEL</CLSNAME>
+     <CMPNAME>SET_TMP_OBJECTS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Set Temporary Objects</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

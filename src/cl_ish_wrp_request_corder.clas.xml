@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_WRP_REQUEST_CORDER</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: Wrapper for Determining Request Data</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_WRP_REQUEST_CORDER provides a service for existing</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>programs that up to now required data from the table N1ANF and do not</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>recognize the clinical order.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>For these programs, it is possible to replace existing queries in the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>table N1ANF where the institution and ANFID are specified by a method</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>call with the same parameters and the same return structure. The return</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>structure is independent of whether the order was entered as a clinical</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>order or as a request.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Sample implementation:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+     <TDLINE>&lt;NP&gt;DATA:  my_einri LIKE N1ANF-einri VALUE &apos;0001&apos;,&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+     <TDLINE>&lt;NP&gt;       my_anfid LIKE N1ANF-anfid VALUE &apos;14000&apos;.&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+     <TDLINE>&lt;NP&gt;******************************************************&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+     <TDLINE>&lt;NP&gt;clear wa_n1anf.&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+     <TDLINE>&lt;NP&gt;* for example, the following line is commented out in original code</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+     <TDLINE>&lt;NP&gt;*SELECT SINGLE * INTO wa_n1anf&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+     <TDLINE>&lt;NP&gt;*                FROM N1ANF&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+     <TDLINE>&lt;NP&gt;*                WHERE einri = my_einri&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+     <TDLINE>&lt;NP&gt;*                AND   anfid = my_anfid.&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+     <TDLINE>&lt;NP&gt;* ... and replaced by...................................&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+     <TDLINE>&lt;NP&gt;class CL_ISH_WRP_REQUEST_CORDER definition load.&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+     <TDLINE>&lt;NP&gt;CALL METHOD CL_ISH_WRP_REQUEST_CORDER=&gt;get_n1anf_by_anfid&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+     <TDLINE>&lt;NP&gt;      EXPORTING i_einri     = my_einri&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+     <TDLINE>&lt;NP&gt;                i_anfid     = my_anfid&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+     <TDLINE>&lt;NP&gt;      IMPORTING es_n1anf    = wa_n1anf&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+     <TDLINE>&lt;NP&gt;                e_is_corder = klaux&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+     <TDLINE>&lt;NP&gt;                e_vkgid     = klauid.&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+     <TDLINE>&lt;NP&gt;* from here, processing proceeds as normal.......&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>To ensure that the relevant entry in the clinical order (item of a</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>clinical order, table N1VKG) can be found, a number must be taken from</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>the number range of the request when an order item is created, and saved</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>in the field N1VKG-REQCOMPID.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Moreover, a number &lt;ZU&gt;may&lt;/&gt; be taken from a relevant number range</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>for request numbers, and saved in the field N1VKG-REQCOMPNR.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The status field in the request is filled with a dummy value (XXX) in</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>the return structure, since the data format of the request status and</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>that of the status of the clinical order item are not compatible.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The method also returns two parameters:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>e_is_corder:,,,,specifies if the data record originates from a request</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>or ,,,,,,,,,,,,item of a clinical order</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>e_vkgid,,,,key of the clinical order item</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_WRP_REQUEST_CORDER bietet einen Dienst für bestehende</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Programme, die bisher Daten aus der Tabelle N1ANF benötigten und den</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Klinischen Auftrag nicht kennen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Für diese Programme wird die Möglichkeit geboten, bestehende Queries in</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>die Tabelle N1ANF bei gegebener Einrichtung und ANFID durch einen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Methodenaufruf mit den selben Parametern und der selben Rückgabestruktur</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>zu ersetzen. Die Rückgabestruktur ist unabhängig davon, ob der Auftrag</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>als Klinischer Auftrag oder als Anforderung erfasst wurde.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Beispielimplementierung:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>&lt;NP&gt;DATA:  my_einri LIKE N1ANF-einri VALUE &apos;0001&apos;,&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>&lt;NP&gt;       my_anfid LIKE N1ANF-anfid VALUE &apos;14000&apos;.&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>&lt;NP&gt;******************************************************&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>&lt;NP&gt;clear wa_n1anf.&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>&lt;NP&gt;* zum Beispiel wird folgende Zeile im Originalcode auskommentiert...</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>&lt;NP&gt;*SELECT SINGLE * INTO wa_n1anf&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>&lt;NP&gt;*                FROM N1ANF&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>&lt;NP&gt;*                WHERE einri = my_einri&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>&lt;NP&gt;*                AND   anfid = my_anfid.&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>&lt;NP&gt;* ... und ersetzt durch...................................&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>&lt;NP&gt;class CL_ISH_WRP_REQUEST_CORDER definition load.&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>&lt;NP&gt;CALL METHOD CL_ISH_WRP_REQUEST_CORDER=&gt;get_n1anf_by_anfid&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>&lt;NP&gt;      EXPORTING i_einri     = my_einri&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>&lt;NP&gt;                i_anfid     = my_anfid&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>&lt;NP&gt;      IMPORTING es_n1anf    = wa_n1anf&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>&lt;NP&gt;                e_is_corder = klaux&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>&lt;NP&gt;                e_vkgid     = klauid.&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>&lt;NP&gt;* ab hier geht die Verarbeitung normal weiter.......&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Damit der entsprechende Eintrag im Klinischen Auftrag (Position eines</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Klinischen Auftrags, Tabelle N1VKG) gefunden werden kann, muss bei</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Anlegen einer Auftragsposition eine Nummer aus dem Nummernkreis der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Anforderung gezogen und in das Feld N1VKG-REQCOMPID gespeichert werden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Weiters &lt;ZU&gt;kann&lt;/&gt; eine Nummer aus einem entsprechenden Nummernkreis</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>für Anforderungsnummern gezogen werden und im Feld N1VKG-REQCOMPNR</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>gespeichert werden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das in der Anforderung vorhandene Statusfeld wird in der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Rückgabestruktur mit einem Dummywert(XXX) befüllt, da das Datenformat</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>des Status der Anforderung und das des Status der Positionen des</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Klinischen Auftrages nicht kompatibel sind.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Zusätzlich gibt die Methode zwei Parameter zurück:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>e_is_corder:,,,,gibt an, ob der Datensatz aus einer Anforderung oder</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>einer ,,,,,,,,,,,,Position eines Klinischen Auftrags stammt</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>e_vkgid,,,,Schlüssel der Position des Klinischen Auftrages</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WRP_REQUEST_CORDER</CLSNAME>
+     <CMPNAME>GET_ANFID_FROM_NLEM</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die ANFID zu einer Leistungs-ID.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WRP_REQUEST_CORDER</CLSNAME>
+     <CMPNAME>GET_ANFID_FROM_NLEM</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Request ID for a Service ID</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WRP_REQUEST_CORDER</CLSNAME>
+     <CMPNAME>GET_ANFID_FROM_NLEM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Request ID for a Service ID</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WRP_REQUEST_CORDER</CLSNAME>
+     <CMPNAME>GET_N1ANF_BY_ANFID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert eine N1ANF-Struktur zu einer Anforderungs-ID.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WRP_REQUEST_CORDER</CLSNAME>
+     <CMPNAME>GET_N1ANF_BY_ANFID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns an N1ANF Structure for a Request ID</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WRP_REQUEST_CORDER</CLSNAME>
+     <CMPNAME>GET_N1ANF_BY_ANFID</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns an N1ANF Structure for a Request ID</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

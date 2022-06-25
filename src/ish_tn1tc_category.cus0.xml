@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CUS0" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <CUS0>
+    <HEADER>
+     <ACTIVITY>ISH_TN1TC_CATEGORY</ACTIVITY>
+     <DOCU_ID>SIMGISH_TN1TC_CATEGORY</DOCU_ID>
+     <ATTRIBUTES>ISH_TN1TC_CATEGORY</ATTRIBUTES>
+     <C_ACTIVITY>ISH_TN1TC_CATEGORY</C_ACTIVITY>
+     <TCODE>S_EWI_87000592</TCODE>
+    </HEADER>
+    <TEXTS>
+     <CUS_IMGACT>
+      <SPRAS>D</SPRAS>
+      <ACTIVITY>ISH_TN1TC_CATEGORY</ACTIVITY>
+      <TEXT>Begründungskategorien bearbeiten</TEXT>
+     </CUS_IMGACT>
+     <CUS_IMGACT>
+      <SPRAS>E</SPRAS>
+      <ACTIVITY>ISH_TN1TC_CATEGORY</ACTIVITY>
+      <TEXT>Edit Reason Categories</TEXT>
+     </CUS_IMGACT>
+     <CUS_IMGACT>
+      <SPRAS>S</SPRAS>
+      <ACTIVITY>ISH_TN1TC_CATEGORY</ACTIVITY>
+      <TEXT>Tratar categorías de motivo</TEXT>
+     </CUS_IMGACT>
+    </TEXTS>
+   </CUS0>
+  </asx:values>
+ </asx:abap>
+</abapGit>

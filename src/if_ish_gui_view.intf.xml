@@ -1,0 +1,997 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_INTF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOINTERF>
+    <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: GUI - View</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <UNICODE>X</UNICODE>
+   </VSEOINTERF>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;MEANING&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The interface IF_ISH_GUI_VIEW defines the interface of an interface</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>object in a &lt;DS:IF.IF_ISH_GUI_APPLICATION&gt;dialog application&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The interface IF_ISH_GUI_VIEW includes the interface</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:IF.IF_ISH_GUI_ELEMENT&gt;IF_ISH_GUI_ELEMENT&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The interface IF_ISH_GUI_VIEW includes the interface</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:IF.IF_ISH_DESTROYABLE&gt;IF_ISH_DESTROYABLE&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The interface IF_ISH_GUI_VIEW is included in the following interfaces:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;DS:IF.IF_ISH_GUI_DYNPRO_VIEW&gt;IF_ISH_GUI_DYNPRO_VIEW&lt;/&gt; (Dynpro</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>Interface Object)</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;DS:IF.IF_ISH_GUI_CONTROL_VIEW&gt;IF_ISH_GUI_CONTROL_VIEW&lt;/&gt; (Control</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>Interface Object)</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>UT</TDFORMAT>
+     <TDLINE>Methods:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_APPLICATION</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the &lt;DS:IF.IF_ISH_GUI_APPLICATION&gt;dialog application&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_CHILD_VIEWS</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the child interface objects.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_CHILD_VIEW_BY_ID</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the child interface object for an</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:DE.N1GUI_ELEMENT_ID&gt;element ID&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_CHILD_VIEW_BY_NAME</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the child interface object for an</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:DE.N1GUI_ELEMENT_NAME&gt;element name&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_CONTROLLER</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the &lt;DS:IF.IF_ISH_GUI_CONTROLLER&gt;control object&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_LAYOUT</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the &lt;DS:CL.CL_ISH_GUI_VIEW_LAYOUT&gt;settings of an interface</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>object&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_PARENT_VIEW</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the parent interface object.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_VCODE</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the processing mode.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>HAS_FOCUS</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns whether the interface object is in focus.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>IS_FIRST_DISPLAY_DONE</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns whether initial display of the interface object has already</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>taken place.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>IS_INITIALIZED</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns whether the interface object is initialized.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Note: Interface object can only be used in a dialog application after</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>their initialization.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>IS_IN_FIRST_DISPLAY_MODE</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns whether initial display of the interface object is in progress.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>IS_IN_INITIALIZATION_MODE</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns whether the interface object is being initialized.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>REGISTER_CHILD_VIEW</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Registers a child interface object.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Interface object use this method at initialization in order to register</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>themselves at the parent interface object.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>SAVE_LAYOUT</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Saves the current settings of the interface object in the database.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>SET_FOCUS</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Sets the focus on an interface object.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>SET_VCODE</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Sets the processing mode.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;USE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The abstract basic class for an interface object is</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CL.CL_ISH_GUI_VIEW&gt;CL_ISH_GUI_VIEW&lt;/&gt;.</TDLINE>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;MEANING&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das Interface IF_ISH_GUI_VIEW definiert die Schnittstelle eines</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Oberflächenobjekts in einer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_APPLICATION&gt;Dialoganwendung&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das Interface IF_ISH_GUI_VIEW umfasst das Interface</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_ELEMENT&gt;IF_ISH_GUI_ELEMENT&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das Interface IF_ISH_GUI_VIEW umfasst das Interface</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_DESTROYABLE&gt;IF_ISH_DESTROYABLE&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das Interface IF_ISH_GUI_VIEW wird von folgenden Interfaces umfasst:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_DYNPRO_VIEW&gt;IF_ISH_GUI_DYNPRO_VIEW&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(Dynpro-Oberflächenobjekt)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_CONTROL_VIEW&gt;IF_ISH_GUI_CONTROL_VIEW&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(Control-Oberflächenobjekt)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>Methoden:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_APPLICATION</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert die &lt;DS:IF.IF_ISH_GUI_APPLICATION&gt;Dialoganwendung&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_CHILD_VIEWS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert die untergeordneten Oberflächenobjekte.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_CHILD_VIEW_BY_ID</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert das untergeordnete Oberflächenobjekt zu einer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:DE.N1GUI_ELEMENT_ID&gt;Elementidentifikation&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_CHILD_VIEW_BY_NAME</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert das untergeordnete Oberflächenobjekt zu einer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:DE.N1GUI_ELEMENT_NAME&gt;Elementbezeichnung&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_CONTROLLER</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert das &lt;DS:IF.IF_ISH_GUI_CONTROLLER&gt;Kontrollobjekt&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_LAYOUT</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert die &lt;DS:CL.CL_ISH_GUI_VIEW_LAYOUT&gt;Einstellungen des</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Oberflächenobjekts&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_PARENT_VIEW</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert das übergeordnete Oberflächenobjekt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_VCODE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert den Verarbeitungsmodus.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>HAS_FOCUS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert, ob das Oberflächenobjekt den Fokus hat.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>IS_FIRST_DISPLAY_DONE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert, ob die Erstanzeige des Oberflächenobjekts bereits</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>durchgeführt wurde.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>IS_INITIALIZED</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert, ob das Oberflächenobjekt initialisiert ist.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Anmerkung: Oberflächenobjekte können in einer Dialoganwendung erst nach</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>deren Initialisierung verwendet werden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>IS_IN_FIRST_DISPLAY_MODE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert, ob die Erstanzeige des Oberflächenobjekts gerade</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>durchgeführt wird.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>IS_IN_INITIALIZATION_MODE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert, ob das Oberflächenobjekt gerade initialisiert wird.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>REGISTER_CHILD_VIEW</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Registriert ein untergeordnetes Oberflächenobjekt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Oberflächenobjekte verwenden diese Methode bei der Initialisierung, um</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>sich beim übergeordneten Oberflächenobjekt zu registrieren.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>SAVE_LAYOUT</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Sichert die aktuellen Einstellungen des Oberflächenobjekts in der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Datenbank.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>SET_FOCUS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Setzt den Fokus auf ein Oberflächenobjekt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>SET_VCODE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Setzt den Verarbeitungsmodus.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die abstrakte Basisklasse für ein Oberflächenobjekt ist</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_GUI_VIEW&gt;CL_ISH_GUI_VIEW&lt;/&gt;.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>ACTUALIZE_LAYOUT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Aktualisiert das Layout</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>ACTUALIZE_LAYOUT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Updates Layout</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>ACTUALIZE_LAYOUT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Updates Layout</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>CONFIG_LAYOUT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Starts Dialog for Processing Layout</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>CONFIG_LAYOUT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Starts Dialog for Processing Layout</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>CO_VCODE_DISPLAY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Verarbeitungsmodus</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>CO_VCODE_DISPLAY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Processing Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>CO_VCODE_DISPLAY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Processing Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>CO_VCODE_INSERT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Verarbeitungsmodus</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>CO_VCODE_INSERT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Processing Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>CO_VCODE_INSERT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Processing Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>CO_VCODE_UPDATE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Verarbeitungsmodus</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>CO_VCODE_UPDATE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Processing Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>CO_VCODE_UPDATE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Processing Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>GET_ALV_VARIANT_REPORT_SUFFIX</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den Suffix für d. Programmname einer ALV-Variante</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>GET_ALV_VARIANT_REPORT_SUFFIX</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Suffix for Program Name for an ALV Variant</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>GET_ALV_VARIANT_REPORT_SUFFIX</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Suffix for Program Name for an ALV Variant</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>GET_APPLICATION</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die Applikation</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>GET_APPLICATION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Application</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>GET_APPLICATION</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Application</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>GET_CHILD_VIEWS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die untergeordneten Views</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>GET_CHILD_VIEWS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Lower-Level Views</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>GET_CHILD_VIEWS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Lower-Level Views</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>GET_CHILD_VIEW_BY_ID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den untergeordneten View zu einer ID</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>GET_CHILD_VIEW_BY_ID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Lower-Level View for an ID</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>GET_CHILD_VIEW_BY_ID</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Lower-Level View for an ID</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>GET_CHILD_VIEW_BY_NAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den untergeordneten View zu einem Namen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>GET_CHILD_VIEW_BY_NAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Lower-Level View for a Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>GET_CHILD_VIEW_BY_NAME</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Lower-Level View for a Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>GET_CONTROLLER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den Controller</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>GET_CONTROLLER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Controller</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>GET_CONTROLLER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Controller</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>GET_ERRORFIELD_MESSAGES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die Meldungen zu fehlerhaften Feldern</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>GET_ERRORFIELD_MESSAGES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Messages for Incorrect Fields</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>GET_ERRORFIELD_MESSAGES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Messages for Incorrect Fields</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>GET_LAYOUT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert das Layout</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>GET_LAYOUT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Layout</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>GET_LAYOUT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Layout</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>GET_PARENT_VIEW</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den übergeordneten View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>GET_PARENT_VIEW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Superordinate View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>GET_PARENT_VIEW</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Superordinate View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>GET_T_ERRORFIELD</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert fehlerhafte Felder</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>GET_T_ERRORFIELD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Incorrect Fields</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>GET_T_ERRORFIELD</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Incorrect Fields</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>GET_T_VIEW_ERRORFIELDS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert fehlerhafte Felder incl. untergeordn. Views</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>GET_T_VIEW_ERRORFIELDS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Incorrect Fields incl. Subordinate Views</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>GET_T_VIEW_ERRORFIELDS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Incorrect Fields incl. Subordinate Views</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>GET_VCODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den Verarbeitungsmodus</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>GET_VCODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Processing Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>GET_VCODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Processing Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>HAS_ERRORFIELDS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert ob fehlerhafte Felder vorhanden sind</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>HAS_ERRORFIELDS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Whether Incorrect Fields Exist</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>HAS_ERRORFIELDS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Whether Incorrect Fields Exist</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>HAS_FOCUS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert ob der View fokussiert ist</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>HAS_FOCUS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Whether the View Is Focused</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>HAS_FOCUS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Whether the View Is Focused</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>IS_FIRST_DISPLAY_DONE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert ob die Erstanzeige durchgeführt wurde</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>IS_FIRST_DISPLAY_DONE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Whether Initial Display Was Performed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>IS_FIRST_DISPLAY_DONE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Whether Initial Display Was Performed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>IS_INITIALIZED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert ob das Objekt initialisiert ist</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>IS_INITIALIZED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Whether the Object Is Initialized</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>IS_INITIALIZED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Whether the Object Is Initialized</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>IS_IN_FIRST_DISPLAY_MODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert ob die Erstanzeige gerade durchgeführt wird</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>IS_IN_FIRST_DISPLAY_MODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Whether Initial Display Is Currently in Progress</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>IS_IN_FIRST_DISPLAY_MODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Whether Initial Display Is Currently in Progress</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>IS_IN_INITIALIZATION_MODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert ob das Objekt gerade initialisiert wird</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>IS_IN_INITIALIZATION_MODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Whethre the Object Is Being Initialized</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>IS_IN_INITIALIZATION_MODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Whethre the Object Is Being Initialized</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>REGISTER_CHILD_VIEW</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Registriert einen untergeordneten View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>REGISTER_CHILD_VIEW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Registers a Subordinate View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>REGISTER_CHILD_VIEW</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Registers a Subordinate View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>SAVE_LAYOUT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Sichert das Layout</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>SAVE_LAYOUT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Saves Layout</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>SAVE_LAYOUT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Saves Layout</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>SET_FOCUS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt den Fokus auf den View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>SET_FOCUS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the Focus on the View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>SET_FOCUS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the Focus on the View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>SET_VCODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt den Verarbeitungsmodus</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>SET_VCODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the Processing Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_VIEW</CLSNAME>
+     <CMPNAME>SET_VCODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the Processing Mode</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

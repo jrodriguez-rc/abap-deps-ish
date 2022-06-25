@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_INTF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOINTERF>
+    <CLSNAME>IF_EX_ISHMED_BUILD_MATRIX</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Interface to BAdI: ISHMED_TC_BUILD_MATRIX</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <UNICODE>X</UNICODE>
+   </VSEOINTERF>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;MEANING&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Structure of Access Matrix for Users</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;USE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Interface IF_EX_ISHMED_BUILD_MATRIX is used to build the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>access matrix for users.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>It contains the following methods:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>BUILD_MATRIX:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Builds the matrix for the logged on users. This method is used in the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>standard check of the treatment authorization.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>BUILD_MATRIX_FOR_USER</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Builds matrix for test purposes.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>CREATE_MATRIX_FOR_USER</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Builds the matrix for the users specified in I_UNAME. This method is</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>only provided for customer-specific projects.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>All methods of this BAdI are implemented by implanting the fallback</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>class CL_FB_ISHMED_TC_BUILD_MATRIX.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>If you have your own implementation you should derive from the fallback</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>class.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Implement this interface to influence the access matrix. Note the access</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>matrix is a central component for the check logic of the treatment</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>authorization. You should only implement this BAdI if you must deviate</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>from the standard default logic. Ensure that the structure of the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>customer-specific access matrix delivers correct results with the check</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>logic of the treatment authorization.</TDLINE>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;MEANING&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Aufbau der Zugriffsmatrix für Benutzer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das Interface IF_EX_ISHMED_BUILD_MATRIX dient zum Aufbau der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Zugriffsmatrix für Benutzer.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Es enthält folgende Methoden:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>BUILD_MATRIX:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Aufbau der Matrix für den angemeldeten Benutzer. Diese Methode wird in</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>der Standardprüfung des Behandlungsauftrags verwendet.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>BUILD_MATRIX_FOR_USER</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Aufbau der Matrix für Testzwecke.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>CREATE_MATRIX_FOR_USER</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Aufbau der Matrix für den in I_UNAME angegebenen Benutzer. Diese Methode</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>wird nur für kundenspeziefische Projekte zur Verfühgung gestellt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Alle Methoden dieses BAdI werden durch Implantierungen der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Fallback-Klasse CL_FB_ISHMED_TC_BUILD_MATRIX umgesetzt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Es empfiehlt sich im Falle einer eigenen Implementierung von der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Fallback-Klasse abzuleiten.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Implementieren Sie dieses Interface, um die Zugriffsmatrix für Benutzer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>zu beeinflussen. Beachten Sie, dass die Zugriffsmatrix eine zentrale</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Komponente für die Prüflogik des Behandlungsauftrages ist.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Implementieren Sie dieses BAdI nur, wenn Sie von der im Standard</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>vorgegebenen Logik abweichen müssen. Stellen Sie sicher, dass der Aufbau</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>der kundeneigenen Zugriffsmatrix mit der Prüflogik des</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Behandlungsauftrages korrekte Ergebnisse liefert.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_EX_ISHMED_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>BUILD_MATRIX</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Aufbau der Matrix für einen User</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_EX_ISHMED_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>BUILD_MATRIX</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Build Matrix for User</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_EX_ISHMED_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>BUILD_MATRIX_FOR_USER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Aufbau der Matrix für einen übergebenen User (Test Only)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_EX_ISHMED_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>BUILD_MATRIX_FOR_USER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Build Matrix for Transferred User (Test Only)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_EX_ISHMED_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>CREATE_MATRIX_FOR_USER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anlegen der Matrix im DB-Tabellenpuffer für einen Benutzer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_EX_ISHMED_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>CREATE_MATRIX_FOR_USER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Create Matrix in DB Table Buffer for a User</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

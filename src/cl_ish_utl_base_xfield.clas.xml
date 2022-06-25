@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_UTL_BASE_XFIELD</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: Functions for X Fields</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_XFIELD</CLSNAME>
+     <CMPNAME>ADJUST_XFIELDS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt alle X-Felder auf ON, wenn kein einziges gesetzt ist.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_XFIELD</CLSNAME>
+     <CMPNAME>ADJUST_XFIELDS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets All X-Fields to ON, if None Is Set</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_XFIELD</CLSNAME>
+     <CMPNAME>ADJUST_XFIELDS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets All X-Fields to ON, if None Is Set</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_XFIELD</CLSNAME>
+     <CMPNAME>CHANGE_XSTRUCTURE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Daten einer Änderungsstruktur in eine andere übernehmen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_XFIELD</CLSNAME>
+     <CMPNAME>CHANGE_XSTRUCTURE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Transfer Data of a Change Structure into Another</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_XFIELD</CLSNAME>
+     <CMPNAME>CHANGE_XSTRUCTURE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Transfer Data of a Change Structure into Another</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

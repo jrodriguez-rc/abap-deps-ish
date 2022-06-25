@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_LB_WUZPI</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: List Box for Desired Time - Interpretation</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_LB_WUZPI</CLSNAME>
+     <CMPNAME>FILL_LISTBOX</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Befüllt die Listbox.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_LB_WUZPI</CLSNAME>
+     <CMPNAME>FILL_LISTBOX</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Fills Listbox</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_LB_WUZPI</CLSNAME>
+     <CMPNAME>FILL_LISTBOX</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Fills Listbox</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_LB_WUZPI</CLSNAME>
+     <CMPNAME>G_EINRI</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Einrichtung</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_LB_WUZPI</CLSNAME>
+     <CMPNAME>G_EINRI</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Institution</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_LB_WUZPI</CLSNAME>
+     <CMPNAME>G_EINRI</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Institution</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_LB_WUZPI</CLSNAME>
+     <CMPNAME>G_ZPI</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Zeitpunktinterpretation - interne Darstellung</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_LB_WUZPI</CLSNAME>
+     <CMPNAME>G_ZPI</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Time Interpretation - Internal Format</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_LB_WUZPI</CLSNAME>
+     <CMPNAME>G_ZPI</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Time Interpretation - Internal Format</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_LB_WUZPI</CLSNAME>
+     <CMPNAME>G_ZPITY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Wartelisten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_LB_WUZPI</CLSNAME>
+     <CMPNAME>G_ZPITY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Waiting Lists</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_LB_WUZPI</CLSNAME>
+     <CMPNAME>G_ZPITY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Waiting Lists</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,1364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: General Functions</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>(Tel.:    ;; (Tel.:  - the 2nd&apos;)&apos; will be linked to pgm.</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+   </TPOOL>
+   <I18N_TPOOL>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>(Tel.:    ;; (Telefon:  - die 2. &apos;)&apos; wird im Pgm angehängt</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>S</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>(Tel.:    ;; (Teléfono:   el 2º   )  se añade a programa</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+   </I18N_TPOOL>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>ADJUST_XFIELDS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt alle X-Felder auf ON, wenn kein einziges gesetzt ist.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>ADJUST_XFIELDS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets All X-Fields to ON, if None Is Set</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>ADJUST_XFIELDS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets All X-Fields to ON, if None Is Set</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>APPEND_MESSAGE_FOR_EXCEPTION</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Aufruf Errorhandler -&gt; Meldung aus einer Ausnahmeklasse aufn</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>APPEND_MESSAGE_FOR_EXCEPTION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Call Error Handler -&gt; Include Message from an Except. Class</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CALCULATE_DURATION_TIME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Berechnet die Zeit zwischen zwei Zeitpunkten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CALCULATE_DURATION_TIME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Calculates the Time Between Two Events</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CHANGE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ändert eine Struktur ausgehend von einer X-Flag Struktur.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CHANGE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Changes a Structure from an X-Flag Structure</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CHANGE_XSTRUCTURE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Daten einer Änderungsstruktur in eine andere übernehmen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CHANGE_XSTRUCTURE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Transfer Data of a Change Structure into Another</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CHANGE_XSTRUCTURE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Transfer Data of a Change Structure into Another</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CHECK_CASE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Fall prüfen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CHECK_CASE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check Case</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CHECK_CASE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Check Case</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CHECK_CASE_OF_OBJ</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Fall prüfen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CHECK_CASE_OF_OBJ</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check Case</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CHECK_CASE_OF_OBJ</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Check Case</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CHECK_CHANGES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Prüft ob und was sich in 2 Strukturen verändert hat.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CHECK_CHANGES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checks for Changes in 2 Structures</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CHECK_CHANGES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Checks for Changes in 2 Structures</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CHECK_FIXED_VALUES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Prüfen mit Festwerten der Domäne</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CHECK_FIXED_VALUES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check with Domain Fixed Values</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CHECK_FIXED_VALUES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Check with Domain Fixed Values</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CHECK_PATIENT_OF_OBJ</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Patient prüfen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CHECK_PATIENT_OF_OBJ</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check Patient</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CHECK_PATIENT_OF_OBJ</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Check Patient</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CHECK_PATIENT_PROVI_OF_OBJ</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Patient mit vorläufigen Stammdaten prüfen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CHECK_PATIENT_PROVI_OF_OBJ</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check Patient with Provisional Master Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CHECK_PATIENT_PROVI_OF_OBJ</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Check Patient with Provisional Master Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CHECK_TIME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Prüft eine Zeitangabe auf richtiges Format</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CHECK_TIME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checks that Time Specification Has Correct Format</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CHECK_TIME</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Checks that Time Specification Has Correct Format</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>COLLECT_MESSAGES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Aufruf Errorhandler -&gt; collect_messages</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>COLLECT_MESSAGES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Call Error Handler -&gt; collect_messages</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>COLLECT_MESSAGES_BY_BAPIRET</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Aufruf Errorhandler -&gt; collect_messages mit BAPIRET2</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>COLLECT_MESSAGES_BY_BAPIRET</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Call Error Handler -&gt; collect_messages with BAPIRET2</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>COLLECT_MESSAGES_BY_EXCEPTION</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>übergebene Ausnahmen werden anhand einer CLASS_KETTE travers</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>COLLECT_MESSAGES_BY_EXCEPTION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Transferred Exceptions Are Scanned Using a CLASS_KETTE</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>COLLECT_MESSAGES_BY_SYST</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Aufruf Errorhandler -&gt; collect_messages mit Systemvariablen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>COLLECT_MESSAGES_BY_SYST</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Call Error Handler -&gt; collect_messages with System Variables</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>COMPARE_CASE_OF_OBJ</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Fall von zwei Objekten vergleichen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>COMPARE_CASE_OF_OBJ</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Compare Case of Two Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>COMPARE_CASE_OF_OBJ</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Compare Case of Two Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>COMPARE_PATIENT_OF_OBJ</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Fall von zwei Objekten vergleichen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>COMPARE_PATIENT_OF_OBJ</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Compare Case of Two Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>COMPARE_PATIENT_OF_OBJ</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Compare Case of Two Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>COMPARE_PATIENT_PROVI_OF_OBJ</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Fall von zwei Objekten vergleichen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>COMPARE_PATIENT_PROVI_OF_OBJ</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Compare Case of Two Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>COMPARE_PATIENT_PROVI_OF_OBJ</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Compare Case of Two Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CONVERT_LONGTEXT_TO_STRING</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Konvertiert den Langtext zu einem String</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CONVERT_LONGTEXT_TO_STRING</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Converts the Long Text for a String</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CONVERT_LONGTEXT_TO_STRING</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Converts the Long Text for a String</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CONVERT_STRING_TO_LONGTEXT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Konvertiert den String zu einem Langtext</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CONVERT_STRING_TO_LONGTEXT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Converts the String for a Long Text</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CONVERT_STRING_TO_LONGTEXT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Converts the String for a Long Text</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CONVERT_STRING_TO_TABLE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Konvertiert einen String in eine Tabelle der übergeben Länge</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CONVERT_STRING_TO_TABLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Converts a String into a Table of Transferred Length</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CONVERT_STRING_TO_TABLE_NOWRAP</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Konvertiert einen String in eine Tabelle, ohne Worttrennung</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CONVERT_STRING_TO_TABLE_NOWRAP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Converts a String into a Table Without Hyphenation</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CONV_CHAR_TO_EXTERN</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>zeichenartigen Wert in die externe Darstellung konvertieren</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CONV_CHAR_TO_EXTERN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Convert Character-Type Value to External Format</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CONV_CHAR_TO_EXTERN</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Convert Character-Type Value to External Format</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CONV_CHAR_TO_INTERN</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>zeichenartigen Wert in die interne Darstellung konvertieren</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CONV_CHAR_TO_INTERN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Convert Character-Type Value into Internal Format</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CONV_CHAR_TO_INTERN</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Convert Character-Type Value into Internal Format</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CONV_DATE_TO_EXTERN</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Datum in externe Darstellung konvertieren</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CONV_DATE_TO_EXTERN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Convert Date to External Format</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CONV_DATE_TO_EXTERN</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Convert Date to External Format</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CONV_TIME_TO_EXTERN</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Uhrzeit in externe Darstellung konvertieren</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CONV_TIME_TO_EXTERN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Convert Time to External Format</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CONV_TIME_TO_EXTERN</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Convert Time to External Format</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CONV_TIME_TO_INTERN</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Uhrzeit in interne Darstellung konvertieren</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CONV_TIME_TO_INTERN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Convert Time into Internal Format</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CONV_TIME_TO_INTERN</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Convert Time into Internal Format</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CONV_TO_OBJLIST</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Objekte in eine Tabelle vom Typ ISH_OBJECTLIST übernehmen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CONV_TO_OBJLIST</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Transfer Objects to Table of Type ISH_OBJECTLIST</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CONV_TO_OBJLIST</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Transfer Objects to Table of Type ISH_OBJECTLIST</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>COPY_MESSAGES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Messages von einem Handler in einen anderen kopieren</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>COPY_MESSAGES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Copy Messages from a Handler into Another Handler</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CREATE_CONFIG</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Erzeugt ein IF_ISH_CONFIG Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CREATE_CONFIG</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Creates an IF_ISH_CONFIG Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CREATE_SET_ERROR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Klasse CL_ISH_ERROR instanzieren und Fehler setzen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>CREATE_SET_ERROR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Instantiate Class CL_ISH_ERROR and Set Error</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>DESTROY_ENV</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Environment zerstören</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>DESTROY_ENV</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Destroyed Environment</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>EXISTS_INSTITUTION</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Prüft eine Einrichtung</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>EXISTS_INSTITUTION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checks an Institution</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GENERATE_GUID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert eine eindeutige GUID (22-stellig)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GENERATE_GUID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns a Unique GUID (22-Characters)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GENERATE_UUID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert eine eindeutige UUID.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GENERATE_UUID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns a Unique UUID</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GENERATE_UUID_WITH_PREFIX</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert eine eindeutige UUID mit Präfix</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GENERATE_UUID_WITH_PREFIX</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Gets a Unique UUID with Prefix</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_AC_PROPOSAL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Preset Appointment Template</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_AC_PROPOSAL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Preset Appointment Template</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_ALL_CONNS_ENDING_AT_PAP</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert rekursiv alle verbundenen Objekte</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_ALL_CONNS_ENDING_AT_PAP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Gets All Connected Objects Recursively</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_AUTH_VM_DEF</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Berechtigung für N_VM_DEF</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_AUTH_VM_DEF</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Authorization for N_VM_DEF</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_CASE_OF_OBJ</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermittlung eines Falles ausgehend von einem Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_CASE_OF_OBJ</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Case From Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_CASE_OF_OBJ</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Case From Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_CUSTOMER_ID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert den Typ eines Kundenspezifischen Objektes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_CUSTOMER_ID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Type of a Customer-Specific Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_DATE_FOR_WEEKDAYS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermittlung von Tagen ausgehend von Wochentagen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_DATE_FOR_WEEKDAYS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Days from Days of the Week</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_DATE_FOR_WEEKDAYS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Days from Days of the Week</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_DATE_FOR_WEEKDAYS_FIRST</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermittlung von Tagen ausgehend von Wochentagen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_DATE_FOR_WEEKDAYS_FIRST</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Days from Days of the Week</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_DATE_FOR_WEEKDAYS_FIRST</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Days from Days of the Week</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_DAYS_OF_PERIOD</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermittlung der Tage ausgehend von einem Zeitintervall</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_DAYS_OF_PERIOD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Days from Time Interval</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_DAYS_OF_PERIOD</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Days from Time Interval</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_DESCR_BEKAT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermittlung der Kurzbezeichnung einer Behandlungskategorie</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_DESCR_BEKAT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Short Description of a Treatment Category</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_DESCR_BEKAT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Short Description of a Treatment Category</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_DESCR_BEWTY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Beschreibung zu einem Bewegungstypen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_DESCR_BEWTY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Description of a Movement Category</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_DESCR_BEWTY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Description of a Movement Category</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_DESCR_BWART</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Beschreibung zur Bewegungsart</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_DESCR_BWART</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Description of the Movement Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_DESCR_BWART</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Description of the Movement Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_DESCR_KHANS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermittlung Krankenhausname &amp; Anschrift</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_DESCR_KHANS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Hospital Name &amp; Address</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_DESCR_KHANS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Hospital Name &amp; Address</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_DESCR_MVMT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermittlung der Kurzbezeichnung einer Behandlungskategorie</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_DESCR_MVMT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Short Description of a Treatment Category</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_DESCR_MVMT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Short Description of a Treatment Category</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_DESCR_ORGUNIT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermittlung der Kurzbezeichnung einer OE</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_DESCR_ORGUNIT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Short Description of an OU</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_DESCR_ORGUNIT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Short Description of an OU</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_DESCR_PERSON</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermittlung des Namens einer Person</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_DESCR_PERSON</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Name of a Person</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_DESCR_PERSON</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Name of a Person</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_DESCR_PLANNING_OBJECT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determines the Short Description of a Planning Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_DESCR_PLANNING_OBJECT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determines the Short Description of a Planning Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_DESCR_ROOM</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermittlung der Kurzbezeichnung eines Raumes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_DESCR_ROOM</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Short Description of a Room</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_DESCR_ROOM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Short Description of a Room</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_ENVIRONMENTS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermittlung aller Environments aus den Bewegungsdaten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_ENVIRONMENTS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine All Environments from the Movement Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_ID_OBJECTS_OF_OBJLIST</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liste mit Objekten v. Typ &quot;IF_ISH_IDENTIFY_OBJECT&quot; erstellen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_ID_OBJECTS_OF_OBJLIST</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Create List with Objects of Type &quot;IF_ISH_IDENTIFY_OBJECT&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_INSTITUTION_OF_OBJ</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermittlung der Einrichtung ausgehend von einem Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_INSTITUTION_OF_OBJ</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Institution from an Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_MESSAGES_OF_EXCEPTION</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Nachrichten der gesamten Kette der Ausnahmen ausgeben</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_MESSAGES_OF_EXCEPTION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Output Messages of the Complete Exception Chain</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_MESSAGE_TEXT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermittelt den Text einer Meldung</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_MESSAGE_TEXT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determines the Text for a Message</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_NOTKZ_ICON</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert das Icon für Notfallkennzeichen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_NOTKZ_ICON</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Icon for Emergency Indicator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_ORGFA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die fachl. OE zu einer ORGID.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_ORGFA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Dept. OU for an ORGID</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_OU_HIER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Erzeugt eine OE Hierarchie</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_OU_HIER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Creates an OU Hierarchy</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_PAP_FOR_OBJECT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermittlung eines vorl. Patienten zu einem Datenbojekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_PAP_FOR_OBJECT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine a Provisional Patient from a Data Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_PAP_FOR_OBJECT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine a Provisional Patient from a Data Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_PATIENT_OF_OBJ</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermittlung eines Patienten ausgehend von einem Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_PATIENT_OF_OBJ</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Patient From Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_PATIENT_OF_OBJ</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Patient From Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_PATNAME_FOR_OBJECT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Name des Patienten anhand eines Datenobjektes ermitteln</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_PATNAME_FOR_OBJECT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Patient Name using a Data Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_PATNAME_FOR_OBJECT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Patient Name using a Data Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_T100_ATTR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Hilfsmethode: Nachrichtenattribut einer T100-Exception holen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_T100_ATTR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Utility Method: Get Message Attribute of a T100 Exception</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_T100_ATTR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Utility Method: Get Message Attribute of a T100 Exception</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_TELEPHONE_NUMBER_OF_USER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Telefonnummer eines Benutzers ermitteln</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_TELEPHONE_NUMBER_OF_USER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine User&apos;s Telephone Number</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_USER_NAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Name eines Benutzer ermitteln</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_USER_NAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine User&apos;s Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_VALUE_OF_DATA_REF</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Wert eines Feldes aus einer Datenreferenz ermitteln</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_VALUE_OF_DATA_REF</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Value of a Field from a Data Reference</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GR_BADI_CREATE_CONFIG</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>BAdI-Interface IF_EX_N1_CREATE_CONFIG</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GR_BADI_CREATE_CONFIG</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>BAdI Interface IF_EX_N1_CREATE_CONFIG</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>GR_BADI_CREATE_CONFIG</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>BAdI Interface IF_EX_N1_CREATE_CONFIG</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>G_AUTH_VM_DEF</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Berechtigungskennzeichen für N_VM_DEF</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>G_AUTH_VM_DEF</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Authorization Indicator for N_VM_DEF</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>G_AUTH_VM_DEF</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Authorization Indicator for N_VM_DEF</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>G_AUTH_VM_DEF_READ</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Kennzeichen ob g_auth_vm_def bereits ermittelt wurde</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>G_AUTH_VM_DEF_READ</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Indicator whether g_auth_vm_def Was Already Determined</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>G_AUTH_VM_DEF_READ</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Indicator whether g_auth_vm_def Was Already Determined</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>HANDLE_WARNINGS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Das Quittieren von Warnmeldungen unterstützen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>HANDLE_WARNINGS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Support Confirmation of Warning Messages</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>IS_BACKGROUND</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Prüfung ob die Anw. im Hintergrund (ohne GUI) läuft</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>IS_BACKGROUND</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check Whether Application Is Running in Background (w/o GUI)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>IS_GUI_CONTROL_VALID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Prüfung ob das übergebene GUI-Control noch gültig ist</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>IS_GUI_CONTROL_VALID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check if Transferred GUI Controm Is Still Valid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>IS_INTERFACE_IMPLEMENTED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Prüft ob das Objekt angegebenes Interface implementiert</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>IS_INTERFACE_IMPLEMENTED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checks if the Object Implements Specified Interface</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>IS_NUMERIC</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Prüfung ob der übergebene Wert numerisch ist</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>IS_NUMERIC</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check if the Passed Value Is Numeric</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>IS_OBJECT_OF_PATIENT_TMP</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermittelt ob ein Objekt eines Patienten temporär ist</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>IS_OBJECT_OF_PATIENT_TMP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determines if a Patient&apos;s Object Is Temporary</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>IS_OBJECT_OF_PATIENT_TMP</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determines if a Patient&apos;s Object Is Temporary</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>IS_OBJ_OP</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Prüfung ob eine Operation betroffen ist</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>IS_OBJ_OP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check if a Surgery Is Affected</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>IS_OU_COORD_UNIT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert, ob OrgEinheit eine Leitstelle ist</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>IS_OU_COORD_UNIT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Whether OU Is Coordinating Facility</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>IS_PATIENT_TMP</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermittelt ob ein Temporäres Objekt zu dem Patienten gehört</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>IS_PATIENT_TMP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determines if a Temporary Object Belongs to the Patient</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>IS_PATIENT_TMP</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determines if a Temporary Object Belongs to the Patient</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>IS_T_ERROR_DERIVED_FROM</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Sind Fehler bestimmter Kategorien im Errorhandler enthalten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>IS_T_ERROR_DERIVED_FROM</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Does the Error Handler Contain Errors of Specific Categories</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>MAX_SESSIONS_CHECK</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>maximale Anzahl Modi prüfen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>MAX_SESSIONS_CHECK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check Maximum Number of Modes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>MESSAGE_TEXT_SPLIT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Textfeld in vier 50-stellige Felder für Ausgabe als MSG-Vari</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>MESSAGE_TEXT_SPLIT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Text field in four 50 charac. fields for output as MSG Vari.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>NORMALIZE_STRING</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Normalisiert einen String</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>NORMALIZE_STRING</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Normalizes String</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>REMOVE_MESSAGES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Aus dem Errorhandler bestimmte Meldungen entfernen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>REMOVE_MESSAGES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Remove Specific Messages from the Error Handler</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>SET_MESSAGE_BY_SYST</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Systemnachricht -&gt; Messagestruktur der EXCEPTION-Klassen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>SET_MESSAGE_BY_SYST</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>System Message -&gt; Message Structure of the EXCEPTION Classes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>SET_VALUE_TO_DATA_REF</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Wert eines Feldes in eine Datenreferenz übernehmen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>SET_VALUE_TO_DATA_REF</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Transfer Value of a Field into a Data Reference</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>SWITCH_ON_OFF_TO_TRUE_FALSE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>für ON / OFF entsprechend TRUE / FALSE setzen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE</CLSNAME>
+     <CMPNAME>SWITCH_ON_OFF_TO_TRUE_FALSE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set TRUE / FALSE for ON / OFF Accordingly</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

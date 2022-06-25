@@ -1,0 +1,752 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: Medical Data Screen Class</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>More Diagnoses</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>002</KEY>
+     <ENTRY>Short Anamnesis</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>003</KEY>
+     <ENTRY>Pregnant</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>004</KEY>
+     <ENTRY>Week</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>005</KEY>
+     <ENTRY>Degree of Infection</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>006</KEY>
+     <ENTRY>Diagnosis</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>007</KEY>
+     <ENTRY>Questions</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>008</KEY>
+     <ENTRY>Display Long Text</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>009</KEY>
+     <ENTRY>Change Long Text</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>010</KEY>
+     <ENTRY>Create Long Text</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>011</KEY>
+     <ENTRY>Risk Factors</ENTRY>
+     <LENGTH>16</LENGTH>
+    </item>
+   </TPOOL>
+   <I18N_TPOOL>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Weitere Diagnosen</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Kurzanamnese</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>Schwanger</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>004</KEY>
+       <ENTRY>Woche</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>005</KEY>
+       <ENTRY>Infektionsgrad</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>006</KEY>
+       <ENTRY>Diagnose</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>007</KEY>
+       <ENTRY>Fragestellung</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>008</KEY>
+       <ENTRY>Langtext anzeigen</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>009</KEY>
+       <ENTRY>Langtext ändern</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>010</KEY>
+       <ENTRY>Langtext anlegen</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>011</KEY>
+       <ENTRY>Risikofaktoren</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>S</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Otros dianósticos</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Anamnesis breve</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>Embarazada</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>004</KEY>
+       <ENTRY>Semana</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>005</KEY>
+       <ENTRY>Grado de infección</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>006</KEY>
+       <ENTRY>Diagnóstico</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>007</KEY>
+       <ENTRY>Lista de cuestiones</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>008</KEY>
+       <ENTRY>Visualiz.txt.explic.</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>009</KEY>
+       <ENTRY>Modif.txt.expl.</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>010</KEY>
+       <ENTRY>Crear txt.expl.</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>011</KEY>
+       <ENTRY>Factores riesgo</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+   </I18N_TPOOL>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>CHECK_RISC_FACTS_FOR_PATIENT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Prüfen, ob für Patient Risikofaktoren vorhanden sind</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>CHECK_RISC_FACTS_FOR_PATIENT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check whether Risk Factors Exist for Patient</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>CHECK_RISC_FACTS_FOR_PATIENT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Check whether Risk Factors Exist for Patient</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>CO_DEFAULT_TABNAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Tabellenname</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>CO_DEFAULT_TABNAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>CO_DEFAULT_TABNAME</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Table Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>CO_OTYPE_SCR_MED_DATA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Screenklasse medizinische Daten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>CO_OTYPE_SCR_MED_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Screen Class: Medical Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>CO_OTYPE_SCR_MED_DATA</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Screen Class: Medical Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>CREATE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Instanz des Screens erzeugen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>CREATE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Create Instance of Screen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>CREATE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Create Instance of Screen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>CREATE_LISTBOX_IFG</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Listbox für Infektionsgrad</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>CREATE_LISTBOX_IFG</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>List Box for Degree of Infection</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>CREATE_LISTBOX_IFG</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>List Box for Degree of Infection</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>FILL_LABEL_MORE_DIA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Button Weitere Diagnosen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>FILL_LABEL_MORE_DIA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>More Diagnoses Button</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>FILL_LABEL_MORE_DIA</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>More Diagnoses Button</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>FILL_LABEL_N1DILTXT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Button KZ ob Langtext vorhanden für Diagnose befüllen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>FILL_LABEL_N1DILTXT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Button Fill Indicator that Long Text Exists for Diagnosis</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>FILL_LABEL_N1DILTXT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Button Fill Indicator that Long Text Exists for Diagnosis</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>FILL_LABEL_N1FRLTXT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Button KZ ob Langtext vorhanden für Fragestellung befüllen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>FILL_LABEL_N1FRLTXT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Button Fill Indicator that Long Text Exists for Questions</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>FILL_LABEL_N1FRLTXT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Button Fill Indicator that Long Text Exists for Questions</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>FILL_LABEL_N1KALTXT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Button KZ ob Langtext vorhanden für Kurzanamnese befüllen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>FILL_LABEL_N1KALTXT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Button Fill Indicator that Long Text Exists for Short Anamn.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>FILL_LABEL_N1KALTXT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Button Fill Indicator that Long Text Exists for Short Anamn.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_DILTX_BUTTON</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Text Langtextbutton &quot;Diagnose&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_DILTX_BUTTON</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Text Long Text Button &quot;Diagnoses&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_DILTX_BUTTON</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Text Long Text Button &quot;Diagnoses&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_DILTX_MORE_BUTTON</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anzeige Button &quot;Weitere Diagnosen&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_DILTX_MORE_BUTTON</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Display Button &quot;More Diagnoses&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_DILTX_MORE_BUTTON</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Display Button &quot;More Diagnoses&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_FIELDNAME_DITXT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feldname für DITXT</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_FIELDNAME_DITXT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Name for DITXT</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_FIELDNAME_DITXT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Field Name for DITXT</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_FIELDNAME_FRAGE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feldname für FRAGE</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_FIELDNAME_FRAGE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Name for FRAGE</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_FIELDNAME_FRAGE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Field Name for FRAGE</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_FIELDNAME_IFG</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feldname für IFG</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_FIELDNAME_IFG</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Name for IFG</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_FIELDNAME_IFG</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Field Name for IFG</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_FIELDNAME_KANAM</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feldname für KANAM</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_FIELDNAME_KANAM</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Name for KANAM</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_FIELDNAME_KANAM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Field Name for KANAM</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_FIELDNAME_MORE_DIA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Feldname</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_FIELDNAME_MORE_DIA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Field Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_FIELDNAME_MORE_DIA</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Field Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_FIELDNAME_N1DILTXT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feldname für N1DILTXT</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_FIELDNAME_N1DILTXT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Name for N1DILTXT</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_FIELDNAME_N1DILTXT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Field Name for N1DILTXT</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_FIELDNAME_N1FRLTXT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feldname für N1FRLTXT</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_FIELDNAME_N1FRLTXT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Name for N1FRLTXT</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_FIELDNAME_N1FRLTXT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Field Name for N1FRLTXT</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_FIELDNAME_N1KALTXT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feldname für N1KALTXT</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_FIELDNAME_N1KALTXT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Name for N1KALTXT</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_FIELDNAME_N1KALTXT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Field Name for N1KALTXT</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_FIELDNAME_RISK_FACTS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Feldname</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_FIELDNAME_RISK_FACTS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Field Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_FIELDNAME_RISK_FACTS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Field Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_FIELDNAME_SCHWKZ</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feldname für SCHWKZ</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_FIELDNAME_SCHWKZ</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Name for SCHWKZ</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_FIELDNAME_SCHWKZ</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Field Name for SCHWKZ</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_FIELDNAME_SCHWO</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feldname für SCHWO</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_FIELDNAME_SCHWO</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Name for SCHWO</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_FIELDNAME_SCHWO</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Field Name for SCHWO</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_FRLTX_BUTTON</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Text Langtextbutton &quot;Fragestellung&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_FRLTX_BUTTON</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Text Long Text Button &quot;Question&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_FRLTX_BUTTON</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Text Long Text Button &quot;Question&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_ISHMED_AUTH</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>KZ IS-H*MED aktiv</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_ISHMED_AUTH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Indicator IS-H*MED Active</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_ISHMED_AUTH</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Indicator IS-H*MED Active</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_KALTX_BUTTON</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Text Langtextbutton &quot;Kurzanamnese&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_KALTX_BUTTON</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Text Long Text Button &quot;Short Anamnesis&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_KALTX_BUTTON</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Text Long Text Button &quot;Short Anamnesis&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_PREFIX_FIELDNAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Feldname</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_PREFIX_FIELDNAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Field Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>G_PREFIX_FIELDNAME</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Field Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>ICON_CREATE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Icon anlegen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>ICON_CREATE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Create Icon</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>ICON_CREATE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Create Icon</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>VALUE_REQUEST_DITXT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>F4-Hilfe für Diagnose</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>VALUE_REQUEST_DITXT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>F4 Help for Diagnosis</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_MED_DATA</CLSNAME>
+     <CMPNAME>VALUE_REQUEST_DITXT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>F4 Help for Diagnosis</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

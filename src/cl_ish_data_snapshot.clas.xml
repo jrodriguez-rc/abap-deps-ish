@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_DATA_SNAPSHOT</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: Snapshot Object for Data Classes</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>This method contains basic functions for the snapshot mechanism, i.e.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>the temporary noting and restoring of object statuses.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Diese Methode beinhaltet Basisfunktionalität für den</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Snapshot-Mechanismus, d.h. das temporäre Merken und Wiederherstellen von</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Objektzuständen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DATA_SNAPSHOT</CLSNAME>
+     <CMPNAME>GET_ACTIVE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert das ACTIVE Kennzeichen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DATA_SNAPSHOT</CLSNAME>
+     <CMPNAME>GET_ACTIVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Supplies the ACTIVE Indicator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DATA_SNAPSHOT</CLSNAME>
+     <CMPNAME>GET_ACTIVE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Supplies the ACTIVE Indicator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DATA_SNAPSHOT</CLSNAME>
+     <CMPNAME>GET_MODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert das MODE Kennzeichen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DATA_SNAPSHOT</CLSNAME>
+     <CMPNAME>GET_MODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Supplies the MODE Indicator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DATA_SNAPSHOT</CLSNAME>
+     <CMPNAME>GET_MODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Supplies the MODE Indicator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DATA_SNAPSHOT</CLSNAME>
+     <CMPNAME>G_ACTIVE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Boolscher Datentyp für ON (= &apos;X&apos;) und OFF (=&apos; &apos;)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DATA_SNAPSHOT</CLSNAME>
+     <CMPNAME>G_ACTIVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Boolean Data Type for ON (= &quot;X&quot;) and OFF (= &quot; &quot;)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DATA_SNAPSHOT</CLSNAME>
+     <CMPNAME>G_ACTIVE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Boolean Data Type for ON (= &quot;X&quot;) and OFF (= &quot; &quot;)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DATA_SNAPSHOT</CLSNAME>
+     <CMPNAME>G_MODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Bearbeitungsmodus von Datensätzen (I/U/D)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DATA_SNAPSHOT</CLSNAME>
+     <CMPNAME>G_MODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Processing Mode for Data Records (I/U/D)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DATA_SNAPSHOT</CLSNAME>
+     <CMPNAME>G_MODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Processing Mode for Data Records (I/U/D)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DATA_SNAPSHOT</CLSNAME>
+     <CMPNAME>SET_ACTIVE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt das ACTIVE Kennzeichen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DATA_SNAPSHOT</CLSNAME>
+     <CMPNAME>SET_ACTIVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the ACTIVE Indicator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DATA_SNAPSHOT</CLSNAME>
+     <CMPNAME>SET_ACTIVE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the ACTIVE Indicator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DATA_SNAPSHOT</CLSNAME>
+     <CMPNAME>SET_MODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt das MODE Kennzeichen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DATA_SNAPSHOT</CLSNAME>
+     <CMPNAME>SET_MODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the MODE Indicator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DATA_SNAPSHOT</CLSNAME>
+     <CMPNAME>SET_MODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the MODE Indicator</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

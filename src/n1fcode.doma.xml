@@ -1,0 +1,1870 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DOMA" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD01V>
+    <DOMNAME>N1FCODE</DOMNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DATATYPE>CHAR</DATATYPE>
+    <LENG>000020</LENG>
+    <OUTPUTLEN>000020</OUTPUTLEN>
+    <VALEXI>X</VALEXI>
+    <DDTEXT>IS-H: Function Code to be Executed</DDTEXT>
+   </DD01V>
+   <DD07V_TAB>
+    <DD07V>
+     <VALPOS>0001</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>AAAE</DOMVALUE_L>
+     <DDTEXT>Change Outpatient Admission</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0002</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>AAAL</DOMVALUE_L>
+     <DDTEXT>Create Outpatient Admission</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0003</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>AAAZ</DOMVALUE_L>
+     <DDTEXT>Display Outpatient Admission</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0004</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>AKAE</DOMVALUE_L>
+     <DDTEXT>Change Outpatient Quick Admission</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0005</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>AKAL</DOMVALUE_L>
+     <DDTEXT>Create Outpatient Quick Admission</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0006</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>AKAZ</DOMVALUE_L>
+     <DDTEXT>Display Outpatient Quick Admission</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0007</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>AMPO</DOMVALUE_L>
+     <DDTEXT>Outpatient Clinic Folder (in Patient Organizer)</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0008</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>ANAE</DOMVALUE_L>
+     <DDTEXT>Change Outpatient Emergency Admission</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0009</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>ANAL</DOMVALUE_L>
+     <DDTEXT>Create Outpatient Emergency Admission</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0010</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>ANAZ</DOMVALUE_L>
+     <DDTEXT>Display Outpatient Emergency Admission</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0011</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>APP_CHGDOC</DOMVALUE_L>
+     <DDTEXT>Display Change Documents for Appointment(s)</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0012</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>APP_SEARCH</DOMVALUE_L>
+     <DDTEXT>Find Appointment MED</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0013</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>CASE_ASS</DOMVALUE_L>
+     <DDTEXT>Assign Case</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0014</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>CHAIN_CANC</DOMVALUE_L>
+     <DDTEXT>Cancel Series</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0015</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>CHAIN_DIS</DOMVALUE_L>
+     <DDTEXT>Display Series</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0016</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>CHAIN_UPD</DOMVALUE_L>
+     <DDTEXT>Change Series</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0017</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>COMMENTS</DOMVALUE_L>
+     <DDTEXT>Comments</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0018</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>CORDD</DOMVALUE_L>
+     <DDTEXT>Display Clinical Order</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0019</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>CORDI</DOMVALUE_L>
+     <DDTEXT>Create Clinical Order</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0020</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>CORDP_CORA</DOMVALUE_L>
+     <DDTEXT>Clinical Order Detail Print (Choose Form...)</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0021</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>CORDP_CORD</DOMVALUE_L>
+     <DDTEXT>Clinical Order Detail Print (Standard Form)</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0022</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>CORDP_CPOA</DOMVALUE_L>
+     <DDTEXT>Clinical Order Item Print (Choose Form...)</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0023</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>CORDP_CPOS</DOMVALUE_L>
+     <DDTEXT>Clinical Order Item Print (Standard Form)</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0024</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>CORDP_PROT</DOMVALUE_L>
+     <DDTEXT>Print Clinical Order (Log)</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0025</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>CORDP_STD</DOMVALUE_L>
+     <DDTEXT>Clinical Order Overview Print (Standard Form)</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0026</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>CORDP_USER</DOMVALUE_L>
+     <DDTEXT>Clinical Order Overview Print (Choose Form...)</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0027</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>CORDS</DOMVALUE_L>
+     <DDTEXT>Find Clinical Order</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0028</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>CORDU</DOMVALUE_L>
+     <DDTEXT>Change Clinical Order</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0029</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>CPOS_CAN</DOMVALUE_L>
+     <DDTEXT>Clinical Order Item - Cancel</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0030</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>CPOS_NSTAT</DOMVALUE_L>
+     <DDTEXT>Clinical Order Item - Set Subsequent Status</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0031</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>CWD_DIS</DOMVALUE_L>
+     <DDTEXT>Clinic WinData Display Examination</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0032</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>CWD_UPD</DOMVALUE_L>
+     <DDTEXT>Clinic WinData Edit Examination</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0033</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>CYCDIS</DOMVALUE_L>
+     <DDTEXT>Display Cycle (for Service)</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0034</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>CYCEND</DOMVALUE_L>
+     <DDTEXT>Exit Cycle (for Service)</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0035</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>CYCINS</DOMVALUE_L>
+     <DDTEXT>Create Cycle (for Service)</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0036</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>CYCUPD</DOMVALUE_L>
+     <DDTEXT>Change Cycle (for Service)</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0037</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>DIAG</DOMVALUE_L>
+     <DDTEXT>Diagnosis Overview</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0038</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>DOCD</DOMVALUE_L>
+     <DDTEXT>Display Document</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0039</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>DOCI</DOMVALUE_L>
+     <DDTEXT>Create Document</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0040</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>DOCU</DOMVALUE_L>
+     <DDTEXT>Change Document</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0041</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>DOLF</DOMVALUE_L>
+     <DDTEXT>Case-Related Document List</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0042</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>DOLP</DOMVALUE_L>
+     <DDTEXT>Patient-Related Document List</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0043</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>DOLS</DOMVALUE_L>
+     <DDTEXT>Document List</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0044</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>IFG_POP</DOMVALUE_L>
+     <DDTEXT>Degree of Infection Dialog Box</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0045</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>LAB_DATA</DOMVALUE_L>
+     <DDTEXT>Laboratory Cumulative Findings</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0046</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>LTXT_SCR</DOMVALUE_L>
+     <DDTEXT>SAPscript Long Text Editor</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0047</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>MATE</DOMVALUE_L>
+     <DDTEXT>Exit Material Entry</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0048</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>MAVS</DOMVALUE_L>
+     <DDTEXT>Material Proposal (for a Service)</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0049</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>MEORDI</DOMVALUE_L>
+     <DDTEXT>Medication: Create Order</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0050</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>NBOP</DOMVALUE_L>
+     <DDTEXT>Create Secondary Surgery</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0051</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>NBSTORNO</DOMVALUE_L>
+     <DDTEXT>Cancel Secondary Surgery</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0052</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>OPAB</DOMVALUE_L>
+     <DDTEXT>Terminate Surgery (Cancel Appointment)</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0053</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>OPBEGON</DOMVALUE_L>
+     <DDTEXT>Start Surgery</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0054</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>OPDETAILS</DOMVALUE_L>
+     <DDTEXT>Display Surgery Details</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0055</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>OPDWS</DOMVALUE_L>
+     <DDTEXT>Surgery Work Station in DWS</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0056</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>OPMO</DOMVALUE_L>
+     <DDTEXT>Surgery Monitor</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0057</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>OPSIGN_F</DOMVALUE_L>
+     <DDTEXT>Set Surgery Indicator &quot;Planned Time Manually Set&quot;</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0058</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>OPSIGN_O</DOMVALUE_L>
+     <DDTEXT>Set Surgery Indicator &quot;Release by Surgeon&quot;</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0059</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>OPSIGN_P</DOMVALUE_L>
+     <DDTEXT>Set Surgery Indicator &quot;Premedication Complete&quot;</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0060</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>OPSTORNO</DOMVALUE_L>
+     <DDTEXT>Cancel Surgery</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0061</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>OUTP_SCHED</DOMVALUE_L>
+     <DDTEXT>Find Appointment</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0062</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>PATEIN</DOMVALUE_L>
+     <DDTEXT>Change Patient Consent</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0063</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>PAT_OPEN</DOMVALUE_L>
+     <DDTEXT>Open Items for Patient</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0064</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>PAUTH</DOMVALUE_L>
+     <DDTEXT>Planning Authority Dialog</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0065</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>PLAN</DOMVALUE_L>
+     <DDTEXT>Plan Appointment</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0066</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>PLANCHGDOC</DOMVALUE_L>
+     <DDTEXT>Display Change Documents for a Plan</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0067</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>PLAN_REL</DOMVALUE_L>
+     <DDTEXT>Release Plan</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0068</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>PORG</DOMVALUE_L>
+     <DDTEXT>Patient Organizer</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0069</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>PRED</DOMVALUE_L>
+     <DDTEXT>Display Preregistration (Clinical Order)</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0070</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>PREI</DOMVALUE_L>
+     <DDTEXT>Create Preregistration (Clinical Order)</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0071</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>PRES</DOMVALUE_L>
+     <DDTEXT>Find Preregistration (Preregistered Clinical Orders)</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0072</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>PREU</DOMVALUE_L>
+     <DDTEXT>Change Preregistration (Clinical Order)</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0073</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>PTS_INS</DOMVALUE_L>
+     <DDTEXT>Create Transport Order</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0074</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>PTS_INSO</DOMVALUE_L>
+     <DDTEXT>Create Transport Order Without Patient</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0075</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>PTS_RWTR</DOMVALUE_L>
+     <DDTEXT>Create Return/Further Transport</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0076</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>REQD</DOMVALUE_L>
+     <DDTEXT>Display Request</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0077</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>REQI</DOMVALUE_L>
+     <DDTEXT>Create Request</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0078</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>REQU</DOMVALUE_L>
+     <DDTEXT>Change Request</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0079</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>REQ_ELAF</DOMVALUE_L>
+     <DDTEXT>Enter Received Surgery Request</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0080</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>REQ_PRT_A</DOMVALUE_L>
+     <DDTEXT>Request Printout (Choose Form)</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0081</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>REQ_PRT_S</DOMVALUE_L>
+     <DDTEXT>Request Printout (Standard)</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0082</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>RISD</DOMVALUE_L>
+     <DDTEXT>Display Risk Factors</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0083</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>RISU</DOMVALUE_L>
+     <DDTEXT>Change Risk Factors</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0084</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>SAAE</DOMVALUE_L>
+     <DDTEXT>Change Inpatient Admission</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0085</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>SAAL</DOMVALUE_L>
+     <DDTEXT>Create Inpatient Admission</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0086</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>SAAZ</DOMVALUE_L>
+     <DDTEXT>Display Inpatient Admission</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0087</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>SERV_ERBR</DOMVALUE_L>
+     <DDTEXT>Perform Service(s)</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0088</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>SERV_QUIT</DOMVALUE_L>
+     <DDTEXT>Release Service(s)</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0089</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>SKAE</DOMVALUE_L>
+     <DDTEXT>Change Inpatient Quick Admission</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0090</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>SKAL</DOMVALUE_L>
+     <DDTEXT>Create Inpatient Quick Admission</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0091</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>SKAZ</DOMVALUE_L>
+     <DDTEXT>Display Inpatient Quick Display</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0092</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>SNAE</DOMVALUE_L>
+     <DDTEXT>Change Inpatient Emergency Admission</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0093</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>SNAL</DOMVALUE_L>
+     <DDTEXT>Create Inpatient Emergency Admission</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0094</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>SNAZ</DOMVALUE_L>
+     <DDTEXT>Display Inpatient Emergency Admission</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0095</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>SZTMK</DOMVALUE_L>
+     <DDTEXT>Set Time Stamps (Time Report)</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0096</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>TEAM</DOMVALUE_L>
+     <DDTEXT>Change Team</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0097</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>TEAM_DIS</DOMVALUE_L>
+     <DDTEXT>Display Team</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0098</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>TMNL</DOMVALUE_L>
+     <DDTEXT>Patient Appointments</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0099</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>VIEW</DOMVALUE_L>
+     <DDTEXT>Call View in Clinical Work Station</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0100</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>VPEF</DOMVALUE_L>
+     <DDTEXT>Enter Vital Sign Values</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0101</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>VPPO</DOMVALUE_L>
+     <DDTEXT>Display Vital Sign Values (in Patient Organizer)</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0102</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>VPSF</DOMVALUE_L>
+     <DDTEXT>Collective Entry Vital Sign Values</DDTEXT>
+    </DD07V>
+   </DD07V_TAB>
+   <I18N_LANGS>
+    <LANGU>D</LANGU>
+    <LANGU>S</LANGU>
+   </I18N_LANGS>
+   <DD01_TEXTS>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>IS-H: Auszuführender Funktionscode</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>IS-H: Código de función para ejecutar</DDTEXT>
+    </item>
+   </DD01_TEXTS>
+   <DD07_TEXTS>
+    <item>
+     <VALPOS>0001</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>AAAE</DOMVALUE_L>
+     <DDTEXT>Ambulante Aufnahme ändern</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0001</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>AAAE</DOMVALUE_L>
+     <DDTEXT>Modificar admisión ambulatoria</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0002</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>AAAL</DOMVALUE_L>
+     <DDTEXT>Ambulante Aufnahme anlegen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0002</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>AAAL</DOMVALUE_L>
+     <DDTEXT>Crear admisión ambulatoria</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0003</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>AAAZ</DOMVALUE_L>
+     <DDTEXT>Ambulante Aufnahme anzeigen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0003</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>AAAZ</DOMVALUE_L>
+     <DDTEXT>Visualizar admisión ambulatoria</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0004</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>AKAE</DOMVALUE_L>
+     <DDTEXT>Ambulante Kurzaufnahme ändern</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0004</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>AKAE</DOMVALUE_L>
+     <DDTEXT>Modificar admisión rápida ambulatoria</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0005</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>AKAL</DOMVALUE_L>
+     <DDTEXT>Ambulante Kurzaufnahme anlegen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0005</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>AKAL</DOMVALUE_L>
+     <DDTEXT>Crear admisión rápida ambulatoria</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0006</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>AKAZ</DOMVALUE_L>
+     <DDTEXT>Ambulante Kurzanahme anzeigen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0006</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>AKAZ</DOMVALUE_L>
+     <DDTEXT>Visualizar admisión rápida ambulatoria</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0007</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>AMPO</DOMVALUE_L>
+     <DDTEXT>Ambulanzkarte (im Patientenorganizer)</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0007</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>AMPO</DOMVALUE_L>
+     <DDTEXT>Ficha (en organizer de pacientes)</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0008</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>ANAE</DOMVALUE_L>
+     <DDTEXT>Ambulante Notaufnahme ändern</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0008</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>ANAE</DOMVALUE_L>
+     <DDTEXT>Modif.admisión urgencias ambulatoria</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0009</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>ANAL</DOMVALUE_L>
+     <DDTEXT>Ambulante Notaufnahme anlegen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0009</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>ANAL</DOMVALUE_L>
+     <DDTEXT>Crear admisión urgencias ambulatoria</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0010</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>ANAZ</DOMVALUE_L>
+     <DDTEXT>Ambulante Notaufnahme anzeigen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0010</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>ANAZ</DOMVALUE_L>
+     <DDTEXT>Visualiz.admisión urgencias ambulatoria</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0011</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>APP_CHGDOC</DOMVALUE_L>
+     <DDTEXT>Änderungsbelege für Termin(e) anzeigen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0011</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>APP_CHGDOC</DOMVALUE_L>
+     <DDTEXT>Visualizar documentos de modificación para citaciones</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0012</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>APP_SEARCH</DOMVALUE_L>
+     <DDTEXT>Termin suchen MED</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0012</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>APP_SEARCH</DOMVALUE_L>
+     <DDTEXT>Buscar citación MED</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0013</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>CASE_ASS</DOMVALUE_L>
+     <DDTEXT>Fall zuordnen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0013</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>CASE_ASS</DOMVALUE_L>
+     <DDTEXT>Asignar episodio</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0014</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>CHAIN_CANC</DOMVALUE_L>
+     <DDTEXT>Serie stornieren</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0014</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>CHAIN_CANC</DOMVALUE_L>
+     <DDTEXT>Anular la serie</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0015</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>CHAIN_DIS</DOMVALUE_L>
+     <DDTEXT>Serie anzeigen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0015</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>CHAIN_DIS</DOMVALUE_L>
+     <DDTEXT>Visualizar la serie</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0016</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>CHAIN_UPD</DOMVALUE_L>
+     <DDTEXT>Serie ändern</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0016</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>CHAIN_UPD</DOMVALUE_L>
+     <DDTEXT>Modificar la serie</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0017</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>COMMENTS</DOMVALUE_L>
+     <DDTEXT>Kommentare</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0017</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>COMMENTS</DOMVALUE_L>
+     <DDTEXT>Comentarios</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0018</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>CORDD</DOMVALUE_L>
+     <DDTEXT>Klinischen Auftrag anzeigen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0018</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>CORDD</DOMVALUE_L>
+     <DDTEXT>Visualizar orden clínica</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0019</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>CORDI</DOMVALUE_L>
+     <DDTEXT>Klinischen Auftrag anlegen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0019</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>CORDI</DOMVALUE_L>
+     <DDTEXT>Crear orden clínica</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0020</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>CORDP_CORA</DOMVALUE_L>
+     <DDTEXT>Klinischen Auftrag Detaildruck (Auswahl)</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0020</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>CORDP_CORA</DOMVALUE_L>
+     <DDTEXT>Imprimir orden clínica detallada (selección)</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0021</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>CORDP_CORD</DOMVALUE_L>
+     <DDTEXT>Klinischen Auftrag Detaildruck (Standard)</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0021</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>CORDP_CORD</DOMVALUE_L>
+     <DDTEXT>Imprimir orden clínica detallada (estándar)</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0022</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>CORDP_CPOA</DOMVALUE_L>
+     <DDTEXT>Klinischen Auftrag Positionsdruck (Auswahl)</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0022</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>CORDP_CPOA</DOMVALUE_L>
+     <DDTEXT>Imprimir posiciones orden clínica (selección)</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0023</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>CORDP_CPOS</DOMVALUE_L>
+     <DDTEXT>Klinischen Auftrag Positionsdruck (Standard)</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0023</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>CORDP_CPOS</DOMVALUE_L>
+     <DDTEXT>Imprimir posiciones orden clínica (estándar)</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0024</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>CORDP_PROT</DOMVALUE_L>
+     <DDTEXT>Klinischen Auftrag drucken (Protokoll)</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0024</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>CORDP_PROT</DOMVALUE_L>
+     <DDTEXT>Imprimir orden clínica (log)</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0025</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>CORDP_STD</DOMVALUE_L>
+     <DDTEXT>Klinischen Auftrag Übersichtsdruck (Standard)</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0025</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>CORDP_STD</DOMVALUE_L>
+     <DDTEXT>Imprimir resumen orden clínica (estándar)</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0026</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>CORDP_USER</DOMVALUE_L>
+     <DDTEXT>Klinischen Auftrag Übersichtsdruck (Auswahl)</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0026</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>CORDP_USER</DOMVALUE_L>
+     <DDTEXT>Imprimir resumen orden clínica (selección)</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0027</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>CORDS</DOMVALUE_L>
+     <DDTEXT>Klinischen Auftrag suchen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0027</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>CORDS</DOMVALUE_L>
+     <DDTEXT>Buscar orden clínica</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0028</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>CORDU</DOMVALUE_L>
+     <DDTEXT>Klinischen Auftrag ändern</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0028</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>CORDU</DOMVALUE_L>
+     <DDTEXT>Modificar orden clínica</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0029</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>CPOS_CAN</DOMVALUE_L>
+     <DDTEXT>Klinische Auftragsposition - Stornieren</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0029</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>CPOS_CAN</DOMVALUE_L>
+     <DDTEXT>Posición de orden clínica: Anular</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0030</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>CPOS_NSTAT</DOMVALUE_L>
+     <DDTEXT>Klinische Auftragsposition - Folgestatus setzen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0030</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>CPOS_NSTAT</DOMVALUE_L>
+     <DDTEXT>Posición de orden clínica: Fijar status siguiente</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0031</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>CWD_DIS</DOMVALUE_L>
+     <DDTEXT>Clinic WinData Untersuchung anzeigen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0031</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>CWD_DIS</DOMVALUE_L>
+     <DDTEXT>Clinic WinData Visualizar reconocimiento</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0032</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>CWD_UPD</DOMVALUE_L>
+     <DDTEXT>Clinic WinData Untersuchung bearbeiten</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0032</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>CWD_UPD</DOMVALUE_L>
+     <DDTEXT>Clinic WinData Tratar reconocimiento</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0033</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>CYCDIS</DOMVALUE_L>
+     <DDTEXT>Zyklus (zu Leistung) anzeigen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0033</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>CYCDIS</DOMVALUE_L>
+     <DDTEXT>Visualizar el ciclo (para la prestación)</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0034</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>CYCEND</DOMVALUE_L>
+     <DDTEXT>Zyklus (zu Leistung) beenden</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0034</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>CYCEND</DOMVALUE_L>
+     <DDTEXT>Finalizar el ciclo (para la prestación)</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0035</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>CYCINS</DOMVALUE_L>
+     <DDTEXT>Zyklus (zu Leistung) anlegen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0035</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>CYCINS</DOMVALUE_L>
+     <DDTEXT>Crear el ciclo (para la prestación)</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0036</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>CYCUPD</DOMVALUE_L>
+     <DDTEXT>Zyklus (zu Leistung) ändern</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0036</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>CYCUPD</DOMVALUE_L>
+     <DDTEXT>Modificar el ciclo (para la prestación)</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0037</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>DIAG</DOMVALUE_L>
+     <DDTEXT>Diagnosenübersicht</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0037</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>DIAG</DOMVALUE_L>
+     <DDTEXT>Resumen diagnósticos</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0038</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>DOCD</DOMVALUE_L>
+     <DDTEXT>Dokument anzeigen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0038</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>DOCD</DOMVALUE_L>
+     <DDTEXT>Visualizar documento</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0039</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>DOCI</DOMVALUE_L>
+     <DDTEXT>Dokument anlegen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0039</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>DOCI</DOMVALUE_L>
+     <DDTEXT>Crear documento</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0040</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>DOCU</DOMVALUE_L>
+     <DDTEXT>Dokument ändern</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0040</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>DOCU</DOMVALUE_L>
+     <DDTEXT>Modificar documento</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0041</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>DOLF</DOMVALUE_L>
+     <DDTEXT>Dokumentenliste fallbezogen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0041</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>DOLF</DOMVALUE_L>
+     <DDTEXT>Lista de documentos por episodio</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0042</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>DOLP</DOMVALUE_L>
+     <DDTEXT>Dokumentenliste patientenbezogen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0042</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>DOLP</DOMVALUE_L>
+     <DDTEXT>Lista de documentos por paciente</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0043</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>DOLS</DOMVALUE_L>
+     <DDTEXT>Dokumentenliste</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0043</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>DOLS</DOMVALUE_L>
+     <DDTEXT>Lista documentos</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0044</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>IFG_POP</DOMVALUE_L>
+     <DDTEXT>Infektionsgrad-Popup</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0044</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>IFG_POP</DOMVALUE_L>
+     <DDTEXT>Ventana de diálogo grado de infección</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0045</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>LAB_DATA</DOMVALUE_L>
+     <DDTEXT>Laborkummulativbefund</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0045</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>LAB_DATA</DOMVALUE_L>
+     <DDTEXT>Resultado acumulado de laboratorio</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0046</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>LTXT_SCR</DOMVALUE_L>
+     <DDTEXT>Sapscript-Langtext-Editor</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0046</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>LTXT_SCR</DOMVALUE_L>
+     <DDTEXT>Editor texto explicativos de Sapscript</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0047</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>MATE</DOMVALUE_L>
+     <DDTEXT>Materialerfassung beenden</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0047</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>MATE</DOMVALUE_L>
+     <DDTEXT>Finalizar entrada material</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0048</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>MAVS</DOMVALUE_L>
+     <DDTEXT>Materialvorschlag (zu einer Leistung)</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0048</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>MAVS</DOMVALUE_L>
+     <DDTEXT>Propuesta de material (para una prestación)</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0049</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>MEORDI</DOMVALUE_L>
+     <DDTEXT>Medikation: Verordnung anlegen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0049</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>MEORDI</DOMVALUE_L>
+     <DDTEXT>Medicación: Crear prescripción</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0050</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>NBOP</DOMVALUE_L>
+     <DDTEXT>Neben-OP anlegen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0050</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>NBOP</DOMVALUE_L>
+     <DDTEXT>Crear IQ secundaria</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0051</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>NBSTORNO</DOMVALUE_L>
+     <DDTEXT>Neben-OP stornieren</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0051</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>NBSTORNO</DOMVALUE_L>
+     <DDTEXT>Anular IQ secundaria</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0052</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>OPAB</DOMVALUE_L>
+     <DDTEXT>OP absetzen (Termin stornieren)</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0052</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>OPAB</DOMVALUE_L>
+     <DDTEXT>Dar salida a IQ (anular citación)</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0053</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>OPBEGON</DOMVALUE_L>
+     <DDTEXT>OP beginnen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0053</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>OPBEGON</DOMVALUE_L>
+     <DDTEXT>Iniciar IQ</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0054</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>OPDETAILS</DOMVALUE_L>
+     <DDTEXT>OP Details anzeigen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0054</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>OPDETAILS</DOMVALUE_L>
+     <DDTEXT>Visualizar detalles IQ</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0055</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>OPDWS</DOMVALUE_L>
+     <DDTEXT>OP-Arbeitsplatz im DWS</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0055</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>OPDWS</DOMVALUE_L>
+     <DDTEXT>Lugar de trabajo IQ en puesto de trabajo dedocumentación</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0056</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>OPMO</DOMVALUE_L>
+     <DDTEXT>OP-Monitor</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0056</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>OPMO</DOMVALUE_L>
+     <DDTEXT>Monitor IQ</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0057</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>OPSIGN_F</DOMVALUE_L>
+     <DDTEXT>OP-Kennzeichen &apos;Planzeit manuell fixiert&apos; setzen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0057</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>OPSIGN_F</DOMVALUE_L>
+     <DDTEXT>Fijar indicador IQ &quot;Tiempo planificado fijado manualmente&quot;</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0058</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>OPSIGN_O</DOMVALUE_L>
+     <DDTEXT>OP-Kennzeichen &apos;Freigabe Operateur&apos; setzen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0058</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>OPSIGN_O</DOMVALUE_L>
+     <DDTEXT>Fijar indicador IQ &apos;Liberación cirujano&apos;</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0059</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>OPSIGN_P</DOMVALUE_L>
+     <DDTEXT>OP-Kennzeichen &apos;Prämedikation vollständig&apos; setzen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0059</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>OPSIGN_P</DOMVALUE_L>
+     <DDTEXT>Fijar indicador IQ &apos;Premedicación completa&apos;</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0060</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>OPSTORNO</DOMVALUE_L>
+     <DDTEXT>OP stornieren</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0060</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>OPSTORNO</DOMVALUE_L>
+     <DDTEXT>Anular IQ</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0061</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>OUTP_SCHED</DOMVALUE_L>
+     <DDTEXT>Termin suchen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0061</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>OUTP_SCHED</DOMVALUE_L>
+     <DDTEXT>Buscar la citación</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0062</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>PATEIN</DOMVALUE_L>
+     <DDTEXT>Einwilligung Patient umsetzen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0062</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>PATEIN</DOMVALUE_L>
+     <DDTEXT>Convertir consentimiento del paciente</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0063</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>PAT_OPEN</DOMVALUE_L>
+     <DDTEXT>Patient Offene Punkte</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0063</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>PAT_OPEN</DOMVALUE_L>
+     <DDTEXT>Puntos pendientes para un paciente</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0064</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>PAUTH</DOMVALUE_L>
+     <DDTEXT>Dialog Planungsauthorität</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0064</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>PAUTH</DOMVALUE_L>
+     <DDTEXT>Diálogo autoridad de planificación</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0065</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>PLAN</DOMVALUE_L>
+     <DDTEXT>Termin planen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0065</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>PLAN</DOMVALUE_L>
+     <DDTEXT>Planificar la citación</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0066</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>PLANCHGDOC</DOMVALUE_L>
+     <DDTEXT>Änderungsbelege für einen Plan anzeigen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0066</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>PLANCHGDOC</DOMVALUE_L>
+     <DDTEXT>Visualizar los documentos de modificación para un plan</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0067</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>PLAN_REL</DOMVALUE_L>
+     <DDTEXT>Planfreigabe</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0067</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>PLAN_REL</DOMVALUE_L>
+     <DDTEXT>Liberación de plan</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0068</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>PORG</DOMVALUE_L>
+     <DDTEXT>Patientenorganizer</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0068</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>PORG</DOMVALUE_L>
+     <DDTEXT>Organizer pacientes</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0069</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>PRED</DOMVALUE_L>
+     <DDTEXT>Vormerkung (Klinischen Auftrag) anzeigen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0069</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>PRED</DOMVALUE_L>
+     <DDTEXT>Visualizar preadmisión (orden clínica)</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0070</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>PREI</DOMVALUE_L>
+     <DDTEXT>Vormerkung (Klinischen Auftrag) anlegen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0070</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>PREI</DOMVALUE_L>
+     <DDTEXT>Crear preadmisión (orden clínica)</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0071</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>PRES</DOMVALUE_L>
+     <DDTEXT>Vormerkung (vorgemerkte Klinische Aufträge) suchen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0071</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>PRES</DOMVALUE_L>
+     <DDTEXT>Buscar preadmisión (órdenes clínicas reservadas)</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0072</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>PREU</DOMVALUE_L>
+     <DDTEXT>Vormerkung (Klinischen Auftrag) ändern</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0072</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>PREU</DOMVALUE_L>
+     <DDTEXT>Modificar preadmisión (orden clínica)</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0073</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>PTS_INS</DOMVALUE_L>
+     <DDTEXT>Fahrauftrag anlegen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0073</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>PTS_INS</DOMVALUE_L>
+     <DDTEXT>Crear orden de transporte</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0074</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>PTS_INSO</DOMVALUE_L>
+     <DDTEXT>Fahrauftrag ohne Patient anlegen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0074</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>PTS_INSO</DOMVALUE_L>
+     <DDTEXT>Crear orden de transporte sin paciente</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0075</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>PTS_RWTR</DOMVALUE_L>
+     <DDTEXT>Rück-/Weitertransport anlegen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0075</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>PTS_RWTR</DOMVALUE_L>
+     <DDTEXT>Crear transporte inverso/subsiguiente</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0076</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>REQD</DOMVALUE_L>
+     <DDTEXT>Anforderung anzeigen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0076</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>REQD</DOMVALUE_L>
+     <DDTEXT>Visualizar la solicitud</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0077</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>REQI</DOMVALUE_L>
+     <DDTEXT>Anforderung anlegen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0077</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>REQI</DOMVALUE_L>
+     <DDTEXT>Crear solicitud</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0078</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>REQU</DOMVALUE_L>
+     <DDTEXT>Anforderung ändern</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0078</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>REQU</DOMVALUE_L>
+     <DDTEXT>Modificar la solicitud</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0079</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>REQ_ELAF</DOMVALUE_L>
+     <DDTEXT>Eingelangte OP-Anforderung erfassen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0079</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>REQ_ELAF</DOMVALUE_L>
+     <DDTEXT>Registrar solicitud IQ entrada</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0080</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>REQ_PRT_A</DOMVALUE_L>
+     <DDTEXT>Anforderungsdruck (Auswahl)</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0080</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>REQ_PRT_A</DOMVALUE_L>
+     <DDTEXT>Impresión de solicitud (selección)</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0081</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>REQ_PRT_S</DOMVALUE_L>
+     <DDTEXT>Anforderungsdruck (Standard)</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0081</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>REQ_PRT_S</DOMVALUE_L>
+     <DDTEXT>Impresión de solicitud (estándar)</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0082</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>RISD</DOMVALUE_L>
+     <DDTEXT>Risikofaktoren anzeigen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0082</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>RISD</DOMVALUE_L>
+     <DDTEXT>Visualizar factores de riesgo</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0083</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>RISU</DOMVALUE_L>
+     <DDTEXT>Risikofaktoren ändern</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0083</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>RISU</DOMVALUE_L>
+     <DDTEXT>Modificar factores de riesgo</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0084</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>SAAE</DOMVALUE_L>
+     <DDTEXT>Stationäre Aufnahme ändern</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0084</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>SAAE</DOMVALUE_L>
+     <DDTEXT>Modificar admisión de hospitalización</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0085</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>SAAL</DOMVALUE_L>
+     <DDTEXT>Stationäre Aufnahme anlegen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0085</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>SAAL</DOMVALUE_L>
+     <DDTEXT>Crear admisión hospitaliz.</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0086</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>SAAZ</DOMVALUE_L>
+     <DDTEXT>Stationäre Aufnahme anzeigen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0086</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>SAAZ</DOMVALUE_L>
+     <DDTEXT>Visual.admisión pcte.hospitalizado</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0087</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>SERV_ERBR</DOMVALUE_L>
+     <DDTEXT>Leistung(en) erbringen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0087</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>SERV_ERBR</DOMVALUE_L>
+     <DDTEXT>Gestionar prestación(es)</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0088</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>SERV_QUIT</DOMVALUE_L>
+     <DDTEXT>Leistung(en) freigeben</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0088</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>SERV_QUIT</DOMVALUE_L>
+     <DDTEXT>Liberar prestación(es)</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0089</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>SKAE</DOMVALUE_L>
+     <DDTEXT>Stationäre Kurzaufnahme ändern</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0089</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>SKAE</DOMVALUE_L>
+     <DDTEXT>Modificar admisión rápida hospitalizado</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0090</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>SKAL</DOMVALUE_L>
+     <DDTEXT>Stationäre Kurzaufnahme anlegen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0090</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>SKAL</DOMVALUE_L>
+     <DDTEXT>Crear admisión rápida hospitalizado</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0091</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>SKAZ</DOMVALUE_L>
+     <DDTEXT>Stationäre Kurzaufnahme anzeigen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0091</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>SKAZ</DOMVALUE_L>
+     <DDTEXT>Visualizar admisión rápida hospitalizado</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0092</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>SNAE</DOMVALUE_L>
+     <DDTEXT>Stationäre Notaufnahme ändern</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0092</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>SNAE</DOMVALUE_L>
+     <DDTEXT>Modificar admisión urgencias hospitaliz.</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0093</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>SNAL</DOMVALUE_L>
+     <DDTEXT>Stationäre Notaufnahme anlegen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0093</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>SNAL</DOMVALUE_L>
+     <DDTEXT>Crear admisión urgencias hospitalizado</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0094</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>SNAZ</DOMVALUE_L>
+     <DDTEXT>Stationäre Notaufnahme anzeigen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0094</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>SNAZ</DOMVALUE_L>
+     <DDTEXT>Visualizar admisión urgencias hospitalizado</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0095</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>SZTMK</DOMVALUE_L>
+     <DDTEXT>Zeitmarken setzen (Zeitenreport)</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0095</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>SZTMK</DOMVALUE_L>
+     <DDTEXT>Fijar marcas tiempo (report tiempos)</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0096</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>TEAM</DOMVALUE_L>
+     <DDTEXT>Team ändern</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0096</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>TEAM</DOMVALUE_L>
+     <DDTEXT>Modificar equipo</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0097</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>TEAM_DIS</DOMVALUE_L>
+     <DDTEXT>Team anzeigen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0097</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>TEAM_DIS</DOMVALUE_L>
+     <DDTEXT>Visualizar equipo</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0098</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>TMNL</DOMVALUE_L>
+     <DDTEXT>Terminkalender Patient</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0098</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>TMNL</DOMVALUE_L>
+     <DDTEXT>Agenda de paciente</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0099</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>VIEW</DOMVALUE_L>
+     <DDTEXT>Sicht im Klinischen Arbeitsplatz aufrufen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0099</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>VIEW</DOMVALUE_L>
+     <DDTEXT>Llamar vista en puesto trabajo clínico</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0100</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>VPEF</DOMVALUE_L>
+     <DDTEXT>Vitalwerte erfassen</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0100</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>VPEF</DOMVALUE_L>
+     <DDTEXT>Registrar valores vitales</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0101</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>VPPO</DOMVALUE_L>
+     <DDTEXT>Vitalwerte anzeigen (im Patientenorganizer)</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0101</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>VPPO</DOMVALUE_L>
+     <DDTEXT>Visualizar valores vitales (en organizer de pacientes)</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0102</VALPOS>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DOMVALUE_L>VPSF</DOMVALUE_L>
+     <DDTEXT>Vitalwerte Sammelerfassung</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0102</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>VPSF</DOMVALUE_L>
+     <DDTEXT>Entrada colectiva valores vitales</DDTEXT>
+    </item>
+   </DD07_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

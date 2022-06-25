@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_FB_ISHMED_TC_CHECK</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Class for BAdI: ISHMED_TC_CHECK</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>100</KEY>
+     <ENTRY>Match with matrix found (inpatient)</ENTRY>
+     <LENGTH>72</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>101</KEY>
+     <ENTRY>Match with matrix found (inpatient) - follow-up period</ENTRY>
+     <LENGTH>72</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>102</KEY>
+     <ENTRY>Match with matrix found (outpatient)</ENTRY>
+     <LENGTH>72</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>103</KEY>
+     <ENTRY>Match with matrix found (outpatient) - follow-up period</ENTRY>
+     <LENGTH>72</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>104</KEY>
+     <ENTRY>Match with matrix found</ENTRY>
+     <LENGTH>72</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>105</KEY>
+     <ENTRY>Match with matrix found - follow-up period</ENTRY>
+     <LENGTH>72</LENGTH>
+    </item>
+   </TPOOL>
+   <I18N_TPOOL>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>100</KEY>
+       <ENTRY>Übereinstimmung mit Matrix gefunden (stat.)</ENTRY>
+       <LENGTH>72</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>101</KEY>
+       <ENTRY>Übereinstimmung mit Matrix gefunden (stat.) - Nachlaufzeit</ENTRY>
+       <LENGTH>72</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>102</KEY>
+       <ENTRY>Übereinstimmung mit Matrix gefunden (amb.)</ENTRY>
+       <LENGTH>72</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>103</KEY>
+       <ENTRY>Übereinstimmung mit Matrix gefunden (amb.) - Nachlaufzeit</ENTRY>
+       <LENGTH>72</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>104</KEY>
+       <ENTRY>Übereinstimmung mit Matrix gefunden</ENTRY>
+       <LENGTH>72</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>105</KEY>
+       <ENTRY>Übereinstimmung mit Matrix gefunden  - Nachlaufzeit</ENTRY>
+       <LENGTH>72</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>S</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>100</KEY>
+       <ENTRY>Existe conformidad con matriz (hospitalizado)</ENTRY>
+       <LENGTH>72</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>101</KEY>
+       <ENTRY>Existe conformidad con matriz (hospitalizado) - Período posterior</ENTRY>
+       <LENGTH>72</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>102</KEY>
+       <ENTRY>Existe conformidad con matriz (ambulatorio)</ENTRY>
+       <LENGTH>72</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>103</KEY>
+       <ENTRY>Existe conformidad con matriz (ambulatorio) - Período posterior</ENTRY>
+       <LENGTH>72</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>104</KEY>
+       <ENTRY>Existe conformidad con matriz</ENTRY>
+       <LENGTH>72</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>105</KEY>
+       <ENTRY>Existe conformidad con matriz - Período posterior</ENTRY>
+       <LENGTH>72</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+   </I18N_TPOOL>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_CHECK</CLSNAME>
+     <CMPNAME>CHECK_APPOINTMENTS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Behandlungsauftrag auf Grund der Patiententermine erteilen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_CHECK</CLSNAME>
+     <CMPNAME>CHECK_APPOINTMENTS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Issue Treatment Contract Based on Patient Appointments</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_CHECK</CLSNAME>
+     <CMPNAME>CHECK_MOVEMENTS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Behandlungsauftrag auf Grund der Bewegungen erteilen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_CHECK</CLSNAME>
+     <CMPNAME>CHECK_MOVEMENTS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Issue Treatment Authorization Based on Movements</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_CHECK</CLSNAME>
+     <CMPNAME>CHECK_PREREGISTRATIONS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Behandlungsauftrag auf Grund der Vormerkungen erteilen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_CHECK</CLSNAME>
+     <CMPNAME>CHECK_PREREGISTRATIONS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Issue Treatment Contract Based on Preregistrations</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_CHECK</CLSNAME>
+     <CMPNAME>GRT_PREREG_STATUS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Tabelle mit Status, die aktive Vormerkung  kennzeichnen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_CHECK</CLSNAME>
+     <CMPNAME>GRT_PREREG_STATUS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table with Statuses Indicating Active Preregistrations</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

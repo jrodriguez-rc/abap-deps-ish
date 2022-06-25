@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_LB_RFSRC</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: List Box for Referral Types</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_LB_RFSRC</CLSNAME>
+     <CMPNAME>FILL_LISTBOX</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Listbox mit verfügbaren Einweisungsarten befüllen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_LB_RFSRC</CLSNAME>
+     <CMPNAME>FILL_LISTBOX</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Fill List Box with Available Referral Types</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_LB_RFSRC</CLSNAME>
+     <CMPNAME>FILL_LISTBOX</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Fill List Box with Available Referral Types</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_LB_RFSRC</CLSNAME>
+     <CMPNAME>G_BEWTY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Bewegungstyp</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_LB_RFSRC</CLSNAME>
+     <CMPNAME>G_BEWTY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Movement Category</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_LB_RFSRC</CLSNAME>
+     <CMPNAME>G_BEWTY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Movement Category</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_LB_RFSRC</CLSNAME>
+     <CMPNAME>G_EINRI</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Einrichtung</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_LB_RFSRC</CLSNAME>
+     <CMPNAME>G_EINRI</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Institution</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_LB_RFSRC</CLSNAME>
+     <CMPNAME>G_EINRI</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Institution</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_LB_RFSRC</CLSNAME>
+     <CMPNAME>G_RFSRC</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Einweisungs-, Überweisungs-, Nachbehandlungsart</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_LB_RFSRC</CLSNAME>
+     <CMPNAME>G_RFSRC</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Referral, Postdischarge Treatment Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_LB_RFSRC</CLSNAME>
+     <CMPNAME>G_RFSRC</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Referral, Postdischarge Treatment Type</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

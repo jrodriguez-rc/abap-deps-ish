@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CUS0" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <CUS0>
+    <HEADER>
+     <ACTIVITY>ISHMED_CASE_VALID</ACTIVITY>
+     <DOCU_ID>SIMGISHMED_CHECK_CASE_VALID</DOCU_ID>
+     <ATTRIBUTES>ISHMED_CASE_VALID</ATTRIBUTES>
+     <C_ACTIVITY>ISHMED_CASE_VALID</C_ACTIVITY>
+     <TCODE>S_PRI_97000179</TCODE>
+    </HEADER>
+    <TEXTS>
+     <CUS_IMGACT>
+      <SPRAS>D</SPRAS>
+      <ACTIVITY>ISHMED_CASE_VALID</ACTIVITY>
+      <TEXT>BAdI: Gültigkeitsprüfung bei abgeschlossenem/abgerechnetem Fall</TEXT>
+     </CUS_IMGACT>
+     <CUS_IMGACT>
+      <SPRAS>E</SPRAS>
+      <ACTIVITY>ISHMED_CASE_VALID</ACTIVITY>
+      <TEXT>BAdI: Validity Check for Completed/Billed Case</TEXT>
+     </CUS_IMGACT>
+     <CUS_IMGACT>
+      <SPRAS>S</SPRAS>
+      <ACTIVITY>ISHMED_CASE_VALID</ACTIVITY>
+      <TEXT>BAdI: Verificación de validez para episodio concluido/facturado</TEXT>
+     </CUS_IMGACT>
+    </TEXTS>
+   </CUS0>
+  </asx:values>
+ </asx:abap>
+</abapGit>

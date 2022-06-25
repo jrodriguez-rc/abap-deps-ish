@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_UTL_BASE_DESCR</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: General Description Function</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>on</ENTRY>
+     <LENGTH>10</LENGTH>
+    </item>
+   </TPOOL>
+   <I18N_TPOOL>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>am</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>S</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>el</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+   </I18N_TPOOL>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_DESCR</CLSNAME>
+     <CMPNAME>CHECK_NORG_BPOM_BUFFER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Kurzbezeichnungen einer OE-Tabelle aus NORG_BPOM_BUFFER</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_DESCR</CLSNAME>
+     <CMPNAME>CHECK_NORG_BPOM_BUFFER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Short Descriptions of OU Table from NORG_BPOM_BUFFER</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_DESCR</CLSNAME>
+     <CMPNAME>GET_DESCR_BEKAT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermittlung der Kurzbezeichnung einer Behandlungskategorie</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_DESCR</CLSNAME>
+     <CMPNAME>GET_DESCR_BEKAT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Short Description of a Treatment Category</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_DESCR</CLSNAME>
+     <CMPNAME>GET_DESCR_BEWTY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermittlung der Beschreibung zu einem Bewegungstypen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_DESCR</CLSNAME>
+     <CMPNAME>GET_DESCR_BEWTY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Description of a Movement Category</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_DESCR</CLSNAME>
+     <CMPNAME>GET_DESCR_BWART</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermittlung der Beschreibung zur Bewegungsart</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_DESCR</CLSNAME>
+     <CMPNAME>GET_DESCR_BWART</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Description of the Movement Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_DESCR</CLSNAME>
+     <CMPNAME>GET_DESCR_KHANS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermittlung Krankenhausname &amp; Anschrift</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_DESCR</CLSNAME>
+     <CMPNAME>GET_DESCR_KHANS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Hospital Name &amp; Address</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_DESCR</CLSNAME>
+     <CMPNAME>GET_DESCR_MVMT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermittlung der Kurzbezeichnung einer Behandlungskategorie</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_DESCR</CLSNAME>
+     <CMPNAME>GET_DESCR_MVMT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Short Description of a Treatment Category</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_DESCR</CLSNAME>
+     <CMPNAME>GET_DESCR_ORGUNIT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermittlung der Kurzbezeichnung einer OE</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_DESCR</CLSNAME>
+     <CMPNAME>GET_DESCR_ORGUNIT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Short Description of an OU</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_DESCR</CLSNAME>
+     <CMPNAME>GET_DESCR_ORGUNIT_TABLE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermittlung der Kurzbezeichnungen einer OE-Tabelle</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_DESCR</CLSNAME>
+     <CMPNAME>GET_DESCR_ORGUNIT_TABLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Short Descriptions from OU Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_DESCR</CLSNAME>
+     <CMPNAME>GET_DESCR_PERSON</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Name of a Person</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_DESCR</CLSNAME>
+     <CMPNAME>GET_DESCR_PERSON</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Name of a Person</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_DESCR</CLSNAME>
+     <CMPNAME>GET_DESCR_ROOM</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermittlung der Kurzbezeichnung eines Raumes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_DESCR</CLSNAME>
+     <CMPNAME>GET_DESCR_ROOM</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Short Description of a Room</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

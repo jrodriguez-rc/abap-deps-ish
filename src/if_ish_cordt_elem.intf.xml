@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_INTF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOINTERF>
+    <CLSNAME>IF_ISH_CORDT_ELEM</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: Element of an Order Type</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <UNICODE>X</UNICODE>
+   </VSEOINTERF>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CORDT_ELEM</CLSNAME>
+     <CMPNAME>GET_ASS_TYPE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert den Typ eines Elements.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CORDT_ELEM</CLSNAME>
+     <CMPNAME>GET_ASS_TYPE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Supplies the Type of an Element</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CORDT_ELEM</CLSNAME>
+     <CMPNAME>GET_ASS_TYPE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Supplies the Type of an Element</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CORDT_ELEM</CLSNAME>
+     <CMPNAME>GET_ELEM_NAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Bezeichnung eines Elements als String.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CORDT_ELEM</CLSNAME>
+     <CMPNAME>GET_ELEM_NAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Supplies the Description of an Element as a String</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CORDT_ELEM</CLSNAME>
+     <CMPNAME>GET_ELEM_NAME</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Supplies the Description of an Element as a String</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CORDT_ELEM</CLSNAME>
+     <CMPNAME>GET_ELEM_TYPE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert den Typ eines Elements als String.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CORDT_ELEM</CLSNAME>
+     <CMPNAME>GET_ELEM_TYPE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Supplies the Type of an Element as a String</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CORDT_ELEM</CLSNAME>
+     <CMPNAME>GET_ELEM_TYPE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Supplies the Type of an Element as a String</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

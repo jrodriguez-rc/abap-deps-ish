@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>N1TC_DECAY_TIME</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <HEADLEN>03</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>14</SCRLEN2>
+    <SCRLEN3>20</SCRLEN3>
+    <DDTEXT>Expiry Time Negative Checks</DDTEXT>
+    <REPTEXT>Exp</REPTEXT>
+    <SCRTEXT_S>ExpiryTime</SCRTEXT_S>
+    <SCRTEXT_M>Expiry Time</SCRTEXT_M>
+    <SCRTEXT_L>Expiry Time in Sec.</SCRTEXT_L>
+    <DTELMASTER>D</DTELMASTER>
+    <DATATYPE>INT1</DATATYPE>
+    <LENG>000003</LENG>
+    <OUTPUTLEN>000003</OUTPUTLEN>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>D</LANGU>
+    <LANGU>S</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>Verfallszeit negativer Prüfungen</DDTEXT>
+     <REPTEXT>VS</REPTEXT>
+     <SCRTEXT_S>Verfallsz.</SCRTEXT_S>
+     <SCRTEXT_M>Verfallszeit</SCRTEXT_M>
+     <SCRTEXT_L>Verfallszeit in Sek.</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>Tiempo hasta caducidad verificaciones negativas</DDTEXT>
+     <REPTEXT>THC</REPTEXT>
+     <SCRTEXT_S>TmpoCad</SCRTEXT_S>
+     <SCRTEXT_M>TmpoHastaCad</SCRTEXT_M>
+     <SCRTEXT_L>TmpoHastaCadEnSeg</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>DE</ID>
+      <OBJECT>N1TC_DECAY_TIME</OBJECT>
+      <LANGU>D</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0009</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00012</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>N1TC_DECAY_TIME</TDNAME>
+      <TDID>DE</TDID>
+      <TDSPRAS>D</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00009</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEFINITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Um die Performance bei Listdarstellungen (Darstellung von mehreren</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Patienten) und Systemnavigation zu verbessern, können negative</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Prüfergebnisse bezüglich Behandlungsauftrag kurzfristig gepuffert</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>werden. Dieses Verhalten ist im Standard deaktiviert und kann im</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Customizing durch die Angabe einer Verfallszeit ( &gt; 0 Sekunden)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>aktiviert  werden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Der Maximalwert der Verfallszeit beträgt 255 Sekunden (4,3 Minuten).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEPENDENCIES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Dies führt im schlechtesten Fall dazu, dass ein Benutzer erst nach</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Ablauf dieser Verfallszeit auf die Daten des Patienten zugreifen kann,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>auch wenn er laut Datenlage schon berechtigt wäre.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Nach Ablauf der Verfallszeit erfolgt die Prüfung auf das Vorliegen eines</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Behandlungsauftrags erneut.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>DE</ID>
+      <OBJECT>N1TC_DECAY_TIME</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0009</VERSION>
+      <TXTLINES>00011</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>N1TC_DECAY_TIME</TDNAME>
+      <TDID>DE</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00009</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEFINITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>To improve system performance when displaying lists (listing several</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>patients) and in navigation, negative results of a treatment contract</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>check can be stored temporarily in the buffer. This behavior is not</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>activated in the standard system, but you can activate it in</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Customizing, specifying an expiry time (&gt; 0 seconds).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The maximum expiry time is 255 seconds (4.3 minutes).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEPENDENCIES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The worst case is that a user cannot access the patient&apos;s data until</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>this expiry time is past, even though the status of the data means they</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>should be authorized to access it.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Once the expiry time is past, the system checks again for a treatment</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>contract.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>DE</ID>
+      <OBJECT>N1TC_DECAY_TIME</OBJECT>
+      <LANGU>S</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0009</VERSION>
+      <TXTLINES>00014</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>N1TC_DECAY_TIME</TDNAME>
+      <TDID>DE</TDID>
+      <TDSPRAS>S</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00009</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEFINITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Para mejorar el rendimiento de las representaciones de listas</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(representación de varios pacientes) y de la navegación del sistema, p</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>uede grabar en memoria intermedia por un período corto de tiempo los</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>resultados de verificación negativos relativos a la orden de tr</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>atamiento.  Este comportamiento está desactivado en la versión estándar,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>pero puede activarse en el Customizing indicando un tiempo de expiración</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>( &gt; 0 segundos).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>El valor máximo del tiempo de expiración asciende a 255 segundos (4,3</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>minutos).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEPENDENCIES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>En el peor de los casos, esto provoca que el usuario puede acceder a los</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>datos del paciente solamente después del fin de este tiempo de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>expiración, aunque estuviera autorizado según la situación de los datos.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Después del tiempo de expiración se verifica de nuevo la existencia de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>una orden de tratamiento.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

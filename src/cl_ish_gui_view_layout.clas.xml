@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_GUI_VIEW_LAYOUT</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: GUI - Settings for a View</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Class CL_ISH_GUI_VIEW_LAYOUT is the abstract basic class for settings</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>for an &lt;DS:IF.IF_ISH_GUI_VIEW&gt;interface object&lt;/&gt; in a</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:IF.IF_ISH_GUI_APPLICATION&gt;dialog application&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Class CL_ISH_GUI_VIEW_LAYOUT inherits from class</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CL.CL_ISH_GUI_LAYOUT&gt;CL_ISH_GUI_LAYOUT&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_GUI_VIEW_LAYOUT ist die abstrakte Basisklasse für</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Einstellungen eines &lt;DS:IF.IF_ISH_GUI_VIEW&gt;Oberflächenobjekts&lt;/&gt; in</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>einer&lt;DS:IF.IF_ISH_GUI_APPLICATION&gt;Dialoganwendung&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_GUI_VIEW_LAYOUT erbt von der Klasse</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_GUI_LAYOUT&gt;CL_ISH_GUI_LAYOUT&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_VIEW_LAYOUT</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_VIEW_LAYOUT</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_VIEW_LAYOUT</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_VIEW_LAYOUT</CLSNAME>
+     <CMPNAME>CO_FIELDNAME_R_VIEW</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Feldname</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_VIEW_LAYOUT</CLSNAME>
+     <CMPNAME>CO_FIELDNAME_R_VIEW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Field Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_VIEW_LAYOUT</CLSNAME>
+     <CMPNAME>CO_FIELDNAME_R_VIEW</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Field Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_VIEW_LAYOUT</CLSNAME>
+     <CMPNAME>CO_RELID_VIEW</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Gebiet in IMPORT/EXPORT-Datentabelle</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_VIEW_LAYOUT</CLSNAME>
+     <CMPNAME>CO_RELID_VIEW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Region in IMPORT/EXPORT Data Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_VIEW_LAYOUT</CLSNAME>
+     <CMPNAME>CO_RELID_VIEW</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Region in IMPORT/EXPORT Data Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_VIEW_LAYOUT</CLSNAME>
+     <CMPNAME>GET_VIEW</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_VIEW_LAYOUT</CLSNAME>
+     <CMPNAME>GET_VIEW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_VIEW_LAYOUT</CLSNAME>
+     <CMPNAME>GET_VIEW</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_VIEW_LAYOUT</CLSNAME>
+     <CMPNAME>GR_VIEW</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: GUI - View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_VIEW_LAYOUT</CLSNAME>
+     <CMPNAME>GR_VIEW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: GUI - View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_VIEW_LAYOUT</CLSNAME>
+     <CMPNAME>GR_VIEW</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: GUI - View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_VIEW_LAYOUT</CLSNAME>
+     <CMPNAME>SET_VIEW</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt den View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_VIEW_LAYOUT</CLSNAME>
+     <CMPNAME>SET_VIEW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_VIEW_LAYOUT</CLSNAME>
+     <CMPNAME>SET_VIEW</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the View</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

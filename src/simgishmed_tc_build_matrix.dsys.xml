@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DSYS" serializer_version="v2.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>HY</ID>
+      <OBJECT>SIMGISHMED_TC_BUILD_MATRIX</OBJECT>
+      <LANGU>D</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0003</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00029</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DSYS</TDOBJECT>
+      <TDNAME>SIMGISHMED_TC_BUILD_MATRIX</TDNAME>
+      <TDID>HY</TDID>
+      <TDSPRAS>D</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00003</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Mit diesem</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE> &lt;DS:GLOS.5C733369F735D311AE620060B03C9BBE&gt;Business Add-In&lt;/&gt; (BAdI)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>können Sie den Aufbau der Zugriffsmatrix umsetzen. Die Zugriffsmatrix</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>wird bei der Prüfung des Behandlungsauftrages verwendet,  um die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Beziehung zwischen einer Rolle und einem Patienten abzugleichen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;PRECONDITIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Im Standard ist das Business Add-In aktiv.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das BAdI ist nicht mehrfach nutzbar.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das BAdI ist filterabhängig.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Zu diesem BAdI wird eine Fallback-Klasse mit einer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Standardimplementierung ausgeliefert. D. h. wenn keine aktive</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Implementierung vorhanden ist, durchläuft das System die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Standardimplementierung. In dieser Standardimplementierung wird das Cu</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>stomizing des Behandlungsauftrages ausgelesen um die Zugriffmatrix zu</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>erstellen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;STANDARD_SETUP&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;ACTIVITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>INCLUDE BADI_ENH_IMPLEMENTATION OBJECT DOKU ID TX</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Um die Fallback-Klasse anzuzeigen, rufen Sie den BAdI-Builder (SE18)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>auf. Führen Sie auf der Registerkarte Erw.spot-Elementdefinitionen einen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Doppelklick auf die BAdI-Implementation durch. Wählen Sie Anzeigen der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Fallback-Klasse (Drucktaste). Führen Sie einen Doppelklick auf die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Methode durch.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;SEE_ALSO&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Dieses BAdI verwendet das Interface IF_EX_ISHMED_BUILD_MATRIX. Um</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>weitere Informationen zu erhalten, zeigen Sie das Interface im Class</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Builder an.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>HY</ID>
+      <OBJECT>SIMGISHMED_TC_BUILD_MATRIX</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0003</VERSION>
+      <TXTLINES>00019</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DSYS</TDOBJECT>
+      <TDNAME>SIMGISHMED_TC_BUILD_MATRIX</TDNAME>
+      <TDID>HY</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00003</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>You can use this &lt;DS:GLOS.5C733369F735D311AE620060B03C9BBE&gt;Business</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Add-In&lt;/&gt; (BAdI) to configure the access matrix. The access matrix is</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>used when checking the treatment authorization to compare the relations</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>hip between a role and a patient.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;PRECONDITIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The business add-in is active in the standard system.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The BAdI cannot be used multiple times.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The BAdI is filter-dependent.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>A fallback class is provided with the standard implementation for this</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>BAdI. This means that if an active implementation does not exist, the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>system runs the standard implementation. In this standard</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>implementation, the system reads the Customizing settings for the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>treatment authorization so as to configure the access matrix.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;STANDARD_SETUP&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;ACTIVITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>INCLUDE BADI_ENH_IMPLEMENTATION OBJECT DOKU ID TX</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>To display the fallback class, call the BAdI Builder (SE18).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Double-click the BAdI implementation on the Enh. Spot Element Definitio</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>ns tab page. Choose Display for the fallback class (pushbutton).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Double-click on the method.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;SEE_ALSO&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>This BAdI uses the interface IF_EX_ISHMED_BUILD_MATRIX. For more</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>information, display the interface in the Class Builder.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>HY</ID>
+      <OBJECT>SIMGISHMED_TC_BUILD_MATRIX</OBJECT>
+      <LANGU>S</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0003</VERSION>
+      <TXTLINES>00019</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DSYS</TDOBJECT>
+      <TDNAME>SIMGISHMED_TC_BUILD_MATRIX</TDNAME>
+      <TDID>HY</TDID>
+      <TDSPRAS>S</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00003</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Con este add-in empresarial (BAdI) puede convertir la estructura de la</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>matriz de acceso. La matriz de acceso se utiliza al verificar la</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>autorización de tratamiento para comparar la relación entre un rol y un</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>paciente.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;PRECONDITIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>El add-in empresarial está activo en la versión estándar.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>El BAdI no se puede utilizar de forma múltiple.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>El BAdI depende de filtros.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Para este BAdI se suministra una clase de reserva con una implementación</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>estándar. Es decir, que si no existe ninguna implementación activa, el</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>sistema realizará la implementación estándar. En esta implementación</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>estándar, el sistema lee el Customizing de la autorización de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>tratamiento para crear la matriz de acceso.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;STANDARD_SETUP&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;ACTIVITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>INCLUDE BADI_ENH_IMPLEMENTATION OBJECT DOKU ID TX</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Para visualizar esta clase de reserva, llame el BAdI Builder (SE18). En</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>la etiqueta Definiciones del elemento del punto de ampliación haga doble</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>clic en la implementación del BAdI. Seleccione Visualizar en la clase de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>reserva (pulsador). Efectúe un doble clic sobre el método.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;SEE_ALSO&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Este BAdI utiliza el interface IF_EX_ISHMED_BUILD_MATRIX. Para obtener</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>información adicional, véase el interface en el generador de clases.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

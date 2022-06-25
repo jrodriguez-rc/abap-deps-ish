@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_UTL_BASE_PATIENT</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: General Patient Functions</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY> DOB</ENTRY>
+     <LENGTH>5</LENGTH>
+    </item>
+   </TPOOL>
+   <I18N_TPOOL>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY> geb.</ENTRY>
+       <LENGTH>5</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>S</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>FNac</ENTRY>
+       <LENGTH>5</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+   </I18N_TPOOL>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_PATIENT</CLSNAME>
+     <CMPNAME>CHECK_PATIENT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Prüft ob der Patient existiert</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_PATIENT</CLSNAME>
+     <CMPNAME>CHECK_PATIENT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checks Whether Patient Exists</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_PATIENT</CLSNAME>
+     <CMPNAME>CHECK_PATIENT_DECEASED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermittelt ob ein Patient verstorben ist</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_PATIENT</CLSNAME>
+     <CMPNAME>CHECK_PATIENT_DECEASED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determines Whether a Patient Is Deceased</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_PATIENT</CLSNAME>
+     <CMPNAME>CHECK_PATIENT_OF_OBJ</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Patient prüfen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_PATIENT</CLSNAME>
+     <CMPNAME>CHECK_PATIENT_OF_OBJ</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check Patient</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_PATIENT</CLSNAME>
+     <CMPNAME>CHECK_PATIENT_PLAN_CHAR_SEX</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Patientengeschlecht gegen Planmerkmale prüfen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_PATIENT</CLSNAME>
+     <CMPNAME>CHECK_PATIENT_PLAN_CHAR_SEX</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check Patient&apos;s Sex Against Planning Characteristics</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_PATIENT</CLSNAME>
+     <CMPNAME>CHECK_PATIENT_PROVI_OF_OBJ</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Patient mit vorläufigen Stammdaten prüfen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_PATIENT</CLSNAME>
+     <CMPNAME>CHECK_PATIENT_PROVI_OF_OBJ</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check Patient with Provisional Master Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_PATIENT</CLSNAME>
+     <CMPNAME>COMPARE_PATIENT_OF_OBJ</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Fall von zwei Objekten vergleichen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_PATIENT</CLSNAME>
+     <CMPNAME>COMPARE_PATIENT_OF_OBJ</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Compare Case of Two Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_PATIENT</CLSNAME>
+     <CMPNAME>COMPARE_PATIENT_PROVI_OF_OBJ</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Fall von zwei Objekten vergleichen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_PATIENT</CLSNAME>
+     <CMPNAME>COMPARE_PATIENT_PROVI_OF_OBJ</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Compare Case of Two Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_PATIENT</CLSNAME>
+     <CMPNAME>GET_NAME_PATIENT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Name eines Patienten ermitteln</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_PATIENT</CLSNAME>
+     <CMPNAME>GET_NAME_PATIENT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determines Name of a Patient</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_PATIENT</CLSNAME>
+     <CMPNAME>GET_NAME_PATIENT_NEW</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Name eines Patienteninformationen ermitteln</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_PATIENT</CLSNAME>
+     <CMPNAME>GET_NAME_PATIENT_NEW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Name of Patient Information</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_PATIENT</CLSNAME>
+     <CMPNAME>GET_OBJ_FOR_PATIENT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermittelt das Objekt zu einem Patienten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_PATIENT</CLSNAME>
+     <CMPNAME>GET_OBJ_FOR_PATIENT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determines the Object for a Patient</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_PATIENT</CLSNAME>
+     <CMPNAME>GET_PAP_FOR_OBJECT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermittlung eines vorl. Patienten zu einem Datenbojekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_PATIENT</CLSNAME>
+     <CMPNAME>GET_PAP_FOR_OBJECT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine a Provisional Patient from a Data Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_PATIENT</CLSNAME>
+     <CMPNAME>GET_PATIENT_OF_OBJ</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermittlung eines Patienten ausgehend von einem Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_PATIENT</CLSNAME>
+     <CMPNAME>GET_PATIENT_OF_OBJ</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Patient From Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_PATIENT</CLSNAME>
+     <CMPNAME>GET_PATNAME_FOR_OBJECT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Name des Patienten anhand eines Datenobjektes ermitteln</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_PATIENT</CLSNAME>
+     <CMPNAME>GET_PATNAME_FOR_OBJECT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Patient Name using a Data Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_PATIENT</CLSNAME>
+     <CMPNAME>GET_RISK_ICON</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert das Icon für Risikofaktoren</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_PATIENT</CLSNAME>
+     <CMPNAME>GET_RISK_ICON</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Icon for Risk Factors</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_PATIENT</CLSNAME>
+     <CMPNAME>IS_OBJECT_OF_PATIENT_TMP</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermittelt ob ein Objekt eines Patienten temporär ist</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_PATIENT</CLSNAME>
+     <CMPNAME>IS_OBJECT_OF_PATIENT_TMP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determines if an Object of a Patient Is Temporary</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_PATIENT</CLSNAME>
+     <CMPNAME>IS_PATIENT_TMP</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermittelt ob ein Temporäres Objekt zu dem Patienten gehört.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_UTL_BASE_PATIENT</CLSNAME>
+     <CMPNAME>IS_PATIENT_TMP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determines if a Temporary Object Belongs to the Patient</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,627 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_INTF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOINTERF>
+    <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Interface for Display Objects</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <UNICODE>X</UNICODE>
+   </VSEOINTERF>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+     <TDLINE>You should not confuse &lt;ZH&gt;display objects&lt;/&gt; with data objects like</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>CL_ISHMED_SERVICE, CL_ISH_APPOINTMENT etc. A display object manages the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>corresponding field catalog and transfers the required fields to a type</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>of output table of a grid or tree. It can, of course, contain any</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>number of data objects and also data which is not object-oriented (also</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>known under the term &quot;non-oo data record&quot;).</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+     <TDLINE>A display class serves only to display data structurally; it is not</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>used to change data, which means that there is no SAVE method or</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>similar.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+     <TDLINE>E.g &quot;Operation&quot; object: This display object contains various data</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>including the surgery anchor service, surgery movement, surgery</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>appointment, surgery services, surgery request, surgery</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>preregistration, surgery team, etc. If the object is instantiated (e.g.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>with a LOAD method), the call will only include one attribute, which</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>uniquely identifies the surgery and which allows the LOAD method to</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>import all other data. This start attribute can be, for example, the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>surgery anchor service, or the surgery movement (for an emergency</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>surgery). The &quot;Operation&quot; display object will then know which field</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>catalog it owns and can also transfer this to the caller.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+     <TDLINE>Display objects can also contain completely abstract things, for</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>example the &quot;free&quot; line in the Surgery view type.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+     <TDLINE>Each display object inherits from this &lt;ZH&gt;interface&lt;/&gt;, which</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>specifies exactly which methods and parameters a display object must</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>own. Using this interface it is possible to program generically, so</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>that it is irrelevant which display object owns a &quot;display&quot;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Ein &lt;ZH&gt;Anzeigeobjekt &lt;/&gt;darf nicht mit den Datenobjekten wie</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>CL_ISHMED_SERVICE, CL_ISH_APPOINTMENT usw. verwechselt werden. Das</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Anzeigeobjekt kümmert sich um die Verwaltung des jeweiligen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Feldkataloges und um die Übergabe der notwendigen Felder in eine Art</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Ausgabetabelle eines Grids/Trees usw. Es kann aber natürlich beliebige</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>und beliebig viele Datenobjekte und natürlich auch nicht</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>objektorientierte Daten (Hier mit dem Begriff &quot;nicht oo-Datensatz&quot;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>bezeichnet) enthalten.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Eine Anzeigeklasse dient aber wirklich nur zum strukturierten Anzeigen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>von Daten; diese Daten können damit aber nicht verändert werden, d.h.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>es wird keine SAVE-Methode oder ähnliches geben.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Z.B. Objekt &quot;Operation&quot;: Dieses Anzeigeobjekt enthält zahlreiche</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>unterschiedliche Daten wie OP-Ankerleistung, OP-Bewegung, OP-Termin,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>OP-Leistungen, OP-Anforderung, OP-Vormerkung, OP-Team usw. Wird das</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Objekt instanziert (z.B mit einer LOAD-Methode), gibt der Aufrufer nur</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ein Attribut mit, das die OP eindeutig identifiziert und das der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>LOAD-Methode erlaubt alle anderen Daten dazu einzulesen. Dieses</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Start-Attribut kann z.B. die OP-Ankerleistung sein oder auch (für eine</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Not-OP) die OP-Bewegung. Das Anzeigeobjekt &quot;Operation&quot; weiß dann auch</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>selbst, welchen Feldkatalog es besitzt und kann diesen auch an den</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Aufrufer übergeben.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Anzeigeobjekte können aber auch komplett abstrakte Dinge enthalten, wie</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>z.B im Sichttyp OP die Zeile &quot;Frei&quot;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Jedes Anzeigeobjekt erbt nun also von diesem &lt;ZH&gt;Interface&lt;/&gt;, das</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>genau vorgibt, welche Methoden und Parameter ein Anzeigeobjekt</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>zumindest besitzen muss. Über dieses Interface ist es möglich generisch</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>zu programmieren, sodass es egal ist, welche Anzeigeobjekte ein</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&quot;Display&quot; besitzt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>AFTER_READ</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Daten für das Anzeigeobjekt wurden gelesen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>AFTER_READ</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Data for Display Object Was Read</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>AFTER_READ</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Data for Display Object Was Read</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>CLOSE_NODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Knoten schließen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>CLOSE_NODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Close Nodes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>CLOSE_NODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Close Nodes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>CONVERT_FOR_DISPLAY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Aufbereitung des Anzeigeobjekts für die Ausgabe</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>CONVERT_FOR_DISPLAY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Prepare Display Object for Display</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>CONVERT_FOR_DISPLAY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Prepare Display Object for Display</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>DESTROY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anzeigeobjekt freigeben</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>DESTROY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Release Display Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>DESTROY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Release Display Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>GET_DATA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Objekte aus dem Anzeigeobjekt ermitteln</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>GET_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Objects from Display Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>GET_DATA</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Objects from Display Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>GET_FIELDCATALOG</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feldkatalog des Anzeigeobjekts ermitteln</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>GET_FIELDCATALOG</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Field Catalog of Display Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>GET_FIELDCATALOG</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Field Catalog of Display Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>GET_MERGED_VALUES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Zeile für das Merging bzw. die Sortierung ermitteln</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>GET_MERGED_VALUES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Rows for Merging or Sorting</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>GET_MERGED_VALUES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Rows for Merging or Sorting</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>GET_SORT_LINE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Row for Sorting</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>GET_SORT_LINE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Row for Sorting</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>GET_TYPE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Typ des Objekts ermitteln</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>GET_TYPE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Type of Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>GET_TYPE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Type of Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>GT_OUTTAB</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ausgabetabelle</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>GT_OUTTAB</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Output Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>GT_OUTTAB</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Output Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>GT_SUBOBJECTS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Tabelle mit untergeordneten Anzeigeobjekten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>GT_SUBOBJECTS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table with Subordinate Display Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>GT_SUBOBJECTS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Table with Subordinate Display Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>G_CANCELLED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Objekt ist storniert (ON/OFF)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>G_CANCELLED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Object is Canceled (ON/OFF)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>G_CANCELLED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Object is Canceled (ON/OFF)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>G_CANCELLED_DATA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Stornierte Daten anzeigen (ON/OFF)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>G_CANCELLED_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Display Canceled Data (ON/OFF)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>G_CANCELLED_DATA</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Display Canceled Data (ON/OFF)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>G_CONSTRUCT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Construktor darf aufgerufen werden ON/OFF</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>G_CONSTRUCT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Constructor Can Be Called ON/OFF</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>G_CONSTRUCT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Constructor Can Be Called ON/OFF</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>G_ENVIRONMENT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Environment</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>G_ENVIRONMENT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Environment</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>G_ENVIRONMENT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Environment</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>G_NODE_OPEN</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Knoten offen (ON/OFF)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>G_NODE_OPEN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Open Nodes (ON/OFF)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>G_NODE_OPEN</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Open Nodes (ON/OFF)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>G_OBJECT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Erzeugendes Objekt, aus dem das Anzeigeobjekt angelegt wurde</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>G_OBJECT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Object from Which Display Object Was Created</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>G_OBJECT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Object from Which Display Object Was Created</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>INITIALIZE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Initialisierungen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>INITIALIZE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Initializations</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>INITIALIZE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Initializations</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>IS_CANCELLED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ist das Objekt storniert?</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>IS_CANCELLED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Is Object Canceled?</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>IS_CANCELLED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Is Object Canceled?</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>LOAD</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anzeigeobjekt laden</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>LOAD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Load Display Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>LOAD</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Load Display Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>OPEN_NODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Knoten öffnen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>OPEN_NODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Expand Node</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>OPEN_NODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Expand Node</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>REMOVE_DATA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Daten aus dem Anzeigeobjekt entfernen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>REMOVE_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Remove Data from Display Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>REMOVE_DATA</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Remove Data from Display Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>SET_MAIN_DATA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Grundlegende Daten des Anzeigeobjekts lesen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>SET_MAIN_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Read Main Data from Display Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>SET_MAIN_DATA</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Read Main Data from Display Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>SET_NODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Globales Knoten-Kz offen/geschlossen setzen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>SET_NODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set Global Open/Close Node Indicator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DISPLAY_OBJECT</CLSNAME>
+     <CMPNAME>SET_NODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Set Global Open/Close Node Indicator</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

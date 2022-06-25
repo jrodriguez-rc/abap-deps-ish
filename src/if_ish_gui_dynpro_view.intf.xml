@@ -1,0 +1,534 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_INTF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOINTERF>
+    <CLSNAME>IF_ISH_GUI_DYNPRO_VIEW</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: GUI - Dynpro View</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <UNICODE>X</UNICODE>
+   </VSEOINTERF>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;DESCRIPTION&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Interface IF_ISH_GUI_DYNPRO_VIEW defines the interface of a screen</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>interface object in a &lt;DS:IF.IF_ISH_GUI_APPLICATION&gt;dialog application</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Interface IF_ISH_GUI_DYNPRO_VIEW contains the interface</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:IF.IF_ISH_GUI_VIEW&gt;IF_ISH_GUI_VIEW&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Interface IF_ISH_GUI_DYNPRO_VIEW is included in the following</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>interfaces:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;DS:IF.IF_ISH_GUI_MDY_VIEW&gt;IF_ISH_GUI_MDY_VIEW&lt;/&gt; (subscreen container</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>interface object)</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;DS:IF.IF_ISH_GUI_SDY_VIEW&gt;IF_ISH_GUI_SDY_VIEW&lt;/&gt; (subscreen interface</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>object)</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>UT</TDFORMAT>
+     <TDLINE>General Information About Screen Interface Objects</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+     <TDLINE>Each screen interface object connects to a screen on initialization.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>Method GET_REPID can be used to determine the name of the function</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>group. Method GET_DYNNR can be used to determine the screen number.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+     <TDLINE>At PBO, the screen interface object transports the data from the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:IF.IF_ISH_GUI_MODEL&gt;model&lt;/&gt; to the screen structure for the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>underlying screen. The model is managed by the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:IF.IF_ISH_GUI_CONTROLLER&gt;control object&lt;/&gt; for the interface object.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+     <TDLINE>At PAI, the screen interface object transports the changed data for the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>underlying screen to the model.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>UT</TDFORMAT>
+     <TDLINE>Methods:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_DYNNR</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the screen number</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_DYNPRO_LAYOUT</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the &lt;DS:CL.CL_ISH_GUI_DYNPRO_LAYOUT&gt;settings for the screen</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>interface object&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_DYNPSTRUCT_FIELDNAME</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the name of a screen field.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>The name of a screen field comprises the name of the screen structure</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>and the field name (parameter I_FIELDNAME), separated by a dash (&apos;-&apos;).</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_DYNPSTRUCT_NAME</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the name of the screen structure</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_REPID</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the name of the function group that contains the screen</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;USE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Class &lt;DS:CL.CL_ISH_GUI_DYNPRO_VIEW&gt;CL_ISH_GUI_DYNPRO_VIEW&lt;/&gt; is the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>abstract basic class for a screen interface object.</TDLINE>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;MEANING&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das Interface IF_ISH_GUI_DYNPRO_VIEW definiert die Schnittstelle eines</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Dynpro-Oberflächenobjekts in einer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_APPLICATION&gt;Dialoganwendung&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das Interface IF_ISH_GUI_DYNPRO_VIEW umfasst das Interface</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_VIEW&gt;IF_ISH_GUI_VIEW&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das Interface IF_ISH_GUI_DYNPRO_VIEW wird von folgenden Interfaces</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>umfasst:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_MDY_VIEW&gt;IF_ISH_GUI_MDY_VIEW&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(Trägerdynpro-Oberflächenobjekt)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_SDY_VIEW&gt;IF_ISH_GUI_SDY_VIEW&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(Subscreen-Oberflächenobjekt)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>Allgemeine Informationen zu Dynpro-Oberflächenobjekten</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Jedes Dynpro-Oberflächenobjekt verbindet sich bei der Initialisierung</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>mit einem Dynpro. Der Name der Funktionsgruppe kann über die Methode</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>GET_REPID ermittelt werden. Die Dynpronummer kann über die Methode</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>GET_DYNNR ermittelt werden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Zum PBO-Zeitpunkt transportiert das Dynpro-Oberflächenobjekt die Daten</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>des &lt;DS:IF.IF_ISH_GUI_MODEL&gt;Models&lt;/&gt; in die Dynprostruktur des zugrunde</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>liegenden Dynpros. Das Model wird durch das</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_CONTROLLER&gt;Kontrollobjekt&lt;/&gt; des Oberflächenobjekts</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>verwaltet.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Zum PAI-Zeitpunkt transportiert das Dynpro-Oberflächenobjekt die auf dem</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>zugrunde liegenden Dynpro geänderten Daten in das Model.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>Methoden:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_DYNNR</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert die Dynpronummer.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_DYNPRO_LAYOUT</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert die &lt;DS:CL.CL_ISH_GUI_DYNPRO_LAYOUT&gt;Eintsellungen des</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Dynpro-Oberflächenobjekts&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_DYNPSTRUCT_FIELDNAME</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert den Namen eines Dynprofeldes.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Der Name eines Dynprofeldes besteht aus dem Namen der Dynprostruktur und</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>dem Feldnamen (Parameter I_FIELDNAME), getrennt durch einen Bindestrich</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(&apos;-&apos;).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_DYNPSTRUCT_NAME</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert den Namen der Dynprostruktur.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_REPID</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert den Namen der Funktionsgruppe, die das Dynpro enthält.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse &lt;DS:CL.CL_ISH_GUI_DYNPRO_VIEW&gt;CL_ISH_GUI_DYNPRO_VIEW&lt;/&gt; ist</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>die abstrakte Basisklasse für ein Dynpro-Oberflächenobjekt.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DYNPRO_VIEW</CLSNAME>
+     <CMPNAME>COMPLETE_POV</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Fertigstellung einer F4-Hilfe</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DYNPRO_VIEW</CLSNAME>
+     <CMPNAME>COMPLETE_POV</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Completion of Input Help (F4)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DYNPRO_VIEW</CLSNAME>
+     <CMPNAME>COMPLETE_POV</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Completion of Input Help (F4)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DYNPRO_VIEW</CLSNAME>
+     <CMPNAME>CO_PROCBLOCK_AFTER_PAI</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Event in Dynpro Screen Logic</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DYNPRO_VIEW</CLSNAME>
+     <CMPNAME>CO_PROCBLOCK_AFTER_PAI</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Event in Dynpro Screen Logic</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DYNPRO_VIEW</CLSNAME>
+     <CMPNAME>CO_PROCBLOCK_AFTER_PBO</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Event in Dynpro Screen Logic</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DYNPRO_VIEW</CLSNAME>
+     <CMPNAME>CO_PROCBLOCK_AFTER_PBO</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Event in Dynpro Screen Logic</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DYNPRO_VIEW</CLSNAME>
+     <CMPNAME>CO_PROCBLOCK_BEFORE_PAI</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Event in Dynpro Screen Logic</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DYNPRO_VIEW</CLSNAME>
+     <CMPNAME>CO_PROCBLOCK_BEFORE_PAI</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Event in Dynpro Screen Logic</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DYNPRO_VIEW</CLSNAME>
+     <CMPNAME>CO_PROCBLOCK_BEFORE_PBO</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Event in Dynpro Screen Logic</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DYNPRO_VIEW</CLSNAME>
+     <CMPNAME>CO_PROCBLOCK_BEFORE_PBO</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Event in Dynpro Screen Logic</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DYNPRO_VIEW</CLSNAME>
+     <CMPNAME>CO_UCOMM_POV_PROCESSED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>UserCommand &quot;F4-Hilfe wurde durchgeführt&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DYNPRO_VIEW</CLSNAME>
+     <CMPNAME>CO_UCOMM_POV_PROCESSED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>User Command &quot;F4 Help Was Executed&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DYNPRO_VIEW</CLSNAME>
+     <CMPNAME>CO_UCOMM_POV_PROCESSED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>User Command &quot;F4 Help Was Executed&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DYNPRO_VIEW</CLSNAME>
+     <CMPNAME>GET_DYNNR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die Dynpronummer des Dynpros</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DYNPRO_VIEW</CLSNAME>
+     <CMPNAME>GET_DYNNR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Dynpro Number of the Dynpro</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DYNPRO_VIEW</CLSNAME>
+     <CMPNAME>GET_DYNNR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Dynpro Number of the Dynpro</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DYNPRO_VIEW</CLSNAME>
+     <CMPNAME>GET_DYNPRO_LAYOUT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert das Dynpro Layout</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DYNPRO_VIEW</CLSNAME>
+     <CMPNAME>GET_DYNPRO_LAYOUT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Dynpro Layout</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DYNPRO_VIEW</CLSNAME>
+     <CMPNAME>GET_DYNPRO_LAYOUT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Dynpro Layout</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DYNPRO_VIEW</CLSNAME>
+     <CMPNAME>GET_DYNPSTRUCT_FIELDNAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den Namen eines Dynprofeldes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DYNPRO_VIEW</CLSNAME>
+     <CMPNAME>GET_DYNPSTRUCT_FIELDNAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Name of Screen Field</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DYNPRO_VIEW</CLSNAME>
+     <CMPNAME>GET_DYNPSTRUCT_FIELDNAME</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Name of Screen Field</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DYNPRO_VIEW</CLSNAME>
+     <CMPNAME>GET_DYNPSTRUCT_NAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den Namen der Dynprostruktur</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DYNPRO_VIEW</CLSNAME>
+     <CMPNAME>GET_DYNPSTRUCT_NAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Name of Screen Structure</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DYNPRO_VIEW</CLSNAME>
+     <CMPNAME>GET_DYNPSTRUCT_NAME</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Name of Screen Structure</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DYNPRO_VIEW</CLSNAME>
+     <CMPNAME>GET_REPID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den Programmnamen des Dynpros</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DYNPRO_VIEW</CLSNAME>
+     <CMPNAME>GET_REPID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Program Name of the Dynpro</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DYNPRO_VIEW</CLSNAME>
+     <CMPNAME>GET_REPID</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Program Name of the Dynpro</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

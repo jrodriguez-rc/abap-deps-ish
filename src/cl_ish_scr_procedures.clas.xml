@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_SCR_PROCEDURES</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: Procedures Screen Class</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>SP Code</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>002</KEY>
+     <ENTRY>SP Text</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>003</KEY>
+     <ENTRY>Localization</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>004</KEY>
+     <ENTRY>Catalog</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+   </TPOOL>
+   <I18N_TPOOL>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>OP-Code</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Bezeichnung OP</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>Lokalisation</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>004</KEY>
+       <ENTRY>Katalog</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>S</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Cód.IQ</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Denominación IQ</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>Localización</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>004</KEY>
+       <ENTRY>Catálogo</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+   </I18N_TPOOL>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_PROCEDURES</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_PROCEDURES</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_PROCEDURES</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_PROCEDURES</CLSNAME>
+     <CMPNAME>CO_OTYPE_SCR_PROCEDURES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Screenklasse Prozeduren</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_PROCEDURES</CLSNAME>
+     <CMPNAME>CO_OTYPE_SCR_PROCEDURES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Screen Class: Procedures</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_PROCEDURES</CLSNAME>
+     <CMPNAME>CO_OTYPE_SCR_PROCEDURES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Screen Class: Procedures</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_PROCEDURES</CLSNAME>
+     <CMPNAME>CREATE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Instanz des Screens erzeugen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_PROCEDURES</CLSNAME>
+     <CMPNAME>CREATE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Create Instance of Screen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_PROCEDURES</CLSNAME>
+     <CMPNAME>CREATE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Create Instance of Screen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_PROCEDURES</CLSNAME>
+     <CMPNAME>GET_DYNPRO_PROCEDURES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Programm und Dynpro des Prozedurensubscreens ermitteln</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_PROCEDURES</CLSNAME>
+     <CMPNAME>GET_DYNPRO_PROCEDURES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Program and Screen of Procedure Subscreen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_PROCEDURES</CLSNAME>
+     <CMPNAME>GET_DYNPRO_PROCEDURES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Program and Screen of Procedure Subscreen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_PROCEDURES</CLSNAME>
+     <CMPNAME>GR_CANCEL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Klasse für Storno</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_PROCEDURES</CLSNAME>
+     <CMPNAME>GR_CANCEL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Class for Cancellation</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_PROCEDURES</CLSNAME>
+     <CMPNAME>GR_CANCEL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Class for Cancellation</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_PROCEDURES</CLSNAME>
+     <CMPNAME>GR_PROCEDURES_SUBSCREEN</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Klin. Auftrag: Versicherungs-Subscreen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_PROCEDURES</CLSNAME>
+     <CMPNAME>GR_PROCEDURES_SUBSCREEN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Clinical Order: Insurance Subscreen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_PROCEDURES</CLSNAME>
+     <CMPNAME>GR_PROCEDURES_SUBSCREEN</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Clinical Order: Insurance Subscreen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_PROCEDURES</CLSNAME>
+     <CMPNAME>G_DYNNR_PROCEDURES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Dynpro des Versicherungssubscreens</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_PROCEDURES</CLSNAME>
+     <CMPNAME>G_DYNNR_PROCEDURES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Screen of the Insurance Subscreen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_PROCEDURES</CLSNAME>
+     <CMPNAME>G_DYNNR_PROCEDURES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Screen of the Insurance Subscreen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_PROCEDURES</CLSNAME>
+     <CMPNAME>G_FIELDNAME_ICPM</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feldname Operationscode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_PROCEDURES</CLSNAME>
+     <CMPNAME>G_FIELDNAME_ICPM</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Name Surgical Procedure Code</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_PROCEDURES</CLSNAME>
+     <CMPNAME>G_FIELDNAME_ICPM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Field Name Surgical Procedure Code</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_PROCEDURES</CLSNAME>
+     <CMPNAME>G_FIELDNAME_ICPMC</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feldname Identifikation Operationsleistungskatalog</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_PROCEDURES</CLSNAME>
+     <CMPNAME>G_FIELDNAME_ICPMC</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Name Surgical Procedures Catalog ID</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_PROCEDURES</CLSNAME>
+     <CMPNAME>G_FIELDNAME_ICPMC</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Field Name Surgical Procedures Catalog ID</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_PROCEDURES</CLSNAME>
+     <CMPNAME>G_FIELDNAME_ICPML</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feldname Lokalisation</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_PROCEDURES</CLSNAME>
+     <CMPNAME>G_FIELDNAME_ICPML</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Name Localization</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_PROCEDURES</CLSNAME>
+     <CMPNAME>G_FIELDNAME_ICPML</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Field Name Localization</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_PROCEDURES</CLSNAME>
+     <CMPNAME>G_PGM_PROCEDURES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Programm des Versicherungssubscreens</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_PROCEDURES</CLSNAME>
+     <CMPNAME>G_PGM_PROCEDURES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Insurance Subscreen Program</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_PROCEDURES</CLSNAME>
+     <CMPNAME>G_PGM_PROCEDURES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Insurance Subscreen Program</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_PROCEDURES</CLSNAME>
+     <CMPNAME>MODIFY_SCREEN_ATT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Modifizieren von Screen-Attributen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_PROCEDURES</CLSNAME>
+     <CMPNAME>MODIFY_SCREEN_ATT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Modification of Screen Attributes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_PROCEDURES</CLSNAME>
+     <CMPNAME>MODIFY_SCREEN_ATT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Modification of Screen Attributes</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

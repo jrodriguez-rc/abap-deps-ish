@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_ASM_PARAM_C</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H ApplSettings Mgmt: Client-Spec.,Time-Ind. Param.Defin.</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_ASM_PARAM_C is used to manage a</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>&lt;DS:CL.CL_ISH_AS_PARAM_C&gt; client-specific, time-independent application</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>setting&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_ASM_PARAM_C dient zur Verwaltung einer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_AS_PARAM_C&gt;mandantenabhängigen, zeitunabhängigen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Applikationseinstellung&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM_C</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM_C</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM_C</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM_C</CLSNAME>
+     <CMPNAME>CO_OTYPE_ASM_PARAM_C</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Objekttyp</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM_C</CLSNAME>
+     <CMPNAME>CO_OTYPE_ASM_PARAM_C</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Object Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM_C</CLSNAME>
+     <CMPNAME>CO_OTYPE_ASM_PARAM_C</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Object Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM_C</CLSNAME>
+     <CMPNAME>GET_BOOKING_TABLES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Verbuchertabellen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM_C</CLSNAME>
+     <CMPNAME>GET_BOOKING_TABLES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Gets the Update Tables</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM_C</CLSNAME>
+     <CMPNAME>GET_BOOKING_TABLES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Gets the Update Tables</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM_C</CLSNAME>
+     <CMPNAME>GET_PARAM_C</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Parameterdefinition</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM_C</CLSNAME>
+     <CMPNAME>GET_PARAM_C</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Gets the Parameter Definition</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM_C</CLSNAME>
+     <CMPNAME>GET_PARAM_C</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Gets the Parameter Definition</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM_C</CLSNAME>
+     <CMPNAME>GET_T_VALUE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert alle Parameterwerte</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM_C</CLSNAME>
+     <CMPNAME>GET_T_VALUE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Gets All Parameter Values</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM_C</CLSNAME>
+     <CMPNAME>GET_T_VALUE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Gets All Parameter Values</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM_C</CLSNAME>
+     <CMPNAME>GET_VALUE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert einen Parameterwert</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM_C</CLSNAME>
+     <CMPNAME>GET_VALUE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Gets a Parameter Value</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM_C</CLSNAME>
+     <CMPNAME>GET_VALUE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Gets a Parameter Value</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM_C</CLSNAME>
+     <CMPNAME>GT_VALUE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H ApplSettings: Parameterwert Mandant zeitunabhängig</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM_C</CLSNAME>
+     <CMPNAME>GT_VALUE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H ApplSettings: Client-Spec.,Time-Indep. Param. Values</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM_C</CLSNAME>
+     <CMPNAME>GT_VALUE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H ApplSettings: Client-Spec.,Time-Indep. Param. Values</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM_C</CLSNAME>
+     <CMPNAME>SET_VALUE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt einen Parameterwert</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM_C</CLSNAME>
+     <CMPNAME>SET_VALUE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets a Parameter Value</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM_C</CLSNAME>
+     <CMPNAME>SET_VALUE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets a Parameter Value</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

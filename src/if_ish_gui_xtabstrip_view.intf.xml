@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_INTF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOINTERF>
+    <CLSNAME>IF_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: GUI - Enhanced Tabstrip View</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <UNICODE>X</UNICODE>
+   </VSEOINTERF>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;DESCRIPTION&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Interface IF_ISH_GUI_XTABSTRIP_VIEW defines the interface of an</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>interface object for an extended tabstrip.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Interface IF_ISH_GUI_XTABSTRIP_VIEW contains the interface</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:IF.IF_ISH_GUI_TABSTRIP_VIEW&gt;IF_ISH_GUI_TABSTRIP_VIEW&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>UT</TDFORMAT>
+     <TDLINE>Methods:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_IDX_BY_TAB_NAME</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the index for the name of a tab page</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_IDX_BY_VIEW</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the index for the specified &lt;DS:IF.IF_ISH_GUI_SDY_VIEW&gt;view&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_IDX_BY_VIEW_NAME</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the index for the specified &lt;DS:IF.IF_ISH_GUI_SDY_VIEW&gt;view name</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_TAB_LABEL</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the label of the tab page that belongs to the specified index</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_TAB_NAME</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the name of the tab page that belongs to the specified index</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_TAB_VIEW</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the &lt;DS:IF.IF_ISH_GUI_SDY_VIEW&gt;view&lt;/&gt; for the tab page that</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>belongs to the specified index&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>SET_TAB_LABEL</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Sets the label of the tab page that belongs to the specified index</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>SET_TAB_VIEW</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Sets the &lt;DS:IF.IF_ISH_GUI_SDY_VIEW&gt;view&lt;/&gt; for the tab page that</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>belongs to the specified index</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The basic class for an extended tabstrip interface object is</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CL.CL_ISH_GUI_XTABSTRIP_VIEW&gt;CL_ISH_GUI_XTABSTRIP_VIEW&lt;/&gt;.</TDLINE>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;MEANING&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das Interface IF_ISH_GUI_XTABSTRIP_VIEW definiert die Schnittstelle</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>eines Oberflächenobjekts für einen erweiterten Tabstrip.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das Interface IF_ISH_GUI_XTABSTRIP_VIEW umfasst das Interface</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_TABSTRIP_VIEW&gt;IF_ISH_GUI_TABSTRIP_VIEW&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>Methoden:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_IDX_BY_TAB_NAME</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert den Index zu dem Namen einer Registerkarte.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_IDX_BY_VIEW</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert den Index zum gegebenen &lt;DS:IF.IF_ISH_GUI_SDY_VIEW&gt;View&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_IDX_BY_VIEW_NAME</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert den Index zum gegebenen Namen des</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_SDY_VIEW&gt;Views&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_TAB_LABEL</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert den Label der zum gegebenen Index gehörenden Registerkarte.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_TAB_NAME</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert den Namen der zum gegebenen Index gehörenden Registerkarte.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_TAB_VIEW</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert den &lt;DS:IF.IF_ISH_GUI_SDY_VIEW&gt;View&lt;/&gt; der zum gegebenen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Index gehörenden Registerkarte.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>SET_TAB_LABEL</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Setzt den Label der zum gegebenen Index gehörenden Registerkarte.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>SET_TAB_VIEW</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Setzt den &lt;DS:IF.IF_ISH_GUI_SDY_VIEW&gt;View&lt;/&gt; der zum gegebenen Index</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>gehörenden Registerkarte.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Basisklasse für ein erweitertes Tabstrip-Oberflächenobjekt ist</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_GUI_XTABSTRIP_VIEW&gt;CL_ISH_GUI_XTABSTRIP_VIEW&lt;/&gt;.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>GET_IDX_BY_TAB_NAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den Index zu einem Reiternamen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>GET_IDX_BY_TAB_NAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Index for a Tab Index Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>GET_IDX_BY_TAB_NAME</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Index for a Tab Index Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>GET_IDX_BY_VIEW</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den Index zu einem View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>GET_IDX_BY_VIEW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Index for a View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>GET_IDX_BY_VIEW</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Index for a View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>GET_IDX_BY_VIEW_NAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den Index zu einem Viewnamen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>GET_IDX_BY_VIEW_NAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Index for a View Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>GET_IDX_BY_VIEW_NAME</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Index for a View Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>GET_TAB_LABEL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die Bezeichnung eines Reiters</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>GET_TAB_LABEL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Description of a Tab Index</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>GET_TAB_LABEL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Description of a Tab Index</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>GET_TAB_NAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den Reiternamen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>GET_TAB_NAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Tab Index Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>GET_TAB_NAME</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Tab Index Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>GET_TAB_VIEW</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den View zu einem Reiter</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>GET_TAB_VIEW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns View for a Tab Index</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>GET_TAB_VIEW</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns View for a Tab Index</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>SET_TAB_LABEL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt die Bezeichnung eines Reiters</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>SET_TAB_LABEL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets Description of a Tab Index</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>SET_TAB_LABEL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets Description of a Tab Index</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>SET_TAB_VIEW</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt den View zu einem Reiter</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>SET_TAB_VIEW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets View for a Tab Index</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>SET_TAB_VIEW</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets View for a Tab Index</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

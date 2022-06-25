@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_INTF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOINTERF>
+    <CLSNAME>IF_ISH_GUI_DRAWERS_VIEW</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: GUI Drawer View</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <UNICODE>X</UNICODE>
+   </VSEOINTERF>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;MEANING&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The interface IF_ISH_GUI_DRAWERS_VIEW defines the interface of a drawer</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>interface object.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The interface IF_ISH_GUI_DRAWERS_VIEW contains the interface</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:IF.IF_ISH_GUI_ELEMENT&gt;IF_ISH_GUI_CONTAINER_VIEW.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>UT</TDFORMAT>
+     <TDLINE>Methods:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>DISABLE_DRAWER</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Locks a drawer</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>The system displays the drawer, but it cannot be opened.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>ENABLE_DRAWER</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Unlocks a drawer.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>The drawer can be opened once again.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_OPEN_DRAWER_NAME</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the name of the opened drawer.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_OPEN_VIEW</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the control interface object of the opened drawer.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>OPEN_DRAWER_BY_NAME</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Opens a drawer.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;USE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class &lt;DS:CL.CL_ISH_GUI_DRAWERS_VIEW&gt;CL_ISH_GUI_DRAWERS_VIEW&lt;/&gt; is</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>used to integrate a drawer interface object into a dialog application.</TDLINE>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;MEANING&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das Interface IF_ISH_GUI_DRAWERS_VIEW definiert die Schnittstelle eines</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Schubladenoberflächenobjekts.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das Interface IF_ISH_GUI_DRAWERS_VIEW umfasst das Interface</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_CONTAINER_VIEW&gt;IF_ISH_GUI_CONTAINER_VIEW&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>Methoden:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>DISABLE_DRAWER</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Sperrt eine Schublade</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Das System zeigt die Schublade danach zwar an, sie kann aber nicht</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>geöffnet werden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>ENABLE_DRAWER</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Entsperrt eine Schublade.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Die Schublade kann danach geöffnet werden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_OPEN_DRAWER_NAME</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert den Namen der geöffneten Schublade.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_OPEN_VIEW</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert das Control-Oberflächenobjekt der geöffneten Schublade.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>OPEN_DRAWER_BY_NAME</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Öffnet eine Schublade.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse &lt;DS:CL.CL_ISH_GUI_DRAWERS_VIEW&gt;CL_ISH_GUI_DRAWERS_VIEW&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>dient zur Einbindung eines Schubladenoberflächenobjekts in eine</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Dialoganwendung.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DRAWERS_VIEW</CLSNAME>
+     <CMPNAME>DISABLE_DRAWER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Sperrt eine Schublade</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DRAWERS_VIEW</CLSNAME>
+     <CMPNAME>DISABLE_DRAWER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Locks a Drawer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DRAWERS_VIEW</CLSNAME>
+     <CMPNAME>DISABLE_DRAWER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Locks a Drawer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DRAWERS_VIEW</CLSNAME>
+     <CMPNAME>ENABLE_DRAWER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Entsperrt eine Schublade</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DRAWERS_VIEW</CLSNAME>
+     <CMPNAME>ENABLE_DRAWER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Unlocks a Drawer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DRAWERS_VIEW</CLSNAME>
+     <CMPNAME>ENABLE_DRAWER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Unlocks a Drawer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DRAWERS_VIEW</CLSNAME>
+     <CMPNAME>GET_OPEN_DRAWER_NAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die geöffnete Schublade</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DRAWERS_VIEW</CLSNAME>
+     <CMPNAME>GET_OPEN_DRAWER_NAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Opened Drawer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DRAWERS_VIEW</CLSNAME>
+     <CMPNAME>GET_OPEN_DRAWER_NAME</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Opened Drawer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DRAWERS_VIEW</CLSNAME>
+     <CMPNAME>GET_OPEN_VIEW</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den View zur geöffneten Schublade</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DRAWERS_VIEW</CLSNAME>
+     <CMPNAME>GET_OPEN_VIEW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns View for Opened Drawer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DRAWERS_VIEW</CLSNAME>
+     <CMPNAME>GET_OPEN_VIEW</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns View for Opened Drawer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DRAWERS_VIEW</CLSNAME>
+     <CMPNAME>OPEN_DRAWER_BY_NAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Öffnet eine Schublade</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DRAWERS_VIEW</CLSNAME>
+     <CMPNAME>OPEN_DRAWER_BY_NAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Open Drawer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_DRAWERS_VIEW</CLSNAME>
+     <CMPNAME>OPEN_DRAWER_BY_NAME</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Open Drawer</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

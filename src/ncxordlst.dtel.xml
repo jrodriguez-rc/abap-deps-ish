@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>NCXORDLST</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>XFELD</DOMNAME>
+    <HEADLEN>01</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>14</SCRLEN2>
+    <SCRLEN3>20</SCRLEN3>
+    <DDTEXT>CORD/PREG: Treatment Context of Clinical Order</DDTEXT>
+    <REPTEXT>T</REPTEXT>
+    <SCRTEXT_S>TreatCntxt</SCRTEXT_S>
+    <SCRTEXT_M>Treat.Context</SCRTEXT_M>
+    <SCRTEXT_L>Treatment Context</SCRTEXT_L>
+    <DTELMASTER>D</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>D</LANGU>
+    <LANGU>S</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>KLAT/VKG: Behandlungskontext des KLAT</DDTEXT>
+     <REPTEXT>B</REPTEXT>
+     <SCRTEXT_S>Beh.Kontxt</SCRTEXT_S>
+     <SCRTEXT_M>Beh.Kontext</SCRTEXT_M>
+     <SCRTEXT_L>Behandlungskontext</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>ORCL/PREAD: Contexto de tratamiento de ORCL</DDTEXT>
+     <REPTEXT>T</REPTEXT>
+     <SCRTEXT_S>ContxtTrat</SCRTEXT_S>
+     <SCRTEXT_M>Contexto trat.</SCRTEXT_M>
+     <SCRTEXT_L>Contexto tratamiento</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>DE</ID>
+      <OBJECT>NCXORDLST</OBJECT>
+      <LANGU>D</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0004</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00006</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>NCXORDLST</TDNAME>
+      <TDID>DE</TDID>
+      <TDSPRAS>D</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00004</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEFINITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Kennzeichnet einen Kontext als &lt;LS&gt;Behandlungskontext&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Ist das Kennzeichen gesetzt, so können Sie im Klinischen Auftrag eine</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Registerkarte definieren, welche die Kurzbezeichnung des Kontexts als</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Namen trägt. In dieser Registerkarte können Sie Klinische Aufträge und</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Termine im Rahmen des Behandlungskontexts planen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>INCLUDE ISH_CORD_PREREG_DEF OBJECT DOKU ID TX</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>DE</ID>
+      <OBJECT>NCXORDLST</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0004</VERSION>
+      <TXTLINES>00006</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>NCXORDLST</TDNAME>
+      <TDID>DE</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00004</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEFINITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Designates a context as a &lt;LS&gt;treatment context&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>If the indicator is set, you can define a tab page in the clinical</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>order that has the short text of the context as its title. You can plan</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>clinical orders and appointments for the treatment context on this</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>tab page.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>INCLUDE ISH_CORD_PREREG_DEF OBJECT DOKU ID TX</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>DE</ID>
+      <OBJECT>NCXORDLST</OBJECT>
+      <LANGU>S</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0004</VERSION>
+      <TXTLINES>00007</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>NCXORDLST</TDNAME>
+      <TDID>DE</TDID>
+      <TDSPRAS>S</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00004</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEFINITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Indica un contexto como &lt;LS&gt;Contexto de tratamiento&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Si el indicador está fijado, en la orden clínica se puede definir una</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>etiqueta que porte la denominación breve del contexto como nombre. En</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>esta etiqueta</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>se pueden planificar órdenes clínicas y citaciones</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>en el marco del contexto de tratamiento.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>INCLUDE ISH_CORD_PREREG_DEF OBJECT DOKU ID TX  LANGUAGE ES</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

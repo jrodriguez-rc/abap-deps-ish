@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_INTF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOINTERF>
+    <CLSNAME>IF_ISH_CB_SNAPSHOT_RUN_DATA</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>ISHMED: Callback for Snapshot</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <UNICODE>X</UNICODE>
+   </VSEOINTERF>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CB_SNAPSHOT_RUN_DATA</CLSNAME>
+     <CMPNAME>CB_SNAPSHOT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Callback ob ein Snapshot erzeugt werden soll</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CB_SNAPSHOT_RUN_DATA</CLSNAME>
+     <CMPNAME>CB_SNAPSHOT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Callback Whether Snapshot Is to Be Created</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CB_SNAPSHOT_RUN_DATA</CLSNAME>
+     <CMPNAME>CB_SNAPSHOT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Callback Whether Snapshot Is to Be Created</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CB_SNAPSHOT_RUN_DATA</CLSNAME>
+     <CMPNAME>CB_SNAPSHOT_BEFORE_CHANGE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Callback ob ein Snapshot vor Änderungen erzeugt werden soll</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CB_SNAPSHOT_RUN_DATA</CLSNAME>
+     <CMPNAME>CB_SNAPSHOT_BEFORE_CHANGE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Callback Whether Snapshot Is to Be Created Before Changes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CB_SNAPSHOT_RUN_DATA</CLSNAME>
+     <CMPNAME>CB_SNAPSHOT_BEFORE_CHANGE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Callback Whether Snapshot Is to Be Created Before Changes</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_INDEXED_ITAB</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: Indexed Table</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_INDEXED_ITAB is the abstract base class for table</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>classes that is based on an internal indexed table.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>For a general overview of table classes, see the documentation for the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>class &lt;DS:CL.CL_ISH_ITAB&gt;CL_ISH_ITAB&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>An indexed table allows access to the contained entries by means of an</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>index (position).</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_INDEXED_ITAB inherits from the class</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CL.CL_ISH_ITAB&gt;CL_ISH_ITAB&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The following subclasses exist:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;DS:CL.CL_ISH_SORTED_ITAB&gt;CL_ISH_SORTED_ITAB&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;DS:CL.CL_ISH_STANDARD_ITAB&gt;CL_ISH_STANDARD_ITAB&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_INDEXED_ITAB ist die abstrakte Basisklasse für</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Tabellenklassen, welche auf einer internen Indextabelle basieren.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Eine generelle Übersicht zu Tabellenklassen finden Sie in der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Klassendokumentation zu &lt;DS:CL.CL_ISH_ITAB&gt;CL_ISH_ITAB&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Eine indizierte Tabelle erlaubt den Zugriff auf die enthaltenen Einträge</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>über einen Index (Position).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_INDEXED_ITAB erbt von der Klasse</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_ITAB&gt;CL_ISH_ITAB&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Folgende Unterklassen existieren:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;DS:CL.CL_ISH_SORTED_ITAB&gt;CL_ISH_SORTED_ITAB&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;DS:CL.CL_ISH_STANDARD_ITAB&gt;CL_ISH_STANDARD_ITAB&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_INDEXED_ITAB</CLSNAME>
+     <CMPNAME>AT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den Eintrag zu einer bestimmten Position</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_INDEXED_ITAB</CLSNAME>
+     <CMPNAME>AT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Entry for a Given Position</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_INDEXED_ITAB</CLSNAME>
+     <CMPNAME>AT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Entry for a Given Position</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_INDEXED_ITAB</CLSNAME>
+     <CMPNAME>CO_OTYPE_INDEXED_ITAB</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Objekttyp</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_INDEXED_ITAB</CLSNAME>
+     <CMPNAME>CO_OTYPE_INDEXED_ITAB</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Object Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_INDEXED_ITAB</CLSNAME>
+     <CMPNAME>CO_OTYPE_INDEXED_ITAB</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Object Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_INDEXED_ITAB</CLSNAME>
+     <CMPNAME>FIRST</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den ersten Eintrag</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_INDEXED_ITAB</CLSNAME>
+     <CMPNAME>FIRST</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the First Entry</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_INDEXED_ITAB</CLSNAME>
+     <CMPNAME>FIRST</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the First Entry</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_INDEXED_ITAB</CLSNAME>
+     <CMPNAME>INDEX</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die Position eines Wertes (erstes Vorkommnis)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_INDEXED_ITAB</CLSNAME>
+     <CMPNAME>INDEX</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Position of a Value (First Occurrence)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_INDEXED_ITAB</CLSNAME>
+     <CMPNAME>INDEX</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Position of a Value (First Occurrence)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_INDEXED_ITAB</CLSNAME>
+     <CMPNAME>LAST</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den letzten Eintrag</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_INDEXED_ITAB</CLSNAME>
+     <CMPNAME>LAST</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Last Entry</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_INDEXED_ITAB</CLSNAME>
+     <CMPNAME>LAST</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Last Entry</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_INDEXED_ITAB</CLSNAME>
+     <CMPNAME>REMOVE_AT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Entfernt den Eintrag einer bestimmten Position</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_INDEXED_ITAB</CLSNAME>
+     <CMPNAME>REMOVE_AT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Removes the Entry of a Given Position</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_INDEXED_ITAB</CLSNAME>
+     <CMPNAME>REMOVE_AT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Removes the Entry of a Given Position</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_INDEXED_ITAB</CLSNAME>
+     <CMPNAME>REPLACE_AT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ersetzt den Eintrag einer bestimmten Position</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_INDEXED_ITAB</CLSNAME>
+     <CMPNAME>REPLACE_AT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Replaces the Entry of a Given Position</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_INDEXED_ITAB</CLSNAME>
+     <CMPNAME>REPLACE_AT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Replaces the Entry of a Given Position</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

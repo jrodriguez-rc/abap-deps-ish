@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>N1_SEQNUM</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>NUMC5</DOMNAME>
+    <HEADLEN>05</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>14</SCRLEN2>
+    <SCRLEN3>40</SCRLEN3>
+    <DDTEXT>Sequence Number</DDTEXT>
+    <REPTEXT>SqNo.</REPTEXT>
+    <SCRTEXT_S>Sequence</SCRTEXT_S>
+    <SCRTEXT_M>Sequence</SCRTEXT_M>
+    <SCRTEXT_L>Sequence Number</SCRTEXT_L>
+    <DTELMASTER>D</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>D</LANGU>
+    <LANGU>S</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>Reihenfolgenummer</DDTEXT>
+     <REPTEXT>RfgNr</REPTEXT>
+     <SCRTEXT_S>Reihenf.</SCRTEXT_S>
+     <SCRTEXT_M>Reihenfolge</SCRTEXT_M>
+     <SCRTEXT_L>Reihenfolgenummer</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>Número de secuencia</DDTEXT>
+     <REPTEXT>Sec.</REPTEXT>
+     <SCRTEXT_S>Secuencia</SCRTEXT_S>
+     <SCRTEXT_M>Secuencia</SCRTEXT_M>
+     <SCRTEXT_L>Número de secuencia</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

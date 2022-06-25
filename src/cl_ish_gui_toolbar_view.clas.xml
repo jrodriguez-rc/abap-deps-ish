@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_GUI_TOOLBAR_VIEW</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: GUI - Toolbar View</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Class CL_ISH_GUI_TOOLBAR_VIEW is the abstract basic class for an</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>interface object for a toolbar control in a</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:IF.IF_ISH_GUI_APPLICATION&gt;dialog application&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Class CL_ISH_GUI_TOOLBAR_VIEW inherits from class</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CL.CL_ISH_GUI_CONTROL_VIEW&gt;CL_ISH_GUI_CONTROL_VIEW&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The interface of an interface object for a toolbar control is defined by</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>the interface &lt;DS:IF.IF_ISH_GUI_TOOLBAR_VIEW&gt;IF_ISH_GUI_TOOLBAR_VIEW&lt;/&gt;.</TDLINE>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_GUI_TOOLBAR_VIEW ist die abstrakte Basisklasse eines</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Oberflächenobjekts für ein Toolbar-Control in einer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_APPLICATION&gt;Dialoganwendung&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_GUI_TOOLBAR_VIEW erbt von der Klasse</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_GUI_CONTROL_VIEW&gt;CL_ISH_GUI_CONTROL_VIEW&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Schnittstelle eines Oberflächenobjekts für ein Toolbar-Control wird</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>durch das Interface</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_TOOLBAR_VIEW&gt;IF_ISH_GUI_TOOLBAR_VIEW&lt;/&gt; definiert.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TOOLBAR_VIEW</CLSNAME>
+     <CMPNAME>CO_CMDRESULT_NOPROC</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Funktion: nicht verarbeitet</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TOOLBAR_VIEW</CLSNAME>
+     <CMPNAME>CO_CMDRESULT_NOPROC</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Function: not Processed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TOOLBAR_VIEW</CLSNAME>
+     <CMPNAME>CO_CMDRESULT_NOPROC</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Function: not Processed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TOOLBAR_VIEW</CLSNAME>
+     <CMPNAME>CO_CMDRESULT_OKCODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Funktion: ok code request absetzen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TOOLBAR_VIEW</CLSNAME>
+     <CMPNAME>CO_CMDRESULT_OKCODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Funktion: Terminate OK Code Request</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TOOLBAR_VIEW</CLSNAME>
+     <CMPNAME>CO_CMDRESULT_OKCODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Funktion: Terminate OK Code Request</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TOOLBAR_VIEW</CLSNAME>
+     <CMPNAME>CO_CMDRESULT_PROCESSED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Funktion: verarbeitet</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TOOLBAR_VIEW</CLSNAME>
+     <CMPNAME>CO_CMDRESULT_PROCESSED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Function: Processed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TOOLBAR_VIEW</CLSNAME>
+     <CMPNAME>CO_CMDRESULT_PROCESSED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Function: Processed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TOOLBAR_VIEW</CLSNAME>
+     <CMPNAME>CREATE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Erzeugt das Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TOOLBAR_VIEW</CLSNAME>
+     <CMPNAME>CREATE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Creates the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TOOLBAR_VIEW</CLSNAME>
+     <CMPNAME>CREATE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Creates the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TOOLBAR_VIEW</CLSNAME>
+     <CMPNAME>GR_FVAR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Funktionsvariante</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TOOLBAR_VIEW</CLSNAME>
+     <CMPNAME>GR_FVAR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Function Variant</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TOOLBAR_VIEW</CLSNAME>
+     <CMPNAME>GR_FVAR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Function Variant</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TOOLBAR_VIEW</CLSNAME>
+     <CMPNAME>INITIALIZE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Initialisiert das Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TOOLBAR_VIEW</CLSNAME>
+     <CMPNAME>INITIALIZE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Initializes the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TOOLBAR_VIEW</CLSNAME>
+     <CMPNAME>INITIALIZE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Initializes the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TOOLBAR_VIEW</CLSNAME>
+     <CMPNAME>ON_DROPDOWN_CLICKED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ereignisbehandler: DropDown-Taste wurde gedrückt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TOOLBAR_VIEW</CLSNAME>
+     <CMPNAME>ON_DROPDOWN_CLICKED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Event Handler: Dropdown Button Was Pressed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TOOLBAR_VIEW</CLSNAME>
+     <CMPNAME>ON_DROPDOWN_CLICKED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Event Handler: Dropdown Button Was Pressed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TOOLBAR_VIEW</CLSNAME>
+     <CMPNAME>ON_FUNCTION_SELECTED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ereignisbehandler: Funktion wurde ausgewählt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TOOLBAR_VIEW</CLSNAME>
+     <CMPNAME>ON_FUNCTION_SELECTED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Event Handler: Function Was Chosen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TOOLBAR_VIEW</CLSNAME>
+     <CMPNAME>ON_FUNCTION_SELECTED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Event Handler: Function Was Chosen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TOOLBAR_VIEW</CLSNAME>
+     <CMPNAME>_BUILD_BUTTONS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Generiert die Druckknöpfe</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TOOLBAR_VIEW</CLSNAME>
+     <CMPNAME>_BUILD_BUTTONS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Generates Pushbuttons</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TOOLBAR_VIEW</CLSNAME>
+     <CMPNAME>_BUILD_BUTTONS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Generates Pushbuttons</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TOOLBAR_VIEW</CLSNAME>
+     <CMPNAME>_INIT_TOOLBAR_VIEW</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Initialisiert das Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TOOLBAR_VIEW</CLSNAME>
+     <CMPNAME>_INIT_TOOLBAR_VIEW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Initializes the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TOOLBAR_VIEW</CLSNAME>
+     <CMPNAME>_INIT_TOOLBAR_VIEW</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Initializes the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TOOLBAR_VIEW</CLSNAME>
+     <CMPNAME>_OWN_CMD</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Eigene Funktion verarbeiten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TOOLBAR_VIEW</CLSNAME>
+     <CMPNAME>_OWN_CMD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Process own Function</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_TOOLBAR_VIEW</CLSNAME>
+     <CMPNAME>_OWN_CMD</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Process own Function</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

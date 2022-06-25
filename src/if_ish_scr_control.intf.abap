@@ -1,0 +1,221 @@
+*"* components of interface IF_ISH_SCR_CONTROL
+interface IF_ISH_SCR_CONTROL
+  public .
+
+
+  interfaces IF_ISH_SCREEN .
+
+  aliases CO_UCOMM_SCR_HELP_REQUEST
+    for IF_ISH_SCREEN~CO_UCOMM_SCR_HELP_REQUEST .
+  aliases CO_UCOMM_SCR_SAVE
+    for IF_ISH_SCREEN~CO_UCOMM_SCR_SAVE .
+  aliases CREATE_ALL_LISTBOXES
+    for IF_ISH_SCREEN~CREATE_ALL_LISTBOXES .
+  aliases CREATE_LISTBOX
+    for IF_ISH_SCREEN~CREATE_LISTBOX .
+  aliases DELETE_EMPTY_LINES
+    for IF_ISH_SCREEN~DELETE_EMPTY_LINES .
+  aliases DESTROY
+    for IF_ISH_SCREEN~DESTROY .
+  aliases GET_ACTIVE_TABSTRIP
+    for IF_ISH_SCREEN~GET_ACTIVE_TABSTRIP .
+  aliases GET_CALLER
+    for IF_ISH_SCREEN~GET_CALLER .
+  aliases GET_CONFIG
+    for IF_ISH_SCREEN~GET_CONFIG .
+  aliases GET_CURSORFIELD
+    for IF_ISH_SCREEN~GET_CURSORFIELD .
+  aliases GET_DATA
+    for IF_ISH_SCREEN~GET_DATA .
+  aliases GET_DEFAULT_CURSORFIELD
+    for IF_ISH_SCREEN~GET_DEFAULT_CURSORFIELD .
+  aliases GET_DEF_CRS_POSSIBLE
+    for IF_ISH_SCREEN~GET_DEF_CRS_POSSIBLE .
+  aliases GET_DYNPRO_HEADER
+    for IF_ISH_SCREEN~GET_DYNPRO_HEADER .
+  aliases GET_DYNPRO_HEADER_COLUMNS
+    for IF_ISH_SCREEN~GET_DYNPRO_HEADER_COLUMNS .
+  aliases GET_ENVIRONMENT
+    for IF_ISH_SCREEN~GET_ENVIRONMENT .
+  aliases GET_FIELDS
+    for IF_ISH_SCREEN~GET_FIELDS .
+  aliases GET_FIELDS_CHANGEABLE
+    for IF_ISH_SCREEN~GET_FIELDS_CHANGEABLE .
+  aliases GET_FIELDS_DEFINITION
+    for IF_ISH_SCREEN~GET_FIELDS_DEFINITION .
+  aliases GET_FIELDS_VALUE
+    for IF_ISH_SCREEN~GET_FIELDS_VALUE .
+  aliases GET_HANDLE_MANDATORY_FIELDS
+    for IF_ISH_SCREEN~GET_HANDLE_MANDATORY_FIELDS .
+  aliases GET_LOCK
+    for IF_ISH_SCREEN~GET_LOCK .
+  aliases GET_MAIN_OBJECT
+    for IF_ISH_SCREEN~GET_MAIN_OBJECT .
+  aliases GET_PARENT
+    for IF_ISH_SCREEN~GET_PARENT .
+  aliases GET_SCRMOD_BY_FIELDNAME
+    for IF_ISH_SCREEN~GET_SCRMOD_BY_FIELDNAME .
+  aliases GET_TYPE
+    for IF_ISH_IDENTIFY_OBJECT~GET_TYPE .
+  aliases GET_T_SCRMOD
+    for IF_ISH_SCREEN~GET_T_SCRMOD .
+  aliases GET_T_SCRM_FIELD
+    for IF_ISH_SCREEN~GET_T_SCRM_FIELD .
+  aliases GET_USE_TNDYM_CURSOR
+    for IF_ISH_SCREEN~GET_USE_TNDYM_CURSOR .
+  aliases HELP_REQUEST
+    for IF_ISH_SCREEN~HELP_REQUEST .
+  aliases INITIALIZE
+    for IF_ISH_SCREEN~INITIALIZE .
+  aliases IS_A
+    for IF_ISH_IDENTIFY_OBJECT~IS_A .
+  aliases IS_INHERITED_FROM
+    for IF_ISH_IDENTIFY_OBJECT~IS_INHERITED_FROM .
+  aliases MODIFY_SCREEN
+    for IF_ISH_SCREEN~MODIFY_SCREEN .
+  aliases OK_CODE_SCREEN
+    for IF_ISH_SCREEN~OK_CODE_SCREEN .
+  aliases PROCESS_AFTER_INPUT
+    for IF_ISH_SCREEN~PROCESS_AFTER_INPUT .
+  aliases PROCESS_BEFORE_OUTPUT
+    for IF_ISH_SCREEN~PROCESS_BEFORE_OUTPUT .
+  aliases RAISE_EV_ERROR
+    for IF_ISH_SCREEN~RAISE_EV_ERROR .
+  aliases RAISE_EV_USER_COMMAND
+    for IF_ISH_SCREEN~RAISE_EV_USER_COMMAND .
+  aliases REMIND_CURSORFIELD
+    for IF_ISH_SCREEN~REMIND_CURSORFIELD .
+  aliases SET_ACTIVE_TABSTRIP
+    for IF_ISH_SCREEN~SET_ACTIVE_TABSTRIP .
+  aliases SET_CALLER
+    for IF_ISH_SCREEN~SET_CALLER .
+  aliases SET_CONFIG
+    for IF_ISH_SCREEN~SET_CONFIG .
+  aliases SET_CURSOR
+    for IF_ISH_SCREEN~SET_CURSOR .
+  aliases SET_CURSORFIELD
+    for IF_ISH_SCREEN~SET_CURSORFIELD .
+  aliases SET_DATA
+    for IF_ISH_SCREEN~SET_DATA .
+  aliases SET_DATA_FROM_FIELDVAL
+    for IF_ISH_SCREEN~SET_DATA_FROM_FIELDVAL .
+  aliases SET_ENVIRONMENT
+    for IF_ISH_SCREEN~SET_ENVIRONMENT .
+  aliases SET_EV_USER_COMMAND_RESULT
+    for IF_ISH_SCREEN~SET_EV_USER_COMMAND_RESULT .
+  aliases SET_FIELDS
+    for IF_ISH_SCREEN~SET_FIELDS .
+  aliases SET_FIELDS_OLD
+    for IF_ISH_SCREEN~SET_FIELDS_OLD .
+  aliases SET_FIELDVAL_FROM_DATA
+    for IF_ISH_SCREEN~SET_FIELDVAL_FROM_DATA .
+  aliases SET_FIRST_TIME
+    for IF_ISH_SCREEN~SET_FIRST_TIME .
+  aliases SET_HANDLE_MANDATORY_FIELDS
+    for IF_ISH_SCREEN~SET_HANDLE_MANDATORY_FIELDS .
+  aliases SET_INSTANCE_FOR_DISPLAY
+    for IF_ISH_SCREEN~SET_INSTANCE_FOR_DISPLAY .
+  aliases SET_LOCK
+    for IF_ISH_SCREEN~SET_LOCK .
+  aliases SET_MAIN_OBJECT
+    for IF_ISH_SCREEN~SET_MAIN_OBJECT .
+  aliases SET_PARENT
+    for IF_ISH_SCREEN~SET_PARENT .
+  aliases SET_USE_TNDYM_CURSOR
+    for IF_ISH_SCREEN~SET_USE_TNDYM_CURSOR .
+  aliases TRANSPORT_FROM_DY
+    for IF_ISH_SCREEN~TRANSPORT_FROM_DY .
+  aliases TRANSPORT_TO_DY
+    for IF_ISH_SCREEN~TRANSPORT_TO_DY .
+  aliases VALUE_REQUEST
+    for IF_ISH_SCREEN~VALUE_REQUEST .
+  aliases EV_CLEAR_ALL_CURSORFIELDS
+    for IF_ISH_SCREEN~EV_CLEAR_ALL_CURSORFIELDS .
+  aliases EV_DATA_CHANGED_AT_OKCODE
+    for IF_ISH_SCREEN~EV_DATA_CHANGED_AT_OKCODE .
+  aliases EV_ERROR
+    for IF_ISH_SCREEN~EV_ERROR .
+  aliases EV_USER_COMMAND
+    for IF_ISH_SCREEN~EV_USER_COMMAND .
+
+  constants CO_UCOMM_SYSEV type SY-UCOMM value 'SYSEV'. "#EC NOTEXT
+  constants CO_UCOMM_SYSEV_ERROR type SY-UCOMM value 'SYSEV_ERROR'. "#EC NOTEXT
+
+  events EV_SYSTEM_EVENT
+    exporting
+      value(I_UCOMM) type SY-UCOMM
+      value(IR_OBJECT) type ref to IF_ISH_IDENTIFY_OBJECT optional .
+
+  methods BUILD_UCOMM
+    changing
+      !C_UCOMM type SY-UCOMM .
+  methods DESTROY_INCL_EMBCNTL
+    exporting
+      !E_RC type ISH_METHOD_RC
+    changing
+      !CR_ERRORHANDLER type ref to CL_ISHMED_ERRORHANDLING optional .
+  methods GET_CONTAINER
+    importing
+      !I_CREATE type ISH_ON_OFF default 'X'
+    exporting
+      !ER_CONTAINER type ref to CL_GUI_CONTAINER
+      !E_RC type ISH_METHOD_RC
+    changing
+      !CR_ERRORHANDLER type ref to CL_ISHMED_ERRORHANDLING optional .
+  methods GET_ORIGINAL_UCOMM
+    importing
+      !I_UCOMM type SY-UCOMM
+    returning
+      value(R_ORIGINAL_UCOMM) type SY-UCOMM .
+  methods IS_DRAGDROP_SUPPORTED
+    returning
+      value(R_SUPPORTED) type ISH_ON_OFF .
+  methods IS_SYSEV_UCOMM
+    importing
+      !I_UCOMM type SY-UCOMM
+    returning
+      value(R_IS_SYSEV_UCOMM) type ISH_ON_OFF .
+  methods IS_UCOMM_SUPPORTED
+    importing
+      !I_UCOMM type SY-UCOMM
+    returning
+      value(R_SUPPORTED) type ISH_ON_OFF .
+  methods PAI_INCL_EMBCNTL
+    importing
+      !I_OBJECT_TYPE type I default 0
+    exporting
+      !E_RC type ISH_METHOD_RC
+    changing
+      !CR_ERRORHANDLER type ref to CL_ISHMED_ERRORHANDLING optional .
+  methods PBO_INCL_EMBCNTL
+    importing
+      !I_OBJECT_TYPE type I default 0
+    exporting
+      !E_RC type ISH_METHOD_RC
+    changing
+      !CR_ERRORHANDLER type ref to CL_ISHMED_ERRORHANDLING optional .
+  methods RAISE_EV_SYSTEM_EVENT
+    importing
+      !I_UCOMM type SY-UCOMM
+      !IR_OBJECT type ref to IF_ISH_IDENTIFY_OBJECT optional
+    exporting
+      !E_HANDLED type ISH_ON_OFF
+      !E_RC type ISH_METHOD_RC
+    changing
+      !CR_ERRORHANDLER type ref to CL_ISHMED_ERRORHANDLING optional .
+  methods SET_EV_SYSTEM_EVENT_RESULT
+    importing
+      !I_HANDLED type ISH_ON_OFF
+      !I_RC type ISH_METHOD_RC default 0
+      !IR_ERRORHANDLER type ref to CL_ISHMED_ERRORHANDLING optional .
+  methods SET_OKCODE_SYSEV
+    importing
+      !I_UCOMM type SY-UCOMM .
+  methods SET_OKCODE_SYSEV_ERROR
+    importing
+      !I_RC type ISH_METHOD_RC
+      !IR_ERRORHANDLER type ref to CL_ISHMED_ERRORHANDLING .
+  methods SUPPORT_DRAGDROP
+    importing
+      !I_SUPPORT_DRAGDROP type ISH_ON_OFF default 'X' .
+endinterface.

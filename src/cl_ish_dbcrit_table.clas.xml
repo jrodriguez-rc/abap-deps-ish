@@ -1,0 +1,544 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H DB: Multiple Value Criterion</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+    <CLSSHAREDMEMORY>X</CLSSHAREDMEMORY>
+   </VSEOCLASS>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_DBCRIT_TABLE is used to display a multiple value</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>criterion as a selection criterion for database accesses.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Each multiple value criterion contains a field name, an operator, and a</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>list of values.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The possible operators are:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>IN</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>Equivalent of the WHERE clause &apos;&lt;(&gt;&lt;&lt;)&gt;field name&gt; IN (&lt;(&gt;&lt;&lt;)&gt;values&gt;)&apos;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>Defined by the constant CO_OPERATOR_IN.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>NOT_IN</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>Equivalent of the WHERE clause &apos;&lt;(&gt;&lt;&lt;)&gt;field name&gt; NOT IN (&lt;(&gt;&lt;&lt;)&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>values&gt;)&apos;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>Defined by the constant CO_OPERATOR_NOT_IN.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The method &lt;DS:CO.CL_ISH_DBCRITERION            AS_STRING&gt;AS_STRING&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>of a multiple value criterion yields the following value:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>With operator IN: ( &lt;(&gt;&lt;&lt;)&gt;field name&gt; IN (&lt;(&gt;&lt;&lt;)&gt;value1&gt;,&lt;(&gt;&lt;&lt;)&gt;value2&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>,...) )</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>With operator NOT_IN: ( &lt;(&gt;&lt;&lt;)&gt;field name&gt; NOT IN (&lt;(&gt;&lt;&lt;)&gt;value1&gt;,&lt;(&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>&lt;&lt;)&gt;value2&gt;,...) )</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>A multiple value criterion can be instantiated either directly by means</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>of the statement CREATE OBJECT (see the method</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CO.CL_ISH_DBCRIT_SINGLE          CONSTRUCTOR&gt;CONSTRUCTOR&lt;/&gt;), or by</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>calling one of the static CREATE* methods.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_DBCRIT_TABLE inherits from the class</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CL.CL_ISH_DBCRITERION&gt;CL_ISH_DBCRITERION&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_DBCRIT_TABLE dient zur Darstellung eines</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Mehrfachwertes als Selektionskriterium für Datenbankzugriffe.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Jedes Mehrfachwertkriterium enthält einen Feldnamen, einen Operator und</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>eine Liste von Werten.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die möglichen Operatoren sind:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>IN</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Entspricht der WHERE-Klausel &apos;&lt;Feldname&gt; IN (&lt;Werte&gt;)&apos;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Definiert durch die Konstante CO_OPERATOR_IN.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>NOT_IN</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Entspricht der WHERE-Klausel &apos;&lt;Feldname&gt; NOT IN (&lt;Werte&gt;)&apos;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Definiert durch die Konstante CO_OPERATOR_NOT_IN.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Methode &lt;DS:CO.CL_ISH_DBCRITERION            AS_STRING&gt;AS_STRING&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>eines Mehrfachwertkriteriums liefert folgenden Wert:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Bei Operator IN: ( &lt;Feldname&gt; IN (&lt;Wert1&gt;,&lt;Wert2&gt;,...) )</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Bei Operator NOT_IN: ( &lt;Feldname&gt; NOT IN (&lt;Wert1&gt;,&lt;(&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>&lt;&lt;)&gt;Wert2&gt;,...) )</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Instanzierung eines Mehrfachwertkriteriums kann entweder direkt über</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>die CREATE OBJECT Anweisung erfolgen (siehe Methode</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CO.CL_ISH_DBCRIT_SINGLE          CONSTRUCTOR&gt;CONSTRUCTOR&lt;/&gt;) oder</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>durch Aufruf einer der statischen CREATE* Methoden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_DBCRIT_TABLE erbt von der Klasse</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_DBCRITERION&gt;CL_ISH_DBCRITERION&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>ADD_VALUE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Fügt einen Wert hinzu</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>ADD_VALUE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Adds a Value</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>ADD_VALUE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Adds a Value</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>ADD_VALUES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Fügt Werte hinzu</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>ADD_VALUES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Adds Values</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>ADD_VALUES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Adds Values</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>ADD_VALUES_BY_TABENTRIES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Fügt die Werte aus einer beliebigen Tabelle hinzu</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>ADD_VALUES_BY_TABENTRIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Adds the Values from Any Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>ADD_VALUES_BY_TABENTRIES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Adds the Values from Any Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>CO_OPERATOR_IN</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Vergleichsoperator &quot;Enthalten&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>CO_OPERATOR_IN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Relational Operator &quot;Contained&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>CO_OPERATOR_IN</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Relational Operator &quot;Contained&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>CO_OPERATOR_NOT_IN</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Vergleichsoperator &quot;Nicht enthalten&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>CO_OPERATOR_NOT_IN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Relational Operator &quot;Not Contained&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>CO_OPERATOR_NOT_IN</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Relational Operator &quot;Not Contained&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>CO_OTYPE_DBCRIT_TABLE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Objekttyp</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>CO_OTYPE_DBCRIT_TABLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Object Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>CO_OTYPE_DBCRIT_TABLE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Object Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>CREATE_BY_TABENTRIES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Instanziert ein Mehrfachwertkriterium</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>CREATE_BY_TABENTRIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Instantiates a Multiple Value Criterion</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>CREATE_BY_TABENTRIES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Instantiates a Multiple Value Criterion</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>GET_OPERATOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert den Vergleichsoperator (siehe CO_OPERATOR_*)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>GET_OPERATOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Gets the Relational Operator (See CO_OPERATOR_*)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>GET_OPERATOR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Gets the Relational Operator (See CO_OPERATOR_*)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>GET_VALUES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Werte</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>GET_VALUES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Gets the Values</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>GET_VALUES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Gets the Values</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>GT_VALUE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Tabelle mit Strings</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>GT_VALUE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Table with Strings</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>GT_VALUE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Table with Strings</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>G_FIELDNAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feldname</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>G_FIELDNAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>G_FIELDNAME</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Field Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>G_OPERATOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Vergleichsoperator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>G_OPERATOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Relational Operator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>G_OPERATOR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Relational Operator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>IS_OPERATOR_VALID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert ob ein Vergleichsoperator gültig ist</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>IS_OPERATOR_VALID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Whether a Relational Operator Is Valid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>IS_OPERATOR_VALID</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Whether a Relational Operator Is Valid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>SET_VALUES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt die Werte</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>SET_VALUES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the Values</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>SET_VALUES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the Values</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>SET_VALUES_BY_TABENTRIES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Übernimmt die Werte aus einer beliebigen Tabelle</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>SET_VALUES_BY_TABENTRIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Transfers the Values from Any Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_TABLE</CLSNAME>
+     <CMPNAME>SET_VALUES_BY_TABENTRIES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Transfers the Values from Any Table</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

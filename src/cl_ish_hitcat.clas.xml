@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: Base Class for Hit List Catalogs</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>CO_OTYPE_HITCAT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Objekttyp Hitlisten-Katalog</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>CO_OTYPE_HITCAT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Object Type Hit List Catalog</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>CO_OTYPE_HITCAT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Object Type Hit List Catalog</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>CO_TYPE_HITCAT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Objekttyp Hitlisten-Katalog</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>CO_TYPE_HITCAT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Object Type Hit List Catalog</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>CO_TYPE_HITCAT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Object Type Hit List Catalog</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>GET_ID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert den Schlüssel des Katalogs</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>GET_ID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Key of the Catalog</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>GET_ID</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Key of the Catalog</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>GET_LONGNAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Langbezeichnung des Katalogs</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>GET_LONGNAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Long Name of the Catalog</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>GET_LONGNAME</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Long Name of the Catalog</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>GET_SHORTNAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Kurzbezeichnung des Katalogs</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>GET_SHORTNAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Short Name of the Catalog</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>GET_SHORTNAME</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Short Name of the Catalog</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>GET_VALID_FROM</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert den Gültigkeitsbeginn des Katalogs</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>GET_VALID_FROM</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Valid-From Date of the Catalog</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>GET_VALID_FROM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Valid-From Date of the Catalog</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>GET_VALID_TO</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert das Gültigkeitsende des Katalogs</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>GET_VALID_TO</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Valid-To Date of the Catalog</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>GET_VALID_TO</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Valid-To Date of the Catalog</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>G_ID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Schlüssel des Katalogs</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>G_ID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>ID Key of the Catalog</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>G_ID</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>ID Key of the Catalog</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>G_LONGNAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Langbezeichnung des Katalogs</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>G_LONGNAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Long Name of the Catalog</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>G_LONGNAME</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Long Name of the Catalog</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>G_SHORTNAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Kurzbezeichnung des Katalogs</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>G_SHORTNAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Short Name of Catalog</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>G_SHORTNAME</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Short Name of Catalog</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>G_VALID_FROM</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Gültigkeitsbeginn des Katalogs</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>G_VALID_FROM</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Valid-From Date of the Catalog</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>G_VALID_FROM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Valid-From Date of the Catalog</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>G_VALID_TO</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Gültigkeitsende des Katalogs</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>G_VALID_TO</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Valid-To Date of the Catalog</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>G_VALID_TO</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Valid-To Date of the Catalog</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>INITIALIZE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Initialisiert den Katalog (nicht die Katalogeinträge).</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>INITIALIZE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Initializes the Catalog (not the Catalog Entries)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>INITIALIZE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Initializes the Catalog (not the Catalog Entries)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>INITIALIZE_ATTRIBUTES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Initialisiert die Katalog-Attribute</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>INITIALIZE_ATTRIBUTES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Initializes the Catalog Attributes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>INITIALIZE_ATTRIBUTES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Initializes the Catalog Attributes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>IS_VALID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert zurück, ob der Katalog gültig ist.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>IS_VALID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Whether the Catalog Is Valid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_HITCAT</CLSNAME>
+     <CMPNAME>IS_VALID</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Whether the Catalog Is Valid</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

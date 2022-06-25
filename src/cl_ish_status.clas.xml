@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_STATUS</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: Status</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_STATUS provides the functionality for managing</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>status objects.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The status is linked to the object via the object number.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Description of the public methods:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>&lt;ZH&gt;read_status&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>This method returns the status of an object.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>&lt;ZH&gt;create_status&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>This method sets the initial status of an object.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>&lt;ZH&gt;change_status&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>This method changes the status of an object.</TDLINE>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_STATUS stellt die Funktionalität zur Verwaltung von</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Statusobjekten zur Verfügung.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Der Status ist über die Objektnummer mit dem Objekt verknüpft.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Beschreibung der öffentlichen Methoden:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;read_status&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Diese Methode liefert den Status eines Objektes.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;create_status&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Diese Methode setzt den Initialstatus eines Objektes.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;change_status&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Diese Methode ändert den Status eines Objektes.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STATUS</CLSNAME>
+     <CMPNAME>CHANGE_STATUS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Status eines Objekts ändern (JEST)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STATUS</CLSNAME>
+     <CMPNAME>CHANGE_STATUS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Change Status of an Object (JEST)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STATUS</CLSNAME>
+     <CMPNAME>CHANGE_STATUS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Change Status of an Object (JEST)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STATUS</CLSNAME>
+     <CMPNAME>COPY_STATUS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Status kopieren</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STATUS</CLSNAME>
+     <CMPNAME>COPY_STATUS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Copy Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STATUS</CLSNAME>
+     <CMPNAME>COPY_STATUS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Copy Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STATUS</CLSNAME>
+     <CMPNAME>CO_OTYPE_STATUS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Konstante Typ Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STATUS</CLSNAME>
+     <CMPNAME>CO_OTYPE_STATUS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Constant Type: Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STATUS</CLSNAME>
+     <CMPNAME>CO_OTYPE_STATUS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Constant Type: Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STATUS</CLSNAME>
+     <CMPNAME>CREATE_STATUS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Status eines Objekts anlegen (JSTO und JEST)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STATUS</CLSNAME>
+     <CMPNAME>CREATE_STATUS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Create Status of an Object (JSTO and JEST)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STATUS</CLSNAME>
+     <CMPNAME>CREATE_STATUS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Create Status of an Object (JSTO and JEST)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STATUS</CLSNAME>
+     <CMPNAME>GET_INITIAL_STATUS_CORD</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert den Initialstatus zu einer Klin. Auftragsposition.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STATUS</CLSNAME>
+     <CMPNAME>GET_INITIAL_STATUS_CORD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Initial Status for a Clinical Order Item</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STATUS</CLSNAME>
+     <CMPNAME>GET_INITIAL_STATUS_CORD</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Initial Status for a Clinical Order Item</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STATUS</CLSNAME>
+     <CMPNAME>GET_T_NEXT_STATUS_CORD</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert alle Folgestatus zu einer Klin. Auftragsposition.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STATUS</CLSNAME>
+     <CMPNAME>GET_T_NEXT_STATUS_CORD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns All Subsequent Statuses for a Clinical Order Item</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STATUS</CLSNAME>
+     <CMPNAME>GET_T_NEXT_STATUS_CORD</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns All Subsequent Statuses for a Clinical Order Item</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STATUS</CLSNAME>
+     <CMPNAME>INIT_MESG</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Message Queue initialisieren</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STATUS</CLSNAME>
+     <CMPNAME>INIT_MESG</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Initialize Message Queue</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STATUS</CLSNAME>
+     <CMPNAME>INIT_MESG</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Initialize Message Queue</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STATUS</CLSNAME>
+     <CMPNAME>READ_STATUS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Status eines Objekts lesen (JSTO und JEST)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STATUS</CLSNAME>
+     <CMPNAME>READ_STATUS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Read Object Status (JSTO and JEST)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STATUS</CLSNAME>
+     <CMPNAME>READ_STATUS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Read Object Status (JSTO and JEST)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STATUS</CLSNAME>
+     <CMPNAME>READ_T_STATUS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Status mehrerer Objekte lesen (JSTO und JEST)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STATUS</CLSNAME>
+     <CMPNAME>READ_T_STATUS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Read Status of Multiple Objects (JSTO and JEST)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STATUS</CLSNAME>
+     <CMPNAME>READ_T_STATUS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Read Status of Multiple Objects (JSTO and JEST)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STATUS</CLSNAME>
+     <CMPNAME>STORE_MESG</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Messages in Message Queue schreiben</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STATUS</CLSNAME>
+     <CMPNAME>STORE_MESG</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Write Messages in Message Queue</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_STATUS</CLSNAME>
+     <CMPNAME>STORE_MESG</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Write Messages in Message Queue</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

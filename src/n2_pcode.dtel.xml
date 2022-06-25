@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>N2_PCODE</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>CHAR4</DOMNAME>
+    <HEADLEN>04</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>14</SCRLEN2>
+    <SCRLEN3>20</SCRLEN3>
+    <DDTEXT>Special Indicator (Presentation Code)</DDTEXT>
+    <REPTEXT>SpIn</REPTEXT>
+    <SCRTEXT_S>Spec. Ind.</SCRTEXT_S>
+    <SCRTEXT_M>Special Indic.</SCRTEXT_M>
+    <SCRTEXT_L>Special Indicator</SCRTEXT_L>
+    <DTELMASTER>D</DTELMASTER>
+    <DEFFDNAME>SPECIAL_IND</DEFFDNAME>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>D</LANGU>
+    <LANGU>S</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>Besonderes Kennzeichen (Präsentationscode)</DDTEXT>
+     <REPTEXT>BKeZ</REPTEXT>
+     <SCRTEXT_S>Bes Kennz.</SCRTEXT_S>
+     <SCRTEXT_M>Bes. Kennzei.</SCRTEXT_M>
+     <SCRTEXT_L>Besonderes Kennzei.</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>Indicador especial (código de presentación)</DDTEXT>
+     <REPTEXT>InEs</REPTEXT>
+     <SCRTEXT_S>Ind.esp.</SCRTEXT_S>
+     <SCRTEXT_M>Ind.especial</SCRTEXT_M>
+     <SCRTEXT_L>Indicador especial</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>DE</ID>
+      <OBJECT>N2_PCODE</OBJECT>
+      <LANGU>D</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0005</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00008</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>N2_PCODE</TDNAME>
+      <TDID>DE</TDID>
+      <TDSPRAS>D</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00005</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEFINITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Der Präsentationscode ist der interne Schlüssel eines Besonderen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Kennzeichens. Der Schlüssel ist frei vergebbar.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Über den Präsentationscode kann gesteuert werden, ob ein Dokument</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>zusätzlich mit einem Icon oder einem Symbol und/oder einem Text</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>präsentiert wird, um es besonders herauszustellen; z.B. ein dringend zu</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>bearbeitendes Dokument, ein pathologischer Befund etc.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Welche Icons, Symbole oder Texte an ein Dokument &apos;angeklebt&apos; werden</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>können, muß für jede Einrichtung per Customizing definiert werden.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>DE</ID>
+      <OBJECT>N2_PCODE</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0005</VERSION>
+      <TXTLINES>00008</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>N2_PCODE</TDNAME>
+      <TDID>DE</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00005</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEFINITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The presentation code is the internal key of a special indicator. This</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>key is user-defined.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Using the presentation code you can control if a document is</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>additionally presented using an icon, a symbol and/or text, in order to</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>emphasize its existence; e.g. a document requiring urgent processing,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>pathological findings, etc.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>For every institution, you must define in Customizing whether an icon,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>a symbol or text is to be &quot;attached&quot; to a document.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>DE</ID>
+      <OBJECT>N2_PCODE</OBJECT>
+      <LANGU>S</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0005</VERSION>
+      <TXTLINES>00008</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>N2_PCODE</TDNAME>
+      <TDID>DE</TDID>
+      <TDSPRAS>S</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00005</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEFINITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>El código de presentación es la clave interna de un indicador especial.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>La clave se puede adjudicar libremente.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Con el código de presentación se puede controlar si un documento se</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>representa adicionalmente mediante un icono o un símbolo y/o un texto,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>para hacerlo destacar; p.ej., un documento que debe ser tratado con</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>urgencia, un resultado patológico, etc.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Los iconos, símbolos o textos que se deben &quot;pegar&quot; a un documento se</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>definirán para cada centro sanitario en el Customizing.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

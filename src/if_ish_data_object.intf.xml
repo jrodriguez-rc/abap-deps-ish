@@ -1,0 +1,588 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_INTF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOINTERF>
+    <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: Base Interface for Data Objects</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <UNICODE>X</UNICODE>
+   </VSEOINTERF>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+     <TDLINE>The IF_ISH_DATA_OBJECT interface specifies basic functionality for all</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>data classes.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+     <TDLINE>Each data object has an equivalent in the database.</TDLINE>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Das Interface IF_ISH_DATA_OBJECT gibt Basisfunktionalität für alle</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Datenklassen vor.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Jedes Datenobjekt hat eine Entsprechung in der Datenbank.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>CHECK_CHANGES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Prüfen, ob und was sich im Objekt geändert hat</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>CHECK_CHANGES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check If Object Has Changed and if so What Has Changed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>CHECK_CHANGES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Check If Object Has Changed and if so What Has Changed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>CO_BUFFER_CLEAR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Kennzeichen, wie ein Puffer verwendet werden soll</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>CO_BUFFER_CLEAR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Indicator Whether a Buffer Should Be Used</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>CO_BUFFER_CLEAR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Indicator Whether a Buffer Should Be Used</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>CO_BUFFER_REFRESH</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Kennzeichen, wie ein Puffer verwendet werden soll</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>CO_BUFFER_REFRESH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Indicator Whether a Buffer Should Be Used</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>CO_BUFFER_REFRESH</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Indicator Whether a Buffer Should Be Used</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>CO_BUFFER_USE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Kennzeichen, wie ein Puffer verwendet werden soll</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>CO_BUFFER_USE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Indicator Whether a Buffer Should Be Used</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>CO_BUFFER_USE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Indicator Whether a Buffer Should Be Used</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>CO_KEYSTRING_DEFAULT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Kennzeichen, ob Schlüssel mit oder ohne Mandant</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>CO_KEYSTRING_DEFAULT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Indicator Whether Key With or Without Client</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>CO_KEYSTRING_DEFAULT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Indicator Whether Key With or Without Client</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>CO_KEYSTRING_WITHOUT_MANDT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Kennzeichen, ob Schlüssel mit oder ohne Mandant</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>CO_KEYSTRING_WITHOUT_MANDT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Indicator Whether Key With or Without Client</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>CO_KEYSTRING_WITHOUT_MANDT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Indicator Whether Key With or Without Client</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>CO_KEYSTRING_WITH_MANDT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Kennzeichen, ob Schlüssel mit oder ohne Mandant</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>CO_KEYSTRING_WITH_MANDT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Indicator Whether Key With or Without Client</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>CO_KEYSTRING_WITH_MANDT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Indicator Whether Key With or Without Client</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>CO_MAX_SNAPSHOTS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Maximale Anzahl von Snapshots pro Instanz</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>CO_MAX_SNAPSHOTS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Maximum Number of Snapshots per Instance</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>CO_MAX_SNAPSHOTS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Maximum Number of Snapshots per Instance</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>CO_MODE_DELETE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Objekt wird gelöscht</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>CO_MODE_DELETE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Object Will Be Deleted</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>CO_MODE_DELETE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Object Will Be Deleted</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>CO_MODE_ERROR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Objekt ist fehlerhaft</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>CO_MODE_ERROR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Object Is Errored</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>CO_MODE_ERROR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Object Is Errored</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>CO_MODE_INSERT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Objekt ist neu (Insert)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>CO_MODE_INSERT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Object Is New (Insert)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>CO_MODE_INSERT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Object Is New (Insert)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>CO_MODE_UNCHANGED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Objekt ist unverändert</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>CO_MODE_UNCHANGED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Object Is Unchanged</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>CO_MODE_UNCHANGED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Object Is Unchanged</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>CO_MODE_UPDATE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Objekt ist geändert (Update)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>CO_MODE_UPDATE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Object Is Changed (Update)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>CO_MODE_UPDATE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Object Is Changed (Update)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>DESTROY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Objekt zerstören</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>DESTROY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Destroy Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>DESTROY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Destroy Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>EV_DESTROYED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Methode DESTROY wurde gerufen.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>EV_DESTROYED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Method DESTROY Was Called</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>EV_DESTROYED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Method DESTROY Was Called</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>EV_REFRESHED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Methode REFRESH wurde gerufen.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>EV_REFRESHED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Method REFRESH Was Called</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>EV_REFRESHED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Method REFRESH Was Called</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>FALSE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Boolscher Datentyp für TRUE (=&apos;1&apos;) und FALSE (=&apos;0&apos;)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>FALSE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Boolean Data Type for TRUE (=&quot;1&quot;) and FALSE (=&quot;0&quot;)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>FALSE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Boolean Data Type for TRUE (=&quot;1&quot;) and FALSE (=&quot;0&quot;)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>GET_CDOC_OBJECT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert das Änderungsbelegobjekt zum aktuellen Objekt.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>GET_CDOC_OBJECT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Change Document Object for Current Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>GET_CDOC_OBJECT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Change Document Object for Current Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>GET_CHECKING_DATE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermittelt das korrekte Datum für Gültigkeitsprüfungen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>GET_CHECKING_DATE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determines Correct Date for Validity Checks</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>GET_CHECKING_DATE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determines Correct Date for Validity Checks</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>GET_KEY_STRING</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Zeichenkette des Objekts ermitteln</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>GET_KEY_STRING</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Character String of Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>GET_KEY_STRING</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Character String of Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>G_ACTIVE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Objekt ist aktiv ON/OFF</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>G_ACTIVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Object Is Active ON/OFF</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>G_ACTIVE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Object Is Active ON/OFF</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>G_MODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Bearbeitungsmodus von Datensätzen (I/U/D)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>G_MODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Processing Mode for Data Records (I/U/D)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>G_MODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Processing Mode for Data Records (I/U/D)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>IS_ACTIVE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ist das Objekt aktiv? (Methode ist schneller als GET_DATA!)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>IS_ACTIVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Is the Object Active? (Method is Faster than GET_DATA!)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>IS_ACTIVE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Is the Object Active? (Method is Faster than GET_DATA!)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>IS_CANCELLED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ist das Objekt storniert?</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>IS_CANCELLED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Is Object Canceled?</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>IS_CANCELLED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Is Object Canceled?</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>IS_CHANGED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert zurück, ob sich das Objekt geändert hat.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>IS_CHANGED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Whether the Object Has Changed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>IS_CHANGED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Whether the Object Has Changed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>IS_NEW</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ist das Objekt neu? (Methode ist schneller als GET_DATA!)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>IS_NEW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Is Object New? (Method Faster than GET_DATA!)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>IS_NEW</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Is Object New? (Method Faster than GET_DATA!)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>OFF</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Boolscher Datentyp für ON (= &apos;X&apos;) und OFF (=&apos; &apos;)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>OFF</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Boolean Data Type for ON (= &quot;X&quot;) and OFF (= &quot; &quot;)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>OFF</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Boolean Data Type for ON (= &quot;X&quot;) and OFF (= &quot; &quot;)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>ON</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Boolscher Datentyp für ON (= &apos;X&apos;) und OFF (=&apos; &apos;)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>ON</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Boolean Data Type for ON (= &quot;X&quot;) and OFF (= &quot; &quot;)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>ON</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Boolean Data Type for ON (= &quot;X&quot;) and OFF (= &quot; &quot;)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>REFRESH</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Objekt aktualisieren</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>REFRESH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Refresh Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>REFRESH</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Refresh Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>TRUE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Boolscher Datentyp für TRUE (=&apos;1&apos;) und FALSE (=&apos;0&apos;)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>TRUE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Boolean Data Type for TRUE (=&quot;1&quot;) and FALSE (=&quot;0&quot;)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_DATA_OBJECT</CLSNAME>
+     <CMPNAME>TRUE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Boolean Data Type for TRUE (=&quot;1&quot;) and FALSE (=&quot;0&quot;)</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

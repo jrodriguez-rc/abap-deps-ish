@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>N1TC_INACTIVE_DAYS</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>N1TC_INACTIVE_DAYS</DOMNAME>
+    <HEADLEN>13</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>13</SCRLEN2>
+    <SCRLEN3>13</SCRLEN3>
+    <DDTEXT>Inactive Days with Which OUs Are Still Taken into Account</DDTEXT>
+    <REPTEXT>Inactive Days</REPTEXT>
+    <SCRTEXT_S>Inactive D</SCRTEXT_S>
+    <SCRTEXT_M>Inactive Days</SCRTEXT_M>
+    <SCRTEXT_L>Inactive Days</SCRTEXT_L>
+    <DTELMASTER>D</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>D</LANGU>
+    <LANGU>S</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>Inaktive Tage, mit denen OEs weiterhin berücksichtig werden</DDTEXT>
+     <REPTEXT>Inaktive Tage</REPTEXT>
+     <SCRTEXT_S>Inaktive T</SCRTEXT_S>
+     <SCRTEXT_M>Inaktive Tage</SCRTEXT_M>
+     <SCRTEXT_L>Inaktive Tage</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>Días inactivos con los que se tienen en cuenta UO</DDTEXT>
+     <REPTEXT>Días inact.</REPTEXT>
+     <SCRTEXT_S>DíasInact</SCRTEXT_S>
+     <SCRTEXT_M>Días inact.</SCRTEXT_M>
+     <SCRTEXT_L>Días inact.</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>DE</ID>
+      <OBJECT>N1TC_INACTIVE_DAYS</OBJECT>
+      <LANGU>D</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0002</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00007</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>N1TC_INACTIVE_DAYS</TDNAME>
+      <TDID>DE</TDID>
+      <TDSPRAS>D</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00002</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEFINITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Dieser Wert als Angabe in Tagen bestimmt, über welchen Zeitraum in der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Vergangenheit nicht mehr aktive Organisationseinheiten (geschlossen oder</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>storniert) bei der Ermittlung der Zuständigkeit eines Benutzer für einen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Behandlunsgauftrag berücksichtigt werden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Dieser Wert kann im Einführungsleitfaden (IMG) unter &lt;LS&gt;Branchenlösung</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Krankenhaus-&gt; Werkzeuge -&gt; Behandlungsauftrag -&gt; Allgemeine</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Einstellungen&lt;/&gt; definiert und geändert werden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEPENDENCIES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>DE</ID>
+      <OBJECT>N1TC_INACTIVE_DAYS</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0002</VERSION>
+      <TXTLINES>00007</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>N1TC_INACTIVE_DAYS</TDNAME>
+      <TDID>DE</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00002</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEFINITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The number of days specified in this field determines the period in the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>past for which organizational units that are no longer active (closed or</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>canceled) are taken into account when determining a user’s</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>responsibility for a treatment authorization.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>You can define and change this value in the Implementation Guide (IMG)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>under &lt;LS&gt;SAP Healthcare - Industry-Specific Components for Hospitals -&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Tools -&gt; Treatment Authorization -&gt; General Settings&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEPENDENCIES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>DE</ID>
+      <OBJECT>N1TC_INACTIVE_DAYS</OBJECT>
+      <LANGU>S</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0002</VERSION>
+      <TXTLINES>00008</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>N1TC_INACTIVE_DAYS</TDNAME>
+      <TDID>DE</TDID>
+      <TDSPRAS>S</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00002</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEFINITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Este valor como indicador en días, determina para qué período del pasado</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ya no se tienen en cuenta las unidades organizativas (cerradas o</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>anuladas) activas para la determinación de la responsabilidad de un</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>usuario para una autorización de tratamiento.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Este valor se puede definir o modificar en la Guía de implementación</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(IMG) en la &lt;LS&gt;Solución sectorial</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Hospitales-&gt;Herramientas-&gt;Autorización de tratamiento-&gt;Opciones</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>generales&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEPENDENCIES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

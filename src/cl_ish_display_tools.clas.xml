@@ -1,0 +1,563 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Shared Methods of Various Display Classes</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>L.N.</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+   </TPOOL>
+   <I18N_TPOOL>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>N.N.</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>S</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>N.N.</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+   </I18N_TPOOL>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>This class contains utility methods for display classes (cf interface</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>IF_ISH_LIST_DISPLAY) and display objects (cf interface</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>IF_ISH_DISPLAY_OBJECT).</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Diese Klasse enthält Hilfsmethoden für Displayklassen (vgl. Interface</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>IF_ISH_LIST_DISPLAY) und Anzeigeobjekte (vgl. Interface</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>IF_ISH_DISPLAY_OBJECT).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>CLEAR_BUFFER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Pufferstrukturen leeren</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>CLEAR_BUFFER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Empty Buffer Structures</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>CONVERT_OUTTAB</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Spez. Tabelle in allg. Struktur der Display-Kl. übernehmen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>CONVERT_OUTTAB</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Transfer Spec. Table in General Structure of Display Class</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>FILL_ADPAT_DATA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Allergiedaten eines Anzeigeobjekts befüllen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>FILL_ADPAT_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Fill Allergy Data for Display Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>FILL_CASE_DATA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Falldaten eines Anzeigeobjekts befüllen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>FILL_CASE_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Fill Case Data of a Display Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>FILL_CLIM_DATA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Vitalzeichen eines Anzeigeobjekts befüllen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>FILL_CLIM_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Fill Vital Signs of a Display Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>FILL_DBC_DATA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>DBC-Daten eines Anzeigeobjekts befüllen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>FILL_DBC_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Fill DBC Data of a Display Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>FILL_DIAG_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Fill Diagnosis Data of a Display Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>FILL_DIAG_DATA</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Fill Diagnosis Data of a Display Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>FILL_IM_DATA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Bildstudie eines Anzeigeobjekts befüllen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>FILL_IM_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Fill Image Study for Display Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>FILL_KURZ_DATA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Kürzel + Kurzbez. für OEs eines Anzeigeobjekts befüllen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>FILL_KURZ_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Fill Identifier + Short Text for OU of a Display Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>FILL_PATHWAY_DATA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Patientenpfaddaten eines Anzeigeobjekts befüllen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>FILL_PATHWAY_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Fill Patient Pathway Data of a Display Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>FILL_PATIENT_DATA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Patientendaten eines Anzeigeobjekts befüllen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>FILL_PATIENT_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Fill Patient Data of a Display Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>FILL_SERVICE_DATA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Leistungsdaten eines Anzeigeobjekts befüllen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>FILL_SERVICE_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Fill Service Data of a Display Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>FILL_T_ADM_DATA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Aufnahmedaten der  Anzeigeobjekte befüllen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>FILL_T_ADM_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Fill Admission Data for Display Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>FILL_T_ADPAT_DATA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Allergiedaten der Anzeigeobjekte befüllen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>FILL_T_ADPAT_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Fill Allergy Data of Display Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>FILL_T_CASE_DATA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Falldaten der  Anzeigeobjekte befüllen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>FILL_T_CASE_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Fill Case Data of Display Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>FILL_T_CONTEXT_DATA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Kontextdaten der  Anzeigeobjekte befüllen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>FILL_T_CONTEXT_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Fill Context Data of Display Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>FILL_T_PATHWAY_DATA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Patientenpfaddaten der Anzeigeobjekte befüllen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>FILL_T_PATHWAY_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Fill Patient Pathway Data for Display Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>FINALIZE_OUTTAB</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ausgabe Tabelle befüllen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>FINALIZE_OUTTAB</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Fill Output Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>GET_DATA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Objekte aus sämtlich betroffenen Anzeigeobjekten ermitteln</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>GET_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Objects from all Display Objects Concerned</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>GET_DRAG_DROP_FOR_WP</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Drag&amp;Drop-Daten für WP ermitteln</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>GET_DRAG_DROP_FOR_WP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Drag&amp;Drop Data for Work Station</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>GET_OUTTAB_FOR_ROWID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ausgabezeilen anhand von Zeilenindex ermitteln</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>GET_OUTTAB_FOR_ROWID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Output Rows using Row Index</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>GET_ROWID_FOR_OBJECT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Zeilenindex für div. Objekte ermitteln (erzeugende Objekte)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>GET_ROWID_FOR_OBJECT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Row Index for Various Objects (to Be Created)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>GET_SEL_OBJECT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ausgewählte Objekte anhand der Ausgabetabelle ermitteln</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>GET_SEL_OBJECT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Selected Objects using Output Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>GET_SORT_CRITERIA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Kriterien für Sortierung ermitteln</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>GET_SORT_CRITERIA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Sort Criteria</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>GET_WP_ICON</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Symbol für bestimmte Kennzeichen-Spalte ermitteln</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>GET_WP_ICON</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Icon for Specific Indicator Column</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>GET_WP_ISH_OBJECT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Workplace-Struktur befüllen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>GET_WP_ISH_OBJECT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Fill Workplace Structure</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>GS_NAMEBUFFER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Puffer-Struktur Patientenname</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>GS_NAMEBUFFER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Buffer Structure Patient Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>GS_NPATBUFFER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Puffer-Struktur NPAT</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>GS_NPATBUFFER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Buffer Structure NPAT</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>MERGE_COLUMN</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Merge einer Spalte durchführen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>MERGE_COLUMN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Perform Merge of a Column</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>PREPARE_OUTTAB_FOR_SORT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ausgabetabelle für Sortierung aufbereiten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>PREPARE_OUTTAB_FOR_SORT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Format Output Table for Sort</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>REFRESH_DATA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Datenbestand einer Ausgabetabelle aktualisieren</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>REFRESH_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Refresh Dataset of an Output Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>REMOVE_DATA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Daten aus einer Ausgabetabelle entfernen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>REMOVE_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Remove Data from an Output Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>REWORK_FCAT_FOR_SORT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feldkatalog für die Sortierung überarbeiten (nur TEMPORÄR !)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>REWORK_FCAT_FOR_SORT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Revise Field Catalog for Sorting (only TEMPORARY!)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>SORT_OUTTAB</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ausgabetabelle sortieren</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>SORT_OUTTAB</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sort Output Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>SORT_SERVICES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Leistungen nach einem bestimmten Feld (NLEI/NLEM) sortieren</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DISPLAY_TOOLS</CLSNAME>
+     <CMPNAME>SORT_SERVICES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sort Services According to a Specific Field (NLEI/NLEM)</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

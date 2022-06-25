@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_INTF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOINTERF>
+    <CLSNAME>IF_ISH_GUI_XSTRUCTURE_MODEL</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: GUI - Extended Structure-Like Model</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <UNICODE>X</UNICODE>
+   </VSEOINTERF>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;DESCRIPTION&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Interface IF_ISH_GUI_XSTRUCTURE_MODEL defines the interface of an</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>extended structure-like model.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Interface IF_ISH_GUI_XSTRUCTURE_MODEL contains the interface</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:IF.IF_ISH_GUI_STRUCTURE_MODEL&gt;IF_ISH_GUI_STRUCTURE_MODEL&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>UT</TDFORMAT>
+     <TDLINE>Methods:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_DATA</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the data contained in structure form.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>IS_FIELD_CHANGEABLE</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns whether a field (specified by field name) is editable.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>IS_READONLY</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns whether the object is read-only.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>If the object is read-only, none of the fields are editable. In this</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>case, the system triggers an exception if a change method is accessed.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>SET_DATA</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Sets the data in structure form.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;USE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>For more information about models, see the documentation for interface</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:IF.IF_ISH_GUI_MODEL&gt;IF_ISH_GUI_MODEL&lt;/&gt;.</TDLINE>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;MEANING&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das Interface IF_ISH_GUI_XSTRUCTURE_MODEL definiert die Schnittstelle</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>eines erweiterten strukturartigen Models.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das Interface IF_ISH_GUI_XSTRUCTURE_MODEL enthält das Interface</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_STRUCTURE_MODEL&gt;IF_ISH_GUI_STRUCTURE_MODEL&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>Methoden:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_DATA</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert die enthaltenen Daten in Form einer Struktur.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>IS_FIELD_CHANGEABLE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert ob ein Feld (spezifiziert über Feldname) änderbar ist.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>IS_READONLY</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert, ob das Objekt nur lesbar ist.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Wenn das Objekt nur lesbar ist, sind keine Felder änderbar. In diesem</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Fall wird bei Aufruf einer ändernden Methode eine Ausnahme ausgelöst.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>SET_DATA</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Setzt die Daten in Form einer Struktur.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Weitere Informationen zu Models finden Sie in der Dokumentation zu</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Interface &lt;DS:IF.IF_ISH_GUI_MODEL&gt;IF_ISH_GUI_MODEL&lt;/&gt;.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_XSTRUCTURE_MODEL</CLSNAME>
+     <CMPNAME>GET_DATA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die Daten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_XSTRUCTURE_MODEL</CLSNAME>
+     <CMPNAME>GET_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_XSTRUCTURE_MODEL</CLSNAME>
+     <CMPNAME>GET_DATA</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_XSTRUCTURE_MODEL</CLSNAME>
+     <CMPNAME>IS_FIELD_CHANGEABLE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert ob ein Feld änderbar ist</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_XSTRUCTURE_MODEL</CLSNAME>
+     <CMPNAME>IS_FIELD_CHANGEABLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns if a Field is Editable</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_XSTRUCTURE_MODEL</CLSNAME>
+     <CMPNAME>IS_FIELD_CHANGEABLE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns if a Field is Editable</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_XSTRUCTURE_MODEL</CLSNAME>
+     <CMPNAME>IS_READONLY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert ob das Objekt nur lesbar ist</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_XSTRUCTURE_MODEL</CLSNAME>
+     <CMPNAME>IS_READONLY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns if the Object Is Readable Only</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_XSTRUCTURE_MODEL</CLSNAME>
+     <CMPNAME>IS_READONLY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns if the Object Is Readable Only</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_XSTRUCTURE_MODEL</CLSNAME>
+     <CMPNAME>SET_DATA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt die Daten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_XSTRUCTURE_MODEL</CLSNAME>
+     <CMPNAME>SET_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_XSTRUCTURE_MODEL</CLSNAME>
+     <CMPNAME>SET_DATA</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets Data</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

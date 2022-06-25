@@ -1,0 +1,487 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_GUI_OKCODE_REQUEST</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: GUI - OKCODE Request</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Class CL_ISH_GUI_OKCODE_REQUEST represents an OK code request in a</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:IF.IF_ISH_GUI_APPLICATION&gt;dialog application&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>An OK code request is used to trigger an OK code.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>UT</TDFORMAT>
+     <TDLINE>Methods:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>CREATE</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Instantiates the object.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>CREATE_BY_CONTROL_EVENT</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Instantiates the object from a &lt;DS:CL.CL_ISH_GUI_CONTROL_EVENT&gt;control</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>event request&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_CONTROL_EVENT</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the &lt;DS:CL.CL_ISH_GUI_CONTROL_EVENT&gt;control event request&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Can be initial.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_PROCESSOR</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the &lt;DS:IF.IF_ISH_GUI_REQUEST_PROCESSOR&gt;request processor&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Can be initial.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_UCOMM</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the function code.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Class CL_ISH_GUI_OKCODE_REQUEST inherits from class</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CL.CL_ISH_GUI_REQUEST&gt;CL_ISH_GUI_REQUEST&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>If &lt;DS:IF.IF_ISH_GUI_DYNPRO_VIEW&gt;screen&lt;/&gt; and</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:IF.IF_ISH_GUI_CONTROL_VIEW&gt;control&lt;/&gt; interface objects are used in</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>a dialog application, the screen fields are updated during PBO.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>This means an OK code must be triggered before the system processes a</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CL.CL_ISH_GUI_CONTROL_EVENT&gt;control event&lt;/&gt; if screen fields are</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>affected by processing.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The OK code request enables this processing behavior. The dialog</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>application notes the control event and triggers an OK code. The system</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>then processes the control event when processing the OK code.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_GUI_OKCODE_REQUEST stellt eine OK-Code-Anfrage in</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>einer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE> &lt;DS:IF.IF_ISH_GUI_APPLICATION&gt;Dialoganwendung&lt;/&gt; dar.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Eine OK-Code-Anfrage dient zum Auslösen eines OK-Codes.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>Methoden:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>CREATE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Instanziert das Objekt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>CREATE_BY_CONTROL_EVENT</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Instanziert das Objekt aus einer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_GUI_CONTROL_EVENT&gt;Controlereignis-Anfrage&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_CONTROL_EVENT</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert die &lt;DS:CL.CL_ISH_GUI_CONTROL_EVENT&gt;Controlereignis-Anfrage</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Kann initial sein.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_PROCESSOR</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert den &lt;DS:IF.IF_ISH_GUI_REQUEST_PROCESSOR&gt;Anfrageverarbeiter</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Kann initial sein.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_UCOMM</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert den Funktionscode.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_GUI_OKCODE_REQUEST erbt von der Klasse</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_GUI_REQUEST&gt;CL_ISH_GUI_REQUEST&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Wenn in einer Dialoganwendung &lt;DS:IF.IF_ISH_GUI_DYNPRO_VIEW&gt;Dynpro-</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>&lt;/&gt;und &lt;DS:IF.IF_ISH_GUI_CONTROL_VIEW&gt;Control-Oberflächenobjekte&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>verwendet werden, muss für die Aktualisierung der Dynprofelder PBO</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>durchlaufen werden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das bedingt, dass vor der Verarbeitung eines</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_GUI_CONTROL_EVENT&gt;Control-Ereignisses&lt;/&gt;ein OK-Code</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ausgelöst werden muss, wenn von der Verarbeitung Dynprofelder betroffen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>sind.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die OK-Code-Anfrage ermöglicht genau dieses Verhalten. Die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Dialoganwendung merkt sich das Control-Ereignis und löst einen OK-Code</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>aus. Bei der Verarbeitung des OK-Codes wird dann das Control-Ereignis</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>verarbeitet.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_OKCODE_REQUEST</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_OKCODE_REQUEST</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_OKCODE_REQUEST</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_OKCODE_REQUEST</CLSNAME>
+     <CMPNAME>CO_UCOMM_OKCODE_REQUEST</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Funktionscode, der PAI ausgelöst hat</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_OKCODE_REQUEST</CLSNAME>
+     <CMPNAME>CO_UCOMM_OKCODE_REQUEST</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Function Code that Triggered PAI</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_OKCODE_REQUEST</CLSNAME>
+     <CMPNAME>CO_UCOMM_OKCODE_REQUEST</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Function Code that Triggered PAI</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_OKCODE_REQUEST</CLSNAME>
+     <CMPNAME>CREATE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Erzeugt das Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_OKCODE_REQUEST</CLSNAME>
+     <CMPNAME>CREATE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Creates the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_OKCODE_REQUEST</CLSNAME>
+     <CMPNAME>CREATE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Creates the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_OKCODE_REQUEST</CLSNAME>
+     <CMPNAME>CREATE_BY_CONTROL_EVENT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Erzeugt das Objekt aus einer Control Ereignisanfrage</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_OKCODE_REQUEST</CLSNAME>
+     <CMPNAME>CREATE_BY_CONTROL_EVENT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Creates the Object from a Control Event Request</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_OKCODE_REQUEST</CLSNAME>
+     <CMPNAME>CREATE_BY_CONTROL_EVENT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Creates the Object from a Control Event Request</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_OKCODE_REQUEST</CLSNAME>
+     <CMPNAME>GET_CONTROL_EVENT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die Control Ereignisanfrage</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_OKCODE_REQUEST</CLSNAME>
+     <CMPNAME>GET_CONTROL_EVENT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Control Event Request</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_OKCODE_REQUEST</CLSNAME>
+     <CMPNAME>GET_CONTROL_EVENT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Control Event Request</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_OKCODE_REQUEST</CLSNAME>
+     <CMPNAME>GET_PROCESSOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den Anfrage-Verarbeiter</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_OKCODE_REQUEST</CLSNAME>
+     <CMPNAME>GET_PROCESSOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Request Processor</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_OKCODE_REQUEST</CLSNAME>
+     <CMPNAME>GET_PROCESSOR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Request Processor</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_OKCODE_REQUEST</CLSNAME>
+     <CMPNAME>GET_UCOMM</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den auszulösenden Funktionscode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_OKCODE_REQUEST</CLSNAME>
+     <CMPNAME>GET_UCOMM</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Function Code to Be Executed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_OKCODE_REQUEST</CLSNAME>
+     <CMPNAME>GET_UCOMM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Function Code to Be Executed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_OKCODE_REQUEST</CLSNAME>
+     <CMPNAME>GR_CONTROL_EVENT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: GUI - Ereignisanfrage zu einem Control</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_OKCODE_REQUEST</CLSNAME>
+     <CMPNAME>GR_CONTROL_EVENT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: GUI - Event Request for a Control</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_OKCODE_REQUEST</CLSNAME>
+     <CMPNAME>GR_CONTROL_EVENT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: GUI - Event Request for a Control</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_OKCODE_REQUEST</CLSNAME>
+     <CMPNAME>GR_PROCESSOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: GUI - Anfrageverarbeiter</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_OKCODE_REQUEST</CLSNAME>
+     <CMPNAME>GR_PROCESSOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: GUI - Request Processor</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_OKCODE_REQUEST</CLSNAME>
+     <CMPNAME>GR_PROCESSOR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: GUI - Request Processor</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_OKCODE_REQUEST</CLSNAME>
+     <CMPNAME>G_UCOMM</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Auszulösender Funktionscode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_OKCODE_REQUEST</CLSNAME>
+     <CMPNAME>G_UCOMM</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Function Code to Be Executed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_OKCODE_REQUEST</CLSNAME>
+     <CMPNAME>G_UCOMM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Function Code to Be Executed</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,413 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: Tree with Nodes</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_COLLNODE_TREE displays a tree-like structured node</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>collection.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>For general information about node collections, see the documentation</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>for the class &lt;DS:CL.CL_ISH_NODE_COLLECTION&gt;CL_ISH_NODE_COLLECTION&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>For general information about node, see the documentation for the class</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>&lt;DS:CL.CL_ISH_COLLECTION_NODE&gt; CL_ISH_COLLECTION_NODE&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_COLLNODE_TREE inherits from the class</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>&lt;DS:CL.CL_ISH_COLLNODE_LIST&gt; CL_ISH_COLLNODE_LIST&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_COLLNODE_TREE stellt einen baumartig strukturierte</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Knotenkollektion dar.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Eine generelle Dokumentation zu Knotenkollektionen finden Sie in der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Klassendokumentation</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_NODE_COLLECTION&gt;CL_ISH_NODE_COLLECTION&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Eine generelle Dokumentation zu Knoten finden Sie in der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Klassendokumentation zu</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_COLLECTION_NODE&gt;CL_ISH_COLLECTION_NODE&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_COLLNODE_TREE erbt von der Klasse</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_COLLNODE_LIST&gt;CL_ISH_COLLNODE_LIST&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>APPEND</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Ass a Node at the End</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>APPEND</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Ass a Node at the End</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>APPEND_CHILD</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Fügt einen neuen Knoten als letzten Unterknoten hinzu</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>APPEND_CHILD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Adds a New Node as Last Subnode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>APPEND_CHILD</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Adds a New Node as Last Subnode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>AT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Node for an Item</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>AT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Node for an Item</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>CO_OTYPE_COLLNODE_TREE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Objekttyp</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>CO_OTYPE_COLLNODE_TREE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Object Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>CO_OTYPE_COLLNODE_TREE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Object Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>FIRST</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the First Node</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>FIRST</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the First Node</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>FIRST_CHILD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the First Subnode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>FIRST_CHILD</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the First Subnode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>INSERT_AFTER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Adds a Follow-On Node</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>INSERT_AFTER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Adds a Follow-On Node</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>INSERT_AT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Adds a Node to an Item</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>INSERT_AT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Adds a Node to an Item</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>INSERT_BEFORE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Adds a Predecessor Node</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>INSERT_BEFORE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Adds a Predecessor Node</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>LAST</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Last Node</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>LAST</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Last Node</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>LAST_CHILD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Last Subnode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>LAST_CHILD</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Last Subnode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>MOVE_AFTER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Moves a Node After Another Node</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>MOVE_AFTER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Moves a Node After Another Node</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>MOVE_BEFORE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Moves a Node Before Another Node</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>MOVE_BEFORE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Moves a Node Before Another Node</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>MOVE_BELOW</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verschiebt einen Knoten unter einen anderen Knoten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>MOVE_BELOW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Moves a Node Below Another Node</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>MOVE_BELOW</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Moves a Node Below Another Node</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>NEXT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Follow-On Node</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>NEXT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Follow-On Node</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>PREPEND</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Ass a Node at the End</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>PREPEND</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Ass a Node at the End</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>PREPEND_CHILD</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Fügt einen neuen Knoten als ersten Unterknoten hinzu</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>PREPEND_CHILD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Adds a New Node as First Subnode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>PREPEND_CHILD</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Adds a New Node as First Subnode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>PREVIOUS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Predecessor Node</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>PREVIOUS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Predecessor Node</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>REMOVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Removes a Node</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>REMOVE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Removes a Node</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>REMOVE_AT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Removes the Node for an Item</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COLLNODE_TREE</CLSNAME>
+     <CMPNAME>REMOVE_AT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Removes the Node for an Item</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

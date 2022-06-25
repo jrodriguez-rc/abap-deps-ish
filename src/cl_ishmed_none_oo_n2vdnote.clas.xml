@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISHMED_NONE_OO_N2VDNOTE</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H*MED: Progress Entry (N2VDNOTE: not OO Data)</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+    <RSTAT>P</RSTAT>
+    <MSG_ID>NFCL</MSG_ID>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>Progress entry does not exist</ENTRY>
+     <LENGTH>50</LENGTH>
+    </item>
+   </TPOOL>
+   <I18N_TPOOL>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Verlaufseintrag nicht vorhanden</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>S</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>La nota de transcurso clínico no existe</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+   </I18N_TPOOL>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>This class is only intended as a transport object for an NDOC data</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>record (thus a document).</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>In addition, the interface was integrated for regular data objects to</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>provide the methods IS_NEW and ADD_CONNECTION (workaround until a real</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>data object for documents becomes available).</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Diese Klasse ist nur als Transportobjekt für einen NDOC-Datensatz (also</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ein Dokument) gedacht.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Zusätzlich wurde das Interface für reguläre Datenobjekte eingebunden,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>damit die Methoden IS_NEW und ADD_CONNECTION zur Verfügung stehen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(Übergangslösung bis ein echtes Datenobjekt für Dokumente zur Verfügung</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>steht).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_NONE_OO_N2VDNOTE</CLSNAME>
+     <CMPNAME>CHANGE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Attribute des Objekts ändern</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_NONE_OO_N2VDNOTE</CLSNAME>
+     <CMPNAME>CHANGE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Change Object Attributes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_NONE_OO_N2VDNOTE</CLSNAME>
+     <CMPNAME>CHANGE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Change Object Attributes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_NONE_OO_N2VDNOTE</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_NONE_OO_N2VDNOTE</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_NONE_OO_N2VDNOTE</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_NONE_OO_N2VDNOTE</CLSNAME>
+     <CMPNAME>CO_OTYPE_NONE_OO_N2VDNOTE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Objekttyp Transportobjekt Verlaufseintrag</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_NONE_OO_N2VDNOTE</CLSNAME>
+     <CMPNAME>CO_OTYPE_NONE_OO_N2VDNOTE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Object Type Transport Object Progress Entry</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_NONE_OO_N2VDNOTE</CLSNAME>
+     <CMPNAME>CO_OTYPE_NONE_OO_N2VDNOTE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Object Type Transport Object Progress Entry</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_NONE_OO_N2VDNOTE</CLSNAME>
+     <CMPNAME>CO_OTYPE_PROGRESS_DOCUMENT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Konstante Typ Verlaufsdokument</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_NONE_OO_N2VDNOTE</CLSNAME>
+     <CMPNAME>CO_OTYPE_PROGRESS_DOCUMENT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Constant Type: Progress Document</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_NONE_OO_N2VDNOTE</CLSNAME>
+     <CMPNAME>CO_OTYPE_PROGRESS_DOCUMENT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Constant Type: Progress Document</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_NONE_OO_N2VDNOTE</CLSNAME>
+     <CMPNAME>CO_OTYPE_PROGRESS_ENTRY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Konstante Typ untypisierter Verlaufseintrag</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_NONE_OO_N2VDNOTE</CLSNAME>
+     <CMPNAME>CO_OTYPE_PROGRESS_ENTRY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Constant Type: Nonspecific Progress Entry</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_NONE_OO_N2VDNOTE</CLSNAME>
+     <CMPNAME>CO_OTYPE_PROGRESS_ENTRY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Constant Type: Nonspecific Progress Entry</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_NONE_OO_N2VDNOTE</CLSNAME>
+     <CMPNAME>GET_DATA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Attribute des Objekts auslesen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_NONE_OO_N2VDNOTE</CLSNAME>
+     <CMPNAME>GET_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get Attributes of the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_NONE_OO_N2VDNOTE</CLSNAME>
+     <CMPNAME>GET_DATA</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Get Attributes of the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_NONE_OO_N2VDNOTE</CLSNAME>
+     <CMPNAME>GT_SNAPSHOT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H*MED: Snapshot-Tabellentyp</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_NONE_OO_N2VDNOTE</CLSNAME>
+     <CMPNAME>GT_SNAPSHOT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H*MED: Snapshot Table Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_NONE_OO_N2VDNOTE</CLSNAME>
+     <CMPNAME>GT_SNAPSHOT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H*MED: Snapshot Table Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_NONE_OO_N2VDNOTE</CLSNAME>
+     <CMPNAME>G_CONSTRUCT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Constructor darf aufgerufen werden ON/OFF</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_NONE_OO_N2VDNOTE</CLSNAME>
+     <CMPNAME>G_CONSTRUCT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Constructor can be Called ON/OFF</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_NONE_OO_N2VDNOTE</CLSNAME>
+     <CMPNAME>G_CONSTRUCT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Constructor can be Called ON/OFF</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_NONE_OO_N2VDNOTE</CLSNAME>
+     <CMPNAME>G_N2VDNOTE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verlaufseintrag</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_NONE_OO_N2VDNOTE</CLSNAME>
+     <CMPNAME>G_N2VDNOTE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Progress Entry</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_NONE_OO_N2VDNOTE</CLSNAME>
+     <CMPNAME>G_N2VDNOTE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Progress Entry</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_NONE_OO_N2VDNOTE</CLSNAME>
+     <CMPNAME>LOAD</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Objekt lesen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_NONE_OO_N2VDNOTE</CLSNAME>
+     <CMPNAME>LOAD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Read Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_NONE_OO_N2VDNOTE</CLSNAME>
+     <CMPNAME>LOAD</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Read Object</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

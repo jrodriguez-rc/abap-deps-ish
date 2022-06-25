@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_DBR_ORG</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Read Organizational Units from the Database</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>This class provides central methods for reading the data of</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>organizational units.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>In dieser Klasse stehen zentrale Methoden für des Lesen der Daten von</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Organisationseinheiten zur Verfügung.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBR_ORG</CLSNAME>
+     <CMPNAME>GET_ORG_BY_ORGID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Organisationseinheit lesen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBR_ORG</CLSNAME>
+     <CMPNAME>GET_ORG_BY_ORGID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Read Organizational Unit</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBR_ORG</CLSNAME>
+     <CMPNAME>GET_ORG_BY_ORGID</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Read Organizational Unit</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBR_ORG</CLSNAME>
+     <CMPNAME>GET_T_ORG_ALL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Alle Organisationseinheiten lesen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBR_ORG</CLSNAME>
+     <CMPNAME>GET_T_ORG_ALL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Read All Organizational Units</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBR_ORG</CLSNAME>
+     <CMPNAME>GET_T_ORG_ALL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Read All Organizational Units</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBR_ORG</CLSNAME>
+     <CMPNAME>GET_T_ORG_BY_INST</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Organisationseinheiten lesen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBR_ORG</CLSNAME>
+     <CMPNAME>GET_T_ORG_BY_INST</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Read Organizational Units</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBR_ORG</CLSNAME>
+     <CMPNAME>GET_T_ORG_BY_INST</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Read Organizational Units</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBR_ORG</CLSNAME>
+     <CMPNAME>GET_T_ORG_BY_ORGID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Organisationseinheiten lesen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBR_ORG</CLSNAME>
+     <CMPNAME>GET_T_ORG_BY_ORGID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Read Organizational Units</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBR_ORG</CLSNAME>
+     <CMPNAME>GET_T_ORG_BY_ORGID</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Read Organizational Units</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBR_ORG</CLSNAME>
+     <CMPNAME>GET_T_ORG_BY_ORGID_RANGE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Organisationseinheiten zu Range-Table lesen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBR_ORG</CLSNAME>
+     <CMPNAME>GET_T_ORG_BY_ORGID_RANGE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Read Organizational Units for Range Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBR_ORG</CLSNAME>
+     <CMPNAME>GET_T_ORG_BY_ORGID_RANGE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Read Organizational Units for Range Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBR_ORG</CLSNAME>
+     <CMPNAME>GET_T_ORG_BY_ORGID_TRUNCATED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Organisationseinheiten zu Range-Table lesen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBR_ORG</CLSNAME>
+     <CMPNAME>GET_T_ORG_BY_ORGID_TRUNCATED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Read Organizational Units for Range Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBR_ORG</CLSNAME>
+     <CMPNAME>GET_T_ORG_BY_ORGID_TRUNCATED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Read Organizational Units for Range Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBR_ORG</CLSNAME>
+     <CMPNAME>GT_BUF_EINRI_ORG</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>i.s.h.med: Hashtabelle für OE</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBR_ORG</CLSNAME>
+     <CMPNAME>GT_BUF_EINRI_ORG</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>i.s.h.med: Hash Table for OU</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBR_ORG</CLSNAME>
+     <CMPNAME>GT_BUF_EINRI_ORG</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>i.s.h.med: Hash Table for OU</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBR_ORG</CLSNAME>
+     <CMPNAME>GT_BUF_ORG_PARTIAL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>i.s.h.med: Hashtabelle für OE</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBR_ORG</CLSNAME>
+     <CMPNAME>GT_BUF_ORG_PARTIAL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>i.s.h.med: Hash Table for OU</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBR_ORG</CLSNAME>
+     <CMPNAME>GT_BUF_ORG_PARTIAL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>i.s.h.med: Hash Table for OU</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBR_ORG</CLSNAME>
+     <CMPNAME>GT_TRUNC_ORGID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Hash-Tabelle für Organisationseinheiten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBR_ORG</CLSNAME>
+     <CMPNAME>GT_TRUNC_ORGID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Hash Table for Organizational Units</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBR_ORG</CLSNAME>
+     <CMPNAME>GT_TRUNC_ORGID</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Hash Table for Organizational Units</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBR_ORG</CLSNAME>
+     <CMPNAME>REFRESH_BUFFER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Buffer refreshen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBR_ORG</CLSNAME>
+     <CMPNAME>REFRESH_BUFFER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Refresh Buffer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBR_ORG</CLSNAME>
+     <CMPNAME>REFRESH_BUFFER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Refresh Buffer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBR_ORG</CLSNAME>
+     <CMPNAME>TYT_TRUNC_ORG</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Hash-Tabelle für Organisationseinheiten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBR_ORG</CLSNAME>
+     <CMPNAME>TYT_TRUNC_ORG</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Hash Table for Organizational Units</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBR_ORG</CLSNAME>
+     <CMPNAME>TYT_TRUNC_ORG</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Hash Table for Organizational Units</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBR_ORG</CLSNAME>
+     <CMPNAME>TY_TRUNC_ORG</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Hash-Struktur für Organisationseinheiten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBR_ORG</CLSNAME>
+     <CMPNAME>TY_TRUNC_ORG</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Hash Structure for Organizational Units</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBR_ORG</CLSNAME>
+     <CMPNAME>TY_TRUNC_ORG</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Hash Structure for Organizational Units</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

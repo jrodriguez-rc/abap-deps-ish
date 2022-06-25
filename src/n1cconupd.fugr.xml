@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>IS-H: Component Configuration Update Tsk</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LN1CCONUPDTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLN1CCONUPD</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ISH_UPDATE_N1COMPCON</FUNCNAME>
+     <UPDATE_TASK>1</UPDATE_TASK>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IT_VN1COMPCON</PARAMETER>
+       <TYP>ISH_T_VN1COMPCON</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IT_VN1COMPCON</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ISH_UPDATE_N1COMPCONT</FUNCNAME>
+     <UPDATE_TASK>1</UPDATE_TASK>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IT_VN1COMPCONT</PARAMETER>
+       <TYP>ISH_T_VN1COMPCONT</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IT_VN1COMPCONT</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

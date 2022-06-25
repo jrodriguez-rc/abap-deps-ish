@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_IPL_UTL_BASE</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: Implementation for General Functions</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_IPL_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_CASE_OF_OBJ</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermittlung eines Falles ausgehend von einem Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_IPL_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_CASE_OF_OBJ</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Case From Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_IPL_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_CASE_OF_OBJ</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Case From Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_IPL_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_PAP_FOR_OBJECT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermittlung eines Patienten mit vorl. Stammdaten zu Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_IPL_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_PAP_FOR_OBJECT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Patient with Provisional Master Data for Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_IPL_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_PAP_FOR_OBJECT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Patient with Provisional Master Data for Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_IPL_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_PATIENT_OF_OBJ</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermittlung eines Patienten ausgehend von einem Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_IPL_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_PATIENT_OF_OBJ</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Patient From Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_IPL_UTL_BASE</CLSNAME>
+     <CMPNAME>GET_PATIENT_OF_OBJ</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Patient From Object</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

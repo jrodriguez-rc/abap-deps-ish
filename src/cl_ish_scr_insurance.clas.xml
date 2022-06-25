@@ -1,0 +1,710 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: Insurance Screen Class</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>Self-/Copayer</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>002</KEY>
+     <ENTRY>Health Insurer</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>003</KEY>
+     <ENTRY>Type of Coverage</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>004</KEY>
+     <ENTRY>Health Insurance Number</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>005</KEY>
+     <ENTRY>Insured To</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>006</KEY>
+     <ENTRY>Health Insurer (Name)</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+   </TPOOL>
+   <I18N_TPOOL>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Selbst-/Zuz.</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Krankenkasse</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>Mitgliedsart</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>004</KEY>
+       <ENTRY>VersNummer</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>005</KEY>
+       <ENTRY>Vers.bis</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>006</KEY>
+       <ENTRY>Krankenkasse (Name)</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>S</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Part./copago</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Aseguradora</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>Clase de cobertura</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>004</KEY>
+       <ENTRY>Nº Seg.Social</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>005</KEY>
+       <ENTRY>Aseg.hasta</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>006</KEY>
+       <ENTRY>Aseguradora (nombre)</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+   </I18N_TPOOL>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>CLASS_CONSTRUCTOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CLASS_CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>CLASS_CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CLASS_CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>CLASS_CONSTRUCTOR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>CLASS_CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>CO_DEFAULT_TABNAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Tabellenname</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>CO_DEFAULT_TABNAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>CO_DEFAULT_TABNAME</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Table Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>CO_OTYPE_SCR_INSURANCE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Screenklasse Versicherung</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>CO_OTYPE_SCR_INSURANCE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Screen Class: Insurance</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>CO_OTYPE_SCR_INSURANCE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Screen Class: Insurance</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>CREATE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Instanz des Screens erzeugen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>CREATE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Create Instance of Screen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>CREATE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Create Instance of Screen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>GET_CORDER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert das zugrundeliegende Auftragsobjekt.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>GET_CORDER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Supplies the Underlying Order Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>GET_CORDER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Supplies the Underlying Order Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>GET_DYNPRO_INSURANCE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Programm und Dynpro des Versicherungssubscreens ermitteln</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>GET_DYNPRO_INSURANCE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Program and Screen of Insurance Subscreen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>GET_DYNPRO_INSURANCE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Program and Screen of Insurance Subscreen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>GR_CANCEL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Klasse für Storno</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>GR_CANCEL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Class for Cancellation</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>GR_CANCEL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Class for Cancellation</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>GR_INSURANCE_SUBSCREEN</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Klin. Auftrag: Versicherungs-Subscreen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>GR_INSURANCE_SUBSCREEN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Clinical Order: Insurance Subscreen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>GR_INSURANCE_SUBSCREEN</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Clinical Order: Insurance Subscreen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>GR_POLICY1</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Vorläufiges Versicherungsverhältnis klin. Auftrag</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>GR_POLICY1</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Provisional Insurance Relationship Clinical Order</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>GR_POLICY1</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Provisional Insurance Relationship Clinical Order</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>GR_POLICY2</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Vorläufiges Versicherungsverhältnis klin. Auftrag</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>GR_POLICY2</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Provisional Insurance Relationship Clinical Order</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>GR_POLICY2</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Provisional Insurance Relationship Clinical Order</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>GR_POLICY3</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Vorläufiges Versicherungsverhältnis klin. Auftrag</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>GR_POLICY3</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Provisional Insurance Relationship Clinical Order</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>GR_POLICY3</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Provisional Insurance Relationship Clinical Order</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_DYNNR_INSURANCE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Dynpro des Versicherungssubscreens</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_DYNNR_INSURANCE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Screen of the Insurance Subscreen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_DYNNR_INSURANCE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Screen of the Insurance Subscreen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_IPID_1</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feldname für Krankenkassennummer im Versicherungsverh. 1</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_IPID_1</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Name for Health Insurer Number in IR 1</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_IPID_1</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Field Name for Health Insurer Number in IR 1</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_IPID_2</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feldname für Krankenkassennummer im Versicherungsverh. 2</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_IPID_2</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Name for Health Insurer Number in IR 2</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_IPID_2</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Field Name for Health Insurer Number in IR 2</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_KNAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feldname für Versicherungsverhältnis - Krankenkassenname</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_KNAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Name for Insurance Relationship - Health Insurer Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_KNAME</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Field Name for Insurance Relationship - Health Insurer Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_KNAME_1</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feldname für Versicherungsverhältnis - Krankenkassenname 1</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_KNAME_1</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Name for Insurance Rel. - Health Insurer Name 1</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_KNAME_1</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Field Name for Insurance Rel. - Health Insurer Name 1</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_KNAME_2</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feldname für Versicherungsverhältnis - Krankenkassenname 2</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_KNAME_2</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Name for Insurance Rel. - Health Insurer Name 2</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_KNAME_2</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Field Name for Insurance Rel. - Health Insurer Name 2</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_KVDAT_1</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feldname für Lesedatum Versichternkarte 1</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_KVDAT_1</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Name for Read Date HC Smart Card 1</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_KVDAT_1</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Field Name for Read Date HC Smart Card 1</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_KVDAT_2</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feldname für Lesedatum Versichternkarte 2</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_KVDAT_2</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Name for Read Date HC Smart Card 2</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_KVDAT_2</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Field Name for Read Date HC Smart Card 2</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_MGART_1</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feldname für Mitgliedsart 1</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_MGART_1</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Name for Type of Coverage 1</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_MGART_1</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Field Name for Type of Coverage 1</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_MGART_2</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feldname für Mitgliedsart 2</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_MGART_2</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Name for Type of Coverage 2</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_MGART_2</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Field Name for Type of Coverage 2</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_VERBI_1</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feldname für Gültigkeitsende des Versicherungsverhältnisses1</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_VERBI_1</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Name for Expiry Date of Insurance Relationship 1</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_VERBI_1</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Field Name for Expiry Date of Insurance Relationship 1</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_VERBI_2</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feldname für Gültigkeitsende des Versicherungsverhältnisses2</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_VERBI_2</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Name for Expiry Date of Insurance Relationship 2</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_VERBI_2</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Field Name for Expiry Date of Insurance Relationship 2</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_VNUMM_1</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feldname für Versicherungsnummer des Patienten 1</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_VNUMM_1</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Name for Health Insurance Number of Patient 1</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_VNUMM_1</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Field Name for Health Insurance Number of Patient 1</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_VNUMM_2</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feldname für Versicherungsnummer des Patienten 2</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_VNUMM_2</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Name for Health Insurance Number of Patient 2</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_VNUMM_2</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Field Name for Health Insurance Number of Patient 2</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_VZUZA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feldname für Kennzeichen Selbst-/Zuzahler</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_VZUZA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Name for Self-Payer/Copayer Indicator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_FIELDNAME_VZUZA</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Field Name for Self-Payer/Copayer Indicator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_PGM_INSURANCE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Programm des Versicherungssubscreens</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_PGM_INSURANCE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Insurance Subscreen Program</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_PGM_INSURANCE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Insurance Subscreen Program</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_PREFIX_FIELDNAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Feldname</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_PREFIX_FIELDNAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Field Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_PREFIX_FIELDNAME</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Field Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_PREFIX_FIELDNAME_1</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Feldname</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_PREFIX_FIELDNAME_1</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Field Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_PREFIX_FIELDNAME_1</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Field Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_PREFIX_FIELDNAME_2</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Feldname</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_PREFIX_FIELDNAME_2</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Field Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>G_PREFIX_FIELDNAME_2</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Field Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>MODIFY_SCREEN_ATT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Modification of Screen Attributes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SCR_INSURANCE</CLSNAME>
+     <CMPNAME>MODIFY_SCREEN_ATT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Modification of Screen Attributes</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

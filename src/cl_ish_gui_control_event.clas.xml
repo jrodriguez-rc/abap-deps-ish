@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_GUI_CONTROL_EVENT</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: GUI - Event Request for a Control</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_GUI_CONTROL_EVENT is the abstract basic class for a</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>request of a &lt;DS:IF.IF_ISH_GUI_CONTROL_VIEW&gt;control interface object&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>in a &lt;DS:IF.IF_ISH_GUI_APPLICATION&gt;dialog application&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>Methods:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_CONTROL_VIEW</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the triggering control interface object.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_FCODE</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the function code.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>IS_STARTUP_EVENT</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns whether the event constitutes the start of a user interaction.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_GUI_CONTROL_EVENT inherits from the class</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CL.CL_ISH_GUI_EVENT_REQUEST&gt;CL_ISH_GUI_EVENT_REQUEST&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The following classes inherit from CL_ISH_GUI_CONTROL_EVENT:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;DS:CL.CL_ISH_GUI_DRAWERS_EVENT&gt;CL_ISH_GUI_DRAWERS_EVENT&lt;/&gt; (Drawer</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>Event)</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;DS:CL.CL_ISH_GUI_GRID_EVENT&gt;CL_ISH_GUI_GRID_EVENT&lt;/&gt;(ALV Grid Event)</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;DS:CL.CL_ISH_GUI_TOOLBAR_EVENT&gt;CL_ISH_GUI_TOOLBAR_EVENT&lt;/&gt; (Toolbar</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>Event)</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;DS:CL.CL_ISH_GUI_TREE_EVENT&gt;CL_ISH_GUI_TREE_EVENT&lt;/&gt; (ALV Tree Event)</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_GUI_CONTROL_EVENT ist die abstrakte Basisklasse für</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>eine Anfrage eines</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_CONTROL_VIEW&gt;Control-Oberflächenobjekts&lt;/&gt; in einer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_APPLICATION&gt;Dialoganwendung&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>Methoden:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_CONTROL_VIEW</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert das auslösende Control-Oberflächenobjekt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_FCODE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert den Funktionscode.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>IS_STARTUP_EVENT</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert ob das Ereignis den Beginn einer Benutzerinteraktion</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>darstellt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_GUI_CONTROL_EVENT erbt von der Klasse</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_GUI_EVENT_REQUEST&gt;CL_ISH_GUI_EVENT_REQUEST&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Folgende Klassen erben von CL_ISH_GUI_CONTROL_EVENT:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;DS:CL.CL_ISH_GUI_DRAWERS_EVENT&gt;CL_ISH_GUI_DRAWERS_EVENT&lt;/&gt; (Schubladen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>ereignis)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;DS:CL.CL_ISH_GUI_GRID_EVENT&gt;CL_ISH_GUI_GRID_EVENT&lt;/&gt; (ALV-Grid-</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>Ereignis)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;DS:CL.CL_ISH_GUI_TOOLBAR_EVENT&gt;CL_ISH_GUI_TOOLBAR_EVENT&lt;/&gt; (Toolbar-</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>Ereignis)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;DS:CL.CL_ISH_GUI_TREE_EVENT&gt;CL_ISH_GUI_TREE_EVENT&lt;/&gt; (ALV-Tree-</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>Ereignis)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_EVENT</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_EVENT</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_EVENT</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_EVENT</CLSNAME>
+     <CMPNAME>GET_CONTROL_VIEW</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den auslösenden Control View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_EVENT</CLSNAME>
+     <CMPNAME>GET_CONTROL_VIEW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Triggering Control View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_EVENT</CLSNAME>
+     <CMPNAME>GET_CONTROL_VIEW</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Triggering Control View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_EVENT</CLSNAME>
+     <CMPNAME>GET_FCODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den Funktionscode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_EVENT</CLSNAME>
+     <CMPNAME>GET_FCODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Function Code</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_EVENT</CLSNAME>
+     <CMPNAME>GET_FCODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Function Code</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_EVENT</CLSNAME>
+     <CMPNAME>G_FCODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Funktionscode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_EVENT</CLSNAME>
+     <CMPNAME>G_FCODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Function Code</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_EVENT</CLSNAME>
+     <CMPNAME>G_FCODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Function Code</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_EVENT</CLSNAME>
+     <CMPNAME>G_STARTUP_ACTION</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>abap_true: Beginn einer Aktion</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_EVENT</CLSNAME>
+     <CMPNAME>G_STARTUP_ACTION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>abap_true: Start of an Action</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_EVENT</CLSNAME>
+     <CMPNAME>G_STARTUP_ACTION</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>abap_true: Start of an Action</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_EVENT</CLSNAME>
+     <CMPNAME>IS_STARTUP_ACTION</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert ob die Ereignisanfrage der Beginn einer Aktion is</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_EVENT</CLSNAME>
+     <CMPNAME>IS_STARTUP_ACTION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns if the Event Request is the Start of an Action</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_CONTROL_EVENT</CLSNAME>
+     <CMPNAME>IS_STARTUP_ACTION</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns if the Event Request is the Start of an Action</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

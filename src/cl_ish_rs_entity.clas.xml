@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_RS_ENTITY</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: Read Services - Object of a Read Service</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_RS_ENTITY</CLSNAME>
+     <CMPNAME>_GET_DATAREF</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Retuniert eine Referenz auf die Daten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_RS_ENTITY</CLSNAME>
+     <CMPNAME>_GET_DATAREF</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Retuns a Reference to the Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_RS_ENTITY</CLSNAME>
+     <CMPNAME>_GET_DATAREF</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Retuns a Reference to the Data</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

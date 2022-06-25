@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>BEZEB</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>BEZEB</DOMNAME>
+    <LOGFLAG>X</LOGFLAG>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>14</SCRLEN2>
+    <SCRLEN3>20</SCRLEN3>
+    <DDTEXT>Reference Level of a Document</DDTEXT>
+    <SCRTEXT_S>Ref. Level</SCRTEXT_S>
+    <SCRTEXT_M>Ref. Level</SCRTEXT_M>
+    <SCRTEXT_L>Reference Level</SCRTEXT_L>
+    <DTELMASTER>D</DTELMASTER>
+    <DEFFDNAME>REFERENCE_LEVEL</DEFFDNAME>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>D</LANGU>
+    <LANGU>S</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>Bezugsebene eines Dokuments</DDTEXT>
+     <SCRTEXT_S>BezEbene</SCRTEXT_S>
+     <SCRTEXT_M>Bezugsebene</SCRTEXT_M>
+     <SCRTEXT_L>Bezugsebene</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>Nivel de referencia de un documento</DDTEXT>
+     <SCRTEXT_S>Nivel ref.</SCRTEXT_S>
+     <SCRTEXT_M>Nivel de ref.</SCRTEXT_M>
+     <SCRTEXT_L>Nivel de referencia</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>DE</ID>
+      <OBJECT>BEZEB</OBJECT>
+      <LANGU>D</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0007</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00025</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>BEZEB</TDNAME>
+      <TDID>DE</TDID>
+      <TDSPRAS>D</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00007</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEFINITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Bezugsebene eines medizinischen Dokuments steuert, welche</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Zuordnungen erlaubt sind bzw. vorhanden sein müssen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Wenn keine Bezugsebene gewählt wird, können einem Dokument ein Patient,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ein Fall, Bewegungen und Leistungen zugeordnet werden. Eine gültige</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Patientennummer muß immer eingetragen sein. Die anderen Zuordnungen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>sind optional.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Patient (P)&lt;/&gt;:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Die Dokumente sind dem Patienten zugeordnet, d.h. sie sind</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>fallübergreifend. Es werden alle weiteren Zuordnungen, wie Fall,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Bewegung, Leistung und deren Organisationseinheiten gelöscht.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;nur Fall (E)&lt;/&gt;:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Die Dokumente sind einem Fall zugeordnet. Es wird überprüft, ob eine</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>FallNr eingegeben ist. Es werden die Zuordnungen, die an einem Fall</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>hängen, die Bewegungen, Leistungen und deren Organisationseinheiten</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>gelöscht.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Fall (F)&lt;/&gt;:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Die Dokumente sind einem Fall zugeordnet. Es wird nur überprüft, ob</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>eine FallNr eingegeben ist. Die Zuordnungen zu Bewegungen und/oder</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Leistungen bleiben erhalten.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Bewegung (B)&lt;/&gt;:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Die Dokumente sind mindestens einer Bewegung zugeordnet. Es wird nur</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>überprüft, ob eine Bewegung eingegeben ist.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Leistung (L)&lt;/&gt;:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Die Dokumente sind mindestens einer Leistung zugeordnet. Es wird nur</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>überprüft, ob eine Leistung eingegeben ist.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>DE</ID>
+      <OBJECT>BEZEB</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0007</VERSION>
+      <TXTLINES>00023</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>BEZEB</TDNAME>
+      <TDID>DE</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00007</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEFINITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The reference level of a medical document controls which assignments are</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>allowed or are available.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>If you do not select a reference level, then you can assign a patient, a</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>case, movements and/or services to a document. You must always enter a</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>valid patient number. Other assignments are optional.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Patient (P)&lt;/&gt;:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>The documents are assigned to the patient, i.e., they involve many</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>cases. All other assignments such as case, movement, service and their</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>organizational units are then deleted.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Case only (E)&lt;/&gt;:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>The documents are assigned to a case. A check is made to see whether a</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>CaseNo has been entered. Assignments connected to a case along with</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>movements, services and their organizational units will all be deleted.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Case (F)&lt;/&gt;:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>The documents are assigned to a case. A check is made to see whether a</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>CaseNo has been entered. The assignments to movements and/or services</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>will be retained.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Movement (B)&lt;/&gt;:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>The documents are assigned to at least one service. A check is made to</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>see whether a movement has been entered.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Service (L):&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>The documents are assigned to at least one service. A check is made only</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>to see whether a service has been entered.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>DE</ID>
+      <OBJECT>BEZEB</OBJECT>
+      <LANGU>S</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0007</VERSION>
+      <TXTLINES>00025</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>BEZEB</TDNAME>
+      <TDID>DE</TDID>
+      <TDSPRAS>S</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00007</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEFINITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>El nivel de referencia de un documento médico controla qué asignaciones</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>están permitidas o deben existir.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Si no se selecciona ningún nivel de referencia, se puede asignar un</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>paciente, un episodio, movimientos y prestaciones al documento. Siempre</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>se deberá introducir un número de paciente válido. Las demás</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>asignaciones son opcionales.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Paciente (P)&lt;/&gt;:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Los documentos están asignados al paciente, es decir, son para todos</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>los episodios. Se borra el resto de asignaciones tales como episodio,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>movimiento, prestación y su unidad organizativa.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Sólo episodio (E)&lt;/&gt;:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Los documentos están asignados a un episodio. Se verifica si se ha</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>indicado un número de episodio. Se borran las asignaciones que están</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>subordinadas a un episodio, los movimientos, las prestaciones y sus</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>unidades organizativas.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Episodio (F)&lt;/&gt;:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Los documentos están asignados a un episodio. Sólo debe verificarse si</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>se ha indicado un número de episodio. Se conservan las asignaciones a</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>movimientos y/o a prestaciones.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Movimiento (M)&lt;/&gt;:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Los documentos están asignados a como mínimo un movimiento. Sólo se</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>verifica si se ha indicado un movimiento.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Prestación (B)&lt;/&gt;:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Los documentos están asignados a como mínimo una prestación. Sólo se</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>verifica si se ha indicado una prestación.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

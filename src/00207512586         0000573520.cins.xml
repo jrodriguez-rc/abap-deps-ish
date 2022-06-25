@@ -1,0 +1,861 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="ZCL_ABAPGIT_OBJECT_BY_SOBJ" serializer_version="1.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <CWBCIHEAD>
+    <CWBCIHEAD>
+     <INSTA>0020751258</INSTA>
+     <PAKID>6</PAKID>
+     <ALEID>0000573520</ALEID>
+     <VERSNO>0001</VERSNO>
+     <FORMAT_ID>3</FORMAT_ID>
+    </CWBCIHEAD>
+   </CWBCIHEAD>
+   <CWBCIHEAD_field_catalog>
+    <item>
+     <POS>1</POS>
+     <NAME>INSTA</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>2</POS>
+     <NAME>PAKID</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>3</POS>
+     <NAME>ALEID</NAME>
+     <TYPE_KIND>N</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>4</POS>
+     <NAME>VERSNO</NAME>
+     <TYPE_KIND>N</TYPE_KIND>
+     <LENGTH>4</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>5</POS>
+     <NAME>FORMAT_ID</NAME>
+     <TYPE_KIND>I</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+    </item>
+    <item>
+     <POS>6</POS>
+     <NAME>INCOMPLETE</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>1</LENGTH>
+    </item>
+    <item>
+     <POS>7</POS>
+     <NAME>MANUAL_ACTIVITY</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>1</LENGTH>
+    </item>
+    <item>
+     <POS>8</POS>
+     <NAME>IS_TRANSPORTABLE</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>1</LENGTH>
+    </item>
+   </CWBCIHEAD_field_catalog>
+   <CWBCIDATA_field_catalog>
+    <item>
+     <POS>1</POS>
+     <NAME>RELID</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>2</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>2</POS>
+     <NAME>INSTA</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>3</POS>
+     <NAME>PAKID</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>4</POS>
+     <NAME>ALEID</NAME>
+     <TYPE_KIND>N</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>5</POS>
+     <NAME>VERSNO</NAME>
+     <TYPE_KIND>N</TYPE_KIND>
+     <LENGTH>4</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>6</POS>
+     <NAME>SRTF2</NAME>
+     <TYPE_KIND>I</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>7</POS>
+     <NAME>CLUSTR</NAME>
+     <TYPE_KIND>s</TYPE_KIND>
+     <LENGTH>5</LENGTH>
+    </item>
+    <item>
+     <POS>8</POS>
+     <NAME>CLUSTD</NAME>
+     <TYPE_KIND>X</TYPE_KIND>
+     <LENGTH>2886</LENGTH>
+    </item>
+   </CWBCIDATA_field_catalog>
+   <CWBCIDPNDC>
+    <CWBCIDPNDC>
+     <INSTA>0020751258</INSTA>
+     <PAKID>6</PAKID>
+     <ALEID>0000573520</ALEID>
+     <VERSNO>0001</VERSNO>
+     <DEPTYPE>P</DEPTYPE>
+     <CIINSTA_D>0020751258</CIINSTA_D>
+     <CIPAKID_D>6</CIPAKID_D>
+     <CIALEID_D>0000498789</CIALEID_D>
+     <NTNUMM_D>0002666227</NTNUMM_D>
+    </CWBCIDPNDC>
+   </CWBCIDPNDC>
+   <CWBCIDPNDC_field_catalog>
+    <item>
+     <POS>1</POS>
+     <NAME>INSTA</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>2</POS>
+     <NAME>PAKID</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>3</POS>
+     <NAME>ALEID</NAME>
+     <TYPE_KIND>N</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>4</POS>
+     <NAME>VERSNO</NAME>
+     <TYPE_KIND>N</TYPE_KIND>
+     <LENGTH>4</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>5</POS>
+     <NAME>DEPTYPE</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>1</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>6</POS>
+     <NAME>CIINSTA_D</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>7</POS>
+     <NAME>CIPAKID_D</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>8</POS>
+     <NAME>CIALEID_D</NAME>
+     <TYPE_KIND>N</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>9</POS>
+     <NAME>NTNUMM_D</NAME>
+     <TYPE_KIND>N</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+   </CWBCIDPNDC_field_catalog>
+   <CWBCIFIXED_field_catalog>
+    <item>
+     <POS>1</POS>
+     <NAME>INSTA</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>2</POS>
+     <NAME>PAKID</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>3</POS>
+     <NAME>ALEID</NAME>
+     <TYPE_KIND>N</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>4</POS>
+     <NAME>VERSNO</NAME>
+     <TYPE_KIND>N</TYPE_KIND>
+     <LENGTH>4</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>5</POS>
+     <NAME>DEPAKID_F</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>6</POS>
+     <NAME>DEALEID_F</NAME>
+     <TYPE_KIND>N</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+   </CWBCIFIXED_field_catalog>
+   <CWBCIVALID>
+    <CWBCIVALID>
+     <INSTA>0020751258</INSTA>
+     <PAKID>6</PAKID>
+     <ALEID>0000573520</ALEID>
+     <VERSNO>0001</VERSNO>
+     <TRPAKID>6</TRPAKID>
+     <TRTYPEID>P</TRTYPEID>
+     <TRALSID>000058</TRALSID>
+     <DEPAKID_LO>6</DEPAKID_LO>
+     <DEALEID_LO>0000000660</DEALEID_LO>
+     <DEPAKID_HI>6</DEPAKID_HI>
+     <DEALEID_HI>0000000712</DEALEID_HI>
+    </CWBCIVALID>
+   </CWBCIVALID>
+   <CWBCIVALID_field_catalog>
+    <item>
+     <POS>1</POS>
+     <NAME>INSTA</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>2</POS>
+     <NAME>PAKID</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>3</POS>
+     <NAME>ALEID</NAME>
+     <TYPE_KIND>N</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>4</POS>
+     <NAME>VERSNO</NAME>
+     <TYPE_KIND>N</TYPE_KIND>
+     <LENGTH>4</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>5</POS>
+     <NAME>TRPAKID</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>6</POS>
+     <NAME>TRTYPEID</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>1</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>7</POS>
+     <NAME>TRALSID</NAME>
+     <TYPE_KIND>N</TYPE_KIND>
+     <LENGTH>6</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>8</POS>
+     <NAME>DEPAKID_LO</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>9</POS>
+     <NAME>DEALEID_LO</NAME>
+     <TYPE_KIND>N</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>10</POS>
+     <NAME>DEPAKID_HI</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>11</POS>
+     <NAME>DEALEID_HI</NAME>
+     <TYPE_KIND>N</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+   </CWBCIVALID_field_catalog>
+   <CWBCIOBJ>
+    <CWBCIOBJ>
+     <INSTA>0020751258</INSTA>
+     <PAKID>6</PAKID>
+     <ALEID>0000573520</ALEID>
+     <VERSNO>0001</VERSNO>
+     <PGMID>LIMU</PGMID>
+     <OBJECT>METH</OBJECT>
+     <OBJ_NAME>CL_ISHMED_FUNCTIONS           CALL_CLINICAL_ORDER</OBJ_NAME>
+     <TRPGMID>R3TR</TRPGMID>
+     <TROBJECT>CLAS</TROBJECT>
+     <TROBJ_NAME>CL_ISHMED_FUNCTIONS</TROBJ_NAME>
+    </CWBCIOBJ>
+    <CWBCIOBJ>
+     <INSTA>0020751258</INSTA>
+     <PAKID>6</PAKID>
+     <ALEID>0000573520</ALEID>
+     <VERSNO>0001</VERSNO>
+     <PGMID>LIMU</PGMID>
+     <OBJECT>METH</OBJECT>
+     <OBJ_NAME>CL_ISHMED_PRC_CORDER          _GET_DEFAULT_HITLIST_PARAM</OBJ_NAME>
+     <TRPGMID>R3TR</TRPGMID>
+     <TROBJECT>CLAS</TROBJECT>
+     <TROBJ_NAME>CL_ISHMED_PRC_CORDER</TROBJ_NAME>
+    </CWBCIOBJ>
+   </CWBCIOBJ>
+   <CWBCIOBJ_field_catalog>
+    <item>
+     <POS>1</POS>
+     <NAME>INSTA</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>2</POS>
+     <NAME>PAKID</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>3</POS>
+     <NAME>ALEID</NAME>
+     <TYPE_KIND>N</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>4</POS>
+     <NAME>VERSNO</NAME>
+     <TYPE_KIND>N</TYPE_KIND>
+     <LENGTH>4</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>5</POS>
+     <NAME>PGMID</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>4</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>6</POS>
+     <NAME>OBJECT</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>4</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>7</POS>
+     <NAME>OBJ_NAME</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>120</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>8</POS>
+     <NAME>TRPGMID</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>4</LENGTH>
+    </item>
+    <item>
+     <POS>9</POS>
+     <NAME>TROBJECT</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>4</LENGTH>
+    </item>
+    <item>
+     <POS>10</POS>
+     <NAME>TROBJ_NAME</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>40</LENGTH>
+    </item>
+   </CWBCIOBJ_field_catalog>
+   <CWBCICATTR_field_catalog>
+    <item>
+     <POS>1</POS>
+     <NAME>INSTA</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>2</POS>
+     <NAME>PAKID</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>3</POS>
+     <NAME>ALEID</NAME>
+     <TYPE_KIND>N</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>4</POS>
+     <NAME>VERSNO</NAME>
+     <TYPE_KIND>N</TYPE_KIND>
+     <LENGTH>4</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>5</POS>
+     <NAME>CONFIRMED</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>1</LENGTH>
+    </item>
+    <item>
+     <POS>6</POS>
+     <NAME>CISTATUS</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>1</LENGTH>
+    </item>
+    <item>
+     <POS>7</POS>
+     <NAME>CONFIRM_ACTIVITY</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>1</LENGTH>
+    </item>
+   </CWBCICATTR_field_catalog>
+   <CWBCIINVLD_field_catalog>
+    <item>
+     <POS>1</POS>
+     <NAME>INSTA</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>2</POS>
+     <NAME>PAKID</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>3</POS>
+     <NAME>ALEID</NAME>
+     <TYPE_KIND>N</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>4</POS>
+     <NAME>VERSNO</NAME>
+     <TYPE_KIND>N</TYPE_KIND>
+     <LENGTH>4</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>5</POS>
+     <NAME>TRPAKID</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>6</POS>
+     <NAME>TRTYPEID</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>1</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>7</POS>
+     <NAME>TRALSID</NAME>
+     <TYPE_KIND>N</TYPE_KIND>
+     <LENGTH>6</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>8</POS>
+     <NAME>DEPAKID_LO</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>9</POS>
+     <NAME>DEALEID_LO</NAME>
+     <TYPE_KIND>N</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>10</POS>
+     <NAME>DEPAKID_HI</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>11</POS>
+     <NAME>DEALEID_HI</NAME>
+     <TYPE_KIND>N</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+   </CWBCIINVLD_field_catalog>
+   <CWBCIDATAOBJ>
+    <CWBCIDATAOBJ>
+     <RELID>CI</RELID>
+     <INSTA>0020751258</INSTA>
+     <PAKID>6</PAKID>
+     <ALEID>0000573520</ALEID>
+     <VERSNO>0001</VERSNO>
+     <PGMID>LIMU</PGMID>
+     <OBJTYPE>METH</OBJTYPE>
+     <OBJNAME>CL_ISHMED_FUNCTIONS           CALL_CLINICAL_ORDER</OBJNAME>
+     <OBJVERSNO>99989</OBJVERSNO>
+     <DELTA_MODE>O</DELTA_MODE>
+     <CLUSTR>662</CLUSTR>
+     <CLUSTD>/wYCAQICgAA0MTAzAAAAAMYEAAASH50CUke17aYRA1EeIrUf0A9AKK+LF5qkaTQ4MraBbbyX2l5E
+nhBN0zZSQqKS25/0n9qf6oy9m5BerIU5Z3xmZzweePWmg+s1fe10/rFUR3Q8fn7i/g84fry67N6f
+f99cXK9HvUE/7XXP12fXny/WX0e9u9svyWHvmMNq83i0+rS6+UOJsevNEW6Oet9ub2+OGHt4eOhv
+Vjf9s+srRgGo6MXw+9Xl3fmGwyLJzXKhhBccxFhUXi8845ArU07Reqsyi6rGzq2bGEEbhcg1l2aZ
+uVmu1XJSF9JnZeFGz0vm6SAFFpTgPpoFhmnlycyFlYYvgEUACjMb7oBFgLwQXO0SRwDSCEfFnFYa
+TSllbYm7eix5BixYEFV8RbDgtKxRIjE7d6ICFhBIPCkfpul+kg6T4R66yQE1bcr94f7bYXoALFCo
+o3bwPmgP0R20c20LnuIa4uECAaPnBpNZ5wU1z+aiUBQJLEKwphSKK+QBwCRbVJ7OHwE4pynQYQL9
+ImX0gPMZNjE93DugjkYG2V/q6IHshToyMNRKBGoXe9QSqKWcaXlCpbQQWHvbrLXbQxKwF2GjmuaZ
+4vatt8AihnL8QUvP6caANYScy/8NTFDFXTgprS3qnDphpTt1XjeX90xB1H5W2uhuMKmVrrgNQkKg
+9JxKcLwYjIXTOEitA6a6aGYYh7FBsrJlKLWL9TwRyAXmtEYUU7q7LUZD4PC4aT/OAGGoxElRhh6y
+cGSchrHxp/T6Mq/KQheeZy6ZYYYnDtJqo7FCvvcOx+WJ4QFMU5u3onDG+/C7RAFesVqWcQST8IS4
+1g2hgmWYhC6uJDwoeXY3Ejmh17PtC2Xbfw2s/Zvhv3Z+Aw==</CLUSTD>
+    </CWBCIDATAOBJ>
+    <CWBCIDATAOBJ>
+     <RELID>CI</RELID>
+     <INSTA>0020751258</INSTA>
+     <PAKID>6</PAKID>
+     <ALEID>0000573520</ALEID>
+     <VERSNO>0001</VERSNO>
+     <PGMID>LIMU</PGMID>
+     <OBJTYPE>METH</OBJTYPE>
+     <OBJNAME>CL_ISHMED_FUNCTIONS           CALL_CLINICAL_ORDER</OBJNAME>
+     <OBJVERSNO>99990</OBJVERSNO>
+     <CLUSTR>868</CLUSTR>
+     <CLUSTD>/wYCAQICgAA0MTAzAAAAAFwKAAASH50CVmz19bZtA3E9DGj3vre+HPzQAsVkykGdtimjQpaYRq0s
+BRLTpMAAgbZpR5ssGRIdNf2I3YfaTkrsZImSui6K8YEiT/f3x7sjH/2m4XhcT0+0ljHQbO0EZ0eL
+tUjjWqgdI4XjHGqsodpagF+Gq3r28J+lfdW0X/+hbz/PUziXRZnk2X6n1zU6ILNxPkmy2X5nqab6
+q85bk4ry854YicUtTpTNyj38ud85U2qxR0hVVd1SLLrjfE5qAeToXIqfi3QpS5Oe6kMvtgOHxQ7z
+uGXSQ2Y5LDRp4DkmPXo3dB3Tc4fHlFyuaTB4zz8dMXPI+CElq11N9q0hM20vdqPDIXPig2Pf5m7g
+R3A9bMtDa57ru7iKgxAtNToaUfqRhZEfmIZh9AxKrnbUYRF3fatWRUzkrv3y2cn/55xxv3ONX2QF
+YcQtzobM5/GRxTkL/Qhp9skgXv8wKQ8+MB8JoflHPbI8lvOFuohHaT7+qyT1oOSaiZLbCr6hEE9+
+LjNVxlmu4mSW5YWc/LjWiUyVQJXFXKTJl400kjY0msQbeIH94TL9VgDdppvUdRBf5jUKrPDTf9lv
+002Kp4jH86L/kpLLJZryOTtFR6yBdcRP+U6/37Ax80YKgHsA5YVeLkfFGPbBAMt3wA84pGW8EIWY
+SyULvakdcCPAVOGu5XUbI5gj5KbuB+0ApHEl4mqRirFMJmjrroUt1DLfcQ/a5cgaAISIcfagJuZF
+rHu9/cboAJaUvvtq19gFOy/nSSbALpJSZNDrd42d7o7Re/39wSAiWW+cFxMEBOeJXLTD9GMukBUc
+rh+xsC0/nuv605l6M5KzJIN82lh62TP6O2C9W/4pzzeL7PlabA+meZrmFfZ0GJ+JbCYhk3JSgsph
+JKGQUzFWdZ3+DqKEq8jny1IB1nDNkWPbr4pEKZkBuiTSFMpELYXCq6Dc0JtrmH/CWV+x6vo65u/2
+6icc/7Ze3fCpwWqLam9rKy3xbd1SOhVmRZZewDTBZEgUnMlCQjKtlxUmUXOngMgmgIzTfIkLAWsg
+oUrUGaiLhYRnhvHi2TbtbOPj2kL5A13tbgo9TdUbXZcY4aalSlaVT+65TEjLvUPuuadIy5VG7jyy
+yM0nGFk958y/f/kX</CLUSTD>
+    </CWBCIDATAOBJ>
+    <CWBCIDATAOBJ>
+     <RELID>CI</RELID>
+     <INSTA>0020751258</INSTA>
+     <PAKID>6</PAKID>
+     <ALEID>0000573520</ALEID>
+     <VERSNO>0001</VERSNO>
+     <PGMID>LIMU</PGMID>
+     <OBJTYPE>METH</OBJTYPE>
+     <OBJNAME>CL_ISHMED_FUNCTIONS           CALL_CLINICAL_ORDER</OBJNAME>
+     <OBJVERSNO>99990</OBJVERSNO>
+     <DELTA_MODE>N</DELTA_MODE>
+     <CLUSTR>664</CLUSTR>
+     <CLUSTD>/wYCAQICgAA0MTAzAAAAAMYEAAASH50C1FFtu2nEQJSHSO0H9AMQyuviXRJ6iQZHxjawjde7tb2I
+PCGapm2kBKKQ25/0n9qf6tjeTUgv1sKcMz6zMx4PvHrTwfXaf+11/rFEh3Ucfn7i/g84fry67N6f
+32wvNutRL+unve75+mzz5WL9bdS7u/2avO8dU1htH49Wn1fXfygxdr09ws1R7/vt7fURIQ8PD/3t
+6rp/trkiPgAVvRh+v7q8O99SWCSFWi4Ec4wCG7PKyYUjFAqhyilaZ0RuUNXYubETxfyGZoWkXC1z
+OyukWE5qzV1eajt6XrxIsxRIUIL9pBYYJoXzZs4MV3QBJAIQmFlRCyQC5JpRse85AuCKWV/MaSXR
+lJzXxnNbjznNgQQLrIqvCBas5DVKOGanllVAAgKOJ6WDNB0m6SAZHKLbO6D2m3yYDQ+ywyGQQKGO
+2uxDkr5NMtQGB8yl0TTFNciwfk9AybnCZMY65ptnCqaFjwQSIRhVMkEF8gBgki8q588fAVgrfaDF
+BPJFyugB63JsYnYwDB2NDPK/1NED+Qt1ZKB8KxGIfexRS6DmfCb5iS+lhUDa2yat3R2SgB0LG9W0
+yAU1B84AiRjK8UfJHfU3BqQh3rn838AEVdyFk9IYXRe+E4bbU+tkc3nPFFjtZqWJ7gZ7tZAVNUHo
+EQg59yVYqrMxsxIHqXXAVOpmhnEYG8QrU4ZSu1jPE4GCYU6jmJ76u9thfggsHjftp2EGPIaKnegy
+9JCEI+M0jJU79a8vi6rUUjua22SGGZ44cCOVxArp4TsclyeGB1BNbc4wbZVz4XeJArxisSzjCCbh
+CXGtG0IFyzAJXVxJeFDy7G4kfOJfT3YvlOz+NZD2b4b+2vsN</CLUSTD>
+    </CWBCIDATAOBJ>
+    <CWBCIDATAOBJ>
+     <RELID>CI</RELID>
+     <INSTA>0020751258</INSTA>
+     <PAKID>6</PAKID>
+     <ALEID>0000573520</ALEID>
+     <VERSNO>0001</VERSNO>
+     <PGMID>LIMU</PGMID>
+     <OBJTYPE>METH</OBJTYPE>
+     <OBJNAME>CL_ISHMED_PRC_CORDER          _GET_DEFAULT_HITLIST_PARAM</OBJNAME>
+     <OBJVERSNO>99989</OBJVERSNO>
+     <DELTA_MODE>O</DELTA_MODE>
+     <CLUSTR>664</CLUSTR>
+     <CLUSTD>/wYCAQICgAA0MTAzAAAAAMUEAAASH50CWke1LbUNA9E8MNN+QD8gk+HVkWNKC8xGjCKJxEW+VJIz
+4cmTUtoyAyHTcPuSflT7U92VbQi9KE50zu5Z7Ura+NWbHo7X9LPT+8dQPdHz+P2J/h9w/Hh91b+/
++L65vFmNB6NhPOhfrM5vPl+uvo4Hd7dfooPBMYfl5vFo+Wm5/kOJsavNETrHg2+3t+sjxh4eHoab
+5Xp4fnPNKAAVgyb8fnl1d7HhsIgyUy+U8IKDmIjS64VnHDJliinO3qrUoqqd59adGEGOXGSaS1On
+bpZpVZdW1rKwStvx05BZnLwDFpTgPpoFhmnlaZoLKw1fAGsAKMxsuAPWAOS54GqXOAKQRjgq5qzU
+OBVSVpa4qyaSp8DCDKJslggzOC0rlEjMzp0ogQUEEnfKk3i0F8VJlOyjmQxQkVPuJ/t7SYwlBwpV
+qz2M4lE0Qm0wwFzbnMc0DrB+ImD03GAy67ygw7OZyBVGxsAaCNYUQqHnJF2UnvbdAHBOU4DDhfWL
+VI0FnE/x8OJD/JAxMEj/UjcWSF+oGwaGjhCB2sWz6QhUUs60PKVSOgisu2XWzdvNEbAXwVFOs1Rx
+u+ctsAZDMfmgped0U8BaQsb6v40SZI0bTgtr8yqjo7DSnTmv21t7piAqPytsY24xqZUuuQ1CQqD0
+nGpwPB9RmmxaY1bso84MU523LYy92CJZ2iJU3MfinwhkAjNbI/IpxyW2GPWAw13Hwzi0AGEoxWle
+hKNkYefYDBPjz2j5IiuLXOeepy6aYYYnDtJqo4XT/O37BB0dw22YtjZvRe6M9+FviQK8aVUXTQdG
+4QlxnRlCBXVoiD6OKDwoeTa3EnlCy7Pte2XbbwbWvWX4r53f</CLUSTD>
+    </CWBCIDATAOBJ>
+    <CWBCIDATAOBJ>
+     <RELID>CI</RELID>
+     <INSTA>0020751258</INSTA>
+     <PAKID>6</PAKID>
+     <ALEID>0000573520</ALEID>
+     <VERSNO>0001</VERSNO>
+     <PGMID>LIMU</PGMID>
+     <OBJTYPE>METH</OBJTYPE>
+     <OBJNAME>CL_ISHMED_PRC_CORDER          _GET_DEFAULT_HITLIST_PARAM</OBJNAME>
+     <OBJVERSNO>99990</OBJVERSNO>
+     <CLUSTR>1163</CLUSTR>
+     <CLUSTD>/wYCAQICgAA0MTAzAAAAAGoRAAASH50CXoz1/SZuBGE/VGpf+lCpb30Z8XDXojPmx5FwOccnYy+J
+e8Ygs2lyUiVrwQu4Z2xkG7jrn3j3T3VsBy4hTgI5oo7AmN3x983Ozn5e+8dfBbSf0sNvQoG1BU24
+xKMuOMJAoIItXGALxaMtkKxVE3r4S/AsPZrYpwpfBOGXn+V3n2Y+LHkUe2FwWqpVqiXgwSh0vWBy
+WlokY7FVeqfILP50woZsvuWJ1wbxCXaelqZJMj+RpNVqVYnZvDIKZ1J6AXqU8suXzF/wWJGvxK7p
+aD2dODoxqarI50TVia3IPVNX5P5Z19AV0+heyFJ+Lvfaf9IPfaJ0CT2XpfW/tNlSu0TRTMcYnHeJ
+7vRtDYFtBIONOWeEIlFHvTCpc25Q0xhQp6/aajeDyhDkv4g9sHpKtVqt1WTp+p+skwE1LJUaPUtS
+0DsNzyKX/3uM1eq9MWbhSeuEDqhKSZdYKRilxLYG2KZdtp1NhyLT3ntiYYOt/J1aEDp8Nk8+O0M/
+HH2MpdRk6ZuTLG0DPAKIdTDjQRI7QZg43iQII+5+P6rL/YQhZDRjvvfvTohSUTayMmybPe19Xozr
+BG23K7KhY36JmQGo9ofb7tvtimwaFk5PrSlL+RkyWZRcYRxqW+3TK1pvNjMvogDoKlXBd4La8uOE
+J9GS/d6s/vGtPNDSaoJR5VZbaiUsKbHRqB2/zoiwTKSb+PdzRaM7WGvLuLx46sx4Mg1ddM15c67X
+rcbRflw49WPmO6NFFG0xXXOl3VtDy7neHL+pF3JJm2xiugklD7MP+eo2+tpyduwuYj9qHVWPQAvj
+mRcw0CIvZgHUW5VavVKv1lrFca3DMawBsYsmu/zcca1dRTF1Pq5Vm3VQzxb/8GVxxOtIpXsK+cH6
+rjfyunuswImlG53KbmVTRmdIY282W40GdJmLSxxH2sdk4BirrXSYzZ2wpP3LpgQoEzaFp1ZAweCN
+DvDYmXqJ78WJM2cRm4ksGIccjAEYlkEN1dwxN+nMaqppQufC0lLNh5fXtxUbJd+x2uTy5e5I5Krf
+s/Hucbb7JTgahxiWbcAtO83quTYKI5dHIveCyNsPs6Oa1o0bYo55J2u5koj4DaL98M2Ovjs+Ljx/
+vDu+0X1CGkk2WTfjgXUa03X/pPIupLqn9DZUYhhNxmyP+isGxPOkKKVZ587o++hECdZC8UxKLYov
+JsnbIZ94AYRj2JbTExiHvh+ucJ8MoykLJhxWLIbr/Q53wV1wSEKIPZcDH4/5KIl3VMAN1Ql4mD/c
+5CS45YaIT1iU7stBtTo9AvE0XPguTNmSA/MjztzPMOQ8gLHn+xgAzkgy9WKYh16QvIIghIBjcxoT
+Z9FoigOIwEuATRgOET/JlMMsXPJ0AJCwoc93nYoDi2b5oKpZTsv2MLKZQe2pm+V8cR9WODegz6Wc
+G4Lnks6MYE/tvA7qEOKplPegPKiIPoB4CBUt77nd+j4dvYv3wk/eiiIP3CLRLMR4dA8qFTx35b53
+n9Okgkc66c4rB+nmCwlp/XJD+frDfw==</CLUSTD>
+    </CWBCIDATAOBJ>
+    <CWBCIDATAOBJ>
+     <RELID>CI</RELID>
+     <INSTA>0020751258</INSTA>
+     <PAKID>6</PAKID>
+     <ALEID>0000573520</ALEID>
+     <VERSNO>0001</VERSNO>
+     <PGMID>LIMU</PGMID>
+     <OBJTYPE>METH</OBJTYPE>
+     <OBJNAME>CL_ISHMED_PRC_CORDER          _GET_DEFAULT_HITLIST_PARAM</OBJNAME>
+     <OBJVERSNO>99990</OBJVERSNO>
+     <DELTA_MODE>N</DELTA_MODE>
+     <CLUSTR>667</CLUSTR>
+     <CLUSTD>/wYCAQICgAA0MTAzAAAAAMUEAAASH50CXke17bQRA9E8ILUf0A+IIl433k0IFDQxcmyTbPFeanuj
+8LRKKW2RIKAmEL6kH9X+VMf2LoRerE3mnJljz9ie3TfvOjjeur+9zj+G6LCOxd9PjP+A06fbm+7j
+1ff19d1q3Ev6ca97tbq8+3y9+jruPWy+RO97pxSW66eT5afl/R9KnLtan2Bw3Pu22dyfELLdbvvr
+5X3/8u6WuAmo6IXpj8ubh6s1hUWUqXohmGUU2ISVVi4soZAJVUzRWi1SjarGzrU5U8wFcpZJylWd
+mlkmRV1qXvNCC6nHz4Nn8eAQiFeC+agWOE0K68ycaa7oAkgAIDCzogZIAMhzRsW+4wiAK2ZcMRel
+RFNwXmnHTTXhNAXiLbAyLOEtGMkrlHDMTg0rgXgEHHdKB3EyjOJBNBih2zmgckE+SkbD5ACdnkLV
+aI+j+DBKDtDttXOpcxq7cYz1OwJKzhUm08Yyd3g6Y7nAmTGQAEGrggmMnKWL0rp9BwDGSDfB4MLy
+VargAWNTPLxkOIqTI3R6Bulf6uCB9JU6MFDuCBGIfTyblkDF+Uzyc1dKC4G0t0xau9scHlvmA+U0
+SwXVQ6uBBAzF5IPklrqbAtIQ56z/2yheFsJwXmidV5k7Cs3NhbGyubUXCqyys0IHd4OdWsiSai90
+CIScuxoMzROXJpvWmBX7qHXDVOZNC2MvNoiXuvAVd7H4ZwIZw8xasXxKcYkd5nrA4K7jfuxbwGEo
+2Xle+KMkfufYDBNlL9zyRVYWucwtTU00wwzPHLiWSjIj6cHRAAMtw22opjarWW6Utf61RAHetKiL
+0IGRf/y81g2+gto3RBdH5B+UvLgbCT9zy5PdeyW7XwbSfmXor73f</CLUSTD>
+    </CWBCIDATAOBJ>
+   </CWBCIDATAOBJ>
+   <CWBCIDATAOBJ_field_catalog>
+    <item>
+     <POS>1</POS>
+     <NAME>RELID</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>2</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>2</POS>
+     <NAME>INSTA</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>3</POS>
+     <NAME>PAKID</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>4</POS>
+     <NAME>ALEID</NAME>
+     <TYPE_KIND>N</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>5</POS>
+     <NAME>VERSNO</NAME>
+     <TYPE_KIND>N</TYPE_KIND>
+     <LENGTH>4</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>6</POS>
+     <NAME>PGMID</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>4</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>7</POS>
+     <NAME>OBJTYPE</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>4</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>8</POS>
+     <NAME>OBJNAME</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>120</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>9</POS>
+     <NAME>OBJVERSNO</NAME>
+     <TYPE_KIND>N</TYPE_KIND>
+     <LENGTH>5</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>10</POS>
+     <NAME>DELTA_MODE</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>2</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>11</POS>
+     <NAME>SRTF2</NAME>
+     <TYPE_KIND>I</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>12</POS>
+     <NAME>CLUSTR</NAME>
+     <TYPE_KIND>s</TYPE_KIND>
+     <LENGTH>5</LENGTH>
+    </item>
+    <item>
+     <POS>13</POS>
+     <NAME>CLUSTD</NAME>
+     <TYPE_KIND>X</TYPE_KIND>
+     <LENGTH>2886</LENGTH>
+    </item>
+   </CWBCIDATAOBJ_field_catalog>
+   <CWBCINSTATTR_field_catalog>
+    <item>
+     <POS>1</POS>
+     <NAME>INSTA</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>2</POS>
+     <NAME>PAKID</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>3</POS>
+     <NAME>ALEID</NAME>
+     <TYPE_KIND>N</TYPE_KIND>
+     <LENGTH>10</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>4</POS>
+     <NAME>VERSNO</NAME>
+     <TYPE_KIND>N</TYPE_KIND>
+     <LENGTH>4</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>5</POS>
+     <NAME>ID</NAME>
+     <TYPE_KIND>N</TYPE_KIND>
+     <LENGTH>2</LENGTH>
+     <IS_KEY>X</IS_KEY>
+    </item>
+    <item>
+     <POS>6</POS>
+     <NAME>VALUE</NAME>
+     <TYPE_KIND>C</TYPE_KIND>
+     <LENGTH>100</LENGTH>
+    </item>
+   </CWBCINSTATTR_field_catalog>
+  </asx:values>
+ </asx:abap>
+</abapGit>

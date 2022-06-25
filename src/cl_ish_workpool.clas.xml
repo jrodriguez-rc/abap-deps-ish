@@ -1,0 +1,1805 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H*MED: Abstract Display Class for Workpools</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>Worklist</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>002</KEY>
+     <ENTRY>Hide</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>003</KEY>
+     <ENTRY>Optimize Width</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>004</KEY>
+     <ENTRY>Find...</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>005</KEY>
+     <ENTRY>Set Filter...</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>006</KEY>
+     <ENTRY>Show</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>007</KEY>
+     <ENTRY>Freeze to Column</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>008</KEY>
+     <ENTRY>Unfreeze Columns</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+   </TPOOL>
+   <I18N_TPOOL>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Arbeitsvorrat</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Ausblenden</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>Optimale Breite</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>004</KEY>
+       <ENTRY>Suchen...</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>005</KEY>
+       <ENTRY>Filter setzen...</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>006</KEY>
+       <ENTRY>Einblenden</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>007</KEY>
+       <ENTRY>Fixieren bis Spalte</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>008</KEY>
+       <ENTRY>Fixierung aufheben</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>S</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Pool trabajo</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Suprimir</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>Ancho óptimo</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>004</KEY>
+       <ENTRY>Buscar...</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>005</KEY>
+       <ENTRY>Fijar filtro...</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>006</KEY>
+       <ENTRY>Visualizar</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>007</KEY>
+       <ENTRY>Fijar hasta columna</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>008</KEY>
+       <ENTRY>Anular fijación</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+   </I18N_TPOOL>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>This is a super class for displaying any kind of workpools (worklists),</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>especially for use in combination with views (super class CL_ISH_VIEW)</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>in the clinical work station.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Dies ist eine Superklasse für die Darstellung jegliche Art von Workpools</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(Arbeitsvorräte); vor allem auch im Klinischen Arbeitsplatz in</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Kombination mit Sichten (Superklasse CL_ISH_VIEW) verwendbar.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>ACTIVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Dummy Container for Toolbar Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>ACTIVE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Dummy Container for Toolbar Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>ADD_DATA_TO_DRAG_DROP_CONT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Daten zu dem Container für Drag&amp;Drop hinzufügen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>ADD_DATA_TO_DRAG_DROP_CONT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Add Data to Drag&amp;Drop Container</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>ADD_DATA_TO_DRAG_DROP_CONT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Add Data to Drag&amp;Drop Container</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>BUILD_DRAGDROP_BEHAVIOUR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Drag &amp; Drop</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>BUILD_DRAGDROP_BEHAVIOUR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Drag &amp; Drop</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>BUILD_DRAGDROP_BEHAVIOUR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Drag &amp; Drop</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>BUILD_DSPOBJ</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anzeigeobjekt erzeugen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>BUILD_DSPOBJ</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Create Display Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>BUILD_DSPOBJ</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Create Display Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>BUILD_FIELDCAT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Zeilenindex für div. Objekte ermitteln (erz. Objekte)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>BUILD_FIELDCAT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Row Index for Various Objects (Created Objects)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>BUILD_FIELDCAT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Row Index for Various Objects (Created Objects)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>BUILD_LAYOUT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Layout erstellen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>BUILD_LAYOUT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Create Layout</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>BUILD_LAYOUT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Create Layout</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>BUILD_OUTTAB</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ausgabetabelle befüllen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>BUILD_OUTTAB</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Fill Output Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>BUILD_OUTTAB</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Fill Output Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>BUILD_OUTTAB_LINE_DSPOBJ</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Zeile(n) für Anzeigeobjekt erstellen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>BUILD_OUTTAB_LINE_DSPOBJ</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Create Row(s) for Display Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>BUILD_OUTTAB_LINE_DSPOBJ</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Create Row(s) for Display Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>BUILD_OUTTAB_LINE_OPERATION</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Zeile(n) für Anzeigeobjekt OPERATION erstellen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>BUILD_OUTTAB_LINE_OPERATION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Create Row(s) for Display Object OPERATION</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>BUILD_OUTTAB_LINE_OPERATION</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Create Row(s) for Display Object OPERATION</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>BUILD_WORKTAB</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Befüllen der Tabelle mit den Einträgen zur Bearbeitung</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>BUILD_WORKTAB</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Fill Table with Entries to Be Processed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>BUILD_WORKTAB</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Fill Table with Entries to Be Processed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>CALL_BADI_VIEW_TITLE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>BADI für Änderung des Titels einer Sicht</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>CALL_BADI_VIEW_TITLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>BADI for Changing the Title of a View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>CALL_BADI_VIEW_TITLE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>BADI for Changing the Title of a View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>CHECK_DD_OUTTAB_LINE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Prüfen ob Drag, Drop für die Zeile möglich sein soll</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>CHECK_DD_OUTTAB_LINE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check Whether Drag+Drop Should Be Possible for Row</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>CHECK_DD_OUTTAB_LINE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Check Whether Drag+Drop Should Be Possible for Row</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>CHECK_DISPLAY_OBJECT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Prüft welches Anzeigeobjekt zu verwenden ist</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>CHECK_DISPLAY_OBJECT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checks Which Display Object Should Be Used</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>CHECK_DISPLAY_OBJECT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Checks Which Display Object Should Be Used</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>CHECK_IF_DISPLAY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Prüfen ob das Anzeigeobjekt in die Liste aufgenommen wird</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>CHECK_IF_DISPLAY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check Whether the Display Object is Inserted in List</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>CHECK_IF_DISPLAY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Check Whether the Display Object is Inserted in List</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>CHECK_IF_EMPTY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Row Index for Various Objects (Created Objects)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>CHECK_IF_EMPTY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Row Index for Various Objects (Created Objects)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>CO_DISPLAY_OP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Dummy Container for Toolbar Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>CO_DISPLAY_OP</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Dummy Container for Toolbar Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>CO_OTYPE_WORKPOOL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Objekttyp</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>CO_OTYPE_WORKPOOL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Object Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>CO_OTYPE_WORKPOOL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Object Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>CO_VIEWTYPE_OP</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Sichttyp OP</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>CO_VIEWTYPE_OP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>OR View Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>CO_VIEWTYPE_OP</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>OR View Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>EXCL_TOOLBAR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Funktionen aus der Toolbar ausblenden</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>EXCL_TOOLBAR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Hide Functions in Toolbar</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>EXCL_TOOLBAR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Hide Functions in Toolbar</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GET_FRONTEND_LAYOUT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Layout vom Frontend holen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GET_FRONTEND_LAYOUT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Det Layout from Frontend</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GET_FRONTEND_LAYOUT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Det Layout from Frontend</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GET_OBJECT_FOR_IDENT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Objekte ausgehend von dem identifizierendem Objekt ermitteln</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GET_OBJECT_FOR_IDENT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Objects from Identifying Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GET_OBJECT_FOR_IDENT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Objects from Identifying Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GET_OBJECT_FOR_IMPOBJ</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Objekte ausgehend vom erzeugenden Obejekt ermitteln</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GET_OBJECT_FOR_IMPOBJ</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Object from Creating Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GET_OBJECT_FOR_IMPOBJ</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Object from Creating Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GET_ROWID_FOR_OBJECT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Zeilenindex für div. Objekte ermitteln (erz. Objekte)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GET_ROWID_FOR_OBJECT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Row Index for Various Objects (Created Objects)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GET_ROWID_FOR_OBJECT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Row Index for Various Objects (Created Objects)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GET_WP_ISH_OBJECT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Workplace-Struktur befüllen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GET_WP_ISH_OBJECT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Fill Workplace Structure</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GET_WP_ISH_OBJECT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Fill Workplace Structure</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GT_ALL_OBJECT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Erzeugende Objekte (d. Anzeige)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GT_ALL_OBJECT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Creating Objects (of Display</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GT_ALL_OBJECT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Creating Objects (of Display</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GT_EXCEPT_QINFO</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Tabelle für die Exception Quickinfo</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GT_EXCEPT_QINFO</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table for Exception Quickinfo</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GT_EXCEPT_QINFO</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Table for Exception Quickinfo</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GT_FIELDCAT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Dummy-Container f. Toolbar-Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GT_FIELDCAT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Dummy Container for Toolbar Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GT_FIELDCAT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Dummy Container for Toolbar Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GT_FILTER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Dummy-Container f. Toolbar-Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GT_FILTER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Dummy Container for Toolbar Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GT_FILTER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Dummy Container for Toolbar Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GT_NDIA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Tabellentyp NDIA</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GT_NDIA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Table Type NDIA</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GT_NDIA</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Table Type NDIA</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GT_NODES_OPEN</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Geöffnete/Geschlossene Knoten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GT_NODES_OPEN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Expanded/Collapsed Nodes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GT_NODES_OPEN</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Expanded/Collapsed Nodes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GT_SEL_CRIT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Dummy-Container f. Toolbar-Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GT_SEL_CRIT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Dummy Container for Toolbar Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GT_SEL_CRIT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Dummy Container for Toolbar Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GT_SORT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Dummy-Container f. Toolbar-Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GT_SORT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Dummy Container for Toolbar Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GT_SORT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Dummy Container for Toolbar Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GT_SORT_OBJECT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Sortierung der Objekte</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GT_SORT_OBJECT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sort Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GT_SORT_OBJECT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sort Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GT_WPOOL_WORK</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Einträge zur Bearbeitung</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GT_WPOOL_WORK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Entries to Be Processed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>GT_WPOOL_WORK</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Entries to Be Processed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_CONSTRUCT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Dummy-Container f. Toolbar-Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_CONSTRUCT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Dummy Container for Toolbar Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_CONSTRUCT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Dummy Container for Toolbar Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_CONTAINER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Dummy-Container f. Toolbar-Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_CONTAINER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Dummy Container for Toolbar Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_CONTAINER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Dummy Container for Toolbar Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_DEFAULT_FCODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Standard-Funktion bei Doppelklick</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_DEFAULT_FCODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Standard Function for Double-Click</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_DEFAULT_FCODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Standard Function for Double-Click</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_DRAGDROP</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Drag&amp;Drop Instanz</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_DRAGDROP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Drag&amp;Drop Instance</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_DRAGDROP</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Drag&amp;Drop Instance</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_DRAG_LINE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Zeilennummer des gedraggden Objekts</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_DRAG_LINE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Row Number of Dragged Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_DRAG_LINE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Row Number of Dragged Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_DUMMY_CONTAINER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Dummy-Container f. Toolbar-Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_DUMMY_CONTAINER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Dummy Container for Toolbar Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_DUMMY_CONTAINER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Dummy Container for Toolbar Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_ENVIRONMENT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Sammlung aller Objekte des Speichers</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_ENVIRONMENT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Collection of All Objects in Memory</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_ENVIRONMENT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Collection of All Objects in Memory</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_GRID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>ALV-Grid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_GRID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>ALV Grid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_GRID</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>ALV Grid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_INSTITUTION</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Einrichtung</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_INSTITUTION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Institution</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_INSTITUTION</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Institution</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_LAYOUT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Dummy-Container f. Toolbar-Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_LAYOUT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Dummy Container for Toolbar Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_LAYOUT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Dummy Container for Toolbar Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_NODES_OPEN</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Alle Knoten offen (ON) oder geschlossen (OFF)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_NODES_OPEN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>All Nodes Opened (ON) or Closed (OFF)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_NODES_OPEN</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>All Nodes Opened (ON) or Closed (OFF)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_NODES_OPEN_OLD</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Alle Knoten offen (ON) oder geschlossen (OFF)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_NODES_OPEN_OLD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>All Nodes Opened (ON) or Closed (OFF)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_NODES_OPEN_OLD</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>All Nodes Opened (ON) or Closed (OFF)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_NOSAVE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Es wird nicht gespeichert</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_NOSAVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Data Will Not Be Saved</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_NOSAVE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Data Will Not Be Saved</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_PLANOE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Planende OrgEinheit</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_PLANOE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Planning Organizational Units</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_PLANOE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Planning Organizational Units</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_SORT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Sortierung</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_SORT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sort Order</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_SORT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sort Order</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_TOOLBAR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Dummy-Container f. Toolbar-Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_TOOLBAR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Dummy Container for Toolbar Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_TOOLBAR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Dummy Container for Toolbar Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_TREE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>ALV-Tree</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_TREE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>ALV Tree</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_TREE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>ALV Tree</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_VIEW_ID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Sicht-ID</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_VIEW_ID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>View ID</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_VIEW_ID</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>View ID</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_VIEW_TYPE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Sicht-Typ</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_VIEW_TYPE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>View Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_VIEW_TYPE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>View Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_WPLACE_ID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Arbeitsumfeld-ID</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_WPLACE_ID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Work Environment ID</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>G_WPLACE_ID</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Work Environment ID</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>HANDLE_GRID_AFTER_USER_COMMAND</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ereignisbehandler für Nachbearbeitung Benutzeraktion im Grid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>HANDLE_GRID_AFTER_USER_COMMAND</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Eent Handler for Follow-Up User Action in Grid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>HANDLE_GRID_AFTER_USER_COMMAND</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Eent Handler for Follow-Up User Action in Grid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>HANDLE_GRID_BEFORE_USER_COMM</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ereignisbehandler für Vorbearbeitung Benutzeraktion im Grid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>HANDLE_GRID_BEFORE_USER_COMM</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Event Handler for Preprocessing User Action in Grid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>HANDLE_GRID_BEFORE_USER_COMM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Event Handler for Preprocessing User Action in Grid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>HANDLE_GRID_CONTEXT_MENU</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ereignisbehandler für Kontext-Menü im Grid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>HANDLE_GRID_CONTEXT_MENU</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Event Handler for Context Menu in Grid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>HANDLE_GRID_CONTEXT_MENU</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Event Handler for Context Menu in Grid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>HANDLE_GRID_DOUBLE_CLICK</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ereignisbehandler für Doppelklick im Grid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>HANDLE_GRID_DOUBLE_CLICK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Event Handler for Double-Clicking in Grid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>HANDLE_GRID_DOUBLE_CLICK</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Event Handler for Double-Clicking in Grid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>HANDLE_GRID_HOTSPOT_CLICK</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ereignisbehandler für Hotspots im Grid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>HANDLE_GRID_HOTSPOT_CLICK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Event Handler for Hotspots in Grid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>HANDLE_GRID_HOTSPOT_CLICK</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Event Handler for Hotspots in Grid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>HANDLE_GRID_MENU_BUTTON</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ereignisbehandler für Menü-button im Grid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>HANDLE_GRID_MENU_BUTTON</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Event Handler for Menu Button in Grid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>HANDLE_GRID_MENU_BUTTON</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Event Handler for Menu Button in Grid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>HANDLE_GRID_ONDRAG</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ereignisbehandler für Drag im Grid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>HANDLE_GRID_ONDRAG</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Event Handler for Drag in Grid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>HANDLE_GRID_ONDRAG</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Event Handler for Drag in Grid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>HANDLE_GRID_ONDROP</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ereignisbehandler für Drop im Grid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>HANDLE_GRID_ONDROP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Event Handler for Drop in Grid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>HANDLE_GRID_ONDROP</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Event Handler for Drop in Grid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>HANDLE_GRID_TOOLBAR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ereignisbehandler für Toolbar im Grid, Funktionen hinzufügen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>HANDLE_GRID_TOOLBAR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Event Handler for Toolbar in Grid, Add Functions</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>HANDLE_GRID_TOOLBAR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Event Handler for Toolbar in Grid, Add Functions</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>HANDLE_GRID_USER_COMMAND</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ereignisbehandler für Benutzeraktion im Grid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>HANDLE_GRID_USER_COMMAND</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Event Handler for User Actions in Grid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>HANDLE_GRID_USER_COMMAND</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Event Handler for User Actions in Grid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>NO</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Dummy Container for Toolbar Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>NO</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Dummy Container for Toolbar Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>NODE_OPENCLOSE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Knoten öffnen / schließen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>NODE_OPENCLOSE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Open / Close Nodes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>NODE_OPENCLOSE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Open / Close Nodes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>NODE_OPENCLOSE_ALL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Sämtliche Knoten öffnen / schließen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>NODE_OPENCLOSE_ALL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Open / Close All Nodes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>NODE_OPENCLOSE_ALL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Open / Close All Nodes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>OFF</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Dummy Container for Toolbar Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>OFF</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Dummy Container for Toolbar Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>ON</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Dummy Container for Toolbar Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>ON</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Dummy Container for Toolbar Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>READ_OUTTAB_LINE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Zeile der Ausgabetabelle lesen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>READ_OUTTAB_LINE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Read Row from Output Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>READ_OUTTAB_LINE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Read Row from Output Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>REFRESH_DISPLAY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anzeige aktualisieren</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>REFRESH_DISPLAY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Refresh Display</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>REFRESH_DISPLAY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Refresh Display</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>REGISTER_EVENTS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ereignisse registrieren</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>REGISTER_EVENTS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Register Events</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>REGISTER_EVENTS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Register Events</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>SET_COLOR_OUTTAB_LINE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Farbe(n) pro Ausgabezeile setzen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>SET_COLOR_OUTTAB_LINE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set Color(s) per Output Row</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>SET_COLOR_OUTTAB_LINE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Set Color(s) per Output Row</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>SET_DRAGDROP_OUTTAB_LINE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Drag &amp; Drop pro Ausgabezeile setzen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>SET_DRAGDROP_OUTTAB_LINE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set Drag &amp; Drop per Output Row</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>SET_DRAGDROP_OUTTAB_LINE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Set Drag &amp; Drop per Output Row</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>SET_FUNCTION_CODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Standard-Funktionscode an Grid/Tree schicken (z.b. Drucken)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>SET_FUNCTION_CODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Send Standard Function Code to Grid/Tree (e.g. Print)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>SET_FUNCTION_CODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Send Standard Function Code to Grid/Tree (e.g. Print)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>SET_NDIA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt die Diagonen von Hauptankterleistungen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>SET_NDIA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets Diagnoses of Main Anchor Services</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>SET_NDIA</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets Diagnoses of Main Anchor Services</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>SET_NOSAVE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Es wird nicht gespeichert</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>SET_NOSAVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Data Will Not Be Saved</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>SET_NOSAVE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Data Will Not Be Saved</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>SET_PLANNING_OU</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Planende OE festlegen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>SET_PLANNING_OU</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Planning OU</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>SET_PLANNING_OU</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Planning OU</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>SET_PROPERTIES_DSPOBJ</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Eigenschaften für Anzeigeobjekte setzen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>SET_PROPERTIES_DSPOBJ</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set Properties for Display Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>SET_PROPERTIES_DSPOBJ</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Set Properties for Display Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>SET_PROPERTIES_OPERATION</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Eigenschaften für Anzeigeobjekt OPERATION ermitteln</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>SET_PROPERTIES_OPERATION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Properties for Display Object OPERATION</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>SET_PROPERTIES_OPERATION</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Properties for Display Object OPERATION</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>SET_SEL_CRITERIA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Selektionskriterien ermitteln</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>SET_SEL_CRITERIA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Selection Criteria</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>SET_SEL_CRITERIA</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Selection Criteria</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>SET_VIEW_DATA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Daten von Sicht und Arbeitsumfeld übergeben</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>SET_VIEW_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Transfer Data from View and Work Environment</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>SET_VIEW_DATA</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Transfer Data from View and Work Environment</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>SET_WORK_FLAG</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Kennzeichen setzen, dass Objekt bearbeitet wurde ON / OFF</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>SET_WORK_FLAG</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set Indicator that Object was Processed ON / OFF</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>SET_WORK_FLAG</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Set Indicator that Object was Processed ON / OFF</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>SORT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Sortierung durchführen (intern)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>SORT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Execute Sort (Internal)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>SORT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Execute Sort (Internal)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>TRUE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Dummy Container for Toolbar Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>TRUE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Dummy Container for Toolbar Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>TYT_IMP_OBJECT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>OO + Nicht-OO Objekte</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>TYT_IMP_OBJECT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>OO + Non-OO Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>TYT_IMP_OBJECT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>OO + Non-OO Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>TY_IMP_OBJECT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>OO + Nicht-OO Objekte</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>TY_IMP_OBJECT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>OO + Non-OO Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>TY_IMP_OBJECT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>OO + Non-OO Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>YES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Dummy Container for Toolbar Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_WORKPOOL</CLSNAME>
+     <CMPNAME>YES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Dummy Container for Toolbar Object</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

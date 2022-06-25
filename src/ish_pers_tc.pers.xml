@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_PERS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PERS>
+    <PERS_REG>
+     <PERS_KEY>ISH_PERS_TC</PERS_KEY>
+     <ACCESS_CL>CL_ISH_PERS_TC</ACCESS_CL>
+     <DATATYPE>TN1TC_RESP_ROLE</DATATYPE>
+     <ACC_AGR>X</ACC_AGR>
+     <TRANSPORT>X</TRANSPORT>
+     <VIS_AGR>X</VIS_AGR>
+     <FLAG2>X</FLAG2>
+    </PERS_REG>
+    <PERS_REG_TEXT>
+     <LANG>E</LANG>
+     <PERS_KEY>ISH_PERS_TC</PERS_KEY>
+     <TEXT>Personalization of Treatment Authorization</TEXT>
+    </PERS_REG_TEXT>
+   </PERS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TRAN" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TSTC>
+    <TCODE>N2PMD_TWB</TCODE>
+    <PGMNA>SAPMN2PMDSTARTERS</PGMNA>
+    <DYPNO>0100</DYPNO>
+    <CINFO>BA==</CINFO>
+   </TSTC>
+   <TSTCC>
+    <TCODE>N2PMD_TWB</TCODE>
+    <S_WEBGUI>1</S_WEBGUI>
+    <S_WIN32>X</S_WIN32>
+    <S_PLATIN>X</S_PLATIN>
+   </TSTCC>
+   <TSTCT>
+    <SPRSL>E</SPRSL>
+    <TCODE>N2PMD_TWB</TCODE>
+    <TTEXT>PMD: Transport Workbench</TTEXT>
+   </TSTCT>
+   <AUTHORIZATIONS>
+    <TSTCA>
+     <TCODE>N2PMD_TWB</TCODE>
+     <OBJCT>N_EINR_TCO</OBJCT>
+     <FIELD>N_EINRI</FIELD>
+    </TSTCA>
+    <TSTCA>
+     <TCODE>N2PMD_TWB</TCODE>
+     <OBJCT>N_EINR_TCO</OBJCT>
+     <FIELD>TCD</FIELD>
+     <VALUE>N2TWB</VALUE>
+    </TSTCA>
+   </AUTHORIZATIONS>
+   <I18N_TPOOL>
+    <TSTCT>
+     <SPRSL>D</SPRSL>
+     <TTEXT>PMD: Transport-Workbench</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>S</SPRSL>
+     <TTEXT>PMD: Workbench transporte</TTEXT>
+    </TSTCT>
+   </I18N_TPOOL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

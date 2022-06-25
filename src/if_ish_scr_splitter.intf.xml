@@ -1,0 +1,2263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_INTF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOINTERF>
+    <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: Interface for Splitter Control Screens</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <UNICODE>X</UNICODE>
+   </VSEOINTERF>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;MEANING&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The interface &lt;ZH&gt;IF_ISH_SCR_SPLITTER&lt;/&gt; specifies the basic</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>funtionality for all screen classes that display a SplitterContainer.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>This interface contains the interface</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:IF.IF_ISH_SCR_CONTROL&gt;IF_ISH_SCR_CONTROL&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The related basic class is</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CL.CL_ISH_SCR_SPLITTER&gt;CL_ISH_SCR_SPLITTER&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>A splitter screen is divided into &lt;ZH&gt;rows&lt;/&gt; and &lt;ZH&gt;columns&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>The combination of row and column is referred to a &lt;ZH&gt;cell&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>Each cell has an underlying CL_GUI_CONTAINER object.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>For each cell, a &lt;ZH&gt;FieldValue&lt;/&gt; is created which contains a reference</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>to an &lt;DS:IF.IF_ISH_SCR_CONTROL&gt;IF_ISH_SCR_CONTROL&lt;/&gt; object.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>A splitter screen has &lt;ZH&gt;settings&lt;/&gt; and &lt;ZH&gt;properties&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Settings have to be made before the splitter screen is initialized.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The settings include:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;ZH&gt;Numbe of columns&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>See attribute &lt;DS:CA.CL_ISH_SCR_SPLITTER           G_COLS&gt;g_cols&lt;/&gt;).</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;ZH&gt;Number of rows&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>See attribute &lt;DS:CA.CL_ISH_SCR_SPLITTER           G_ROWS&gt;g_rows&lt;/&gt;).</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;ZH&gt;Indicator for the use of user-specific properties&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>See attribute</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CA.CL_ISH_SCR_SPLITTER           G_READ_PROPERTIES&gt;g_read_properties</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>&lt;/&gt; and</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CA.CL_ISH_SCR_SPLITTER           G_SAVE_PROPERTIES&gt;g_save_properties</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>&lt;/&gt;).</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;ZH&gt;Indicator for the control of embedded</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:IF.IF_ISH_SCR_CONTROL&gt;control screens&lt;/&gt;&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>See attributes</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CA.CL_ISH_SCR_SPLITTER           G_DESTROY_EMBCNTL&gt;g_destroy_embcntl</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>&lt;/&gt;, &lt;DS:CA.CL_ISH_SCR_SPLITTER           G_PAI_EMBCNTL&gt;g_pai_embcntl&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>aund &lt;DS:CA.CL_ISH_SCR_SPLITTER           G_PBO_EMBCNTL&gt;g_pbo_embcntl</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>&lt;/&gt;).</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Properties are divided into:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;ZH&gt;Default properties&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>See attributes</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CA.CL_ISH_SCR_SPLITTER           GS_DEF_SPLITPROP&gt;gs_def_splitprop</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>&lt;/&gt;, &lt;DS:CA.CL_ISH_SCR_SPLITTER           GT_DEF_SPLITPROP_COL&gt;gt_def_sp</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>litprop_col&lt;/&gt; and</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>&lt;DS:CA.CL_ISH_SCR_SPLITTER           GT_DEF_SPLITPROP_ROW&gt;gt_def_splitpr</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>op_row&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>The default properties can be set before the splitter screen is</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>inititialized. They are used for the initial display.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;ZH&gt;Current properties&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>See attributes</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CA.CL_ISH_SCR_SPLITTER           GS_SPLITPROP_X&gt;gs_splitprop_x&lt;/&gt;,</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>&lt;DS:CA.CL_ISH_SCR_SPLITTER           GT_SPLITPROP_COL_X&gt;gt_splitprop_col</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>_x&lt;/&gt; and &lt;DS:CA.CL_ISH_SCR_SPLITTER           GT_SPLITPROP_ROW_X&gt;gt_spl</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>itprop_row_x&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>The current properties can be modified in production operation. They are</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>active on the interface at the PBO event.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;ZH&gt;Properties that are active on the interface&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>See attributes</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CA.CL_ISH_SCR_SPLITTER           GS_SPLITPROP_CNTL&gt;gs_splitprop_cntl</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>&lt;/&gt;, &lt;DS:CA.CL_ISH_SCR_SPLITTER           GT_SPLITPROP_COL_CNTL&gt;gt_split</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>prop_col_cntl&lt;/&gt; ad</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>&lt;DS:CA.CL_ISH_SCR_SPLITTER           GT_SPLITPROP_ROW_CNTL&gt;gt_splitprop_</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>row_cntl&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>The interface properties can only be read out. The interface properties</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>are modified by the current properties at the PBO event.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;USE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>You use objects of this type in a similar way as objects of the type</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:IF.IF_ISH_SCREEN&gt;IF_ISH_SCREEN&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The following features are worth mentioning:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;ZH&gt;Processing of the FieldValues&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>A FieldValue of the type Screen is created for each cell.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>To set a screen in a FieldValue, you must use the method</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:IO.IF_ISH_SCR_SPLITTER           SET_CELL_SCREEN&gt;set_cell_screen&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>and not the method &lt;ZH&gt;set_fields&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;ZH&gt;Management of Embedded Screens&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>Whereas, where &quot;conventional&quot; screens are concerned, the caller always</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>has to handle the embedded screens also, the control screen can assume</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>this task. The attributes</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CA.CL_ISH_SCR_SPLITTER           G_DESTROY_EMBCNTL&gt;g_destroy_embcntl</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>&lt;/&gt;, &lt;DS:CA.CL_ISH_SCR_SPLITTER           G_PAI_EMBCNTL&gt;g_pai_embcntl&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>and &lt;DS:CA.CL_ISH_SCR_SPLITTER           G_PBO_EMBCNTL&gt;g_pbo_embcntl&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>control this behavior.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;ZH&gt;Nesting of Splitter Screens&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>The method &lt;DS:IO.IF_ISH_SCR_SPLITTER           SPLIT_CELL&gt;split_cell</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>&lt;/&gt; provides a neat and simple possibility of dividing a cell into</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>additional splitters.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;ZH&gt;Save and Read-Out of User-Specific Properties&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>It is possible to save the current properties at a specific event or</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>automatically when the splitter screen is destroyed and to re-use them</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>when initialization takes place.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>For further information, see the attributes</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CA.CL_ISH_SCR_SPLITTER           G_READ_PROPERTIES&gt;g_read_properties</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>&lt;/&gt; and</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CA.CL_ISH_SCR_SPLITTER           G_SAVE_PROPERTIES&gt;g_save_properties</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;MEANING&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das Interface &lt;ZH&gt;IF_ISH_SCR_SPLITTER &lt;/&gt;gibt die Basisfunktionalität</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>für alle Bildklassen vor, die einen SplitterContainer darstellen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Dieses Interface enthält das Interface</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_SCR_CONTROL&gt;IF_ISH_SCR_CONTROL&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die zugehörige Basisklasse ist</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_SCR_SPLITTER&gt;CL_ISH_SCR_SPLITTER&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Ein Splitter Screen unterteilt sich in &lt;ZH&gt;Zeilen&lt;/&gt; und &lt;ZH&gt;Spalten&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Die Kombination aus Zeile und Spalte wird als &lt;ZH&gt;Zelle&lt;/&gt; bezeichnet.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Jede Zelle hat ein CL_GUI_CONTAINER Objekt zugrunde liegend.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Für jede Zelle wird ein &lt;ZH&gt;FieldValue&lt;/&gt; angelegt, welcher eine</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Referenz auf ein &lt;DS:IF.IF_ISH_SCR_CONTROL&gt;IF_ISH_SCR_CONTROL&lt;/&gt; Objekt</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>beinhaltet.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Ein SplitterScreen hat &lt;ZH&gt;Einstellungen&lt;/&gt; und &lt;ZH&gt;Eigenschaften&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Einstellungen müssen vor der Initialisierung des SplitterScreens gesetzt</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>werden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Zu den Einstellungen gehören:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Anzahl der Spalten&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Siehe Attribut &lt;DS:CA.CL_ISH_SCR_SPLITTER           G_COLS&gt;g_cols&lt;/&gt;).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Anzahl der Zeilen&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Siehe Attribut &lt;DS:CA.CL_ISH_SCR_SPLITTER           G_ROWS&gt;g_rows&lt;/&gt;).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Kennzeichen für die Verwendung benutzerspezifischer Eigenschaften&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Siehe Attribute</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CA.CL_ISH_SCR_SPLITTER           G_READ_PROPERTIES&gt;g_read_properties</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>&lt;/&gt; und</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CA.CL_ISH_SCR_SPLITTER           G_SAVE_PROPERTIES&gt;g_save_properties</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>&lt;/&gt;).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Kennzeichen für die Ansteuerung eingebundener</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_SCR_CONTROL&gt;ControlScreens&lt;/&gt;&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Siehe Attribute</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CA.CL_ISH_SCR_SPLITTER           G_DESTROY_EMBCNTL&gt;g_destroy_embcntl</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>&lt;/&gt;, &lt;DS:CA.CL_ISH_SCR_SPLITTER           G_PAI_EMBCNTL&gt;g_pai_embcntl&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>und &lt;DS:CA.CL_ISH_SCR_SPLITTER           G_PBO_EMBCNTL&gt;g_pbo_embcntl</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>&lt;/&gt;).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Eigenschaften unterteilen sich in</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Defaulteigenschaften&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Siehe Attribute</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CA.CL_ISH_SCR_SPLITTER           GS_DEF_SPLITPROP&gt;gs_def_splitprop</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>&lt;/&gt;, &lt;DS:CA.CL_ISH_SCR_SPLITTER           GT_DEF_SPLITPROP_COL&gt;gt_def_sp</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>litprop_col&lt;/&gt; und</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>&lt;DS:CA.CL_ISH_SCR_SPLITTER           GT_DEF_SPLITPROP_ROW&gt;gt_def_splitpr</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>op_row&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Die Defaulteigenschaften können vor der Initialisierung des</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>SplitterScreens gesetzt werden. Sie werden für die Erstanzeige</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>verwendet.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Aktuelle Eigenschaften&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Siehe Attribute</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CA.CL_ISH_SCR_SPLITTER           GS_SPLITPROP_X&gt;gs_splitprop_x&lt;/&gt;,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>&lt;DS:CA.CL_ISH_SCR_SPLITTER           GT_SPLITPROP_COL_X&gt;gt_splitprop_col</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>_x&lt;/&gt; und &lt;DS:CA.CL_ISH_SCR_SPLITTER           GT_SPLITPROP_ROW_X&gt;gt_spl</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>itprop_row_x&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Die aktuellen Eigenschaften können laufend geändert werden. Sie werden</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>zum PBO-Zeitpunkt auf der Oberfläche aktiv.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Eigenschaften, die auf der Oberfläche aktiv sind&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Siehe Attribute</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CA.CL_ISH_SCR_SPLITTER           GS_SPLITPROP_CNTL&gt;gs_splitprop_cntl</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>&lt;/&gt;, &lt;DS:CA.CL_ISH_SCR_SPLITTER           GT_SPLITPROP_COL_CNTL&gt;gt_split</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>prop_col_cntl&lt;/&gt; und</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>&lt;DS:CA.CL_ISH_SCR_SPLITTER           GT_SPLITPROP_ROW_CNTL&gt;gt_splitprop_</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>row_cntl&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Die Oberflächeneigenschaften können nur ausgelesen werden. Die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Veränderung der Oberflächeneigenschaften erfolgt zum PBO-Zeitpunkt durch</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>die aktuellen Eigenschaften.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Objekte dieses Interfacetyps sind analog zu Objekten vom Typ</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_SCREEN&gt;IF_ISH_SCREEN&lt;/&gt; zu verwenden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Folgende Features sind erwähnenswert:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Bearbeitung der FieldValues&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Zu jeder Zelle wird ein FieldValue vom Typ Screen angelegt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Um einen Screen in einen FieldValue zu setzen, muss nicht die Methode</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;ZH&gt;set_fields&lt;/&gt; verwendet werden, sondern es kann die Methode</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IO.IF_ISH_SCR_SPLITTER           SET_CELL_SCREEN&gt;set_cell_screen&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>verwendet werden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Verwaltung eingebundener Screens&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Während sich bei herkömmlichen Screens der Aufrufer immer auch um die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>eingebundenen Screens kümmern muss, kann der Control-Screen diese</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Aufgabe übernehmen. Die Attribute</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CA.CL_ISH_SCR_SPLITTER           G_DESTROY_EMBCNTL&gt;g_destroy_embcntl</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>&lt;/&gt;, &lt;DS:CA.CL_ISH_SCR_SPLITTER           G_PAI_EMBCNTL&gt;g_pai_embcntl&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>und &lt;DS:CA.CL_ISH_SCR_SPLITTER           G_PBO_EMBCNTL&gt;g_pbo_embcntl&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>steuern dieses Verhalten.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Schachtelung von Splitter-Screens&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Die Methode &lt;DS:IO.IF_ISH_SCR_SPLITTER           SPLIT_CELL&gt;split_cell</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>&lt;/&gt; bietet eine elegante und einfache Möglichkeit, eine Zelle in weitere</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Splitter zu unterteilen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Speichern und Auslesen benutzerspezifischer Eigenschaften.&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Es ist möglich, die aktuellen Eigenschaften zu einem beliebigen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Zeitpunkt oder automatisch beim Zerstören des SplitterScreens zu</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>speichern und zum Initialisierungszeitpunkt wieder zu verwenden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Siehe dazu Attribute</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CA.CL_ISH_SCR_SPLITTER           G_READ_PROPERTIES&gt;g_read_properties</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>&lt;/&gt; und</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CA.CL_ISH_SCR_SPLITTER           G_SAVE_PROPERTIES&gt;g_save_properties</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>BUILD_CELL_FROM_FIELDNAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Zelle zum angegebenen FieldValue-Feldname</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>BUILD_CELL_FROM_FIELDNAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Cell for the Specified FieldValue Field Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>BUILD_CELL_FROM_FIELDNAME</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Cell for the Specified FieldValue Field Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>BUILD_FIELDNAME_FROM_CELL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert den FieldValue-Feldname zur angegebenen Zelle</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>BUILD_FIELDNAME_FROM_CELL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the FieldValue Field Name for the Specified Cell</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>BUILD_FIELDNAME_FROM_CELL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the FieldValue Field Name for the Specified Cell</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>CO_MODE_ABSOLUTE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Absoluter Spalten-/Zeilenmodus</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>CO_MODE_ABSOLUTE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Absolute Column/Row Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>CO_MODE_ABSOLUTE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Absolute Column/Row Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>CO_MODE_RELATIVE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Relativer Spalten-/Zeilenmodus</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>CO_MODE_RELATIVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Relateive Column/Row Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>CO_MODE_RELATIVE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Relateive Column/Row Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_ALIAS_NAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert den Aliasnamen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_ALIAS_NAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Alias Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_ALIAS_NAME</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Alias Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_BORDER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Rahmen-Eigenschaft</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_BORDER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Frame Property</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_BORDER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Frame Property</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_CELL_CONTAINER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert den GUI-Container zur angegebenen Zelle</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_CELL_CONTAINER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the GUI Container for the Specified Cell</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_CELL_CONTAINER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the GUI Container for the Specified Cell</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_CELL_FIELDVAL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert den FieldValue zur angegebenen Zelle</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_CELL_FIELDVAL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the FieldValue for the Specified Cell</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_CELL_FIELDVAL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the FieldValue for the Specified Cell</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_CELL_SCREEN</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert das Screen-Objekt zur angegebenen Zelle</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_CELL_SCREEN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Screen Object for the Specified Cell</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_CELL_SCREEN</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Screen Object for the Specified Cell</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_COLUMN_MODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert den Spaltenmodus</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_COLUMN_MODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Column Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_COLUMN_MODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Column Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_COLUMN_PROPERTIES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Eigenschaften einer Spalte</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_COLUMN_PROPERTIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Properties of a Column</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_COLUMN_PROPERTIES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Properties of a Column</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_COLUMN_SASH_MOVABLE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Verschiebbarkeit des Spaltentrenners</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_COLUMN_SASH_MOVABLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Movability of the Column Separator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_COLUMN_SASH_MOVABLE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Movability of the Column Separator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_COLUMN_SASH_VISIBLE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Sichtbarkeit des Spaltentrenners</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_COLUMN_SASH_VISIBLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Visibility of the Column Separator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_COLUMN_SASH_VISIBLE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Visibility of the Column Separator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_COLUMN_VISIBLE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Sichtbarkeit der angegebenen Spalte</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_COLUMN_VISIBLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Visibility of the Specified Column</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_COLUMN_VISIBLE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Visibility of the Specified Column</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_COLUMN_WIDTH</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Spaltenbreite</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_COLUMN_WIDTH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Column Width</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_COLUMN_WIDTH</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Column Width</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_COMMON_PROPERTIES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert allgemeine Eigenschaften des Splitters</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_COMMON_PROPERTIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns General Properties of the Splitter</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_COMMON_PROPERTIES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns General Properties of the Splitter</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_CONFIG_SPLITTER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert das zugehörige Splitter-Konfigurationsobjekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_CONFIG_SPLITTER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Releated Splitter Configuration Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_CONFIG_SPLITTER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Releated Splitter Configuration Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_BORDER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Default-Rahmeneigenschaft</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_BORDER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Default Frame Property</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_BORDER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Default Frame Property</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_COLUMN_MODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert den Default-Spaltenmodus</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_COLUMN_MODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Default Column Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_COLUMN_MODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Default Column Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_COLUMN_PROPERTIES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Default-Eigenschaften einer Spalte</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_COLUMN_PROPERTIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Default Properties of a Column</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_COLUMN_PROPERTIES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Default Properties of a Column</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_COLUMN_SASH_MOVABLE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Default-Verschiebbarkeit des Spaltentrenners</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_COLUMN_SASH_MOVABLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Default Movability of the Column Separator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_COLUMN_SASH_MOVABLE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Default Movability of the Column Separator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_COLUMN_SASH_VISIBLE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Default-Sichtbarkeit des Spaltentrenners</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_COLUMN_SASH_VISIBLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Default Visibility of the Column Separator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_COLUMN_SASH_VISIBLE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Default Visibility of the Column Separator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_COLUMN_VISIBLE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Default-Sichtbarkeit der angegebenen Spalte</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_COLUMN_VISIBLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Default Visibility of the Specified Column</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_COLUMN_VISIBLE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Default Visibility of the Specified Column</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_COLUMN_WIDTH</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Default-Spaltenbreite</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_COLUMN_WIDTH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Default Column Width</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_COLUMN_WIDTH</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Default Column Width</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_COMMON_PROPERTIES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Default allgemeinen Eigenschaften</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_COMMON_PROPERTIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Default General Properties</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_COMMON_PROPERTIES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Default General Properties</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_ROW_HEIGHT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Default-Zeilenhöhe</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_ROW_HEIGHT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Default Row Height</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_ROW_HEIGHT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Default Row Height</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_ROW_MODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert den Default-Zeilenmodus</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_ROW_MODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Default Row Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_ROW_MODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Default Row Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_ROW_PROPERTIES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Default allg. Eigenschaften einer Zeile</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_ROW_PROPERTIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Default General Properties of a Row</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_ROW_PROPERTIES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Default General Properties of a Row</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_ROW_SASH_MOVABLE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Default-Verschiebbarkeit des Zeilentrenners</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_ROW_SASH_MOVABLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Default Movability of the Row Separator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_ROW_SASH_MOVABLE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Default Movability of the Row Separator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_ROW_SASH_VISIBLE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Default-Sichtbarkeit des Zeilentrenners</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_ROW_SASH_VISIBLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Default Visibility of the Row Separator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_ROW_SASH_VISIBLE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Default Visibility of the Row Separator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_ROW_VISIBLE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Default-Sichtbarkeit der angegebenen Zeile</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_ROW_VISIBLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Default Visibility of the Specified Row</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_DEF_ROW_VISIBLE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Default Visibility of the Specified Row</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_EMBEDDED_CONTROLS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die eingebundenen Control Screens</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_EMBEDDED_CONTROLS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Embedded Control Screen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_EMBEDDED_CONTROLS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Embedded Control Screen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_NR_OF_COLUMNS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Anzahl der Spalten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_NR_OF_COLUMNS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Number of Columns</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_NR_OF_COLUMNS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Number of Columns</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_NR_OF_ROWS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Anzahl der Zeilen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_NR_OF_ROWS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Number of Rows</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_NR_OF_ROWS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Number of Rows</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_READ_PROPERTIES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert Kennz. &quot;Benutzerspez. Eigenschaften einlesen&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_READ_PROPERTIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns &quot;Import User-Specific Properties&quot; Indicator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_READ_PROPERTIES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns &quot;Import User-Specific Properties&quot; Indicator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_ROW_HEIGHT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Zeilenhöhe</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_ROW_HEIGHT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Row Hight</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_ROW_HEIGHT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Row Hight</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_ROW_MODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert den Zeilenmodus</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_ROW_MODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Row Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_ROW_MODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Row Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_ROW_PROPERTIES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Eigenschaften einer Zeile</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_ROW_PROPERTIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Properties of a Row</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_ROW_PROPERTIES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Properties of a Row</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_ROW_SASH_MOVABLE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Verschiebbarkeit des Zeilentrenners</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_ROW_SASH_MOVABLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Movability of the Row Separator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_ROW_SASH_MOVABLE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Movability of the Row Separator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_ROW_SASH_VISIBLE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Sichtbarkeit des Zeilentrenners</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_ROW_SASH_VISIBLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Visibility of the Row Separator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_ROW_SASH_VISIBLE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Visibility of the Row Separator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_ROW_VISIBLE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Sichtbarkeit der angegebenen Zeile</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_ROW_VISIBLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Visibility of the Specified Row</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_ROW_VISIBLE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Visibility of the Specified Row</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_SAVE_PROPERTIES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert Kennz. &quot;Benutzerspez. Eigenschaften sichern&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_SAVE_PROPERTIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns &quot;Save User-Specific Properties&quot; Indicator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_SAVE_PROPERTIES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns &quot;Save User-Specific Properties&quot; Indicator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_SPLITTER_CONTAINER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert den zugrundeliegenden GUI-Splitter-Container</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_SPLITTER_CONTAINER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Related GUI Splitter Container</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>GET_SPLITTER_CONTAINER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Related GUI Splitter Container</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>IS_CELL_VISIBLE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert ob eine Zelle sichtbar ist</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>IS_CELL_VISIBLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Whether a Cell Is Visible</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>IS_CELL_VISIBLE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Whether a Cell Is Visible</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>READ_COLUMN_PROPERTIES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liest benutzerspezifische Eigenschaften einer Spalte</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>READ_COLUMN_PROPERTIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Reads User-Specific Properties of a Column</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>READ_COLUMN_PROPERTIES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Reads User-Specific Properties of a Column</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>READ_COMMON_PROPERTIES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liest benutzerspezifische allg. Eigenschaften</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>READ_COMMON_PROPERTIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Reads User-Specific General Properties</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>READ_COMMON_PROPERTIES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Reads User-Specific General Properties</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>READ_PROPERTIES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liest sämtliche benutzerspezifischen Eigenschaften</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>READ_PROPERTIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Reads All User-Specific Properties</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>READ_PROPERTIES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Reads All User-Specific Properties</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>READ_ROW_PROPERTIES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liest benutzerspezifische Eigenschaften einer Zeile</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>READ_ROW_PROPERTIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Reads User-Specific Properties of a Row</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>READ_ROW_PROPERTIES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Reads User-Specific Properties of a Row</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SAVE_COLUMN_PROPERTIES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Speichert benutzerspezifische Eigenschaften einer Spalte</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SAVE_COLUMN_PROPERTIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Saves User-Specific Properties of a Column</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SAVE_COLUMN_PROPERTIES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Saves User-Specific Properties of a Column</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SAVE_COMMON_PROPERTIES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Speichert benutzerspezifische allg. Eigenschaften</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SAVE_COMMON_PROPERTIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Saves User-Specific General Properties</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SAVE_COMMON_PROPERTIES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Saves User-Specific General Properties</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SAVE_PROPERTIES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Speichert sämtliche benutzerspezifischen Eigenschaften</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SAVE_PROPERTIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Saves All User-Specific Properties</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SAVE_PROPERTIES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Saves All User-Specific Properties</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SAVE_ROW_PROPERTIES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Speichert benutzerspezifische Eigenschaften einer Zeile</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SAVE_ROW_PROPERTIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Saves User-Specific Properties of a Row</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SAVE_ROW_PROPERTIES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Saves User-Specific Properties of a Row</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_ALIAS_NAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt den Aliasname</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_ALIAS_NAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the Alias Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_ALIAS_NAME</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the Alias Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_BORDER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt die Rahmen-Eigenschaft</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_BORDER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the Frame Properties</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_BORDER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the Frame Properties</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_CELL_SCREEN</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt das Screen-Objekt in die angegebene Zelle</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_CELL_SCREEN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Places the Screen Object in the Specified Cell</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_CELL_SCREEN</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Places the Screen Object in the Specified Cell</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_COLUMN_MODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt den Spaltenmodus</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_COLUMN_MODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets Column Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_COLUMN_MODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets Column Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_COLUMN_PROPERTIES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt die Eigenschaften einer Spalte</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_COLUMN_PROPERTIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the Properties of a Column</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_COLUMN_PROPERTIES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the Properties of a Column</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_COLUMN_SASH_MOVABLE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt die Verschiebbarkeit des Spaltentrenners</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_COLUMN_SASH_MOVABLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the Movability of the Column Separator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_COLUMN_SASH_MOVABLE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the Movability of the Column Separator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_COLUMN_SASH_VISIBLE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt die Sichtbarkeit des Spaltentrenners</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_COLUMN_SASH_VISIBLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the Visibility of the Column Separator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_COLUMN_SASH_VISIBLE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the Visibility of the Column Separator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_COLUMN_VISIBLE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt die Sichtbarkeit der angegebenen Spalte</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_COLUMN_VISIBLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the Visibility of the Specified Column</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_COLUMN_VISIBLE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the Visibility of the Specified Column</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_COLUMN_WIDTH</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt die Spaltenbreite</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_COLUMN_WIDTH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the Column Width</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_COLUMN_WIDTH</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the Column Width</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_COMMON_PROPERTIES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt allgemeine Eigenschaften</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_COMMON_PROPERTIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets General Properties</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_COMMON_PROPERTIES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets General Properties</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_BORDER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt die Default Rahmen-Eigenschaft</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_BORDER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the Default Frame Property</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_BORDER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the Default Frame Property</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_COLUMN_MODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt den Default-Spaltenmodus</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_COLUMN_MODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the Default Column Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_COLUMN_MODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the Default Column Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_COLUMN_PROPERTIES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt die Default-Eigenschaften einer Spalte</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_COLUMN_PROPERTIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the Default Properties of a Column</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_COLUMN_PROPERTIES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the Default Properties of a Column</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_COLUMN_SASH_MOVABLE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt die Default-Verschiebbarkeit des Spaltentrenners</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_COLUMN_SASH_MOVABLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the Default Movability of the Column Separator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_COLUMN_SASH_MOVABLE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the Default Movability of the Column Separator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_COLUMN_SASH_VISIBLE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt die Default-Sichtbarkeit des Spaltentrenners</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_COLUMN_SASH_VISIBLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the Default Visibility of the Column Separator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_COLUMN_SASH_VISIBLE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the Default Visibility of the Column Separator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_COLUMN_VISIBLE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt die Default-Sichtbarkeit der angegebenen Spalte</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_COLUMN_VISIBLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the Default Visibility of the Specified Column</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_COLUMN_VISIBLE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the Default Visibility of the Specified Column</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_COLUMN_WIDTH</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt die Default-Spaltenbreite</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_COLUMN_WIDTH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the Default Column Width</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_COLUMN_WIDTH</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the Default Column Width</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_COMMON_PROPERTIES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt die Default allgemeinen Eigenschaften</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_COMMON_PROPERTIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the Default General Properties</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_COMMON_PROPERTIES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the Default General Properties</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_ROW_HEIGHT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt die Default-Zeilenhöhe</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_ROW_HEIGHT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the Default Row Height</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_ROW_HEIGHT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the Default Row Height</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_ROW_MODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt den Default-Zeilenmodus</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_ROW_MODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the Default Row Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_ROW_MODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the Default Row Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_ROW_PROPERTIES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt die Default-Eigenschaften einer Zeile</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_ROW_PROPERTIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the Default Properties of a Row</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_ROW_PROPERTIES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the Default Properties of a Row</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_ROW_SASH_MOVABLE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt die Default-Verschiebbarkeit des Zeilentrenners</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_ROW_SASH_MOVABLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the Default Movability of the Row Separator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_ROW_SASH_MOVABLE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the Default Movability of the Row Separator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_ROW_SASH_VISIBLE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt die Default-Sichtbarkeit des Zeilentrenners</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_ROW_SASH_VISIBLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the Default Visibility of the Row Separator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_ROW_SASH_VISIBLE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the Default Visibility of the Row Separator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_ROW_VISIBLE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt die Default-Sichtbarkeit der angegebenen Zeile</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_ROW_VISIBLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the Default Visiblity of the Specified Row</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_DEF_ROW_VISIBLE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the Default Visiblity of the Specified Row</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_READ_PROPERTIES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt Kennzeichen &quot;Eigenschaften einlesen&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_READ_PROPERTIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set the &quot;Import Properties&quot; Indicator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_READ_PROPERTIES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Set the &quot;Import Properties&quot; Indicator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_ROW_HEIGHT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt die Zeilenhöhe</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_ROW_HEIGHT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the Row Height</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_ROW_HEIGHT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the Row Height</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_ROW_MODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt den Zeilenmodus</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_ROW_MODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the Row Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_ROW_MODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the Row Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_ROW_PROPERTIES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt die Eigenschaften einer Zeile</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_ROW_PROPERTIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the Properties of a Row</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_ROW_PROPERTIES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the Properties of a Row</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_ROW_SASH_MOVABLE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt die Verschiebbarkeit des Zeilentrenners</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_ROW_SASH_MOVABLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the Movability of the Row Separator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_ROW_SASH_MOVABLE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the Movability of the Row Separator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_ROW_SASH_VISIBLE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt die Sichtbarkeit des Zeilentrenners</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_ROW_SASH_VISIBLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the Visibility of the Row Separator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_ROW_SASH_VISIBLE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the Visibility of the Row Separator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_ROW_VISIBLE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt die Sichtbarkeit der angegebenen Zeile</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_ROW_VISIBLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the Visibility of the Specified Row</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_ROW_VISIBLE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the Visibility of the Specified Row</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_SAVE_PROPERTIES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt Kennzeichen &quot;Eigenschaften sichern&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_SAVE_PROPERTIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the &quot;Save Properties&quot; Indicator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SET_SAVE_PROPERTIES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the &quot;Save Properties&quot; Indicator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SPLIT_CELL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Erzeugt einen SplitterSimple Screen in der angegebenen Zelle</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SPLIT_CELL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Creates a Splitter Simple Screen in the Specified Cell</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_SCR_SPLITTER</CLSNAME>
+     <CMPNAME>SPLIT_CELL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Creates a Splitter Simple Screen in the Specified Cell</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

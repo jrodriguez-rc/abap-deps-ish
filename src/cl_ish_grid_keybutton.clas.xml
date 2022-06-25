@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_GRID_KEYBUTTON</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: Key Button for an ALV Grid</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class &lt;ZH&gt;CL_ISH_GRID_KEYBUTTON&lt;/&gt; handles a key button in an</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CL.CL_ISH_SCR_ALV_GRID&gt;ALV grid screen&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>In addition to the normal functions of a &lt;DS:CL.CL_ISH_GRID_BUTTON&gt;grid</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>button&lt;/&gt; a key button contains the handling of the button click.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>When you click  a key button, the next button (in a loop) is displayed.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>The button click not only causes the icon of the button to change, but</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>also changes the value of the related key field (see method</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>CREATE_KEYBUTTON).</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse &lt;ZH&gt;CL_ISH_GRID_KEYBUTTON&lt;/&gt; kümmert sich um die Behandlung</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>eines Keybuttons in einem &lt;DS:CL.CL_ISH_SCR_ALV_GRID&gt;ALVGrid-Screen&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Ein Keybutton enthält zusätzlich zur normalen Funktionalität eines</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_GRID_BUTTON&gt;GridButtons&lt;/&gt; die Behandlung des</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ButtonClicks.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Bei Click auf einen Keybutton wird automatisch der nächste Button (in</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>einer Schleife) angezeigt. Es ändert sich durch den ButtonClick nicht</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>nur das Icon des Buttons, sondern auch der Wert des zugehörigen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Key-Feldes (siehe Methode CREATE_KEYBUTTON).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTON</CLSNAME>
+     <CMPNAME>CO_OTYPE_GRID_KEYBUTTON</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>KeyButton für ALVGrid Screens</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTON</CLSNAME>
+     <CMPNAME>CO_OTYPE_GRID_KEYBUTTON</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Key Button for ALV Grid Screens</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTON</CLSNAME>
+     <CMPNAME>CO_OTYPE_GRID_KEYBUTTON</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Key Button for ALV Grid Screens</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTON</CLSNAME>
+     <CMPNAME>CREATE_KEYBUTTON</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Erzeugt einen GridKeyButton</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTON</CLSNAME>
+     <CMPNAME>CREATE_KEYBUTTON</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Creates a Grid Key Button</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTON</CLSNAME>
+     <CMPNAME>CREATE_KEYBUTTON</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Creates a Grid Key Button</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTON</CLSNAME>
+     <CMPNAME>GET_KEYBUTTONDEF</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die zugrundeliegende GridKeyButtondefinition</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTON</CLSNAME>
+     <CMPNAME>GET_KEYBUTTONDEF</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Underlying Grid Key Button Definition</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTON</CLSNAME>
+     <CMPNAME>GET_KEYBUTTONDEF</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Underlying Grid Key Button Definition</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

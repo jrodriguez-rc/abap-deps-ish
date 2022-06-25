@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H ApplSettings Management: Parameter Definition</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_ASM_PARAM is used to manage a &lt;DS:CL.CL_ISH_AS_PARAM&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>parameter definition&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class &lt;DS:CL.CL_ISH_ASM_PARAM_C&gt;CL_ISH_ASM_PARAM_C&lt;/&gt; inherits</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>functions from this class.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_ASM_PARAM dient zur Verwaltung einer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_AS_PARAM&gt;Parameterdefinition&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Diese Klasse vererbt Funktionalität an die Klasse</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_ASM_PARAM_C&gt;CL_ISH_ASM_PARAM_C&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>CHECK</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Prüft das Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>CHECK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checks the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>CHECK</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Checks the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>CO_OTYPE_ASM_PARAM</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Objekttyp</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>CO_OTYPE_ASM_PARAM</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Object Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>CO_OTYPE_ASM_PARAM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Object Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>DESTROY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Zerstört das Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>DESTROY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Destroys the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>DESTROY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Destroys the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>GET_DEFAULT_VALUE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert den Defaultwert</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>GET_DEFAULT_VALUE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Gets the Default Value</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>GET_DEFAULT_VALUE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Gets the Default Value</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>GET_PARAM</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Parameterdefinition</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>GET_PARAM</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Gets the Parameter Definition</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>GET_PARAM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Gets the Parameter Definition</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>GET_PARAMID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Identifikation der Parameterdefinition</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>GET_PARAMID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Gets the Identification of the Parameter Definition</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>GET_PARAMID</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Gets the Identification of the Parameter Definition</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>GR_PARAM</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H ApplSettings: Parameterdefinition</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>GR_PARAM</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H ApplSettings: Parameter Definition</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>GR_PARAM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H ApplSettings: Parameter Definition</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>G_LOCKED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>ON: Objekt ist gesperrt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>G_LOCKED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>ON: Object Is Locked</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>G_LOCKED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>ON: Object Is Locked</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>INITIALIZE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Initialisiert das Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>INITIALIZE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Initializes the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>INITIALIZE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Initializes the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>IS_CHANGED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert ob das Objekt geändert wurde</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>IS_CHANGED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Gets Whether the Object Was Changed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>IS_CHANGED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Gets Whether the Object Was Changed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>IS_LOCKED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert ob das Objekt gesperrt ist</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>IS_LOCKED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Gets Whether the Object Is Locked</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>IS_LOCKED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Gets Whether the Object Is Locked</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>LOCK</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Sperrt das Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>LOCK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Lock object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>LOCK</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Lock object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>SAVE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Speichert das Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>SAVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Saves the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>SAVE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Saves the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>UNLOCK</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Entsperrt das Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>UNLOCK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Unlocks the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>UNLOCK</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Unlocks the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>_DESTROY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Zerstört das Objekt (interne Verarbeitung)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>_DESTROY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Destroys the Object (Internal Processing)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>_DESTROY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Destroys the Object (Internal Processing)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>_LOCK</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Sperrt das Objekt (interne Verarbeitung)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>_LOCK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Locks the Object (Internal Processing)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>_LOCK</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Locks the Object (Internal Processing)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>_UNLOCK</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Entsperrt das Objekt (interne Verarbeitung)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>_UNLOCK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Unlocks the Object (Internal Processing)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ASM_PARAM</CLSNAME>
+     <CMPNAME>_UNLOCK</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Unlocks the Object (Internal Processing)</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

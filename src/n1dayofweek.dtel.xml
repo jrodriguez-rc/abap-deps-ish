@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>N1DAYOFWEEK</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>CHAR2</DOMNAME>
+    <HEADLEN>02</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>14</SCRLEN2>
+    <SCRLEN3>20</SCRLEN3>
+    <DDTEXT>Weekday (2-Character Abberviation)</DDTEXT>
+    <REPTEXT>Dy</REPTEXT>
+    <SCRTEXT_S>Weekday</SCRTEXT_S>
+    <SCRTEXT_M>Weekday</SCRTEXT_M>
+    <SCRTEXT_L>Weekday</SCRTEXT_L>
+    <DTELMASTER>D</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>D</LANGU>
+    <LANGU>S</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>Wochentag (2-stellige Abkürzung)</DDTEXT>
+     <REPTEXT>Tg</REPTEXT>
+     <SCRTEXT_S>Wochentag</SCRTEXT_S>
+     <SCRTEXT_M>Wochentag</SCRTEXT_M>
+     <SCRTEXT_L>Wochentag</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>Día de la semana (abreviatura de 2 dígitos)</DDTEXT>
+     <REPTEXT>D.</REPTEXT>
+     <SCRTEXT_S>Día sem.</SCRTEXT_S>
+     <SCRTEXT_M>Día de semana</SCRTEXT_M>
+     <SCRTEXT_L>Día de la semana</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

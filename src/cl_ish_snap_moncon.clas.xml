@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_SNAP_MONCON</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: Snapshot Class for CL_ISH_MONCON</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Snapshot for a monitoring configuration.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Snapshot für eine Monitoring-Konfiguration.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SNAP_MONCON</CLSNAME>
+     <CMPNAME>GR_AREA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Monitoring Arbeitsgebiet</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SNAP_MONCON</CLSNAME>
+     <CMPNAME>GR_AREA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Monitoring Work Area</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SNAP_MONCON</CLSNAME>
+     <CMPNAME>GR_AREA</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Monitoring Work Area</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SNAP_MONCON</CLSNAME>
+     <CMPNAME>GT_COMPLSTAGE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Erledigungsstufen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SNAP_MONCON</CLSNAME>
+     <CMPNAME>GT_COMPLSTAGE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Completion Levels</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SNAP_MONCON</CLSNAME>
+     <CMPNAME>GT_COMPLSTAGE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Completion Levels</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SNAP_MONCON</CLSNAME>
+     <CMPNAME>G_COMPLSTAGES_LOADED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Erledigungsstufen bereits geladen (ON/OFF)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SNAP_MONCON</CLSNAME>
+     <CMPNAME>G_COMPLSTAGES_LOADED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Completion Levels Already Loaded (ON/OFF)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SNAP_MONCON</CLSNAME>
+     <CMPNAME>G_COMPLSTAGES_LOADED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Completion Levels Already Loaded (ON/OFF)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SNAP_MONCON</CLSNAME>
+     <CMPNAME>G_DELETIONMARK</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Monitoring Konfiguration zur Löschung vorgemerkt (ON/OFF)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SNAP_MONCON</CLSNAME>
+     <CMPNAME>G_DELETIONMARK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Monitoring Configuration Flagged for Deletion (ON/OFF)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SNAP_MONCON</CLSNAME>
+     <CMPNAME>G_DELETIONMARK</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Monitoring Configuration Flagged for Deletion (ON/OFF)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SNAP_MONCON</CLSNAME>
+     <CMPNAME>G_ID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Identifikation einer Monitoring Konfiguration</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SNAP_MONCON</CLSNAME>
+     <CMPNAME>G_ID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Identification of a Monitoring Configuration</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SNAP_MONCON</CLSNAME>
+     <CMPNAME>G_ID</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Identification of a Monitoring Configuration</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SNAP_MONCON</CLSNAME>
+     <CMPNAME>G_LOCKED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Monitoring Konfiguration gesperrt (ON/OFF)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SNAP_MONCON</CLSNAME>
+     <CMPNAME>G_LOCKED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Monitoring Configuration Locked (ON/OFF)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SNAP_MONCON</CLSNAME>
+     <CMPNAME>G_LOCKED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Monitoring Configuration Locked (ON/OFF)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SNAP_MONCON</CLSNAME>
+     <CMPNAME>G_NAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Bezeichnung einer Monitoring Konfiguration</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SNAP_MONCON</CLSNAME>
+     <CMPNAME>G_NAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Name of a Monitoring Configuration</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SNAP_MONCON</CLSNAME>
+     <CMPNAME>G_NAME</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Name of a Monitoring Configuration</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SNAP_MONCON</CLSNAME>
+     <CMPNAME>G_NAME_ORIG</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Bezeichnung einer Monitoring Konfiguration (Original)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SNAP_MONCON</CLSNAME>
+     <CMPNAME>G_NAME_ORIG</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Description of a Monitoring Configuration (Original)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SNAP_MONCON</CLSNAME>
+     <CMPNAME>G_NAME_ORIG</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Description of a Monitoring Configuration (Original)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SNAP_MONCON</CLSNAME>
+     <CMPNAME>G_NEW</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Monitoring Konfiguration ist neu (ON/OFF)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SNAP_MONCON</CLSNAME>
+     <CMPNAME>G_NEW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Monitoring Configuration Is New (ON/OFF)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SNAP_MONCON</CLSNAME>
+     <CMPNAME>G_NEW</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Monitoring Configuration Is New (ON/OFF)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SNAP_MONCON</CLSNAME>
+     <CMPNAME>G_TIMESTAMP</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Zeitstempel</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SNAP_MONCON</CLSNAME>
+     <CMPNAME>G_TIMESTAMP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Timestamp</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_SNAP_MONCON</CLSNAME>
+     <CMPNAME>G_TIMESTAMP</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Timestamp</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

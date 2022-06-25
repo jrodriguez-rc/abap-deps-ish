@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_LB_COMPCON</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: List Box for Displaying Existing Configurations</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_LB_COMPCON</CLSNAME>
+     <CMPNAME>FILL_LISTBOX</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>instanziert und befüllt die Listbox</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_LB_COMPCON</CLSNAME>
+     <CMPNAME>FILL_LISTBOX</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Instantiates and Fills the Listbox</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_LB_COMPCON</CLSNAME>
+     <CMPNAME>FILL_LISTBOX</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Instantiates and Fills the Listbox</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_LB_COMPCON</CLSNAME>
+     <CMPNAME>G_COMPID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Identifikation eines Bausteins</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_LB_COMPCON</CLSNAME>
+     <CMPNAME>G_COMPID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Module Identification</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_LB_COMPCON</CLSNAME>
+     <CMPNAME>G_COMPID</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Module Identification</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

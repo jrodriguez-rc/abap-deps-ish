@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: GUI - Enhanced Tabstrip View</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_GUI_XTABSTRIP_VIEW is the basic class for an enhanced</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>tabstrip interface object in a &lt;DS:IF.IF_ISH_GUI_APPLICATION&gt;dialog</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>application&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_GUI_XTABSTRIP_VIEW inherits from the class</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CL.CL_ISH_GUI_TABSTRIP_VIEW&gt;CL_ISH_GUI_TABSTRIP_VIEW&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The interface of an enhanced tabstrip interface object is defined by the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>interface &lt;DS:IF.IF_ISH_GUI_XTABSTRIP_VIEW&gt;IF_ISH_GUI_XTABSTRIP_VIEW&lt;/&gt;.</TDLINE>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_GUI_XTABSTRIP_VIEW ist die Basisklasse für ein</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>erweitertes Tabstrip-Oberflächenobjekt in einer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_APPLICATION&gt;Dialoganwendung&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_GUI_XTABSTRIP_VIEW erbt von der Klasse</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_GUI_TABSTRIP_VIEW&gt;CL_ISH_GUI_TABSTRIP_VIEW&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Schnittstelle eines erweiterten Tabstrip-Oberflächenobjekts wird</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>durch das Interface</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_XTABSTRIP_VIEW&gt;IF_ISH_GUI_XTABSTRIP_VIEW&lt;/&gt; definiert.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>GET_T_TABSTRIP_VIEW</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die Tabtrip Views</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>GET_T_TABSTRIP_VIEW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Tabstrip Views</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>GET_T_TABSTRIP_VIEW</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Tabstrip Views</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>GT_XTABDEF</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Reiterdefinitionen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>GT_XTABDEF</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Tab Index Definitions</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>GT_XTABDEF</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Tab Index Definitions</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>INITIALIZE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Initialisiert das Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>INITIALIZE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Initializes the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>INITIALIZE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Initializes the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>ON_TAB_VIEW_DESTROYED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ereignisbehandler: ReiterView wurde zerstört</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>ON_TAB_VIEW_DESTROYED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Event Handler: Tab Index View was Destroyed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>ON_TAB_VIEW_DESTROYED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Event Handler: Tab Index View was Destroyed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>_ADJUST_ACTIVETAB</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Anpassen des aktiven Reiters</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>_ADJUST_ACTIVETAB</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Adjustment of Active Tab Index</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>_ADJUST_ACTIVETAB</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Adjustment of Active Tab Index</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>_GET_XTABDEF_BY_IDX</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die Reiterdefinition zu einem Index</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>_GET_XTABDEF_BY_IDX</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Tab Index Definition for an Index</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>_GET_XTABDEF_BY_IDX</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Tab Index Definition for an Index</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>_GET_XTABDEF_BY_TAB_NAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die Reiterdefinition zu einem Reiternamen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>_GET_XTABDEF_BY_TAB_NAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Tab Index Definition for a Tab Index Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>_GET_XTABDEF_BY_TAB_NAME</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Tab Index Definition for a Tab Index Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>_GET_XTABDEF_BY_VIEW</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die Reiterdefinition zu einem View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>_GET_XTABDEF_BY_VIEW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Tab Index Definition for a View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>_GET_XTABDEF_BY_VIEW</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Tab Index Definition for a View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>_GET_XTABDEF_LABEL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die Bezeichnung zu einer Reiterdefinition</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>_GET_XTABDEF_LABEL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Description for a Tab Index Definition</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>_GET_XTABDEF_LABEL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Description for a Tab Index Definition</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>_INIT_XTABSTRIP_VIEW</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Initialisiert das Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>_INIT_XTABSTRIP_VIEW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Initializes the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>_INIT_XTABSTRIP_VIEW</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Initializes the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>_SET_ACTIVE_TAB</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt den aktiven Reiter</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>_SET_ACTIVE_TAB</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the Active Tab Index</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_XTABSTRIP_VIEW</CLSNAME>
+     <CMPNAME>_SET_ACTIVE_TAB</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the Active Tab Index</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

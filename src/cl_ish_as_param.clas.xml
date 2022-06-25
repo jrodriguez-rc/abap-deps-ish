@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_AS_PARAM</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H ApplSettings: Parameter Definition</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+    <CLSSHAREDMEMORY>X</CLSSHAREDMEMORY>
+   </VSEOCLASS>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_AS_PARAM defines the structure of an application</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>setting.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>An application setting provides the basic control of an application&apos;s</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>program flow.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>Dependent on the kind of application setting, this can contain different</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>values (for example, one value for each client).</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Application settings are defined by means of an implementation of the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>interface&lt;DS:IF.IF_ISH_FAC_AS_PARAM&gt; IF_ISH_FAC_AS_PARAM&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The following kinds of application settings exist, which are depicted by</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>subclasses:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;DS:CL.CL_ISH_AS_PARAM_C&gt;CL_ISH_AS_PARAM_C&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>Client-specific, time-independent.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_AS_PARAM definiert die Struktur einer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Applikationseinstellung.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Eine Applikationseinstellung dient zur grundlegenden Steuerung des</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Programmflusses einer Applikation.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Abhängig von der Ausprägung der Applikationseinstellung kann diese</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>verschiedene Werte beinhalten (beispielsweise einen Wert pro Mandant).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Applikationseinstellungen werden durch Implementierung des Interfaces</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_FAC_AS_PARAM&gt;IF_ISH_FAC_AS_PARAM&lt;/&gt; definiert.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Es gibt folgende Ausprägungen von Applikationseinstellungen, die durch</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Unterklassen abgebildet werden:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;DS:CL.CL_ISH_AS_PARAM_C&gt;CL_ISH_AS_PARAM_C&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Mandantenabhängig, zeitunabhängig.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_PARAM</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_PARAM</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_PARAM</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_PARAM</CLSNAME>
+     <CMPNAME>CO_OTYPE_AS_PARAM</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Objekttyp</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_PARAM</CLSNAME>
+     <CMPNAME>CO_OTYPE_AS_PARAM</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Object Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_PARAM</CLSNAME>
+     <CMPNAME>CO_OTYPE_AS_PARAM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Object Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_PARAM</CLSNAME>
+     <CMPNAME>CREATE_ASM_PARAM</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Erzeugt eine Parameterdefinition zur Verwaltung</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_PARAM</CLSNAME>
+     <CMPNAME>CREATE_ASM_PARAM</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Creates a Parameter Definition for Management</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_PARAM</CLSNAME>
+     <CMPNAME>CREATE_ASM_PARAM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Creates a Parameter Definition for Management</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_PARAM</CLSNAME>
+     <CMPNAME>DESTROY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Zerstört das Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_PARAM</CLSNAME>
+     <CMPNAME>DESTROY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Destroys the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_PARAM</CLSNAME>
+     <CMPNAME>DESTROY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Destroys the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_PARAM</CLSNAME>
+     <CMPNAME>GET_DEFAULT_VALUE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert den Defaultwert</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_PARAM</CLSNAME>
+     <CMPNAME>GET_DEFAULT_VALUE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Gets the Default Value</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_PARAM</CLSNAME>
+     <CMPNAME>GET_DEFAULT_VALUE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Gets the Default Value</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_PARAM</CLSNAME>
+     <CMPNAME>GET_PARAMID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Identifikation der Parameterdefinition</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_PARAM</CLSNAME>
+     <CMPNAME>GET_PARAMID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Gets the Identification of the Parameter Definition</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_PARAM</CLSNAME>
+     <CMPNAME>GET_PARAMID</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Gets the Identification of the Parameter Definition</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_PARAM</CLSNAME>
+     <CMPNAME>G_DEFAULT_VALUE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H ApplSettings: Parameterwert</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_PARAM</CLSNAME>
+     <CMPNAME>G_DEFAULT_VALUE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H ApplSettings: Parameter Value</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_PARAM</CLSNAME>
+     <CMPNAME>G_DEFAULT_VALUE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H ApplSettings: Parameter Value</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_PARAM</CLSNAME>
+     <CMPNAME>G_INVALID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>ON: Objekt ist fehlerhaft</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_PARAM</CLSNAME>
+     <CMPNAME>G_INVALID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>ON: Object Contains Errors</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_PARAM</CLSNAME>
+     <CMPNAME>G_INVALID</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>ON: Object Contains Errors</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_PARAM</CLSNAME>
+     <CMPNAME>G_PARAMID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H ApplSettings: Identifikation einer Parameterdefinition</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_PARAM</CLSNAME>
+     <CMPNAME>G_PARAMID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H ApplSettings: Identification of a Parameter Definition</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_PARAM</CLSNAME>
+     <CMPNAME>G_PARAMID</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H ApplSettings: Identification of a Parameter Definition</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_PARAM</CLSNAME>
+     <CMPNAME>INITIALIZE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Initialisiert das Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_PARAM</CLSNAME>
+     <CMPNAME>INITIALIZE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Initializes the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_PARAM</CLSNAME>
+     <CMPNAME>INITIALIZE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Initializes the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_PARAM</CLSNAME>
+     <CMPNAME>INVALIDATE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Kennzeichnet das Objekt als fehlerhaft</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_PARAM</CLSNAME>
+     <CMPNAME>INVALIDATE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Identifies the Object as Containing Errors</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_PARAM</CLSNAME>
+     <CMPNAME>INVALIDATE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Identifies the Object as Containing Errors</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_PARAM</CLSNAME>
+     <CMPNAME>IS_INVALID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert ob das Objekt fehlerhaft ist</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_PARAM</CLSNAME>
+     <CMPNAME>IS_INVALID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Whether the Object Contains Errors</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_AS_PARAM</CLSNAME>
+     <CMPNAME>IS_INVALID</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Whether the Object Contains Errors</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

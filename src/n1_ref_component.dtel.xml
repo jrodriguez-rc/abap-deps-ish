@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>N1_REF_COMPONENT</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>IF_ISH_COMPONENT</DOMNAME>
+    <HEADLEN>10</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>14</SCRLEN2>
+    <SCRLEN3>20</SCRLEN3>
+    <DDTEXT>Reference to IF_ISH_COMPONENT (Component)</DDTEXT>
+    <REPTEXT>Component</REPTEXT>
+    <SCRTEXT_S>Component</SCRTEXT_S>
+    <SCRTEXT_M>Component</SCRTEXT_M>
+    <SCRTEXT_L>Component</SCRTEXT_L>
+    <DTELMASTER>D</DTELMASTER>
+    <DATATYPE>REF</DATATYPE>
+    <REFKIND>R</REFKIND>
+    <REFTYPE>I</REFTYPE>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>D</LANGU>
+    <LANGU>S</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>Referenz auf IF_ISH_COMPONENT (Baustein)</DDTEXT>
+     <REPTEXT>Baustein</REPTEXT>
+     <SCRTEXT_S>Baustein</SCRTEXT_S>
+     <SCRTEXT_M>Baustein</SCRTEXT_M>
+     <SCRTEXT_L>Baustein</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>Referencia a IF_ISH_COMPONENT (módulo)</DDTEXT>
+     <REPTEXT>Módulo</REPTEXT>
+     <SCRTEXT_S>Módulo</SCRTEXT_S>
+     <SCRTEXT_M>Módulo</SCRTEXT_M>
+     <SCRTEXT_L>Módulo</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

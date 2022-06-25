@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_GRID_KEYBUTTONDEF</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: Key Button Definition for an ALV Grid</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class &lt;ZH&gt;CL_ISH_GRID_KEYBUTTONDEF&lt;/&gt; contains the definition of a</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CL.CL_ISH_GRID_KEYBUTTON&gt;key button&lt;/&gt; for an</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CL.CL_ISH_SCR_ALV_GRID&gt;ALV grid screen&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>A key button definition contains a table of key value pairs.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>The key is any value, the value contains the definition of the icon.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The icon corresponding to the key in the Outtab is displayed.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>For example, to graphically present the status of an object (open - in</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>process - complete) using an icon, you could use a key button with the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>following definition:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Key=&quot;open&quot;, value=&quot;&lt;Icon_Offen&gt;&quot;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>Key=&quot;in process&quot;, value=&quot;&lt;Icon_InArbeit&gt;&quot;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>Key=&quot;complete&quot;, value=&quot;&lt;Icon_Erledigt&gt;&quot;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The user of the ALV grid screen now only needs to set the status.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>The related icon is displayed automatically.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse &lt;ZH&gt;CL_ISH_GRID_KEYBUTTONDEF&lt;/&gt; enthält die Definition eines</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_GRID_KEYBUTTON&gt;Keybuttons&lt;/&gt; zu einem</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_SCR_ALV_GRID&gt;ALVGrid-Screen&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Eine Keybuttondefinition enthält eine Tabelle von Key-Value Paaren.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Der Key ist ein beliebiger Wert, der Value enthält die Definition des</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Icons.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Zur Anzeige kommt jenes Icon, welches dem in der Outtab enthaltenen Key</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>entspricht.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Um beispielsweise den Status eines Objektes (Offen - In Arbeit -</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Erledigt) durch ein Icon zu visualisieren, könnte ein Keybutton mit</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>folgender Definition verwendet werden:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Key=&quot;Offen&quot;, Value=&quot;&lt;Icon_Offen&gt;&quot;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Key=&quot;In Arbeit&quot;, Value=&quot;&lt;Icon_InArbeit&gt;&quot;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Key=&quot;Erledigt&quot;, Value=&quot;&lt;Icon_Erledigt&gt;&quot;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Der Verwender des ALVGrid-Screens braucht nun nur mehr den Status zu</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>setzen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Das zugehörige Icon wird automatisch angezeigt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTONDEF</CLSNAME>
+     <CMPNAME>ADD_KEYBUTTON</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Fügt einen Keybutton hinzu</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTONDEF</CLSNAME>
+     <CMPNAME>ADD_KEYBUTTON</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Adds a Key Button</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTONDEF</CLSNAME>
+     <CMPNAME>ADD_KEYBUTTON</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Adds a Key Button</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTONDEF</CLSNAME>
+     <CMPNAME>COMPLETE_CONSTRUCTION_KEY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Komplettiert die Instanzierung (siehe CREATE_KEYBUTTONDEF)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTONDEF</CLSNAME>
+     <CMPNAME>COMPLETE_CONSTRUCTION_KEY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Completes the Instantiation (see CREATE_KEYBUTTONDEF)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTONDEF</CLSNAME>
+     <CMPNAME>COMPLETE_CONSTRUCTION_KEY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Completes the Instantiation (see CREATE_KEYBUTTONDEF)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTONDEF</CLSNAME>
+     <CMPNAME>CO_OTYPE_GRID_KEYBUTTONDEF</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>KeyButtonDefinition für ALVGrid Screens</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTONDEF</CLSNAME>
+     <CMPNAME>CO_OTYPE_GRID_KEYBUTTONDEF</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Key Button Definition for ALV Grid Screens</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTONDEF</CLSNAME>
+     <CMPNAME>CO_OTYPE_GRID_KEYBUTTONDEF</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Key Button Definition for ALV Grid Screens</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTONDEF</CLSNAME>
+     <CMPNAME>CREATE_KEYBUTTONDEF</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Erzeugt eine Keybuttondefinition</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTONDEF</CLSNAME>
+     <CMPNAME>CREATE_KEYBUTTONDEF</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Creates a Key Button Definition</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTONDEF</CLSNAME>
+     <CMPNAME>CREATE_KEYBUTTONDEF</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Creates a Key Button Definition</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTONDEF</CLSNAME>
+     <CMPNAME>GET_KEYBUTTON_BY_ICON</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert den ersten Keybutton zu einem Icon</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTONDEF</CLSNAME>
+     <CMPNAME>GET_KEYBUTTON_BY_ICON</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the First Key Button for an Icon</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTONDEF</CLSNAME>
+     <CMPNAME>GET_KEYBUTTON_BY_ICON</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the First Key Button for an Icon</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTONDEF</CLSNAME>
+     <CMPNAME>GET_KEYBUTTON_BY_INDEX</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert den Keybutton zum spezifizierten Index</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTONDEF</CLSNAME>
+     <CMPNAME>GET_KEYBUTTON_BY_INDEX</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Key Button for the Specified Index</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTONDEF</CLSNAME>
+     <CMPNAME>GET_KEYBUTTON_BY_INDEX</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Key Button for the Specified Index</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTONDEF</CLSNAME>
+     <CMPNAME>GET_KEYBUTTON_BY_KEY_VALUE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert den Keybutton zu einem KeyValue</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTONDEF</CLSNAME>
+     <CMPNAME>GET_KEYBUTTON_BY_KEY_VALUE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Key Button for a Key Value</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTONDEF</CLSNAME>
+     <CMPNAME>GET_KEYBUTTON_BY_KEY_VALUE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Key Button for a Key Value</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTONDEF</CLSNAME>
+     <CMPNAME>GET_T_KEYBUTTON</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Keybuttons</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTONDEF</CLSNAME>
+     <CMPNAME>GET_T_KEYBUTTON</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Key Buttons</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTONDEF</CLSNAME>
+     <CMPNAME>GET_T_KEYBUTTON</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Key Buttons</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTONDEF</CLSNAME>
+     <CMPNAME>GT_KEYBUTTON</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Tabelle von ALV Grid KeyButtons</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTONDEF</CLSNAME>
+     <CMPNAME>GT_KEYBUTTON</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Table of ALV Grid Key Buttons</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTONDEF</CLSNAME>
+     <CMPNAME>GT_KEYBUTTON</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Table of ALV Grid Key Buttons</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTONDEF</CLSNAME>
+     <CMPNAME>G_FIELDNAME_KEY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feldname des Buttonkeys in der Outtab</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTONDEF</CLSNAME>
+     <CMPNAME>G_FIELDNAME_KEY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Name of the Button Key in the Outtab</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTONDEF</CLSNAME>
+     <CMPNAME>G_FIELDNAME_KEY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Field Name of the Button Key in the Outtab</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTONDEF</CLSNAME>
+     <CMPNAME>G_TRANS_KEY_FV</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>ON: FieldValue für Key wird transportiert</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTONDEF</CLSNAME>
+     <CMPNAME>G_TRANS_KEY_FV</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>ON: FieldValue for Key Is Transported</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTONDEF</CLSNAME>
+     <CMPNAME>G_TRANS_KEY_FV</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>ON: FieldValue for Key Is Transported</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTONDEF</CLSNAME>
+     <CMPNAME>REMOVE_KEYBUTTON</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Entfernt einen Keybutton</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTONDEF</CLSNAME>
+     <CMPNAME>REMOVE_KEYBUTTON</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Removes a Key Button</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GRID_KEYBUTTONDEF</CLSNAME>
+     <CMPNAME>REMOVE_KEYBUTTON</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Removes a Key Button</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

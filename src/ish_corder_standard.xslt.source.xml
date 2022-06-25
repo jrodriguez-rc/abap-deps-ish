@@ -1,0 +1,255 @@
+<!--
+IS-H*MED Clinical Order Stylesheet
+vers. 0.8, ACW, 2003-11-03
+-->
+<xsl:transform xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:sap="http://www.sap.com/sapxsl" version="1.0">
+  <xsl:output method="html" omit-xml-declaration="yes"/>
+  <xsl:template match="/CORD">
+    <HTML>
+      <HEAD>
+        <TITLE>
+Clinical Order - HTML View</TITLE>
+        <STYLE type="text/css">body {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #000000}
+		table {  font-family: Verdana, Arial, Helvetica, sans-serif}
+		hr {  color: #000099}
+		td.head {background-color: #c8c8c8; font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px}
+		td.linetag {background-color: #ffffff; font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 10px}
+		td.linetext {background-color: #ffffff; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px}
+		td.linetextextra {background-color: #ffffff; font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 10px}
+		tr.posheader {background-color:#000000; color:#f9f9f9}
+				</STYLE>
+      </HEAD>
+      <BODY bgcolor="#FFFFFF">
+        <TABLE align="center" bgcolor="#000000" border="0" cellpadding="1" cellspacing="0" width="100%">
+          <TR>
+            <TD>
+              <TABLE bgcolor="#FFFFFF" border="0" cellpadding="2" cellspacing="0" width="100%">
+                <TR>
+                  <TD colspan="2">
+                    <!-- Header start -->
+                    <TABLE bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+                       <TR>
+                        <TD align="right">
+                        </TD>
+                       </TR>
+                    </TABLE>
+                    <!-- Header end -->
+                  </TD>
+                </TR>
+                <TR>
+                  <TD align="center" colspan="2">
+                    <TABLE bgcolor="#000000" border="0" cellpadding="0" cellspacing="1" width="100%">
+                      <TR>
+                        <TD>
+                          <TABLE bgcolor="#ffffff" border="0" cellpadding="2" cellspacing="0" width="100%">
+                            <TR>
+                              <TD valign="top" width="50%">
+                                <!-- PATIENT start -->
+                                <xsl:for-each select="CORDHEADER/COMP[@NAME='Patientenheader']">
+                                  <xsl:call-template name="component"/>
+                                </xsl:for-each>
+                                <!-- PATIENT end -->
+                              </TD>
+                              <TD valign="top" width="50%">
+                                <!-- ORDER start -->
+                                <xsl:for-each select="CORDHEADER/COMP[@NAME='Auftragsdaten']">
+                                  <xsl:call-template name="component"/>
+                                </xsl:for-each>
+                                <!-- ORDER end -->
+                              </TD>
+                            </TR>
+                          </TABLE>
+                        </TD>
+                      </TR>
+                    </TABLE>
+                  </TD>
+                </TR>
+                <TR>
+                  <TD align="center" colspan="2">
+                    <TABLE bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" width="100%">
+                      <TR>
+                        <TD>
+                   <!--   <TABLE bgcolor="#ffffff" border="0" cellpadding="2" cellspacing="0" width="100%">
+                            <TR>
+                              <TD class="head" valign="top">Weitere Angaben</TD>
+                            </TR>
+                          </TABLE>
+                   -->  </TD>
+                      </TR>
+                    </TABLE>
+                  </TD>
+                </TR>
+                <TR>
+                  <TD align="center" colspan="2">
+                    <TABLE bgcolor="#000000" border="0" cellpadding="0" cellspacing="1" width="100%">
+                      <TR>
+                        <TD>
+                          <TABLE bgcolor="#ffffff" border="0" cellpadding="2" cellspacing="0" width="100%">
+                    <!-- Kopfbausteine start -->
+                            <data>
+                              <xsl:apply-templates select="CORDHEADER/COMP[not(@NAME = 'Patientenheader') and not(@NAME = 'Auftragsdaten')]"/>
+                            </data>
+                            <!-- Kopfbausteine end -->
+                          </TABLE>
+                        </TD>
+                      </TR>
+                    </TABLE>
+                  </TD>
+                </TR>
+                <TR>
+                 <TD>
+                    <BR/>
+                    <BR/>
+                  </TD>
+                </TR>
+                <TR>
+                  <TD align="center" colspan="2">
+                    <TABLE bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" width="100%">
+                      <TR>
+                        <TD>
+                   <!--   <TABLE bgcolor="#ffffff" border="0" cellpadding="2" cellspacing="0" width="100%">
+                            <TR>
+                               <TD class="head" valign="top">Positionen</TD>
+                            </TR>
+                          </TABLE>
+                   -->  </TD>
+                      </TR>
+                    </TABLE>
+                   </TD>
+                  </TR>
+                <xsl:for-each select="CORDPOSITIONS/CORDPOSITION">
+                  <TR>
+                    <TD align="center" colspan="2">
+                      <TABLE bgcolor="#000000" border="0" cellpadding="0" cellspacing="1" width="100%">
+                        <TR>
+                          <TD>
+                            <TABLE bgcolor="#ffffff" border="0" cellpadding="2" cellspacing="0" width="100%">
+                              <TR>
+                                <TD class="head" valign="top" width="20%">
+                                  <xsl:value-of select="@POSNO"/>
+                                </TD>
+                                <TD class="head" valign="top" width="60%">
+                                  <xsl:value-of select="POSITIONHEADER/POSTITLE"/>
+                                </TD>
+                                <TD class="head" valign="top" width="20%">
+                                  <xsl:value-of select="POSITIONHEADER/POSSTATUS"/>
+                                </TD>
+                              </TR>
+                              <TR>
+                                <TD class="head" valign="top" width="20%"/>
+                                <TD class="head" valign="top" width="60%">
+                                  <table border="0" cellpadding="2" cellspacing="0">
+                                  <tr>
+                                   <td class="head" valign="top" width="50%">
+                                    <xsl:value-of select="POSITIONHEADER/POSSERVOU"/>
+                                 	 </td>
+                                   <td class="head" valign="top" width="50%">
+                                    <xsl:value-of select="POSITIONHEADER/POSPREREG"/>
+                                   </td>
+                                  </tr>
+                                  </table>
+                                </TD>
+                                <TD class="head" valign="top" width="20%">
+                                  <xsl:value-of select="POSITIONHEADER/POSDEPTOU"/>
+                                </TD>
+                              </TR>
+                              <TR>
+                                <TD class="head" valign="top" width="20%"/>
+                                <TD class="head" valign="top" width="60%">
+                                    <xsl:value-of select="POSITIONHEADER/POSAPP"/>
+                                </TD>
+                                <TD class="head" valign="top" width="20%">
+                                     <xsl:value-of select="POSITIONHEADER/POSCASENO"/>
+                                </TD>
+                              </TR>
+
+                            </TABLE>
+                          </TD>
+                        </TR>
+                      </TABLE>
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD align="center" colspan="2">
+                      <TABLE bgcolor="#000000" border="0" cellpadding="0" cellspacing="1" width="100%">
+                        <TR>
+                          <TD>
+                            <TABLE bgcolor="#ffffff" border="0" cellpadding="2" cellspacing="0" width="100%">
+                              <!-- Positionsbausteine start -->
+                              <data>
+                                <xsl:apply-templates select="POSCOMPS/COMP"/>
+                              </data>
+                              <!-- Positionsbausteine end -->
+                            </TABLE>
+                          </TD>
+                        </TR>
+                      </TABLE>
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD>
+                      <BR/>
+                    </TD>
+                  </TR>
+                </xsl:for-each>
+              </TABLE>
+            </TD>
+          </TR>
+        </TABLE>
+      </BODY>
+    </HTML>
+    <!-- Template for component layout start / exluding patient and order -->
+  </xsl:template>
+  <xsl:template name="component">
+    <TABLE bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+      <TR>
+        <TD class="head" colspan="2">
+          <xsl:value-of select="@NAME"/>
+        </TD>
+      </TR>
+      <xsl:for-each select="COMPELEMENT">
+        <TR>
+          <TD class="linetag" width="25%">
+            <xsl:value-of select="ELEMENTTAG"/>
+          </TD>
+          <TD class="linetextextra">
+            <xsl:value-of select="ELEMENTVAL"/>
+          </TD>
+        </TR>
+      </xsl:for-each>
+    </TABLE>
+  </xsl:template>
+  <!-- Template for component layout start-->
+  <!-- position components table start -->
+  <xsl:template match="CORDHEADER/COMP">
+    <xsl:if test="position() mod 2 = 1">
+      <TR>
+        <TD valign="top" width="50%">
+          <xsl:call-template name="component"/>
+        </TD>
+        <TD valign="top" width="50%">
+          <xsl:for-each select="following-sibling::*[not(@NAME = 'Patientenheader') and not(@NAME = 'Auftragsdaten')][1]">
+            <xsl:call-template name="component"/>
+          </xsl:for-each>
+        </TD>
+      </TR>
+    </xsl:if>
+  </xsl:template>
+  <!-- position components table end -->
+  <!-- position components table start -->
+  <xsl:template match="CORDPOSITIONS/CORDPOSITION/POSCOMPS/COMP">
+    <xsl:if test="position() mod 2 = 1">
+      <TR>
+        <TD valign="top" width="50%">
+          <xsl:call-template name="component"/>
+        </TD>
+        <TD valign="top" width="50%">
+          <xsl:for-each select="following-sibling::*[1]">
+            <xsl:call-template name="component"/>
+          </xsl:for-each>
+        </TD>
+      </TR>
+    </xsl:if>
+  </xsl:template>
+  <!-- position components table end -->
+</xsl:transform>

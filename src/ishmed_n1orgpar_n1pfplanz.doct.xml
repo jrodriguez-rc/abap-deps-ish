@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DOCT" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DOC>
+    <item>
+     <DOKIL>
+      <ID>TX</ID>
+      <OBJECT>ISHMED_N1ORGPAR_N1PFPLANZ</OBJECT>
+      <LANGU>D</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0008</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00023</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ISHMED_N1ORGPAR_N1PFPLANZ</TDNAME>
+      <TDID>TX</TDID>
+      <TDSPRAS>D</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00008</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Pflegeplan im Anzeigemodus aufrufen&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;DEFINITION&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Mit diesem Parameter steuern Sie, ob der Pflegeplan im Anzeigemodus</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(keine Fallsperre aktiv) oder im Änderungsmodus (Fallsperre aktiv)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>aufgerufen werden soll.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Das System prüft den Parameterwert für die aktuelle pflegerische OE des</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Patienten.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Bei folgenden Funktionen ruft das System den Pflegeplan unabhängig vom</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Parameterwert automatisch im Anlege- bzw. Änderungsmodus auf:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Wenn für den gewählten Fall noch kein Pflegeplan angelegt wurde, legt</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>das System einen neuen Pflegeplan an (Anlegemodus, daher Fallsperre</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>aktiv).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Wenn für den gewählten Fall bereits ein Pflegeplan vorhanden ist und die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>aufrufende Stelle von der aktuellen pflegerischen Organisationseinheit</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(OE) des Pflegeplans abweicht, erfolgt der Aufruf des Pflegeplans</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>automatisch im Änderungsmodus (Fallsperre aktiv). Sie können den</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Pflegeplan von der bisherigen pflegerischen OE übernehmen (Aufruf des</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Übernahmedialogs).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>VERWENDUNG</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Mögliche Parameterwerte:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE> &apos;X&apos;: Das System ruft den Pflegeplan im Anzeigemodus auf.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&apos; &apos;: Das System ruft den Pflegeplan im Änderungsmodus (Standardwert)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>auf.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>TX</ID>
+      <OBJECT>ISHMED_N1ORGPAR_N1PFPLANZ</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0008</VERSION>
+      <TXTLINES>00021</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ISHMED_N1ORGPAR_N1PFPLANZ</TDNAME>
+      <TDID>TX</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00008</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Call Nursing Plan in Display Mode&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;DEFINITION&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>This parameter enables you to control whether the nursing plan is to be</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>called in display mode (no active case lock) or change mode (active case</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>lock).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>The system checks the parameter value for the patient&apos;s current nursing</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>organizational unit.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>The system automatically accesses the nursing plan in create or change</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>mode regardless of the parameter value in the following functions:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>If a nursing plan has not yet been created for the selected case, the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>system creates a new nursing plan (creation mode, so case lock is</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>active).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>If a nursing plan exists for the selected case, and the calling point</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>differs from the current nursing organizational unit (OU) of the nursing</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>plan, the nursing plan is automatically called in change mode (case lock</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>active). You can transfer the nursing plan from the previous nursing OU</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(call of the transfer dialog).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;USE&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Possible parameter values:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&apos;X&apos;: The system calls the nursing plan in display mode.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&apos; &apos;: The system calls the nursing plan in change mode (default value).</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>TX</ID>
+      <OBJECT>ISHMED_N1ORGPAR_N1PFPLANZ</OBJECT>
+      <LANGU>S</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0008</VERSION>
+      <TXTLINES>00024</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ISHMED_N1ORGPAR_N1PFPLANZ</TDNAME>
+      <TDID>TX</TDID>
+      <TDSPRAS>S</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00008</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Llamar el plan de cuidados en modo de visualización&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;DEFINICIÓN&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Con este parámetro puede hacer que el sistema llame el plan de cuidados</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>en modo de visualización (sin bloqueo de episodio activo) o en modo de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>modificación (bloqueo de episodio activo)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>El sistema verifica el valor del parámetro para la unidad organizativa</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>de enfermería actual del paciente.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>En las siguientes funciones, el sistema llama el plan de cuidados</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>automáticamente, sin tener en cuenta el valor del parámetro, en modo de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>visualización o modificación:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Si todavía no se ha creado ningún plan de cuidados para el episodio</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>seleccionado, el sistema crea un plan de cuidados nuevo (modo de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>creación y, por consiguiente, bloqueo de episodio activo).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Si ya existe un plan de cuidados para el episodio seleccionado y la</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>posición de llamada es distinta de la unidad organizativa (UO) de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>enfermería actual, el sistema llama automáticamente el plan de cuidados</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>en modo de modificación (bloqueo de episodio activo). Es posible</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>transferir el plan de cuidados desde la UO de enfermería anterior</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(llamada del diálogo de transferencia).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>UTILIZACIÓN</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Valores de parámetro posibles:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&quot;X&quot;: El sistema llama el plan de cuidados en modo de visualización.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&quot; &quot;: El sistema llama el plan de cuidados en modo de modificación (valor</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>por defecto).</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </DOC>
+  </asx:values>
+ </asx:abap>
+</abapGit>

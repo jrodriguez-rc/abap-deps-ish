@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>N1_REF_DATA</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>DATA</DOMNAME>
+    <HEADLEN>14</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>14</SCRLEN2>
+    <SCRLEN3>20</SCRLEN3>
+    <DDTEXT>Reference to Any Data Item (TYPE REF TO DATA)</DDTEXT>
+    <REPTEXT>Data Reference</REPTEXT>
+    <SCRTEXT_S>Data Ref.</SCRTEXT_S>
+    <SCRTEXT_M>Data Reference</SCRTEXT_M>
+    <SCRTEXT_L>Data Reference</SCRTEXT_L>
+    <DTELMASTER>D</DTELMASTER>
+    <DATATYPE>REF</DATATYPE>
+    <REFKIND>R</REFKIND>
+    <REFTYPE>D</REFTYPE>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>D</LANGU>
+    <LANGU>S</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>Referenz auf beliebiges Datum (TYPE REF TO DATA)</DDTEXT>
+     <REPTEXT>Datenreferenz</REPTEXT>
+     <SCRTEXT_S>Datenref.</SCRTEXT_S>
+     <SCRTEXT_M>Datenreferenz</SCRTEXT_M>
+     <SCRTEXT_L>Datenreferenz</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>Referencia a una fecha cualquiera (TYPE REF TO DATA)</DDTEXT>
+     <REPTEXT>Refer.datos</REPTEXT>
+     <SCRTEXT_S>Ref.dat.</SCRTEXT_S>
+     <SCRTEXT_M>Refer.datos</SCRTEXT_M>
+     <SCRTEXT_L>Referencia datos</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_INTF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOINTERF>
+    <CLSNAME>IF_ISH_GUI_MDY_VIEW</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: GUI - Subscreen Container View</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <UNICODE>X</UNICODE>
+   </VSEOINTERF>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;DESCRIPTION&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Interface IF_ISH_GUI_MDY_VIEW defines the interface of a subscreen</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>container interface object in a &lt;DS:IF.IF_ISH_GUI_APPLICATION&gt;dialog</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>application&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Interface IF_ISH_GUI_MDY_VIEW contains the interface</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:IF.IF_ISH_GUI_DYNPRO_VIEW&gt;IF_ISH_GUI_DYNPRO_VIEW&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>UT</TDFORMAT>
+     <TDLINE>Methods:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_MAIN_CONTROLLER</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the &lt;DS:IF.IF_ISH_GUI_MAIN_CONTROLLER&gt;main control object&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>The control object of a subscreen container interface object must be a</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>main control object.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Methods GET_CONTROLLER and GET_MAIN_CONTROLLER return the same object.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_PFSTATUS</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the current &lt;DS:CL.CL_ISH_GUI_MDY_PFSTATUS&gt;GUI status object&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_TITLEBAR</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the current &lt;DS:CL.CL_ISH_GUI_MDY_TITLEBAR&gt;title bar object&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_T_PFSTATUS</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns a table containing the GUI status objects.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>A subscreen container interface object can have more than one GUI status</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>object.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>It makes sense to use one GUI status object for each processing mode.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_T_TITLEBAR</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns a table containing the title bar objects.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>A subscreen container interface object can have more than one title bar</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>object.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>It makes sense to use one title bar object for each processing mode.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;USE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The abstract basic class for a subscreen container interface object is</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CL.CL_ISH_GUI_MDY_VIEW&gt;CL_ISH_GUI_MDY_VIEW&lt;/&gt;.</TDLINE>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;MEANING&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das Interface IF_ISH_GUI_MDY_VIEW definiert die Schnittstelle eines</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Trägerdynpro-Oberflächenobjekts in einer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_APPLICATION&gt;Dialoganwendung&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das Interface IF_ISH_GUI_MDY_VIEW umfasst das Interface</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_DYNPRO_VIEW&gt;IF_ISH_GUI_DYNPRO_VIEW&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>Methoden:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_MAIN_CONTROLLER</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert das &lt;DS:IF.IF_ISH_GUI_MAIN_CONTROLLER&gt;Haupt-Kontrollobjekt</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Das Kontrollobjekt zu einem Trägerdynpro-Oberflächenobjekt muss ein</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Haupt-Kontrollobjekt sein.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Die Methoden GET_CONTROLLER und GET_MAIN_CONTROLLER returnieren das</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>gleiche Objekt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_PFSTATUS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert das aktuelle &lt;DS:CL.CL_ISH_GUI_MDY_PFSTATUS&gt;GUIStatusobjekt</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_TITLEBAR</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert das aktuelle &lt;DS:CL.CL_ISH_GUI_MDY_TITLEBAR&gt;Titelzeilenobjekt</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_T_PFSTATUS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert eine Tabelle mit den GUIStatusobjekten.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Ein Trägerdynpro-Oberflächenobjekt kann mehrere GUIStatusobjekte haben.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Sinnvoll ist die Verwendung je eines GUIStatusobjekts pro</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Verarbeitungsmodus.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_T_TITLEBAR</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert eine Tabelle mit den Titelzeilenobjekten.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Ein Trägerdynpro-Oberflächenobjekt kann mehrere Titelzeilenobjekte</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>haben.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Sinnvoll ist die Verwendung je eines Titelzeilenobjekts pro</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Verarbeitungsmodus.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die abstrakte Basisklasse für ein Trägerdynpro-Oberflächenobjekt ist</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_GUI_MDY_VIEW&gt;CL_ISH_GUI_MDY_VIEW&lt;/&gt;.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>CO_DEF_MAIN_VIEW_NAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Defaultname des Hauptviews</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>CO_DEF_MAIN_VIEW_NAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Default Name of the Main View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>CO_DEF_MAIN_VIEW_NAME</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Default Name of the Main View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>EV_EXIT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Trägerdynpro wird verlassen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>EV_EXIT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Subscreen Container Exited</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>EV_EXIT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Subscreen Container Exited</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>GET_MAIN_CONTROLLER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den Hauptcontroller</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>GET_MAIN_CONTROLLER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Main Controller</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>GET_MAIN_CONTROLLER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Main Controller</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>GET_PFSTATUS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den aktuellen GUI-Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>GET_PFSTATUS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Current GUI Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>GET_PFSTATUS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Current GUI Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>GET_TITLEBAR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die atkuelle Titelzeile</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>GET_TITLEBAR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Current Title Bar</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>GET_TITLEBAR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Current Title Bar</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>GET_T_PFSTATUS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert alle GUI-Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>GET_T_PFSTATUS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns All GUI Statuses</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>GET_T_PFSTATUS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns All GUI Statuses</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>GET_T_TITLEBAR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert alle Titelzeilen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>GET_T_TITLEBAR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns All Title Bars</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_MDY_VIEW</CLSNAME>
+     <CMPNAME>GET_T_TITLEBAR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns All Title Bars</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

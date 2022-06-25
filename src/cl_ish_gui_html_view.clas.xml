@@ -1,0 +1,439 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_GUI_HTML_VIEW</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: GUI - HTML View</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_GUI_HTML_VIEW is used to display an Internet page (URL)</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>in a  &lt;DS:IF.IF_ISH_GUI_APPLICATION&gt;dialog application&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>UT</TDFORMAT>
+     <TDLINE>Methods:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>CREATE_AND_INIT_BY_CONTVIEW</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Instantiates and initializes the object for a container interface</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>object.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>The instantiated URL interface object registers itself as the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>subordinate interface object for the transferred container interface</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>object.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>CREATE_AND_INIT_BY_DYNPVIEW</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Instantiates and initializes the object for a dynpro interface object.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_HTML_VIEWER</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the underlying HTML control object.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_URL</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the URL.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>INITIALIZE</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Initializes the object.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>NEW_INSTANCE</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Instantiates the object.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>SET_URL</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Sets the URL.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_GUI_HTML_VIEW inherits from the class</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CL.CL_ISH_GUI_CONTROL_VIEW&gt;CL_ISH_GUI_CONTROL_VIEW&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_GUI_HTML_VIEW dient zur Darstellung einer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Internetseite (URL) in einer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_APPLICATION&gt;Dialoganwendung&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>Methoden:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>CREATE_AND_INIT_BY_CONTVIEW</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Instanziert und Initialisiert das Objekt zu einem</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Container-Oberflächenobjekt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Das instanzierte URL-Oberflächenobjekt registriert sich beim übergebenen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Container-Oberflächenobjekt als untergeordnetes Oberflächenobjekt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>CREATE_AND_INIT_BY_DYNPVIEW</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Instanziert und Initialisiert das Objekt zu einem</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Dynpro-Oberflächenobjekt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_HTML_VIEWER</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert das zugrunde liegende HTML Control Objekt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_URL</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert die URL.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>INITIALIZE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Initialisiert das Objekt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>NEW_INSTANCE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Instanziert das Objekt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>SET_URL</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Setzt die URL.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_GUI_HTML_VIEW erbt von der Klasse</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_GUI_CONTROL_VIEW&gt;CL_ISH_GUI_CONTROL_VIEW&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_HTML_VIEW</CLSNAME>
+     <CMPNAME>CREATE_AND_INIT_BY_CONTVIEW</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Instanziert und initialisiert das Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_HTML_VIEW</CLSNAME>
+     <CMPNAME>CREATE_AND_INIT_BY_CONTVIEW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Instantiates and Initializes Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_HTML_VIEW</CLSNAME>
+     <CMPNAME>CREATE_AND_INIT_BY_CONTVIEW</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Instantiates and Initializes Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_HTML_VIEW</CLSNAME>
+     <CMPNAME>CREATE_AND_INIT_BY_DYNPVIEW</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Instanziert und initialisiert das Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_HTML_VIEW</CLSNAME>
+     <CMPNAME>CREATE_AND_INIT_BY_DYNPVIEW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Instantiates and Initializes Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_HTML_VIEW</CLSNAME>
+     <CMPNAME>CREATE_AND_INIT_BY_DYNPVIEW</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Instantiates and Initializes Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_HTML_VIEW</CLSNAME>
+     <CMPNAME>GET_HTML_VIEWER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den HTML Viewer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_HTML_VIEW</CLSNAME>
+     <CMPNAME>GET_HTML_VIEWER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns HTML Viewer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_HTML_VIEW</CLSNAME>
+     <CMPNAME>GET_HTML_VIEWER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns HTML Viewer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_HTML_VIEW</CLSNAME>
+     <CMPNAME>GET_URL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die URL</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_HTML_VIEW</CLSNAME>
+     <CMPNAME>GET_URL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns URL</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_HTML_VIEW</CLSNAME>
+     <CMPNAME>GET_URL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns URL</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_HTML_VIEW</CLSNAME>
+     <CMPNAME>G_FIELDNAME_URL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Feldname</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_HTML_VIEW</CLSNAME>
+     <CMPNAME>G_FIELDNAME_URL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Field Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_HTML_VIEW</CLSNAME>
+     <CMPNAME>G_FIELDNAME_URL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Field Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_HTML_VIEW</CLSNAME>
+     <CMPNAME>G_URL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>URL (Webseite)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_HTML_VIEW</CLSNAME>
+     <CMPNAME>G_URL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>URL (Web Page)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_HTML_VIEW</CLSNAME>
+     <CMPNAME>G_URL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>URL (Web Page)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_HTML_VIEW</CLSNAME>
+     <CMPNAME>INITIALIZE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Initialisiert das Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_HTML_VIEW</CLSNAME>
+     <CMPNAME>INITIALIZE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Initializes the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_HTML_VIEW</CLSNAME>
+     <CMPNAME>INITIALIZE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Initializes the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_HTML_VIEW</CLSNAME>
+     <CMPNAME>NEW_INSTANCE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Instanziert das Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_HTML_VIEW</CLSNAME>
+     <CMPNAME>NEW_INSTANCE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Instantiates the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_HTML_VIEW</CLSNAME>
+     <CMPNAME>NEW_INSTANCE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Instantiates the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_HTML_VIEW</CLSNAME>
+     <CMPNAME>ON_MODEL_CHANGED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Model wurde geändert</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_HTML_VIEW</CLSNAME>
+     <CMPNAME>ON_MODEL_CHANGED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Model Changed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_HTML_VIEW</CLSNAME>
+     <CMPNAME>ON_MODEL_CHANGED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Model Changed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_HTML_VIEW</CLSNAME>
+     <CMPNAME>SET_URL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt die URL</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_HTML_VIEW</CLSNAME>
+     <CMPNAME>SET_URL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the URL</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_HTML_VIEW</CLSNAME>
+     <CMPNAME>SET_URL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the URL</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

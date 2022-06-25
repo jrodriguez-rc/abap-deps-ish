@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_INTF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOINTERF>
+    <CLSNAME>IF_ISH_CONFIG_SPLITTER</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: Configuration Interface for Splitter Screens</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <UNICODE>X</UNICODE>
+   </VSEOINTERF>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;MEANING&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The interface &lt;ZH&gt;IF_ISH_CONFIG_SPLITTER&lt;/&gt; specifies the basic</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>functionality for configurations of &lt;DS:IF.IF_ISH_SCR_SPLITTER&gt;splitter</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>screens&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>This interface contains the interface</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:IF.IF_ISH_IDENTIFY_OBJECT&gt;IF_ISH_IDENTIFY_OBJECT&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The related basic class is</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CL.CL_ISH_CONFIG_SPLITTER&gt;CL_ISH_CONFIG_SPLITTER&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>A splitter configuration is determined from the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CL.CL_ISH_SCR_SPLITTER&gt;splitter screen&lt;/&gt; using the method</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;ZH&gt;get_config_splitter&lt;/&gt; of the &lt;DS:IF.IF_ISH_CONFIG&gt;screen configurat</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>ion&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The methods of a splitter configuration are called at the following</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>events from a splitter screen:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>Initialization of the splitter screen (once)</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>The methods initialize_common_properties, initialize_column_properties</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>and initialize_row_properties of the splitter configuration are called</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>at this event.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>PBO of the splitter screen (on-going)</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>The method modify_properties of the splitter configuration is called at</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>this event.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;USE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;MEANING&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das Interface &lt;ZH&gt;IF_ISH_CONFIG_SPLITTER&lt;/&gt; gibt die Basisfunktionalität</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>für Konfigurationen von &lt;DS:IF.IF_ISH_SCR_SPLITTER&gt;Splitter-Screens&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>vor.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Dieses Interface enthält das Interface</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_IDENTIFY_OBJECT&gt;IF_ISH_IDENTIFY_OBJECT&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die zugehörige Basisklasse ist</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_CONFIG_SPLITTER&gt;CL_ISH_CONFIG_SPLITTER&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Eine Splitter-Konfiguration wird von einem</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_SCR_SPLITTER&gt;Splitter-Screen&lt;/&gt; über die Methode</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;ZH&gt;get_config_splitter&lt;/&gt; der &lt;DS:IF.IF_ISH_CONFIG&gt;Screen-Konfiguration</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>&lt;/&gt; ermittelt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Methoden einer Splitter-Konfiguration werden zu folgenden</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Zeitpunkten von einem Splitter-Screen gerufen:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Initialisierung des Splitter-Screens (einmalig)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Zu diesem Zeitpunkt werden die Methoden initialize_common_properties,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>initialize_column_properties und initialize_row_properties der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Splitter-Konfiguration aufgerufen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>PBO des Splitter-Screens (laufend)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Zum diesem Zeitpunkt wird die Methode modify_properties der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Splitter-Konfiguration aufgerufen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CONFIG_SPLITTER</CLSNAME>
+     <CMPNAME>CLONE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Erzeugt einen Klon der Konfiguration</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CONFIG_SPLITTER</CLSNAME>
+     <CMPNAME>CLONE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Creates Clone of Configuration</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CONFIG_SPLITTER</CLSNAME>
+     <CMPNAME>CLONE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Creates Clone of Configuration</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CONFIG_SPLITTER</CLSNAME>
+     <CMPNAME>COPY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Erzeugt eine Kopie der Konfiguration</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CONFIG_SPLITTER</CLSNAME>
+     <CMPNAME>COPY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Creates Copy of Configuration</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CONFIG_SPLITTER</CLSNAME>
+     <CMPNAME>COPY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Creates Copy of Configuration</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CONFIG_SPLITTER</CLSNAME>
+     <CMPNAME>DESTROY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Instanz zerstören</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CONFIG_SPLITTER</CLSNAME>
+     <CMPNAME>DESTROY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Destroy Instance</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CONFIG_SPLITTER</CLSNAME>
+     <CMPNAME>DESTROY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Destroy Instance</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CONFIG_SPLITTER</CLSNAME>
+     <CMPNAME>INITIALIZE_COLUMN_PROPERTIES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Initialisiert die Eigenschaften einer Spalte</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CONFIG_SPLITTER</CLSNAME>
+     <CMPNAME>INITIALIZE_COLUMN_PROPERTIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Initializes the Properties of a Column</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CONFIG_SPLITTER</CLSNAME>
+     <CMPNAME>INITIALIZE_COLUMN_PROPERTIES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Initializes the Properties of a Column</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CONFIG_SPLITTER</CLSNAME>
+     <CMPNAME>INITIALIZE_COMMON_PROPERTIES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Initialisiert die allg. Eigenschaften des SplitterScreens</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CONFIG_SPLITTER</CLSNAME>
+     <CMPNAME>INITIALIZE_COMMON_PROPERTIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Initializes the General Properties of the Splitter Screen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CONFIG_SPLITTER</CLSNAME>
+     <CMPNAME>INITIALIZE_COMMON_PROPERTIES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Initializes the General Properties of the Splitter Screen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CONFIG_SPLITTER</CLSNAME>
+     <CMPNAME>INITIALIZE_ROW_PROPERTIES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Initialisiert die Eigenschaften einer Zeile</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CONFIG_SPLITTER</CLSNAME>
+     <CMPNAME>INITIALIZE_ROW_PROPERTIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Initializes the Properties of a Row</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CONFIG_SPLITTER</CLSNAME>
+     <CMPNAME>INITIALIZE_ROW_PROPERTIES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Initializes the Properties of a Row</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CONFIG_SPLITTER</CLSNAME>
+     <CMPNAME>MODIFY_PROPERTIES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Modifiziert die Eigenschaften des SplitterScreens</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CONFIG_SPLITTER</CLSNAME>
+     <CMPNAME>MODIFY_PROPERTIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Modifies the Properties of the Splitter Screen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CONFIG_SPLITTER</CLSNAME>
+     <CMPNAME>MODIFY_PROPERTIES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Modifies the Properties of the Splitter Screen</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

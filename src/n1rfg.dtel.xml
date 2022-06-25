@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>N1RFG</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>NUM02</DOMNAME>
+    <HEADLEN>02</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>14</SCRLEN2>
+    <SCRLEN3>20</SCRLEN3>
+    <DDTEXT>Sequence Number</DDTEXT>
+    <REPTEXT>SN</REPTEXT>
+    <SCRTEXT_S>SEQ</SCRTEXT_S>
+    <SCRTEXT_M>Sequence</SCRTEXT_M>
+    <SCRTEXT_L>Sequence</SCRTEXT_L>
+    <DTELMASTER>D</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>D</LANGU>
+    <LANGU>S</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>Reihenfolgenummer</DDTEXT>
+     <REPTEXT>RF</REPTEXT>
+     <SCRTEXT_S>RFG</SCRTEXT_S>
+     <SCRTEXT_M>Reihenfolge</SCRTEXT_M>
+     <SCRTEXT_L>Reihenfolge</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>Número de secuencia</DDTEXT>
+     <REPTEXT>SC</REPTEXT>
+     <SCRTEXT_S>SCC</SCRTEXT_S>
+     <SCRTEXT_M>Secuencia</SCRTEXT_M>
+     <SCRTEXT_L>Secuencia</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>DE</ID>
+      <OBJECT>N1RFG</OBJECT>
+      <LANGU>D</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0003</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00006</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>N1RFG</TDNAME>
+      <TDID>DE</TDID>
+      <TDSPRAS>D</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00003</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEFINITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Reihenfolgenummer zeigt an, an wievielter Position ein Termin</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>innerhalb einer Ressource in einem Betrachtungszeitraum eingeplant ist.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Die Zählung der OP Termine beginnt mit 1.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Im OP Plan werden ausschließlich die Reihenfolgenummern von OP Terminen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>eines OP Saales berechnet. Termine auf OE Ebene oder tagesgenaue</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Termine werden mit keiner Reihenfolgenummer versehen.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>DE</ID>
+      <OBJECT>N1RFG</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0003</VERSION>
+      <TXTLINES>00006</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>N1RFG</TDNAME>
+      <TDID>DE</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00003</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEFINITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The sequence number determines the position at which an appointment is</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>planned within a resource in an analysis period. The surgery</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>appointments are counted beginning at 1.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>In the OR plan the system will only calculate the sequence numbers of</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>the surgery appointments of one operating room. Appointments at OU</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>level or day-based appointments do not have a sequence number.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>DE</ID>
+      <OBJECT>N1RFG</OBJECT>
+      <LANGU>S</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0003</VERSION>
+      <TXTLINES>00006</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>N1RFG</TDNAME>
+      <TDID>DE</TDID>
+      <TDSPRAS>S</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00003</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEFINITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>El número de secuencia indica la posición en la que se encuentra una</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>citación dentro de un recurso a lo largo de un período de observación.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Las citaciones IQ empiezan a contarse a partir del número 1.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>En el plan IQ sólo se calculan los números de secuencia de citaciones IQ</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>de una sala IQ. Las citaciones en el nivel de UO o las citaciones por</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>día no obtienen ningún número de secuencia.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

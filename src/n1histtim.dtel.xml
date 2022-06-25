@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>N1HISTTIM</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>UHRZT</DOMNAME>
+    <HEADLEN>08</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>14</SCRLEN2>
+    <SCRLEN3>40</SCRLEN3>
+    <DDTEXT>History Creation Time</DDTEXT>
+    <REPTEXT>HistTime</REPTEXT>
+    <SCRTEXT_S>HistTime</SCRTEXT_S>
+    <SCRTEXT_M>HistTime</SCRTEXT_M>
+    <SCRTEXT_L>History Creation Time</SCRTEXT_L>
+    <DTELMASTER>D</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>D</LANGU>
+    <LANGU>S</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>Uhrzeit einer Historisierung</DDTEXT>
+     <REPTEXT>HistZeit</REPTEXT>
+     <SCRTEXT_S>HistZeit</SCRTEXT_S>
+     <SCRTEXT_M>HistZeit</SCRTEXT_M>
+     <SCRTEXT_L>Uhrzeit der Historisierung</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>Hora de creación del historial</DDTEXT>
+     <REPTEXT>H hist.</REPTEXT>
+     <SCRTEXT_S>H hist.</SCRTEXT_S>
+     <SCRTEXT_M>H creac.hist.</SCRTEXT_M>
+     <SCRTEXT_L>Hora de creación del historial</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

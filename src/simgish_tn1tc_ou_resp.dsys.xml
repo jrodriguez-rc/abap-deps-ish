@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DSYS" serializer_version="v2.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>HY</ID>
+      <OBJECT>SIMGISH_TN1TC_OU_RESP</OBJECT>
+      <LANGU>D</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0011</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00013</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DSYS</TDOBJECT>
+      <TDNAME>SIMGISH_TN1TC_OU_RESP</TDNAME>
+      <TDID>HY</TDID>
+      <TDSPRAS>D</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00011</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>In dieser Customizing-Aktivität pflegen Sie die Bezeichnung für die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>OE-Zuständigkeiten in Kurz- und Langform, unter Angabe einer Bezugsebene</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>zum Patienten, die im Rahmen der Behandlungsauftragsprüfung verwendet</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>werden sollen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;PRECONDITIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;STANDARD_SETUP&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;ACTIVITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Tragen Sie in das Feld &lt;LS&gt;OE-Zuständigkeit&lt;/&gt; ein Kürzel ein und geben</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Sie dazu im Feld &lt;LS&gt;OE-Zuständigkeit Bezeichnung&lt;/&gt; die Langform an.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Wählen Sie zusätzlich die dafür gültige Patientenbezugsebene &lt;LB&gt;Patient</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;/&gt;oder &lt;LB&gt;Fall&lt;/&gt; im Feld &lt;LS&gt;Bezugsebene BehAuf.&lt;/&gt; aus.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>HY</ID>
+      <OBJECT>SIMGISH_TN1TC_OU_RESP</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0011</VERSION>
+      <TXTLINES>00007</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DSYS</TDOBJECT>
+      <TDNAME>SIMGISH_TN1TC_OU_RESP</TDNAME>
+      <TDID>HY</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00011</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>In this Customizing activity, you maintain short and long texts for OU</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>jurisdictions that apply to a reference level for the patient, for use</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>in the treatment authorization check.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;PRECONDITIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;STANDARD_SETUP&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;ACTIVITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Enter an ID in the &lt;LS&gt;OU Jurisdiction&lt;/&gt; field and enter the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>corresponding long text in the &lt;LS&gt;Text for OU Jurisdiction&lt;/&gt; field.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Also select the patient reference level, &lt;LB&gt;Patient&lt;/&gt; or &lt;LB&gt;Case&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>for your entry in the &lt;LS&gt; Ref. Level Trt Auth.&lt;/&gt; field.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>HY</ID>
+      <OBJECT>SIMGISH_TN1TC_OU_RESP</OBJECT>
+      <LANGU>S</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0011</VERSION>
+      <TXTLINES>00009</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DSYS</TDOBJECT>
+      <TDNAME>SIMGISH_TN1TC_OU_RESP</TDNAME>
+      <TDID>HY</TDID>
+      <TDSPRAS>S</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00011</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>En esta actividad de Customizing actualice la denominación de las</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>responsabilidades UO de forma breve y explicativa, indicando un nivel de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>referencia del paciente que se debe utiliza en el marco de la</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>verificación de autorización de tratamiento.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;PRECONDITIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;STANDARD_SETUP&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;ACTIVITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Indique en el campo &lt;LS&gt;Responsabilidad UO&lt;/&gt; una abreviación e indique</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>en el campo &lt;LS&gt;Denominación de responsabilidad UO&lt;/&gt; la forma</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>explicativa. Seleccione adicionalmente los niveles de referencia de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>paciente válidos &lt;LB&gt;Paciente&lt;/&gt; o &lt;LB&gt;Episodio&lt;/&gt; en el campo &lt;LS&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>Autorización de tratamiento de nivel de referencia&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

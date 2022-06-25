@@ -1,0 +1,694 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: Component Class</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The interface IF_ISH_COMPONENT defines the interface for all component</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>classes (regardless if standard or customer-specific implemention).</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+     <TDLINE>Each interface has its own basic class. These basic classes contain</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>methods so that source code does not have to be implemented several</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>times over. A basic class is also needed to be able to distinguish</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>standard components from customer-specific components in an instance.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+     <TDLINE>The related basic class of the interface IF_ISH_COMPONENT is</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>CL_ISH_COMPONENT.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das Interface IF_ISH_COMPONENT definiert die Schnittstelle aller</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Bausteinklassen (egal ob durch Standard oder Kunden implementiert).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Jedes Interface hat seine eigene Basisklasse. Diese Basisklassen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>enthalten Methoden, um Coding nicht mehrfach zu implementieren. Eine</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Basisklasse ist auch erforderlich, um ,ausgehend von einer Instanz,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>unterscheiden zu können, ob es sich um einen Standard- oder um einen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Kundenbaustein handelt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Die zugehörige Basisklasse des Interfaces IF_ISH_COMPONENT ist die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>CL_ISH_COMPONENT.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>CLASS_CONSTRUCTOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CLASS_CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>CLASS_CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CLASS_CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>CLASS_CONSTRUCTOR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>CLASS_CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>COPY_DATA_INTERNAL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Kopiert die Daten aus einem anderen Baustein.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>COPY_DATA_INTERNAL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Copies the Data from Another Component</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>COPY_DATA_INTERNAL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Copies the Data from Another Component</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>CO_OTYPE_COMPONENT_BASE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Basisklasse: Bausteine</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>CO_OTYPE_COMPONENT_BASE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Base Class: Components</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>CO_OTYPE_COMPONENT_BASE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Base Class: Components</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>CREATE_BASE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Erzeugt ein Bausteinobjekt und liefert es zurück.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>CREATE_BASE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Creates and Returns a Component Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>CREATE_BASE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Creates and Returns a Component Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>CREATE_COMPCON</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Erzeugt die zugehörige Bausteinkonfiguration</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>CREATE_COMPCON</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Creates the Related Component Configuration</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>CREATE_COMPCON</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Creates the Related Component Configuration</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>DESTROY_COMPCON</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Zerstört die zugehörige Bausteinkonfiguration</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>DESTROY_COMPCON</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Destroys the Related Component Configuration</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>DESTROY_COMPCON</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Destroys the Related Component Configuration</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>GET_ALL_SCREENS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert alle Screens des Bausteins</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>GET_ALL_SCREENS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns All Screens of Component</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>GET_ALL_SCREENS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns All Screens of Component</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>GET_DOM_FOR_RUN_DATA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert die Daten eines Datenobjektes als DOM</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>GET_DOM_FOR_RUN_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Data of a Data Object as a DOM</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>GET_DOM_FOR_RUN_DATA</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Data of a Data Object as a DOM</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>GR_BADI</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>BAdI-Interface IF_EX_N1_CREATE_PRC_POPUP</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>GR_BADI</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>BAdI Interface IF_EX_N1_CREATE_PRC_POPUP</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>GR_BADI</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>BAdI Interface IF_EX_N1_CREATE_PRC_POPUP</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>GR_COMPCON</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Basisinterface für eine Bausteinkonfiguration</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>GR_COMPCON</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Base Interface for a Component Configuration</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>GR_COMPCON</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Base Interface for a Component Configuration</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>GR_COMPDEF</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Bausteindefinition</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>GR_COMPDEF</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Component Definition</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>GR_COMPDEF</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Component Definition</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>GR_CONFIG</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Interface zur Konfiguration von Dialogen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>GR_CONFIG</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Interface for Configuration of Dialogs</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>GR_CONFIG</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Interface for Configuration of Dialogs</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>GR_ENVIRONMENT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Klasse für Sammlung aller Objekte des Speichers</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>GR_ENVIRONMENT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Class for Collecting All Objects in Memory</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>GR_ENVIRONMENT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Class for Collecting All Objects in Memory</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>GR_LOCK</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H*MED: Absetzen und Aufhebung von div. Sperren</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>GR_LOCK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H*MED: Termination and Removal of Various Locks</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>GR_LOCK</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H*MED: Termination and Removal of Various Locks</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>GR_MAIN_OBJECT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Einem Objekt einen Typ zuweisen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>GR_MAIN_OBJECT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Assign a Type to an Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>GR_MAIN_OBJECT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Assign a Type to an Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>GR_T_PRINT_FIELD</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Tablle von Feldern für Druck</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>GR_T_PRINT_FIELD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Table of Fields for Printout</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>GR_T_PRINT_FIELD</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Table of Fields for Printout</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>GT_ADDITIONAL_OBJECTS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Tabelle mit IF_ISH_IDENTIFY_OBJECT Referenzen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>GT_ADDITIONAL_OBJECTS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Table with IF_ISH_IDENTIFY_OBJECT References</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>GT_ADDITIONAL_OBJECTS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Table with IF_ISH_IDENTIFY_OBJECT References</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>GT_SCREEN_OBJECTS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Tabelle mit diversen Screenobjekten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>GT_SCREEN_OBJECTS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Table with Various Screen Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>GT_SCREEN_OBJECTS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Table with Various Screen Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>GT_UID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Schlüssel der bearbeiteten Einträge</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>GT_UID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Keys of the Processed Entries</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>GT_UID</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Keys of the Processed Entries</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>G_INITIALIZE_SCREENS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Screens initialisieren?</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>G_INITIALIZE_SCREENS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Initialize Screens?</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>G_INITIALIZE_SCREENS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Initialize Screens?</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>G_ISHMED_AUTH</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Boolscher Datentyp für ON (= &apos;X&apos;) und OFF (=&apos; &apos;)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>G_ISHMED_AUTH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Boolean Data Type for ON (= &quot;X&quot;) and OFF (= &quot; &quot;)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>G_ISHMED_AUTH</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Boolean Data Type for ON (= &quot;X&quot;) and OFF (= &quot; &quot;)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>G_PLACETYPE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Typ des Arbeitsumfeldes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>G_PLACETYPE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Type of Work Environment</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>G_PLACETYPE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Type of Work Environment</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>G_PREALLOC_DONE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>ON: Vorbelegung bereits durchgeführt.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>G_PREALLOC_DONE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>ON: Presettings Already Made</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>G_PREALLOC_DONE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>ON: Presettings Already Made</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>G_USE_TNDYM_CURSOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Cursorpositionierung lt. Dynpromodifikation durchführen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>G_USE_TNDYM_CURSOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Make Cursor Positioning According to Screen Modification</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>G_USE_TNDYM_CURSOR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Make Cursor Positioning According to Screen Modification</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>G_VCODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Verarbeitungsmodus</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>G_VCODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Processing Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>G_VCODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Processing Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>INITIALIZE_COMPCON</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Initialisiert die zugehörige Bausteinkonfiguration</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>INITIALIZE_COMPCON</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Initializes the Related Component Configuration</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>INITIALIZE_COMPCON</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Initializes the Related Component Configuration</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>INITIALIZE_SCREENS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Initialisiert gt_screens.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>INITIALIZE_SCREENS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Initializes gt_screens</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>INITIALIZE_SCREENS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Initializes gt_screens</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>PREALLOC_INTERNAL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Durchführung der Vorbelegungen.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>PREALLOC_INTERNAL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Make Presettings</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>PREALLOC_INTERNAL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Make Presettings</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>TRANSPORT_FROM_SCREEN_INTERNAL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Datentransport von einem Screen-Objekt.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>TRANSPORT_FROM_SCREEN_INTERNAL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Data Transport from a Screen Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>TRANSPORT_FROM_SCREEN_INTERNAL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Data Transport from a Screen Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>TRANSPORT_TO_SCREEN_INTERNAL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Datentransport in ein Screen-Objekt.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>TRANSPORT_TO_SCREEN_INTERNAL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Data Transport into a Screen Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPONENT_BASE</CLSNAME>
+     <CMPNAME>TRANSPORT_TO_SCREEN_INTERNAL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Data Transport into a Screen Object</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

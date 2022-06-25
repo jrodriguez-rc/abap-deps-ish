@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Status Input Help</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>Description</ENTRY>
+     <LENGTH>30</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>002</KEY>
+     <ENTRY>Status</ENTRY>
+     <LENGTH>8</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>003</KEY>
+     <ENTRY>Clinical Order Items</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>004</KEY>
+     <ENTRY>Status Profile</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+   </TPOOL>
+   <I18N_TPOOL>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Bezeichnung</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Status</ENTRY>
+       <LENGTH>8</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>Klinische Auftragspositionen</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>004</KEY>
+       <ENTRY>Statusschema</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>S</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Denominación</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Status</ENTRY>
+       <LENGTH>8</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>Posiciones clínicas de orden</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>004</KEY>
+       <ENTRY>Esquema de status</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+   </I18N_TPOOL>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Class for selecting planning objects (OUs, rooms) from an ALV grid.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Klasse zur Auswahl von Planobjekten (OEs, Räume) aus einem ALV-Grid.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>constructor</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Constructor</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Constructor</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>CO_OBTYP_CORD</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Objekttyp Klinischer Auftrag</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>CO_OBTYP_CORD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Object Type Clinical Order</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>CO_OBTYP_CORD</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Object Type Clinical Order</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>CREATE_FIELDCAT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feldkatalog erstellen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>CREATE_FIELDCAT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Create Field Catalog</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>CREATE_FIELDCAT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Create Field Catalog</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>CREATE_OUTTAB</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Befüllen der Ausgabetabelle</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>CREATE_OUTTAB</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Fill the Display Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>CREATE_OUTTAB</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Fill the Display Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>FILL_OUTTAB_LINE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ausgabezeile befüllen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>FILL_OUTTAB_LINE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Fill Display Row</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>FILL_OUTTAB_LINE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Fill Display Row</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>GET_SELECTED_ENTRIES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermittlung der ausgewählten Einträge</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>GET_SELECTED_ENTRIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Selected Entries</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>GET_SELECTED_ENTRIES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Selected Entries</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>GET_STATUS_TXT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Texte zu den Statusschema + Anwenderstatus lesen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>GET_STATUS_TXT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Read Texts for the Status Profile + User Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>GET_STATUS_TXT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Read Texts for the Status Profile + User Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>GT_STATUS_OBJ</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Statusschema + Anwenderstatus (inkl. Objektref.)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>GT_STATUS_OBJ</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Status Profile + User Status (Incl. Object Ref.)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>GT_STATUS_OBJ</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Status Profile + User Status (Incl. Object Ref.)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>G_CALLER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Aufrufendes Programm</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>G_CALLER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Calling Program</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>G_CALLER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Calling Program</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>G_LENGTH_TEXT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Breite der Spalte &apos;Bezeichnung&apos;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>G_LENGTH_TEXT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Width of &apos;Description&apos; Column</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>G_LENGTH_TEXT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Width of &apos;Description&apos; Column</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>G_NO_STSMA_IF_ONE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Keine Zeile für Statusschema, wenn nur 1 Statusschema vorh.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>G_NO_STSMA_IF_ONE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>No Row for Status Profile if only 1 Status Profile Exists</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>G_NO_STSMA_IF_ONE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>No Row for Status Profile if only 1 Status Profile Exists</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>G_OBTYP</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Objekttyp</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>G_OBTYP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Object Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>G_OBTYP</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Object Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>SET_LAYOUT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Layout festlegen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>SET_LAYOUT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Layout</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>SET_LAYOUT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Layout</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>SET_SELECTED_ENTRIES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzen der ausgewählten Einträge</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>SET_SELECTED_ENTRIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set Selected Entries</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>SET_SELECTED_ENTRIES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Set Selected Entries</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>SET_VCODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verarbeitungscode (UPD oder DIS) setzen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>SET_VCODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set Processing Code (UPD or DIS)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CHECK_LIST_STATUS</CLSNAME>
+     <CMPNAME>SET_VCODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Set Processing Code (UPD or DIS)</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

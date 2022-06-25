@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_DBCRIT_ASSEMBLED</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H DB: Compound Criterion</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+    <CLSSHAREDMEMORY>X</CLSSHAREDMEMORY>
+   </VSEOCLASS>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_DBCRIT_ASSEMBLED displays a compound selection</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>criterion.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>A compound selection criterion is always composed of two selection</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>criteria that are linked with an operator.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The following operators exist that are defined by constants:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>AND</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>Specifies an AND operation.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>Is defined by the constant CO_OPERATOR_AND.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>OR</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>Specifies an OR operation.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>Is defined by the constant CO_OPERATOR_OR.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>NOT</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>Specifies a NOT operation.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>Is defined by the constant CO_OPERATOR_NOT.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The method &lt;DS:CO.CL_ISH_DBCRITERION            AS_STRING&gt;AS_STRING&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>of a compound selection criterion yields the following content (note the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>parentheses):</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>( &lt;(&gt;&lt;&lt;)&gt;stingified criterion 1&gt; &lt;(&gt;&lt;&lt;)&gt;operator&gt; &lt;(&gt;&lt;&lt;)&gt;stringified</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>criterion 2&gt; )</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>A compound criterion can be instantiated either directly by means of the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>statement CREATE OBJECT (see the method</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CO.CL_ISH_DBCRIT_ASSEMBLED       CONSTRUCTOR&gt;CONSTRUCTOR&lt;/&gt;) or by</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>calling one of the methods &lt;DS:CO.CL_ISH_DBCRITERION            AND&gt;AND</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>&lt;/&gt;, &lt;DS:CO.CL_ISH_DBCRITERION            OR&gt;OR&lt;/&gt; or</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CO.CL_ISH_DBCRITERION            NOT&gt;NOT&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_DBCRIT_ASSEMBLED inherits from the class</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>&lt;DS:CL.CL_ISH_DBCRITERION&gt; CL_ISH_DBCRITERION&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_DBCRIT_ASSEMBLED stellt ein zusammengesetztes</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Selektionskriterium dar.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Ein zusammengesetztes Selektionskriterium besteht immer aus zwei</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Selektionskriterien, welche mit einem Operator verknüpft werden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Es gibt folgende Operatoren, die durch Konstanten definiert sind:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>AND</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Spezifiziert eine UND Verknüpfung.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Wird durch die Konstante CO_OPERATOR_AND definiert.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>OR</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Spezifiziert eine ODER Verknüpfung.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Wird durch die Konstante CO_OPERATOR_OR definiert.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>NOT</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Spezifiziert eine NICHT Verknüpfung.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Wird durch die Konstante CO_OPERATOR_NOT definiert.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Methode &lt;DS:CO.CL_ISH_DBCRITERION            AS_STRING&gt;AS_STRING&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>eines zusammengesetzten Selektionskriteriums liefert folgenden Inhalt</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(beachten Sie die Klammersetzung):</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>( &lt;Stringifiziertes Kriterium 1&gt; &lt;Operator&gt; &lt;(&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>&lt;&lt;)&gt;Stringifiziertes Kriterium 2&gt; )</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Instanzierung eines zusammengesetzten Kriteriums kann entweder</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>direkt durch CREATE OBJECT Anweisung erfolgen (siehe Methode</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CO.CL_ISH_DBCRIT_ASSEMBLED       CONSTRUCTOR&gt;CONSTRUCTOR&lt;/&gt;) oder</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>durch Aufruf einer der Methoden</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CO.CL_ISH_DBCRITERION            AND&gt;AND&lt;/&gt;,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CO.CL_ISH_DBCRITERION            OR&gt;OR&lt;/&gt; oder</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CO.CL_ISH_DBCRITERION            NOT&gt;NOT&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_DBCRIT_ASSEMBLED erbt von der Klasse</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_DBCRITERION&gt;CL_ISH_DBCRITERION&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_ASSEMBLED</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_ASSEMBLED</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_ASSEMBLED</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_ASSEMBLED</CLSNAME>
+     <CMPNAME>CO_OPERATOR_AND</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verknüpfungsoperator &quot;Und&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_ASSEMBLED</CLSNAME>
+     <CMPNAME>CO_OPERATOR_AND</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Logical Operator &quot;AND&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_ASSEMBLED</CLSNAME>
+     <CMPNAME>CO_OPERATOR_AND</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Logical Operator &quot;AND&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_ASSEMBLED</CLSNAME>
+     <CMPNAME>CO_OPERATOR_NOT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verknüpfungsoperator &quot;Nicht&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_ASSEMBLED</CLSNAME>
+     <CMPNAME>CO_OPERATOR_NOT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Logical Operator &quot;NOT&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_ASSEMBLED</CLSNAME>
+     <CMPNAME>CO_OPERATOR_NOT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Logical Operator &quot;NOT&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_ASSEMBLED</CLSNAME>
+     <CMPNAME>CO_OPERATOR_OR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verknüpfungsoperator &quot;Oder&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_ASSEMBLED</CLSNAME>
+     <CMPNAME>CO_OPERATOR_OR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Logical Operator &quot;OR&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_ASSEMBLED</CLSNAME>
+     <CMPNAME>CO_OPERATOR_OR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Logical Operator &quot;OR&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_ASSEMBLED</CLSNAME>
+     <CMPNAME>CO_OTYPE_DBCRIT_ASSEMBLED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Objekttyp</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_ASSEMBLED</CLSNAME>
+     <CMPNAME>CO_OTYPE_DBCRIT_ASSEMBLED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Object Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_ASSEMBLED</CLSNAME>
+     <CMPNAME>CO_OTYPE_DBCRIT_ASSEMBLED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Object Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_ASSEMBLED</CLSNAME>
+     <CMPNAME>GET_CRIT1</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert das erste Kriterium</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_ASSEMBLED</CLSNAME>
+     <CMPNAME>GET_CRIT1</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Gets the First Criterion</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_ASSEMBLED</CLSNAME>
+     <CMPNAME>GET_CRIT1</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Gets the First Criterion</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_ASSEMBLED</CLSNAME>
+     <CMPNAME>GET_CRIT2</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert das zweite Kriterium</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_ASSEMBLED</CLSNAME>
+     <CMPNAME>GET_CRIT2</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Gets the Second Criterion</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_ASSEMBLED</CLSNAME>
+     <CMPNAME>GET_CRIT2</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Gets the Second Criterion</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_ASSEMBLED</CLSNAME>
+     <CMPNAME>GET_OPERATOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert den Verknüpfungsoperator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_ASSEMBLED</CLSNAME>
+     <CMPNAME>GET_OPERATOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Gets the Logical Operator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_ASSEMBLED</CLSNAME>
+     <CMPNAME>GET_OPERATOR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Gets the Logical Operator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_ASSEMBLED</CLSNAME>
+     <CMPNAME>GR_CRIT1</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H DB: Kriterium für Lesezugriff</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_ASSEMBLED</CLSNAME>
+     <CMPNAME>GR_CRIT1</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H DB: Criterion for Read Access</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_ASSEMBLED</CLSNAME>
+     <CMPNAME>GR_CRIT1</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H DB: Criterion for Read Access</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_ASSEMBLED</CLSNAME>
+     <CMPNAME>GR_CRIT2</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H DB: Kriterium für Lesezugriff</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_ASSEMBLED</CLSNAME>
+     <CMPNAME>GR_CRIT2</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H DB: Criterion for Read Access</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_ASSEMBLED</CLSNAME>
+     <CMPNAME>GR_CRIT2</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H DB: Criterion for Read Access</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_ASSEMBLED</CLSNAME>
+     <CMPNAME>G_OPERATOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verknüpfungsoperator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_ASSEMBLED</CLSNAME>
+     <CMPNAME>G_OPERATOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Logical Operator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_ASSEMBLED</CLSNAME>
+     <CMPNAME>G_OPERATOR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Logical Operator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_ASSEMBLED</CLSNAME>
+     <CMPNAME>IS_OPERATOR_VALID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert ob ein Verknüpfungsoperator gültig ist</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_ASSEMBLED</CLSNAME>
+     <CMPNAME>IS_OPERATOR_VALID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Whether Logical Operator Is Valid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_DBCRIT_ASSEMBLED</CLSNAME>
+     <CMPNAME>IS_OPERATOR_VALID</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Whether Logical Operator Is Valid</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

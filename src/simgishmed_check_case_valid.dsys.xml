@@ -1,0 +1,619 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DSYS" serializer_version="v2.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>HY</ID>
+      <OBJECT>SIMGISHMED_CHECK_CASE_VALID</OBJECT>
+      <LANGU>D</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0008</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00051</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DSYS</TDOBJECT>
+      <TDNAME>SIMGISHMED_CHECK_CASE_VALID</TDNAME>
+      <TDID>HY</TDID>
+      <TDSPRAS>D</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00008</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Dieses</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE> &lt;DS:GLOS.5C733369F735D311AE620060B03C9BBE&gt;Business Add-In&lt;/&gt; (BAdI)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>wird in den folgenden Komponenten verwendet:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Planung&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Klinischer Auftrag&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Klinischer Arbeitsplatz&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;LS&gt;OP-System&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Klinisches Patientenmanagement&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>In i.s.h.med wird im Bereich der Terminplanung und im Bereich des</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Klinischen Auftrags mit fallfreien Objekten gearbeitet. Die fallfreien</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Objekte müssen Sie zu einem bestimmten Zeitpunkt einem Fall des</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Patienten zuordnen. Die Zuordnung eines fallfreien Objekts zu einem Fall</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>können Sie beispielsweise in folgenden Funktionen von i.s.h.med</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>vornehmen:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Funktion zur Fallzuordnung im Klinischen Arbeitsplatz</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Sichern einer Aufnahmefunktion stationär oder ambulant</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>OP beginnen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Fall zuordnen im Klinischen Auftrag</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Mit diesem BAdI können Sie den Fall, an welchen ein fallfreier Termin</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>oder Klinischer Auftrag geknüpft wird, prüfen. Aufgrund der Prüfung</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>können Sie entscheiden, ob es bei  einer Fallzuordnung zu einem</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>abgeschlossenen oder abgerechnetem Fall trotzdem möglich sein soll, die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Verknüpfung zuzulassen. Folgende Optionen stehen Ihnen zur Verfügung:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Warnung</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Fehlermeldung</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>keine Meldung</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;PRECONDITIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;STANDARD_SETUP&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Im Standard ist das Business Add-In aktiv.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Das BAdI ist nicht mehrfach nutzbar.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Das BAdI ist filterabhängig.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Zu diesem BAdI wird eine Fallback-Klasse mit einer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Standardimplementierung ausgeliefert. D. h. wenn keine aktive</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Implementierung vorhanden ist, durchläuft das System die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Standardimplementierung. In dieser Standardimplementierung wertet das</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>System die Systemparameter N1CHKABR und N1ANFNST aus, die den</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Meldungstyp im Customizing definieren.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;ACTIVITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>INCLUDE BADI_ENH_IMPLEMENTATION OBJECT DOKU ID TX</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Um die Fallback-Klasse anzuzeigen, rufen Sie den BAdI-Builder (SE18)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>auf. Führen Sie auf der Registerkarte &lt;LS&gt;Erw.spot-Elementdefinitionen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>&lt;/&gt; einen Doppelklick auf die BAdI-Implementation durch. Wählen Sie</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;LS&gt;Anzeigen&lt;/&gt; der Fallback-Klasse (Drucktaste). Führen Sie einen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Doppelklick auf die Methode durch.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;SEE_ALSO&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Dieses BAdI verwendet das Interface</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE> &lt;DS:IF.IF_EX_ISHMED_CHECK_CASE_VALID&gt;IF_EX_ISHMED_CHECK_CASE_VALID&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Um weitere Informationen zu erhalten, zeigen Sie das Interface im Class</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Builder an.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>HY</ID>
+      <OBJECT>SIMGISHMED_CHECK_CASE_VALID</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0008</VERSION>
+      <TXTLINES>00040</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DSYS</TDOBJECT>
+      <TDNAME>SIMGISHMED_CHECK_CASE_VALID</TDNAME>
+      <TDID>HY</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00008</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>This &lt;DS:GLOS.5C733369F735D311AE620060B03C9BBE&gt;Business Add-In&lt;/&gt; (BAdI)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>is used in the following i.s.h.med components:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Planning&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Clinical Order&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Clinical Work Station&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Surgery System&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Clinical Patient Management&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>In i.s.h.med work is performed with caseless objects within the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Appointment Planning and Clinical Order areas. At a certain time you</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>have to assign the caseless objects to one of the patient&apos;s cases. You</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>can assign a caseless object to a case, for example, in the following</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>i.s.h.med functions:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Function to case assignment in the clinical work station</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Save an inpatient or outpatient admission function</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Start surgery</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Assign Case in Clinical Order</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>You can use this BAdI to check the case to which a caseless appointment</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>or clinical order is linked. On the basis of the check you can decide if</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>you nevertheless wish it to be possible to permit the linkage in a case</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>assignment for a completed or billed case. The following options are</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>provided:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Warning</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Error message</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>No error message</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;PRECONDITIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;STANDARD_SETUP&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The Business Add-In is active in the standard system.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>The BAdI cannot be used multiple times.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>The BAdI is filter-dependent.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>A fallback class is provided with the standard implementation for this</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>BAdI. This means that if there is no active implementation, the system</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>runs the standard implementation. The N1CHKABR and N1ANFNST system</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>parameters which define the message type in customizing are evaluated in</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>this standard implementation.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;ACTIVITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>INCLUDE BADI_ENH_IMPLEMENTATION OBJECT DOKU ID TX</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>To display the fallback class, call the BAdI Builder (SE18). On the &lt;LS&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>Enh. Spot Element Definitions&lt;/&gt; tab page double-click on the BAdI</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>implementation. Choose &lt;LS&gt;Display&lt;/&gt; for the fallback class</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(pushbutton). Double-click the method.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;SEE_ALSO&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>This BAdI uses the interface &lt;DS:IF.IF_EX_ISHMED_CHECK_CASE_VALID&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>IF_EX_ISHMED_CHECK_CASE_VALID&lt;/&gt;. For more information, display the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>interface in the Class Builder.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>HY</ID>
+      <OBJECT>SIMGISHMED_CHECK_CASE_VALID</OBJECT>
+      <LANGU>S</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0008</VERSION>
+      <TXTLINES>00041</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DSYS</TDOBJECT>
+      <TDNAME>SIMGISHMED_CHECK_CASE_VALID</TDNAME>
+      <TDID>HY</TDID>
+      <TDSPRAS>S</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00008</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Este add-in empresarial (BAdI) se utiliza en los siguientes componentes:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;LS&gt;planificación&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;LS&gt;orden clínica&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Puesto de trabajo clínico&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Sistema IQ&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Gestión clínica de pacientes&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>En i.s.h.med, en el ámbito de la planificación de citaciones y en el</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ámbito de la orden clínica, se trabaja con objetos sin episodio. Los</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>objetos sin episodio deben asignarse en una fecha y hora determinadas a</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>un episodio del paciente. La asignación de un objeto sin episodio a un</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>episodio se puede realizar, por ejemplo, en las siguientes funciones de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>i.s.h.med:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Función para la asignación de episodios en el puesto de trabajo clínico</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Grabación de una función de admisión de hospitalización o ambulatoria</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Inicio de intervención quirúrgica</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Asignación de episodio en orden clínica</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Con este BAdI puede verificar el episodio con el que se enlaza una</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>citación sin episodio o una orden clínica. Basándose en la verificación</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>puede decidir si durante una asignación de episodio a un episodio</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>finalizado o facturado debe ser posible permitir el enlace. Dispone de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>las siguientes opciones:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>mensaje de advertencia</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>mensaje de error</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>ningún mensaje</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;PRECONDITIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;STANDARD_SETUP&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>El add-in empresarial está activo en la versión estándar.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>El BAdI no se puede utilizar de forma múltiple.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>El BAdI depende de filtros.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Para este BAdI se suministra una clase de reserva con una implementación</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>estándar. Es decir, que si no existe ninguna implementación activa, el</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>sistema realizará la implementación estándar. En esta implementación</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>estándar, el sistema evalúa los parámetros de sistema N1CHKABR y</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>N1ANFNST que definen el tipo de mensaje en el Customizing.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;ACTIVITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>INCLUDE BADI_ENH_IMPLEMENTATION OBJECT DOKU ID TX</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Para visualizar esta clase de reserva, llame el BAdI Builder (SE18). En</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>la etiqueta &lt;LS&gt;Definiciones elemento para punto de ampliación&lt;/&gt; haga</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>doble clic en la implementación del BAdI. Seleccione &lt;LS&gt;visualizar&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>en la clase de reserva (pulsador). Efectúe un doble clic sobre el</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>método.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;SEE_ALSO&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Este BAdI utiliza la interface &lt;DS:IF.IF_EX_ISHMED_CHECK_CASE_VALID&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>IF_EX_ISHMED_CHECK_CASE_VALID&lt;/&gt;. Para más información, véase el</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>interface en el generador de clases.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

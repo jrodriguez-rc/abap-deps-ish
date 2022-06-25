@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_INTF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOINTERF>
+    <CLSNAME>IF_ISH_FV_CONSTANTS</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: Constants for Field Values (Data Element NFVTYPE)</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <UNICODE>X</UNICODE>
+   </VSEOINTERF>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+     <TDLINE>The IF_ISH_FV_CONSTANTS interface contains constants for all possible</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>instances of a field value type.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+     <TDLINE>A field value type is specified by the NFVTYPE data element and is</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>chiefly used int the RNFIELD_VALUE structure and in the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>CL_ISH_FIELD_VALUES class.</TDLINE>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Das Interface IF_ISH_FV_CONSTANTS enthält Konstanten für alle möglichen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Ausprägungen eines Feldwert-Typs.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Ein Feldwert-Typ ist durch das Datenelement NFVTYPE spezifiziert und</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>findet seine Hauptverwendung in der Struktur RNFIELD_VALUE und in der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Klasse CL_ISH_FIELD_VALUES.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_FV_CONSTANTS</CLSNAME>
+     <CMPNAME>CO_FVTYPE_FV</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Referenz auf CL_ISH_FIELD_VALUES</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_FV_CONSTANTS</CLSNAME>
+     <CMPNAME>CO_FVTYPE_FV</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Reference to CL_ISH_FIELD_VALUES</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_FV_CONSTANTS</CLSNAME>
+     <CMPNAME>CO_FVTYPE_FV</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Reference to CL_ISH_FIELD_VALUES</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_FV_CONSTANTS</CLSNAME>
+     <CMPNAME>CO_FVTYPE_IDENTIFY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Referenz auf IF_ISH_IDENTIFY_OBJECT</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_FV_CONSTANTS</CLSNAME>
+     <CMPNAME>CO_FVTYPE_IDENTIFY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Reference to IF_ISH_IDENTIFY_OBJECT</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_FV_CONSTANTS</CLSNAME>
+     <CMPNAME>CO_FVTYPE_IDENTIFY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Reference to IF_ISH_IDENTIFY_OBJECT</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_FV_CONSTANTS</CLSNAME>
+     <CMPNAME>CO_FVTYPE_SCREEN</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Referenz auf if_ish_screen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_FV_CONSTANTS</CLSNAME>
+     <CMPNAME>CO_FVTYPE_SCREEN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Reference to if_ish_screen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_FV_CONSTANTS</CLSNAME>
+     <CMPNAME>CO_FVTYPE_SCREEN</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Reference to if_ish_screen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_FV_CONSTANTS</CLSNAME>
+     <CMPNAME>CO_FVTYPE_SINGLE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Einzelwert</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_FV_CONSTANTS</CLSNAME>
+     <CMPNAME>CO_FVTYPE_SINGLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Single Value</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_FV_CONSTANTS</CLSNAME>
+     <CMPNAME>CO_FVTYPE_SINGLE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Single Value</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_COMPCON_GA</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: Module Configuration for GUI Application</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>This class manages the module configuration for material entry.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Diese Klasse verwaltet die Bausteinkonfiguration für die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Materialerfassung.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPCON_GA</CLSNAME>
+     <CMPNAME>CO_OTYPE_COMPCON_GA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Objekttyp</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPCON_GA</CLSNAME>
+     <CMPNAME>CO_OTYPE_COMPCON_GA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Object Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPCON_GA</CLSNAME>
+     <CMPNAME>CO_OTYPE_COMPCON_GA</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Object Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPCON_GA</CLSNAME>
+     <CMPNAME>GET_COMPONENT_GA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den Baustein</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPCON_GA</CLSNAME>
+     <CMPNAME>GET_COMPONENT_GA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Component</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPCON_GA</CLSNAME>
+     <CMPNAME>GET_COMPONENT_GA</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Component</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPCON_GA</CLSNAME>
+     <CMPNAME>GET_GM_COMPCON</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert das Model</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPCON_GA</CLSNAME>
+     <CMPNAME>GET_GM_COMPCON</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Model</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPCON_GA</CLSNAME>
+     <CMPNAME>GET_GM_COMPCON</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Model</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPCON_GA</CLSNAME>
+     <CMPNAME>GET_LAYOUT2PROCESS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Layout</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPCON_GA</CLSNAME>
+     <CMPNAME>GET_LAYOUT2PROCESS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Layout</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPCON_GA</CLSNAME>
+     <CMPNAME>GET_SCR_COMPCON_GA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Screen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPCON_GA</CLSNAME>
+     <CMPNAME>GET_SCR_COMPCON_GA</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Screen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPCON_GA</CLSNAME>
+     <CMPNAME>GR_GM_COMPCON</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Model für eine Bausteinkonfiguration</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPCON_GA</CLSNAME>
+     <CMPNAME>GR_GM_COMPCON</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Model for a Module Configuration</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPCON_GA</CLSNAME>
+     <CMPNAME>GR_GM_COMPCON</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Model for a Module Configuration</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPCON_GA</CLSNAME>
+     <CMPNAME>GR_GM_COMPCON_ORIG</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Originaldaten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPCON_GA</CLSNAME>
+     <CMPNAME>GR_GM_COMPCON_ORIG</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Original Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPCON_GA</CLSNAME>
+     <CMPNAME>GR_GM_COMPCON_ORIG</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Original Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPCON_GA</CLSNAME>
+     <CMPNAME>GR_LAYOUT2PROCESS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: GUI - Settings of an Application</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPCON_GA</CLSNAME>
+     <CMPNAME>GR_LAYOUT2PROCESS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: GUI - Settings of an Application</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPCON_GA</CLSNAME>
+     <CMPNAME>LOAD_APPLICATION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Loads Application</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_COMPCON_GA</CLSNAME>
+     <CMPNAME>LOAD_APPLICATION</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Loads Application</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

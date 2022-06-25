@@ -1,0 +1,631 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_INTF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOINTERF>
+    <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: GUI - ALV Grid View</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <UNICODE>X</UNICODE>
+   </VSEOINTERF>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;MEANING&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The interface IF_ISH_GUI_GRID_VIEW defines the interface of an interface</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>object for an ALV grid control.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The interface IF_ISH_GUI_GRID_VIEW contains the interface</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE> &lt;DS:IF.IF_ISH_GUI_CONTROL_VIEW&gt;IF_ISH_GUI_CONTROL_VIEW&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>UT</TDFORMAT>
+     <TDLINE>Methods:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_ALV_GRID</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the underlying ALV grid control.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_GRID_LAYOUT</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the &lt;DS:CL.CL_ISH_GUI_GRID_LAYOUT&gt;setting object&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_MODEL_BY_IDX</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the &lt;DS:IF.IF_ISH_GUI_MODEL&gt;model&lt;/&gt; for an item (index) in the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>Outtab.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_OUTTAB_ROW_MODELS</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns a table with all models of the Outtab.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_ROW_BY_IDX</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns a reference to the Outtab structure for an item (index).</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_SELECTED_IDX</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the index of the selected row.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>If more than one row is selected, the method raises an exception of the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>type &lt;DS:CL.CX_ISH_STATIC_HANDLER&gt;CX_ISH_STATIC_HANDLER&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_SELECTED_IDXS</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the indexes of the selected rows.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_SELECTED_MODEL</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the model for the selected row.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>If more than one row is selected, the method raises an exception of the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>type &lt;DS:CL.CX_ISH_STATIC_HANDLER&gt;CX_ISH_STATIC_HANDLER&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_SELECTED_MODELS</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the models for the selected rows.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>SET_SELECTED_ROWS_BY_IDXS</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Selected rows specified by an index specification.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>SET_SELECTED_ROWS_BY_MODELS</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Selected rows specified by model specification.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>SET_SELECTED_ROW_BY_IDX</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Selects a row specified by an index specification.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>SET_SELECTED_ROW_BY_MODEL</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Selects a row specified by a model specification.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;USE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The abstract basic class of an interface object of an ALV grid control</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>is &lt;DS:CL.CL_ISH_GUI_GRID_VIEW&gt;CL_ISH_GUI_GRID_VIEW&lt;/&gt;.</TDLINE>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;MEANING&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das Interface IF_ISH_GUI_GRID_VIEW definiert die Schnittstelle eines</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Oberflächenobjekts für ein ALV-Grid Control.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das Interface IF_ISH_GUI_GRID_VIEW enthält das Interface</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_CONTROL_VIEW&gt;IF_ISH_GUI_CONTROL_VIEW&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>Methoden:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_ALV_GRID</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert das zugrunde liegende ALV-Grid Control.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_GRID_LAYOUT</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert das &lt;DS:CL.CL_ISH_GUI_GRID_LAYOUT&gt;Einstellungsobjekt&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_MODEL_BY_IDX</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert das &lt;DS:IF.IF_ISH_GUI_MODEL&gt;Model&lt;/&gt; zu einer Position</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(Index) in der Outtab.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_OUTTAB_ROW_MODELS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert eine Tabelle mit allen Models der Outtab.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_ROW_BY_IDX</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert eine Referenz auf die Outtab-Struktur zu einer Position</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(Index).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_SELECTED_IDX</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert den Index der markierten Zeile.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Wenn nicht genau eine Zeile markiert ist, wird eine Ausnahme vom Typ</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CX_ISH_STATIC_HANDLER&gt;CX_ISH_STATIC_HANDLER&lt;/&gt; ausgelöst.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_SELECTED_IDXS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert die Indizes der markierten Zeilen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_SELECTED_MODEL</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert das Model zur markierten Zeile.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Wenn nicht genau eine Zeile markiert ist, wird eine Ausnahme vom Typ</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CX_ISH_STATIC_HANDLER&gt;CX_ISH_STATIC_HANDLER&lt;/&gt; ausgelöst.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_SELECTED_MODELS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert die Models zu den markierten Zeilen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>SET_SELECTED_ROWS_BY_IDXS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Markiert Zeilen spezifiziert über eine Indexangabe.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>SET_SELECTED_ROWS_BY_MODELS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Markiert Zeilen spezifiziert über Modelangabe.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>SET_SELECTED_ROW_BY_IDX</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Markiert eine Zeile spezifiziert über eine Indexangabe.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>SET_SELECTED_ROW_BY_MODEL</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Markiert eine Zeile spezifiziert über eine Modelangabe.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die abstrakte Basisklasse eines Oberflächenobjekts für ein ALV-Grid</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Control ist &lt;DS:CL.CL_ISH_GUI_GRID_VIEW&gt;CL_ISH_GUI_GRID_VIEW&lt;/&gt;.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>GET_ALV_GRID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert das zugrundeliegende ALVGrid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>GET_ALV_GRID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Underlying ALV Grid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>GET_ALV_GRID</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Underlying ALV Grid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>GET_GRID_LAYOUT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert das Layout</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>GET_GRID_LAYOUT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Layout</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>GET_GRID_LAYOUT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Layout</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>GET_MODEL_BY_IDX</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert das Model zu einer Zeilennummer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>GET_MODEL_BY_IDX</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Model for a Row Number</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>GET_MODEL_BY_IDX</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Model for a Row Number</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>GET_OUTTAB_ROW_MODELS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die Models aus der Outtab</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>GET_OUTTAB_ROW_MODELS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Models from Outtab</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>GET_OUTTAB_ROW_MODELS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Models from Outtab</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>GET_ROW_BY_IDX</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die Zeile zu einer Zeilennummer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>GET_ROW_BY_IDX</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Row for a Row Number</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>GET_ROW_BY_IDX</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Row for a Row Number</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>GET_SELECTED_IDX</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die selektierte Zeilennummer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>GET_SELECTED_IDX</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Selected Row Number</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>GET_SELECTED_IDX</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Selected Row Number</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>GET_SELECTED_IDXS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die selektierten Zeilennummern</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>GET_SELECTED_IDXS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Selected Row Numbers</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>GET_SELECTED_IDXS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Selected Row Numbers</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>GET_SELECTED_MODEL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert das selektierte Model</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>GET_SELECTED_MODEL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Selected Model</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>GET_SELECTED_MODEL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Selected Model</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>GET_SELECTED_MODELS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die selektierten Models</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>GET_SELECTED_MODELS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Selected Models</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>GET_SELECTED_MODELS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Selected Models</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>SET_SELECTED_CELL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt die selektierte Zelle</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>SET_SELECTED_CELL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the Selected Cell</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>SET_SELECTED_CELL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the Selected Cell</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>SET_SELECTED_ROWS_BY_IDXS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt die selektierten Zeilen nach den Zeilennummern</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>SET_SELECTED_ROWS_BY_IDXS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets Selected Lines by Line Numbers</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>SET_SELECTED_ROWS_BY_IDXS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets Selected Lines by Line Numbers</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>SET_SELECTED_ROWS_BY_MODELS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt die selektierten Zeilen zu den Models</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>SET_SELECTED_ROWS_BY_MODELS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets Selected Lines for Models</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>SET_SELECTED_ROWS_BY_MODELS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets Selected Lines for Models</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>SET_SELECTED_ROW_BY_IDX</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt die selektierte Zeile nach Zeilennummer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>SET_SELECTED_ROW_BY_IDX</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set Selected Row by Row Number</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>SET_SELECTED_ROW_BY_IDX</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Set Selected Row by Row Number</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>SET_SELECTED_ROW_BY_MODEL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt die selektierte Zeile zum Model</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>SET_SELECTED_ROW_BY_MODEL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set Selected Row for Model</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_GRID_VIEW</CLSNAME>
+     <CMPNAME>SET_SELECTED_ROW_BY_MODEL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Set Selected Row for Model</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

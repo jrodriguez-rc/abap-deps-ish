@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_INTF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOINTERF>
+    <CLSNAME>IF_EX_N1_CONNECTIVITY</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>BAdI Interface IF_EX_N1_PTS_FPV</DESCRIPT>
+    <CATEGORY>01</CATEGORY>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <UNICODE>X</UNICODE>
+   </VSEOINTERF>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+     <TDLINE>&amp;MEANING&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+     <TDLINE>&amp;USE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+     <TDLINE>For a detailed description, see the respective method documentation.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;MEANING&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Eine detailierte Beschreibung entnehmen Sie der jeweiligen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Methodendokumentation.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_EX_N1_CONNECTIVITY</CLSNAME>
+     <CMPNAME>EXIT_CHECK</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Daten prüfen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_EX_N1_CONNECTIVITY</CLSNAME>
+     <CMPNAME>EXIT_CHECK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_EX_N1_CONNECTIVITY</CLSNAME>
+     <CMPNAME>EXIT_CHECK</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Check Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_EX_N1_CONNECTIVITY</CLSNAME>
+     <CMPNAME>EXIT_EXPORT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Daten exportieren</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_EX_N1_CONNECTIVITY</CLSNAME>
+     <CMPNAME>EXIT_EXPORT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Export Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_EX_N1_CONNECTIVITY</CLSNAME>
+     <CMPNAME>EXIT_EXPORT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Export Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_EX_N1_CONNECTIVITY</CLSNAME>
+     <CMPNAME>EXIT_IMPORT_CORDER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Daten für Klinische Aufträge importieren</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_EX_N1_CONNECTIVITY</CLSNAME>
+     <CMPNAME>EXIT_IMPORT_CORDER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Import Data for Clinical Orders</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_EX_N1_CONNECTIVITY</CLSNAME>
+     <CMPNAME>EXIT_IMPORT_CORDER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Import Data for Clinical Orders</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

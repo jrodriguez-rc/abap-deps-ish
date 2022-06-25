@@ -1,0 +1,549 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: GUI - GUI Status of a Subscreen Container</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_GUI_MDY_PFSTATUS manages the GUI status of a</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:IF.IF_ISH_GUI_MDY_VIEW&gt;subscreen container interface object&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>UT</TDFORMAT>
+     <TDLINE>Methods:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>CREATE</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Instantiates the object.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>ADD_EXCLUDING_FUNCTION</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Adds an excluding function.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>CLEAR_EXCLUDING_FUNCTIONS</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Clears the table with the excluding functions.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_CLONE</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns an exact copy of the object.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_EXCLUDING_FUNCTIONS</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the table with the excluding functions.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_PFKEY</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the &lt;DS:DE.SYPFKEY&gt;name of the GUI status&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_REPID</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the &lt;DS:DE.SYREPID&gt;name of the function group.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>HAS_EXCLUDING_FUNCTION</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns whether a function code (parameter I_EXCLFUNC) is contained in</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>the table of the excluded functions.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>REMOVE_EXCLUDING_FUNCTION</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Removes a function code from the table of excluded functions.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>SET_EXCLUDING_FUNCTIONS</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Sets the table with the excluding functions.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_GUI_MDY_PFSTATUS verwaltet den GUI-Status eines</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_MDY_VIEW&gt;Trägerdynpro-Oberflächenobjekts&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>Methoden:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>CREATE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Instanziert das Objekt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>ADD_EXCLUDING_FUNCTION</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Fügt eine exkludierte Funktion hinzu.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>CLEAR_EXCLUDING_FUNCTIONS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Leert die Tabelle mit den exkludierten Funktionen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_CLONE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert eine exakte Kopie des Objekts.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_EXCLUDING_FUNCTIONS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert die Tabelle mit den exkludierten Funktionen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_PFKEY</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert den &lt;DS:DE.SYPFKEY&gt;Namen des GUI-Status&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_REPID</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert den &lt;DS:DE.SYREPID&gt;Namen der Funktionsgruppe&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>HAS_EXCLUDING_FUNCTION</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert, ob ein Funktionscode (Parameter I_EXCLFUNC) in der Tabelle</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>der exkludierten Funktionen enthalten ist.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>REMOVE_EXCLUDING_FUNCTION</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Entfernt einen Funktionscode aus der Tabelle der exckludierten</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Funktionen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>SET_EXCLUDING_FUNCTIONS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Setzt die Tabelle mit den exkludierten Funktionen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>ADD_EXCLUDING_FUNCTION</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Fügt eine excludierte Funktion hinzu</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>ADD_EXCLUDING_FUNCTION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Adds an Excluded Function</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>ADD_EXCLUDING_FUNCTION</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Adds an Excluded Function</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>CLEAR_EXCLUDING_FUNCTIONS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Entfernt die excludierten Funktionen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>CLEAR_EXCLUDING_FUNCTIONS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Removes the Excluded Functions</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>CLEAR_EXCLUDING_FUNCTIONS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Removes the Excluded Functions</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>CO_DEF_PFSTATUS_NAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Defaultname des GUI-Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>CO_DEF_PFSTATUS_NAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Default Name of the GUI Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>CO_DEF_PFSTATUS_NAME</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Default Name of the GUI Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>CREATE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Erzeugt das Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>CREATE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Creates the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>CREATE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Creates the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>GET_CLONE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Erzeugt eine Kopie des Objekts</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>GET_CLONE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Generates a Copy of the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>GET_CLONE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Generates a Copy of the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>GET_EXCLUDING_FUNCTIONS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die excludierten Funktionen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>GET_EXCLUDING_FUNCTIONS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Excluded Functions</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>GET_EXCLUDING_FUNCTIONS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Excluded Functions</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>GET_PFKEY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den GUI-Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>GET_PFKEY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the GUI Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>GET_PFKEY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the GUI Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>GET_REPID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den Programmnamen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>GET_REPID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Program Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>GET_REPID</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Program Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>GT_EXCLFUNC</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Excludierte Funktionen für GUI-Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>GT_EXCLFUNC</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Excluded Functions for GUI Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>GT_EXCLFUNC</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Excluded Functions for GUI Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>G_PFKEY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Aktueller GUI-Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>G_PFKEY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Current GUI Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>G_PFKEY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Current GUI Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>G_REPID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Programmname für GUI-Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>G_REPID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Program Name for GUI Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>G_REPID</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Program Name for GUI Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>HAS_EXCLUDING_FUNCTION</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert ob eine Funktion excludiert ist</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>HAS_EXCLUDING_FUNCTION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Whether a Function is Excluded</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>HAS_EXCLUDING_FUNCTION</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Whether a Function is Excluded</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>REMOVE_EXCLUDING_FUNCTION</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Entfernt eine excludierte Funktion</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>REMOVE_EXCLUDING_FUNCTION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Removes an Excluded Function</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>REMOVE_EXCLUDING_FUNCTION</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Removes an Excluded Function</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>SET_EXCLUDING_FUNCTIONS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt die excludierten Funktionen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>SET_EXCLUDING_FUNCTIONS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Defines the Excluded Functions</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_MDY_PFSTATUS</CLSNAME>
+     <CMPNAME>SET_EXCLUDING_FUNCTIONS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Defines the Excluded Functions</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

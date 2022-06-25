@@ -1,0 +1,687 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_INTF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOINTERF>
+    <CLSNAME>IF_ISH_GUI_CONTROLLER</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: GUI - Controller</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <UNICODE>X</UNICODE>
+   </VSEOINTERF>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;MEANING&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The interface IF_ISH_GUI_CONTROLLER defines the interface of a control</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>object for an &lt;DS:IF.IF_ISH_GUI_VIEW&gt;interface object&lt;/&gt; in a</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:IF.IF_ISH_GUI_APPLICATION&gt;dialog application&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The interface IF_ISH_GUI_CONTROLLER contains the interface</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:IF.IF_ISH_GUI_ELEMENT&gt;IF_ISH_GUI_ELEMENT&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The interface IF_ISH_GUI_CONTROLLER contains the interface</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:IF.IF_ISH_DESTROYABLE&gt;IF_ISH_DESTROYABLE&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The interface IF_ISH_GUI_CONTROLLER is contained in interface</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:IF.IF_ISH_GUI_MAIN_CONTROLLER&gt;IF_ISH_GUI_MAIN_CONTROLLER&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>A control object is responsible for linking a</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:IF.IF_ISH_GUI_MODEL&gt;model&lt;/&gt; with an</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:IF.IF_ISH_GUI_VIEW&gt;interface object&lt;/&gt; in a dialog application.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>There can be several control objects in a dialog application.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>The control objects are arranged in a hierarchy.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>Each control object has a parent control object and can have any number</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>of child control objects.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>The &lt;DS:IF.IF_ISH_GUI_MAIN_CONTROLLER&gt;main control object&lt;/&gt; constitutes</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>an exception. The main control object has no parent control object.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>Methods:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_APPLICATION</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the &lt;DS:IF.IF_ISH_GUI_APPLICATION&gt;dialog application&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_CHILD_CONTROLLERS</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the child control objects.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_CHILD_CONTROLLER_BY_ID</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the child control object for an element ID.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_CHILD_CONTROLLER_BY_NAME</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the child control object for an element name.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_MAIN_CONTROLLER</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the &lt;DS:IF.IF_ISH_GUI_MAIN_CONTROLLER&gt;main control object&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_MODEL</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the &lt;DS:IF.IF_ISH_GUI_MODEL&gt;model&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_PARENT_CONTROLLER</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the parent control object.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_VCODE</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the processing mode.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_VIEW</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the &lt;DS:IF.IF_ISH_GUI_VIEW&gt;interface object&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>IS_INITIALIZED</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns whether the control object is initialized.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>IS_IN_INITIALIZATION_MODE</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns whether the control object is being initialized.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>REGISTER_CHILD_CONTROLLER</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Registers a child control object.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>SET_VCODE</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Sets the processing mode.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;USE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The abstract basic class for a control object is</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CL.CL_ISH_GUI_CONTROLLER&gt;CL_ISH_GUI_CONTROLLER&lt;/&gt;.</TDLINE>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;MEANING&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das Interface IF_ISH_GUI_CONTROLLER definiert die Schnittstelle eines</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Kontrollobjekts für ein &lt;DS:IF.IF_ISH_GUI_VIEW&gt;Oberflächenobjekt&lt;/&gt; in</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>einer &lt;DS:IF.IF_ISH_GUI_APPLICATION&gt;Dialoganwendung&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das Interface IF_ISH_GUI_CONTROLLER umfasst das Interface</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_ELEMENT&gt;IF_ISH_GUI_ELEMENT&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das Interface IF_ISH_GUI_CONTROLLER umfasst das Interface</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_DESTROYABLE&gt;IF_ISH_DESTROYABLE&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das Interface IF_ISH_GUI_CONTROLLER wird von Interface</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_MAIN_CONTROLLER&gt;IF_ISH_GUI_MAIN_CONTROLLER&lt;/&gt; umfasst.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Ein Kontrollobjekt ist innerhalb einer Dialoganwendung für die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Verknüpfung eines &lt;DS:IF.IF_ISH_GUI_MODEL&gt;Models&lt;/&gt; mit einem</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_VIEW&gt;Oberflächenobjekt&lt;/&gt; zuständig.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Innerhalb einer Dialoganwendung kann es mehrere Kontrollobjekte geben.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Die Kontrollobjekte sind hierarchisch angeordnet.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Jedes Kontrollobjekt hat ein übergeordnetes Kontrollobjekt und kann</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>beliebig viele untergeordnete Kontrollobjekte haben.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Eine Ausnahme ist das</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_MAIN_CONTROLLER&gt;Haupt-Kontrollobjekt&lt;/&gt;. Das</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Haupt-Kontrollobjekt hat kein übergeordnetes Kontrollobjekt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>Methoden:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_APPLICATION</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert die &lt;DS:IF.IF_ISH_GUI_APPLICATION&gt;Dialoganwendung&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_CHILD_CONTROLLERS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert die untergeordneten Kontrollobjekte.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_CHILD_CONTROLLER_BY_ID</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert das untergeordnete Kontrollobjekt zu einer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Elementidentifikation.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_CHILD_CONTROLLER_BY_NAME</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert das untergeordnete Kontrollobjekt zu einer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Elementbezeichnung.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_MAIN_CONTROLLER</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert das &lt;DS:IF.IF_ISH_GUI_MAIN_CONTROLLER&gt;Haupt-Kontrollobjekt</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_MODEL</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert das &lt;DS:IF.IF_ISH_GUI_MODEL&gt;Model&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_PARENT_CONTROLLER</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert das übergeordnete Kontrollobjekt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_VCODE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert den Verarbeitungsmodus.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_VIEW</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert das &lt;DS:IF.IF_ISH_GUI_VIEW&gt;Oberflächenobjekt&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>IS_INITIALIZED</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert, ob das Kontrollobjekt initialisiert ist.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>IS_IN_INITIALIZATION_MODE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert, ob das Kontrollobjekt gerade initialisiert wird.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>REGISTER_CHILD_CONTROLLER</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Registriert ein untergeordnetes Kontrollobjekt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>SET_VCODE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Setzt den Verarbeitungsmodus.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die abstrakte Basisklasse für ein Kontrollobjekt ist</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_GUI_CONTROLLER&gt;CL_ISH_GUI_CONTROLLER&lt;/&gt;.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>GET_APPLICATION</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die Applikation</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>GET_APPLICATION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Application</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>GET_APPLICATION</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Application</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>GET_CHILD_CONTROLLERS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die untergeordneten Controller</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>GET_CHILD_CONTROLLERS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Subordinate Controllers</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>GET_CHILD_CONTROLLERS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Subordinate Controllers</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>GET_CHILD_CONTROLLER_BY_ID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den untergeordneten Controller zu einer ID</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>GET_CHILD_CONTROLLER_BY_ID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Subordinate Controller for an ID</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>GET_CHILD_CONTROLLER_BY_ID</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Subordinate Controller for an ID</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>GET_CHILD_CONTROLLER_BY_NAME</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den untergeordneten Controller zu einem Namen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>GET_CHILD_CONTROLLER_BY_NAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Subordinate Controller for a Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>GET_CHILD_CONTROLLER_BY_NAME</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Subordinate Controller for a Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>GET_MAIN_CONTROLLER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den Hauptcontroller</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>GET_MAIN_CONTROLLER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Main Controller</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>GET_MAIN_CONTROLLER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Main Controller</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>GET_MODEL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert das Model</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>GET_MODEL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Model</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>GET_MODEL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Model</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>GET_PARENT_CONTROLLER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den übergeordneten Controller</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>GET_PARENT_CONTROLLER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Superordinate Controller</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>GET_PARENT_CONTROLLER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Superordinate Controller</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>GET_VCODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den Verarbeitungsmodus</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>GET_VCODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Processing Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>GET_VCODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Processing Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>GET_VIEW</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>GET_VIEW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>GET_VIEW</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the View</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>IS_INITIALIZED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert ob das Objekt initialisiert ist</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>IS_INITIALIZED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Whether the Object Is Initialized</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>IS_INITIALIZED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Whether the Object Is Initialized</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>IS_IN_INITIALIZATION_MODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert ob das Objekt gerade initialisiert wird</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>IS_IN_INITIALIZATION_MODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Whethre the Object Is Being Initialized</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>IS_IN_INITIALIZATION_MODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Whethre the Object Is Being Initialized</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>REGISTER_CHILD_CONTROLLER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Registriert einen untergeordneten Controller</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>REGISTER_CHILD_CONTROLLER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Registers a Subordinate Controller</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>REGISTER_CHILD_CONTROLLER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Registers a Subordinate Controller</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>SET_VCODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt den Verarbeitungsmodus</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>SET_VCODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the Processing Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>SET_VCODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the Processing Mode</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

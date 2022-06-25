@@ -1,0 +1,1804 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_INTF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOINTERF>
+    <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: GUI - ALV Tree View</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <UNICODE>X</UNICODE>
+   </VSEOINTERF>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;MEANING&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The interface IF_ISH_GUI_TREE_VIEW defines an interface object for an</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>ALV tree control.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The interface IF_ISH_GUI_TREE_VIEW contains the interface</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE> &lt;DS:IF.IF_ISH_GUI_CONTROL_VIEW&gt;IF_ISH_GUI_CONTROL_VIEW&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>UT</TDFORMAT>
+     <TDLINE>Methods:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>CHECK_MODEL</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Sets the checkbox in the hierarchy column for a node model.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>CHECK_MODELS</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Sets the checkboxes in the hierarchy column for several node models.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>CHECK_NKEY</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Sets the checkbox in the hierarchy column for a node key.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>CHECK_NKEYS</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Sets the checkboxes in the hierarchy column for several node keys.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>COLLAPSE_ALL_NODES</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Collapses all nodes.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>COLLAPSE_NODE</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Collapses a node.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>COLLAPSE_NODES</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Collapses several nodes.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>EXPAND_ALL_NODES</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Expands all nodes.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>EXPAND_NODE</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Expands a node.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>EXPAND_NODES</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Expands several nodes.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_ALL_CHECKED_CHILD_MODELS</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns all node models for a parent node model whose checkbox is set in</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>the hierarchy column.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>In contrast to the method GET_CHECKED_CHILD_MODELS the method takes into</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>account all child nodes and not only the directly subordinate nodes.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_ALL_CHECKED_CHILD_NKEYS</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns all node models for a parent node key whose checkbox is set in</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>the hierarchy column.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>In contrast to the method GET_CHECKED_CHILD_NKEYS the method takes into</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>account all child nodes and not only the directly subordinate nodes.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_ALL_CHILD_NKEYS</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns all child node keys for a parent node key.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_ALV_TREE</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the underlying ALV tree control.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_ALV_TREE_TOOLBAR</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the toolbar control of the underlying ALV tree control.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_CHECKED_CHILD_MODELS</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns all node models assigned directly under a parent node key, whose</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>checkbox is set in the hierarchy column.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>See also method GET_ALL_CHECKED_CHILD_MODELS.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_CHECKED_CHILD_NKEYS</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns all node keys assigned directly under a parent node key, whose</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>checkbox is set in the hierarchy column.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>See also method GET_ALL_CHECKED_CHILD_NKEYS.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_CHECKED_MODELS</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns all node models whose checkbox is set in the hierarchy column.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_CHECKED_NKEYS</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns all node keys whose checkbox is set in the hierarchy column.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_CHECKED_PARENT_MODEL</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the parent node model for a node key, if its checkbox is set in</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>the hierarchy column.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_CHECKED_PARENT_NKEY</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the parent node key for a node key, if its checkbox is set in</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>the hierarchy column.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_CHILD_NKEYS</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the child node keys for a node key.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_MODEL_BY_NKEY</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the node model for a node key.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_NKEYS_BY_MODEL</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns all node keys for a node model.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_NKEY_BY_CHILD_MODEL</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the node key for a child node model.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_PARENT_MODEL_BY_NKEY</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the parent node model for a node key.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_PARENT_NKEY</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the parent node key.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_PARENT_NKEYS</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the node keys of all parent nodes.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_ROOT_NKEYS</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the node keys of the root nodes.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_SELECTED_MODEL</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the node model for the selected node.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>If more than one node is selected, an exception of the type</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>CX_ISH_STATIC_HANDLER is triggered.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_SELECTED_MODELS</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the node models for all selected nodes.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_SELECTED_NKEY</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the node key for the selected node.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>If more than one node is selected, an exception of the type</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>CX_ISH_STATIC_HANDLER is triggered.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_SELECTED_NKEYS</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the node keys for the selected nodes.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_TREE_LAYOUT</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the settings object.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>HAS_PARENT_NKEY</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns whether a node key is assigned under another node key.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>IS_NKEY_CHECKED</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns whether the checkbox of the hierarchy column of a node,</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>specified using the node key, is set.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>SET_SELECTED_MODEL</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Selects a node specified using a node model.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>SET_SELECTED_MODELS</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Selects several nodes specified using node models.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>SET_SELECTED_NKEY</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Selects a node specified using a node key.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>SET_SELECTED_NKEYS</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Selects several nodes specified using node keys.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>UNCHECK_MODEL</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Clears the checkbox in the hierarchy column for a node model.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>UNCHECK_MODELS</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Clears the checkboxes in the hierarchy column for several node models.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>UNCHECK_NKEY</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Clears the checkbox in the hierarchy column for a node key.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>UNCHECK_NKEYS</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Clears the checkboxes in the hierarchy column for several node keys.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;USE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The abstract basic class of an interface object of an ALV tree control</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>is &lt;DS:CL.CL_ISH_GUI_TREE_VIEW&gt;CL_ISH_GUI_TREE_VIEW&lt;/&gt;</TDLINE>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;MEANING&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das Interface IF_ISH_GUI_TREE_VIEW definiert die Schnittstelle eines</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Oberflächenobjekts für ein ALV-Tree Control.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das Interface IF_ISH_GUI_TREE_VIEW enthält das Interface</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_CONTROL_VIEW&gt;IF_ISH_GUI_CONTROL_VIEW&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>Methoden:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>CHECK_MODEL</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Setzt das Ankreuzfeld in der Hierarchiespalte zu einem Knotenmodel.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>CHECK_MODELS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Setzt die Ankreuzfelder in der Hierarchiespalte zu mehreren</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Knotenmodels.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>CHECK_NKEY</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Setzt das Ankreuzfeld in der Hierarchiespalte zu einem Knotenschlüssel.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>CHECK_NKEYS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Setzt die Ankreuzfelder in der Hierarchiespalte zu mehreren</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Knotenschlüsseln.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>COLLAPSE_ALL_NODES</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Zuklappen aller Knoten.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>COLLAPSE_NODE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Zuklappen eines Knoten.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>COLLAPSE_NODES</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Zuklappen mehrerer Knoten.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>EXPAND_ALL_NODES</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Aufklappen aller Knoten.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>EXPAND_NODE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Aufklappen eines Knoten.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>EXPAND_NODES</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Aufklappen mehrerer Knoten.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_ALL_CHECKED_CHILD_MODELS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert alle Knotenmodels zu einem übergeordneten Knotenmodel, deren</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Ankreuzfeld in der Hierarchiespalte gesetzt ist.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Im Gegensatz zur Methode GET_CHECKED_CHILD_MODELS werden alle</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Unterknoten berücksichtigt, und nicht nur die direkt untergeordneten</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Knoten.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_ALL_CHECKED_CHILD_NKEYS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert alle Knotenmodels zu einem übergeordneten Knotenschlüssel,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>deren Ankreuzfeld in der Hierarchiespalte gesetzt ist.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Im Gegensatz zur Methode GET_CHECKED_CHILD_NKEYS werden alle Unterknoten</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>berücksichtigt, und nicht nur die direkt untergeordneten Knoten.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_ALL_CHILD_NKEYS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert alle untergeordneten Knotenschlüssel zu einem übergeordneten</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Knotenschlüssel.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_ALV_TREE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert das zugrunde liegende ALV-Tree Control.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_ALV_TREE_TOOLBAR</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert das Toolbar Control des zugrunde liegenden ALV-Tree Controls.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_CHECKED_CHILD_MODELS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert alle einem übergeordneten Knotenschlüssel direkt</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>untergeordneten Knotenmodels, deren Ankreuzfeld in der Hierarchiespalte</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>gesetzt ist.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Siehe auch Methode GET_ALL_CHECKED_CHILD_MODELS.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_CHECKED_CHILD_NKEYS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert alle einem übergeordneten Knotenschlüssel direkt</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>untergeordneten Knotenschlüssel, deren Ankreuzfeld in der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Hierarchiespalte gesetzt ist.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Siehe auch Methode GET_ALL_CHECKED_CHILD_NKEYS.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_CHECKED_MODELS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert alle Knotenmodels, deren Ankreuzfeld in der Hierarchiespalte</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>gesetzt ist.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_CHECKED_NKEYS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert alle Knotenschlüssel, deren Ankreuzfeld in der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Hierarchiespalte gesetzt ist.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_CHECKED_PARENT_MODEL</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert das zu einem Knotenschlüssel übergeordnete Knotenmodel, wenn</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>dessen Ankreuzfeld in der Hierarchiespalte gesetzt ist.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_CHECKED_PARENT_NKEY</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert den zu einem Knotenschlüssel übergeordneten Knotenschlüssel,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>wenn dessen Ankreuzfeld in der Hierarchiespalte gesetzt ist.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_CHILD_NKEYS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert die untergeordneten Knotenschlüssel zu einem Knotenschlüssel.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_MODEL_BY_NKEY</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert das Knotenmodel zu einem Knotenschlüssel.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_NKEYS_BY_MODEL</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert alle Knotenschlüssel zu einem Knotenmodel.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_NKEY_BY_CHILD_MODEL</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert den Knotenschlüssel zu einem untergeordneten Knotenmodel.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_PARENT_MODEL_BY_NKEY</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert das übergeordnete Knotenmodel zu einem Knotenschlüssel.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_PARENT_NKEY</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert den übergeordneten Knotenschlüssel.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_PARENT_NKEYS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert die Knotenschlüssel aller übergeordneten Knoten.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_ROOT_NKEYS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert die Knotenschlüssel der Wurzelknoten.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_SELECTED_MODEL</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert das Knotenmodel zum markierten Knoten.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Wenn nicht genau ein Knoten markiert ist, wird eine Ausnahme vom Typ</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>CX_ISH_STATIC_HANDLER ausgelöst.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>GET_SELECTED_MODELS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert die Knotenmodels zu allen markierten Knoten.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_SELECTED_NKEY</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert den Knotenschlüssel zum markierten Knoten.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Wenn nicht genau ein Knoten markiert ist, wird eine Ausnahme vom Typ</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>CX_ISH_STATIC_HANDLER ausgelöst.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>GET_SELECTED_NKEYS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert die Knotenschlüssel der markierten Knoten.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_TREE_LAYOUT</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert das Einstellungsobjekt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>HAS_PARENT_NKEY</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert ob ein Knotenschlüssel unter einem anderen Knotenschlüssel</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>hängt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>IS_NKEY_CHECKED</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert ob das Ankreuzfeld der Hierarchiespalte eines Knoten,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>spezifiziert über Knotenschlüssel, gesetzt ist.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>SET_SELECTED_MODEL</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Markiert einen Knoten, spezifiziert über ein Knotenmodel.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>SET_SELECTED_MODELS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Markiert mehrere Knoten, spezifiziert über Knotenmodels.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>SET_SELECTED_NKEY</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Markiert einen Knoten, spezifiziert über einen Knotenschlüssel.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>SET_SELECTED_NKEYS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Markiert mehrere Knoten, spezifiziert über Knotenschlüssel.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>UNCHECK_MODEL</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Leert das Ankreuzfeld der Hierarchiespalte zu einem Knotenmodel.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>UNCHECK_MODELS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Leert die Ankreuzfelder der Hierarchiespalte zu mehreren Knotenmodels.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>UNCHECK_NKEY</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Leert das Ankreuzfeld der Hierarchiespalte zu einem Knotenschlüssel.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>UNCHECK_NKEYS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Leert die Ankreuzfelder der Hierarchiespalte zu mehreren</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Knotenschlüsseln.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die abstrakte Basisklasse eines Oberflächenobjekts für ein ALV-Tree</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Control ist &lt;DS:CL.CL_ISH_GUI_TREE_VIEW&gt;CL_ISH_GUI_TREE_VIEW&lt;/&gt;.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>CHECK_MODEL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Markiert das Ankreuzfeld eines Knotenmodels</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>CHECK_MODEL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Select Checkbox for Node Model</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>CHECK_MODEL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Select Checkbox for Node Model</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>CHECK_MODELS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Markiert das Ankreuzfeld mehrerer Knotenmodels</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>CHECK_MODELS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Select Checkbox for Several Node Models</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>CHECK_MODELS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Select Checkbox for Several Node Models</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>CHECK_NKEY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Markiert das Ankreuzfeld einer Hierarchiespalte</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>CHECK_NKEY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Selects Checkbox for a Hierarchy Column</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>CHECK_NKEY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Selects Checkbox for a Hierarchy Column</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>CHECK_NKEYS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Markiert das Ankreuzfeld mehrerer Hierarchiespalten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>CHECK_NKEYS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Selects Checkbox for Several Hierarchy Columns</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>CHECK_NKEYS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Selects Checkbox for Several Hierarchy Columns</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>COLLAPSE_ALL_NODES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Klappt alle Knoten zu</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>COLLAPSE_ALL_NODES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Collapse All Nodes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>COLLAPSE_ALL_NODES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Collapse All Nodes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>COLLAPSE_NODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Klappt einen Knoten zu</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>COLLAPSE_NODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Collapses a Node</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>COLLAPSE_NODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Collapses a Node</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>COLLAPSE_NODES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Klappt mehrere Knoten zu</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>COLLAPSE_NODES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Collapse Several Nodes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>COLLAPSE_NODES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Collapse Several Nodes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>DESELECT_ALL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Deselektiert alle Knoten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>DESELECT_ALL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Deselects All Nodes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>DESELECT_ALL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Deselects All Nodes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>EXPAND_ALL_NODES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Expandiert alle Knoten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>EXPAND_ALL_NODES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Expands All Nodes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>EXPAND_ALL_NODES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Expands All Nodes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>EXPAND_NODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Expandiert einen Knoten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>EXPAND_NODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Expands a Node</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>EXPAND_NODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Expands a Node</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>EXPAND_NODES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Expandiert mehrere Knoten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>EXPAND_NODES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Expand Several Nodes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>EXPAND_NODES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Expand Several Nodes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_ALL_CHECKED_CHILD_MODELS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die Models zu allen angekreuzten Unterknoten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_ALL_CHECKED_CHILD_MODELS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Models for All Selected Subnodes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_ALL_CHECKED_CHILD_MODELS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Models for All Selected Subnodes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_ALL_CHECKED_CHILD_NKEYS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert alle angekreuzten Unterknoten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_ALL_CHECKED_CHILD_NKEYS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns All Selected Subnodes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_ALL_CHECKED_CHILD_NKEYS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns All Selected Subnodes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_ALL_CHILD_NKEYS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert alle unterg. NodeKeys zu einem NodeKey</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_ALL_CHILD_NKEYS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns All Lower Level Node Keys for a Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_ALL_CHILD_NKEYS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns All Lower Level Node Keys for a Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_ALV_TREE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den zugrundeliegenden ALVTree</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_ALV_TREE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Underlying ALV Tree</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_ALV_TREE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Underlying ALV Tree</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_ALV_TREE_TOOLBAR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die Toolbar des ALVTree</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_ALV_TREE_TOOLBAR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Toolbar for ALV Tree</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_ALV_TREE_TOOLBAR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Toolbar for ALV Tree</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_CHECKED_CHILD_MODELS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die Models zu den angekreuzten Unterknoten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_CHECKED_CHILD_MODELS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Models for Selected Subnodes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_CHECKED_CHILD_MODELS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Models for Selected Subnodes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_CHECKED_CHILD_NKEYS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die angekreuzten Unterknoten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_CHECKED_CHILD_NKEYS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Selected Subnodes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_CHECKED_CHILD_NKEYS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Selected Subnodes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_CHECKED_MODELS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die Models zu angekreuzten Hierarchiespalten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_CHECKED_MODELS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Models for Checked Hierarchy Columns</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_CHECKED_MODELS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Models for Checked Hierarchy Columns</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_CHECKED_NKEYS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die NodeKeys zu angekreuzten Hierarchiespalten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_CHECKED_NKEYS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Node Keys for Checked Hierarchy Columns</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_CHECKED_NKEYS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Node Keys for Checked Hierarchy Columns</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_CHECKED_PARENT_MODEL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert das Model zum angekreuzten überg. NodeKey</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_CHECKED_PARENT_MODEL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Model for Selected Higher Level Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_CHECKED_PARENT_MODEL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Model for Selected Higher Level Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_CHECKED_PARENT_NKEY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den angekreuzten übergeordneten NodeKey</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_CHECKED_PARENT_NKEY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Selected Higher Level Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_CHECKED_PARENT_NKEY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Selected Higher Level Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_CHILD_NKEYS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die Child NodeKeys zu einem NodeKey</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_CHILD_NKEYS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Child NodeKeys for a NodeKey</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_CHILD_NKEYS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Child NodeKeys for a NodeKey</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_MODEL_BY_NKEY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert das Model zu einem NodeKey</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_MODEL_BY_NKEY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Model for a NodeKey</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_MODEL_BY_NKEY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Model for a NodeKey</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_NKEYS_BY_MODEL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die NodeKeys zu einem Model</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_NKEYS_BY_MODEL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the NodeKeys for a Model</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_NKEYS_BY_MODEL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the NodeKeys for a Model</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_NKEY_BY_CHILD_MODEL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den NodeKey zu einem untergeordneten Model</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_NKEY_BY_CHILD_MODEL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the NodeKey for a Lower Level Model</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_NKEY_BY_CHILD_MODEL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the NodeKey for a Lower Level Model</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_PARENT_MODEL_BY_NKEY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert das übergeordnete Model zu einem NodeKey</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_PARENT_MODEL_BY_NKEY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Higher Level Model for a Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_PARENT_MODEL_BY_NKEY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Higher Level Model for a Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_PARENT_NKEY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den übergeordneten NodeKey</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_PARENT_NKEY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Parent Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_PARENT_NKEY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Parent Node Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_PARENT_NKEYS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert alle übergeordneten NodeKeys</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_PARENT_NKEYS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns All Parent Node Keys</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_PARENT_NKEYS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns All Parent Node Keys</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_ROOT_NKEYS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die NodeKeys der Wurzelknoten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_ROOT_NKEYS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Return Node Keys for Root Nodes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_ROOT_NKEYS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Return Node Keys for Root Nodes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_SELECTED_MODEL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert das Model zum selektierten Knoten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_SELECTED_MODEL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Model for the Selected Node</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_SELECTED_MODEL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Model for the Selected Node</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_SELECTED_MODELS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die Models zu den selektierten Knoten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_SELECTED_MODELS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Models for the Selected Nodes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_SELECTED_MODELS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Models for the Selected Nodes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_SELECTED_NKEY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den NodeKey des selektierten Knoten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_SELECTED_NKEY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the NodeKey of the Selected Node</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_SELECTED_NKEY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the NodeKey of the Selected Node</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_SELECTED_NKEYS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die NodeKeys der selektierten Knoten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_SELECTED_NKEYS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the NodeKeys of the Selected Nodes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_SELECTED_NKEYS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the NodeKeys of the Selected Nodes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_TREE_LAYOUT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert das Tree Layout</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_TREE_LAYOUT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Tree Layout</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>GET_TREE_LAYOUT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Tree Layout</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>HAS_PARENT_NKEY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert ob ein Knoten unter einem anderen liegt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>HAS_PARENT_NKEY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Information Whether One Node Is Below Another</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>HAS_PARENT_NKEY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Information Whether One Node Is Below Another</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>IS_NKEY_CHECKED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert ob ein NodeKey angekreuzt ist</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>IS_NKEY_CHECKED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Whether a Node Key Is Selected</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>IS_NKEY_CHECKED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Whether a Node Key Is Selected</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>SET_SELECTED_MODEL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Selektiert den Knoten zu einem Model</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>SET_SELECTED_MODEL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Selects the Node for a Model</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>SET_SELECTED_MODEL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Selects the Node for a Model</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>SET_SELECTED_MODELS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Selektiert die Knoten zu Models</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>SET_SELECTED_MODELS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Selects the Nodes for a Model</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>SET_SELECTED_MODELS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Selects the Nodes for a Model</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>SET_SELECTED_NKEY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Selektiert den Knoten zu einem NodeKey</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>SET_SELECTED_NKEY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Selects the Node for a NodeKey</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>SET_SELECTED_NKEY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Selects the Node for a NodeKey</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>SET_SELECTED_NKEYS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Selektiert die Knoten zu NodeKeys</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>SET_SELECTED_NKEYS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Selects the Nodes for NodeKeys</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>SET_SELECTED_NKEYS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Selects the Nodes for NodeKeys</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>SET_SELECTED_NODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the Selected Nodes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>SET_SELECTED_NODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the Selected Nodes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>UNCHECK_MODEL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Demarkiert das Ankreuzfeld eines Knotenmodels</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>UNCHECK_MODEL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Deselect Checkbox for Node Model</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>UNCHECK_MODEL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Deselect Checkbox for Node Model</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>UNCHECK_MODELS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Demarkiert das Ankreuzfeld mehrerer Knotenmodels</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>UNCHECK_MODELS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Deselect Checkbox for Several Node Models</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>UNCHECK_MODELS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Deselect Checkbox for Several Node Models</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>UNCHECK_NKEY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Demarkiert das Ankreuzfeld einer Hierarchiespalte</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>UNCHECK_NKEY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Deselects Checkbox of a Hierarchy Column</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>UNCHECK_NKEY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Deselects Checkbox of a Hierarchy Column</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>UNCHECK_NKEYS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Demarkiert das Ankreuzfeld mehrerer Hierarchiespalten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>UNCHECK_NKEYS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Deselects Checkbox of Several Hierarchy Columns</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TREE_VIEW</CLSNAME>
+     <CMPNAME>UNCHECK_NKEYS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Deselects Checkbox of Several Hierarchy Columns</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

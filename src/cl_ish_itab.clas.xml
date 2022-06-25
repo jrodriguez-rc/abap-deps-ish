@@ -1,0 +1,1087 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_ITAB</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: Internal Table</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_ITAB is the abstract base class for a collection that</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>is based on an internal table.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>For a general overview of collections, see the documentation for the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>class &lt;DS:CL.CL_ISH_COLLECTION&gt;CL_ISH_COLLECTION&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The following kinds of internal table types exist:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>Index tables</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>Index tables are mapped using the abstract class</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CL.CL_ISH_INDEXED_ITAB&gt;CL_ISH_INDEXED_ITAB&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>According to the subtypes of internal index tables, the following</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>additional classification exists:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B2</TDFORMAT>
+     <TDLINE>Sorted tables</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>These are mapped using the class &lt;DS:CL.CL_ISH_SORTED_ITAB&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>CL_ISH_SORTED_ITAB&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B2</TDFORMAT>
+     <TDLINE>Standard tables</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>These are mapped using the class &lt;DS:CL.CL_ISH_STANDARD_ITAB&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>CL_ISH_STANDARD_ITAB&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>Hashed tables</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>Hashed tables are mapped using the class &lt;DS:CL.CL_ISH_HASHED_ITAB&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>CL_ISH_HASHED_ITAB&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The functions provided by each internal table type are defined in the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>class CL_ISH_ITAB.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>These functions are implemented by methods and can be categorized as</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>follows:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>Read information</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B2</TDFORMAT>
+     <TDLINE>The method ALLOWS_NULL_ENTRIES determines whether initial entries are</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>allowed.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B2</TDFORMAT>
+     <TDLINE>The methods &lt;DS:CO.CL_ISH_ITAB                   AS_ITAB&gt;AS_ITAB&lt;/&gt; and</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CO.CL_ISH_ITAB                   AS_ITAB_REF&gt;AS_ITAB_REF&lt;/&gt; display</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>each CL_ISH_ITAB object as an internal table.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B2</TDFORMAT>
+     <TDLINE>The method CONTAINS determines whether an internal table contains a</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>specific value.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B2</TDFORMAT>
+     <TDLINE>The method OCCURENCES_OF determines how often a specific value is</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>contained in an internal table.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>Process entries</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B2</TDFORMAT>
+     <TDLINE>The method INSERT inserts an entry into the internal table.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>The underlying internal table type determines where the entry is</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>inserted.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B2</TDFORMAT>
+     <TDLINE>The method INSERT_ITAB transfers entries from any internal table into</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>the internal table.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B2</TDFORMAT>
+     <TDLINE>The method REMOVE removes entries of a specific value from the internal</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>table.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B2</TDFORMAT>
+     <TDLINE>The method REPLACE replaces the first occurrence of a specific value by</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>another value.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_ITAB inherits from the class &lt;DS:CL.CL_ISH_COLLECTION&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>CL_ISH_COLLECTION&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The following subclasses exist:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;DS:CL.CL_ISH_INDEXED_ITAB&gt;CL_ISH_INDEXED_ITAB&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;DS:CL.CL_ISH_HASHED_ITAB&gt;CL_ISH_HASHED_ITAB&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>It is permitted to create further kinds of internal tables (subclasses</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>of CL_ISH_ITAB or of their derivations).</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>However, it is recommended to only create subclasses of table classes</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>that are already instantiable:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>CL_ISH_STANDARD_ITAB</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>CL_ISH_STANDARD_OBJECT_ITAB</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>CL_ISH_SORTED_ITAB</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>CL_ISH_SORTED_OBJECT_ITAB</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>CL_ISH_HASHED_ITAB</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>CL_ISH_HASHED_OBJECT_ITAB</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>If you create a subclass, please observe the following points:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>Instantiation should only be possible using a public static method of</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>the new subclass (creation protected).</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>The table classes cannot work expediently until the protected method</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>INITIALIZE has been called.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>A reference to the internal table to be managed must be passed to this</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>method.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>Attention: This reference must be valid for the entire lifespan of the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>table object.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>The simplest and most appropriate way of achieving this is to define a</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>public instance attribute (called GT_TABLE hereafter), and to pass a</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>reference to this internal table to the method INITIALIZE (get reference</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>of gt_table into lr_table).</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_ITAB ist die abstrakte Basisklasse für eine</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Kollektion, die auf einer internen Tabelle basiert.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Eine generelle Übersicht zu Kollektionen finden Sie in der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Klassendokumentation zu &lt;DS:CL.CL_ISH_COLLECTION&gt;CL_ISH_COLLECTION&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Den verschiedenen internen Tabellentypen entsprechend gibt es folgende</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Ausprägungen:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Index-Tabellen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Index-Tabellen werden durch die abstrakte Klasse</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_INDEXED_ITAB&gt;CL_ISH_INDEXED_ITAB&lt;/&gt; abgebildet.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Entsprechend der Subtypen von internen Index-Tabellen gibt es folgende</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>weitere Untergliederung:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>Sortierte Tabellen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Diese werden durch die Klasse</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_SORTED_ITAB&gt;CL_ISH_SORTED_ITAB&lt;/&gt; abgebildet.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>Standardtabellen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Diese werden durch die Klasse</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_STANDARD_ITAB&gt;CL_ISH_STANDARD_ITAB&lt;/&gt; abgebildet.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Hash-Tabellen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Hash-Tabellen werden durch die Klasse</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_HASHED_ITAB&gt;CL_ISH_HASHED_ITAB&lt;/&gt; abgebildet.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>In der Klasse CL_ISH_ITAB sind jene Funktionalitäten definiert, die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>jeder interne Tabellentyp bietet.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Diese Funktionalitäten werden durch Methoden implementiert und können</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>folgendermaßen kategorisiert werden:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Auslesen von Informationen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>Mit der Methode ALLOWS_NULL_ENTRIES kann ermittelt werden, ob initiale</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Einträge erlaubt sind.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>Mit den Methoden &lt;DS:CO.CL_ISH_ITAB                   AS_ITAB&gt;AS_ITAB&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>und &lt;DS:CO.CL_ISH_ITAB                   AS_ITAB_REF&gt;AS_ITAB_REF&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>lässt sich jedes CL_ISH_ITAB-Objekt als interne Tabelle darstellen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>Mit der Methode CONTAINS kann ermittelt werden, ob die interne Tabelle</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>einen bestimmten Wert beinhaltet.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>Mit der Methode OCCURENCES_OF kann ermittelt werden, wie oft ein</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>bestimmter Wert in der internen Tabelle enthalten ist.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Bearbeiten der Einträge</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>Mit der Methode INSERT kann ein Eintrag in die interne Tabelle</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>vorgenommen werden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>An welcher Stelle der Eintrag eingefügt wird, bestimmt der zugrunde</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>liegende interne Tabellentyp.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>Mit der Methode INSERT_ITAB können Einträge einer beliebigen internen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Tabelle in die interne Tabelle übernommen werden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>Mit der Methode REMOVE können Einträge eines bestimmten Wertes aus der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>internen Tabelle entfernt werden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>Mit der Methode REPLACE kann das erste Vorkommnis eines bestimmten</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Wertes durch einen anderen Wert ersetzt werden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_ITAB erbt von der Klasse</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_COLLECTION&gt;CL_ISH_COLLECTION&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Folgende Unterklassen existieren:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;DS:CL.CL_ISH_INDEXED_ITAB&gt;CL_ISH_INDEXED_ITAB&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;DS:CL.CL_ISH_HASHED_ITAB&gt;CL_ISH_HASHED_ITAB&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Es ist erlaubt, weitere Ausprägungen von internen Tabellen (Unterklassen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>von CL_ISH_ITAB oder deren Ableitungen) anzulegen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Es wird allerdings empfohlen, nur Unterklassen von bereits</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>instanzierbaren Tabellenklassen anzulegen:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>CL_ISH_STANDARD_ITAB</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>CL_ISH_STANDARD_OBJECT_ITAB</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>CL_ISH_SORTED_ITAB</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>CL_ISH_SORTED_OBJECT_ITAB</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>CL_ISH_HASHED_ITAB</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>CL_ISH_HASHED_OBJECT_ITAB</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Wird eine Unterklasse angelegt, sollten folgende Punkte berücksichtigt</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>werden:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Die Instanzierung sollte nur über eine öffentliche statische Methode der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>neuen Unterklasse möglich sein (creation protected).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Die Tabellenklassen können erst sinnvoll arbeiten nachdem die geschützte</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Methode INITIALIZE aufgerufen wurde.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Dieser Methode muss eine Referenz auf die zu verwaltende interne Tabelle</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>übergeben werden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Achtung: Diese Referenz muss während der gesamten Lebensdauer des</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Tabellenobjekts gültig sein.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Am einfachsten und auch am sinnvollsten lässt sich dies erreichen, indem</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ein öffentliches Instanzattribut (in weiterer Folge GT_TABLE genannt)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>definiert wird und der Methode INITIALIZE eine Referenz auf diese</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>interne Tabelle übergeben wird (get reference of gt_table into</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>lr_table).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>ALLOWS_NULL_ENTRIES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert ob nicht befüllte Einträge erlaubt sind</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>ALLOWS_NULL_ENTRIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Whether Non-Filled Entries Are Allowed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>ALLOWS_NULL_ENTRIES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Whether Non-Filled Entries Are Allowed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>AS_ITAB</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert eine Kopie der zugrunde liegenden Tabelle</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>AS_ITAB</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns a Copy of the Underlying Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>AS_ITAB</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns a Copy of the Underlying Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>AS_ITAB_REF</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert eine Kopie der zugrunde liegenden Tabelle</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>AS_ITAB_REF</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns a Copy of the Underlying Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>AS_ITAB_REF</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns a Copy of the Underlying Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>CHECK_INITIALIZATION</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Prüft die Initialisierung</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>CHECK_INITIALIZATION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checks the Initialization</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>CHECK_INITIALIZATION</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Checks the Initialization</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>CONTAINS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert ob ein Wert enthalten ist</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>CONTAINS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Whether a Value Is Contained</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>CONTAINS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Whether a Value Is Contained</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>CO_OTYPE_ITAB</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Objekttyp</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>CO_OTYPE_ITAB</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Object Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>CO_OTYPE_ITAB</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Object Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>ENTRIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Number of Contained Entries</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>ENTRIES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Number of Contained Entries</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>EV_VALUE_INSERTED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Wert wurde hinzugefügt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>EV_VALUE_INSERTED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Value Was Added</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>EV_VALUE_INSERTED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Value Was Added</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>EV_VALUE_REMOVED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Wert wurde entfernt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>EV_VALUE_REMOVED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Value Was Removed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>EV_VALUE_REMOVED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Value Was Removed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>EV_VALUE_REPLACED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Wert wurde ersetzt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>EV_VALUE_REPLACED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Value Was Replaced</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>EV_VALUE_REPLACED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Value Was Replaced</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>GET_LINEDESCR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert das Beschreibungsobjekt zum Zeilentyp der Tabelle</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>GET_LINEDESCR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Description Object for Table Row Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>GET_LINEDESCR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Description Object for Table Row Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>GET_TABLEDESCR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert das Beschreibungsobjekt zur Tabelle</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>GET_TABLEDESCR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Description Object for the Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>GET_TABLEDESCR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Description Object for the Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>GET_TABLEREF</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert eine Referenz auf die verwaltete Tabelle</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>GET_TABLEREF</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns a Reference to the Managed Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>GET_TABLEREF</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns a Reference to the Managed Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>GR_LINEDESCR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Beschreibungsobjekt zum Zeilentyp von gr_table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>GR_LINEDESCR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Description Object for Row Type of gr_table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>GR_LINEDESCR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Description Object for Row Type of gr_table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>GR_TABLE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Referenz auf die interne Tabelle</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>GR_TABLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Reference to the Internal Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>GR_TABLE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Reference to the Internal Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>GR_TABLEDESCR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Beischreibungsobjekt zu gr_table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>GR_TABLEDESCR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Description Object for gr_table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>GR_TABLEDESCR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Description Object for gr_table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>G_ALLOW_NULL_ENTRIES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>FALSE: Nur befüllte Einträge erlaubt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>G_ALLOW_NULL_ENTRIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>FALSE: Only Filled Entries Allowed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>G_ALLOW_NULL_ENTRIES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>FALSE: Only Filled Entries Allowed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>INITIALIZE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Initialisiert das Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>INITIALIZE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Initializes the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>INITIALIZE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Initializes the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>INSERT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Fügt einen Wert hinzu</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>INSERT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Adds a Value</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>INSERT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Adds a Value</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>INSERT_ITAB</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Fügt die Einträge einer internen Tabelle hinzu</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>INSERT_ITAB</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Adds the Entries of an Internal Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>INSERT_ITAB</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Adds the Entries of an Internal Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>IS_VALUE_VALID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert ob ein Wert gültig ist</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>IS_VALUE_VALID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Whether a Value Is Valid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>IS_VALUE_VALID</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Whether a Value Is Valid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>OCCURRENCES_OF</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert wie oft ein Wert enthalten ist</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>OCCURRENCES_OF</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns How Often a Value Is Contained</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>OCCURRENCES_OF</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns How Often a Value Is Contained</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>REMOVE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Entfernt Einträge eines Wertes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>REMOVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Removes Entries of a Value</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>REMOVE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Removes Entries of a Value</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>REPLACE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ersetzt einen Eintrag (erstes Vorkommnis)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>REPLACE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Replaces an Entry (First Occurrence)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>REPLACE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Replaces an Entry (First Occurrence)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>_ENTRIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Number of Contained Entries</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>_ENTRIES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Number of Contained Entries</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>_INSERT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Fügt einen Wert hinzu</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>_INSERT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Adds a Value</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_ITAB</CLSNAME>
+     <CMPNAME>_INSERT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Adds a Value</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

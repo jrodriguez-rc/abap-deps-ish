@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Class for BAdI: ISHMED_TC_BUILD_MATRIX</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>No measurable performance improvement. Is hierarchy buffer in use?</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>900</KEY>
+     <ENTRY>No text context exists for system</ENTRY>
+     <LENGTH>80</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>901</KEY>
+     <ENTRY>Matrices of institutions are not different</ENTRY>
+     <LENGTH>80</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>902</KEY>
+     <ENTRY>Matrices are not identical</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+   </TPOOL>
+   <I18N_TPOOL>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>900</KEY>
+       <ENTRY>Kein Test-Kontext für das System vorhanden</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>901</KEY>
+       <ENTRY>Die Matrizen der Einrichtungen unterscheiden sich nicht</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Keine Performanceverbesserung messbar. Wird Hierarchie-Puffer benutzt?</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>902</KEY>
+       <ENTRY>Die Matrizen sind nicht gleich</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>S</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>No se puede medir la mejora de rendimiento. ¿Se está utilizando la memoria intermedia de la jerarquía?</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>900</KEY>
+       <ENTRY>No existe ningún contexto de test para el sistema</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>901</KEY>
+       <ENTRY>Las matrices de centros sanitarios no se solapan</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>902</KEY>
+       <ENTRY>Las matrices no son idénticas</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+   </I18N_TPOOL>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>BUILD_MATRIX_FROM_CUSTOMIZING</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Erstellen der Matrix aus den Einstellungen des Systems</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>BUILD_MATRIX_FROM_CUSTOMIZING</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Creation of Matrix from System Settings</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>CLASS_CONSTRUCTOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CLASS_CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>CLASS_CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CLASS_CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>GET_ALL_DEPT_OU</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Alle fachlichen OE</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>GET_ALL_DEPT_OU</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>All Departmental OUs</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>GET_HIERARCHY_FOR_ALL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Gesamte OE Hirachien aufbauen.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>GET_HIERARCHY_FOR_ALL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set Up Entire OU Hierarchies</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>GET_HIERARCHY_FOR_OU</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Hierachie einer OE ermitteln</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>GET_HIERARCHY_FOR_OU</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Hierarchy of OU</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>GET_INTER_OU</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Interdisziplinäre OE</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>GET_INTER_OU</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Interdepartmental OU</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>GET_MATRIX_HIERARCHY_ROUGH</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Auflösen der * Einträge</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>GET_MATRIX_HIERARCHY_ROUGH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Replace * Entries</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>GET_MATRX_FROM_ROUGH</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Aufbau der Matrix aus den Roh Daten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>GET_MATRX_FROM_ROUGH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Structure of Matrix from Raw Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>GET_OUS_FOR_RESPONSIBILITIES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermittung der OE&apos;s für OE-Zuständikeiten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>GET_OUS_FOR_RESPONSIBILITIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determination of OUs for OU Jurisdiction</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>GET_OUS_FOR_RESPONSIBILITY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermittung der OE&apos;s für Zuständikeit wie in Cust einget.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>GET_OUS_FOR_RESPONSIBILITY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine OUs for Jurisdiction as Entered in Customizing</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>GET_OU_RESPONSIBILITY_FOR_ROLE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermittung der OE&apos;s für OE-Zuständikeiten für Rolle</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>GET_OU_RESPONSIBILITY_FOR_ROLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determination of OUs for OU Jurisdiction for Role</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>GET_OU_RESPONSIBILITY_ROLES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermittung der OE&apos;s für OE-Zuständikeiten für Rollen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>GET_OU_RESPONSIBILITY_ROLES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determination of OUs for OU Jurisdiction for Roles</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>GET_ROLES_FOR_USER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liest die Rollen einer User</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>GET_ROLES_FOR_USER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Reads Roles of User</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>GET_TIMES_FOR_HIERARCHY_OU</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermitteln der Zeiten für alle OE in der aufgelösten Matrix</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>GET_TIMES_FOR_HIERARCHY_OU</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Times for all OUs in Solved Matrix</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>GET_TIME_FOR_DEFAULT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermitteln der Zeiten auf System-Ebene</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>GET_TIME_FOR_DEFAULT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Times at System Level</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>GET_TIME_FOR_INSTITUTION</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermitteln der Zeiten auf Einrichtungs-Ebene</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>GET_TIME_FOR_INSTITUTION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Times at Institution Level</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>GET_TIME_FOR_OU</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermitteln der Zeiten auf OE-Ebene</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>GET_TIME_FOR_OU</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Times at OU Level</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>G_ALTERNATIVE_MATRIX</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Alernative Matrix Erstellung</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>G_ALTERNATIVE_MATRIX</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Alernative Matrix Creation</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>G_INACTIVE_DAYS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Inaktive Tage, mit denen OEs weiterhin berücksichtig werden</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>G_INACTIVE_DAYS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Inactive Days with Which OUs Are Still Taken into Account</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>G_STD_DAYS_APPL</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Beantragungszeit des Behandlungsauftrages</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>G_STD_DAYS_APPL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Application Time of Treatment Contract</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>G_STD_DAYS_EXT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Nachlaufzeit des Behandlungsauftrages</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>G_STD_DAYS_EXT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Follow-Up Time of Treatment Contract</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>LOAD_MATRIX</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Laden der MAtrix aus dem Buffer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>LOAD_MATRIX</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Load Matrix from Buffer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>LOAD_MATRIX_HIERARCHY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Laden der Matrix</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>LOAD_MATRIX_HIERARCHY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Loading matrix ...</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>SAVE_MATRIX</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Speicher der Matrix im Buffer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>SAVE_MATRIX</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Save Matrix in Buffer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>SAVE_MATRIX_HIERARCHY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Speichern der Matrix</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>SAVE_MATRIX_HIERARCHY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Saving matrix ...</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>_GET_NORG</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Laden der Orgeinheit</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_FB_ISHMED_TC_BUILD_MATRIX</CLSNAME>
+     <CMPNAME>_GET_NORG</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Loading OU ...</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

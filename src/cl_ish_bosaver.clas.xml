@@ -1,0 +1,877 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: Saving Business Objects</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_BOSAVER is used to save or check</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE> &lt;DS:IF.IF_ISH_BUSINESS_OBJECT&gt;business objects&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>UT</TDFORMAT>
+     <TDLINE>Methods:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>CB_*</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>These methods are called from the business objects at different times.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>They ensure that many business object methods can only be called by the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>save object (callback mechanism).</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>CHECK_HAS_BO</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>This method raises an exception of the type</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CL.CX_ISH_STATIC_HANDLER&gt;CX_ISH_STATIC_HANDLER&lt;/&gt; if a particular</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>business object is missing from the list of the business objects to be</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>processed.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>EXECUTE_CHECK</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Checks business objects.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>EXECUTE_SAVE</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Saves business objects.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_SAVE_STATUS</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the status of the save.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>The possible values are defined by the constants CO_SAVESTAT_* in the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>interface &lt;DS:IF.IF_ISH_BUSINESS_OBJECT&gt;IF_ISH_BUSINESS_OBJECT&lt;/&gt; and</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>correspond to the fixed values of the domain N1BOSAVESTATUS.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_T_BO</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the business objects to be processed.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>HAS_BO</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns whether a particular business object is present in the list of</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>business objects to be processed.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>For detailed information about business classes, see the documentation</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>for the interface &lt;DS:IF.IF_ISH_BUSINESS_OBJECT&gt;IF_ISH_BUSINESS_OBJECT</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>&lt;/&gt;.</TDLINE>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_BOSAVER dient zum Sichern oder Prüfen von</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_BUSINESS_OBJECT&gt;Geschäftsobjekten&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>Methoden:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>CB_*</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Diese Methoden werden von den Geschäftsobjekten zu verschiedenen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Zeitpunkten gerufen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Sie gewährleisten, dass manche Geschäftsobjekt-Methoden nur durch das</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Sicherungsobjekt aufgerufen werden können (Callback-Mechanismus).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>CHECK_HAS_BO</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Diese Methode löst eine Ausnahme vom Typ</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CX_ISH_STATIC_HANDLER&gt;CX_ISH_STATIC_HANDLER&lt;/&gt; aus, wenn ein</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>bestimmtes Geschäftsobjekt nicht in der Liste der zu verarbeitenden</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Geschäftsobjekte enthalten ist.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>EXECUTE_CHECK</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Prüft Geschäftsobjekte.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>EXECUTE_SAVE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Sichert Geschäftsobjekte.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_SAVE_STATUS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert den Status der Sicherung.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Die möglichen Werte sind durch Konstanten CO_SAVESTAT_* im Interface</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_BUSINESS_OBJECT&gt;IF_ISH_BUSINESS_OBJECT&lt;/&gt; definiert und</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>entsprechen den Festwerten der Domäne N1BOSAVESTATUS.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_T_BO</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert die zu verarbeitenden Geschäftsobjekte.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>HAS_BO</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert, ob ein bestimmtes Geschäftsobjekt in der Liste der zu</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>verarbeitenden Geschäftsobjekte enthalten ist.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Detailliertere Informationen zu Geschäftsobjekten entnehmen Sie der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Dokumentation von Interface</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_BUSINESS_OBJECT&gt;IF_ISH_BUSINESS_OBJECT&lt;/&gt;.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>CB_AFTER_COMMIT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Callback: Verarbeitung nach COMMIT WORK</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>CB_AFTER_COMMIT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Callback: Process After COMMIT WORK</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>CB_AFTER_COMMIT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Callback: Process After COMMIT WORK</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>CB_AFTER_ROLLBACK</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Callback: Verarbeitung nach ROLLBACK WORK</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>CB_AFTER_ROLLBACK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Callback: Process After ROLLBACK WORK</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>CB_AFTER_ROLLBACK</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Callback: Process After ROLLBACK WORK</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>CB_BEFORE_SAVE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Callback: Verarbeitung vor Sichern</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>CB_BEFORE_SAVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Callback: Process Before Saving</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>CB_BEFORE_SAVE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Callback: Process Before Saving</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>CB_CHECK</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Callback: Geschäftsobjekt prüfen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>CB_CHECK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Callback: Check Business Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>CB_CHECK</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Callback: Check Business Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>CB_CLEAR_SAVER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Callback: Sicherungsobjekt aus Geschäftsobjekt austragen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>CB_CLEAR_SAVER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Callback: Remove Object for Saving from Business Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>CB_CLEAR_SAVER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Callback: Remove Object for Saving from Business Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>CB_COLLECT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Callback: Geschäftsobjekte sammeln</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>CB_COLLECT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Callback: Collect Business Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>CB_COLLECT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Callback: Collect Business Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>CB_SAVE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Callback: Geschäftsobjekt sichern</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>CB_SAVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Callback: Save Business Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>CB_SAVE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Callback: Save Business Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>CB_SET_SAVER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Callback: Sicherungsobjekt in Geschäftsobjekt eintragen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>CB_SET_SAVER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Callback: Enter Object for Saving in Business Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>CB_SET_SAVER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Callback: Enter Object for Saving in Business Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>CHECK_HAS_BO</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Prüft ob ein Geschäftsobjekt enthalten ist</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>CHECK_HAS_BO</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check for Business Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>CHECK_HAS_BO</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Check for Business Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>EXECUTE_CHECK</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Geschäftsobjekte prüfen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>EXECUTE_CHECK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check Business Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>EXECUTE_CHECK</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Check Business Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>EXECUTE_SAVE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Geschäftsobjekte sichern</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>EXECUTE_SAVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Save Business Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>EXECUTE_SAVE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Save Business Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>GET_SAVE_STATUS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den Sicherungsstatus</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>GET_SAVE_STATUS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Save Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>GET_SAVE_STATUS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Save Status</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>GET_T_BO</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die enthaltenen Geschäftsobjekte</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>GET_T_BO</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Business Objects Contained</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>GET_T_BO</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Business Objects Contained</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>GR_CB_BO</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Geschäftsobjekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>GR_CB_BO</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Business Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>GR_CB_BO</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Business Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>GR_CB_BO_CLEAR_SAVER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Geschäftsobjekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>GR_CB_BO_CLEAR_SAVER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Business Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>GR_CB_BO_CLEAR_SAVER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Business Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>GR_CB_BO_SET_SAVER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Geschäftsobjekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>GR_CB_BO_SET_SAVER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Business Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>GR_CB_BO_SET_SAVER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Business Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>GT_BO</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Hash-Tabelle Geschäftsobjekte</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>GT_BO</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Hash Table Business Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>GT_BO</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Hash Table Business Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>G_SAVE_STATUS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Sicherungsstatus eines Geschäftsobjekts</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>G_SAVE_STATUS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Save Status of Business Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>G_SAVE_STATUS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Save Status of Business Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>HAS_BO</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert ob ein Geschäftsobjekt enthalten ist</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>HAS_BO</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Whether Business Object Is Contained</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>HAS_BO</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Whether Business Object Is Contained</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>ON_TRANSACTION_FINISHED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verarbeitung nach COMMIT/ROLLBACK WORK</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>ON_TRANSACTION_FINISHED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Processing After COMMIT/ROLLBACK WORK</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>ON_TRANSACTION_FINISHED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Processing After COMMIT/ROLLBACK WORK</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>_ADD_BO</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Fügt ein Geschäftsobjekt hinzu</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>_ADD_BO</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Adds a Business Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>_ADD_BO</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Adds a Business Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>_AFTER_COMMIT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verarbeitung nach COMMIT</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>_AFTER_COMMIT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Processing After COMMIT</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>_AFTER_COMMIT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Processing After COMMIT</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>_AFTER_ROLLBACK</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Verarbeitung nach ROLLBACK</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>_AFTER_ROLLBACK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Processing After ROLLBACK</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>_AFTER_ROLLBACK</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Processing After ROLLBACK</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>_BEFORE_SAVE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Vor Sichern der Geschäftsobjekte</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>_BEFORE_SAVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Before Saving Business Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>_BEFORE_SAVE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Before Saving Business Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>_CHECK</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Geschäftsobjekte prüfen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>_CHECK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check Business Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>_CHECK</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Check Business Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>_CLEAR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Leert das Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>_CLEAR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Empties Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>_CLEAR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Empties Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>_COLLECT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Sammelt die Geschäftsobjekte</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>_COLLECT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Collects Business Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>_COLLECT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Collects Business Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>_COLLECT_BO</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Sammelt die Geschäftsobjekte zu einem Geschäftsobjekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>_COLLECT_BO</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Collects Business Objects for a Business Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>_COLLECT_BO</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Collects Business Objects for a Business Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>_EXECUTE_CHECK</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Geschäftsobjekte prüfen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>_EXECUTE_CHECK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check Business Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>_EXECUTE_CHECK</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Check Business Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>_EXECUTE_SAVE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Geschäftsobjekte sichern</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>_EXECUTE_SAVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Save Business Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>_EXECUTE_SAVE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Save Business Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>_NEW_INSTANCE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Instanziert das Objekt für ein Geschäftsobjekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>_NEW_INSTANCE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Instantiates Object for a Business Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>_NEW_INSTANCE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Instantiates Object for a Business Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>_SAVE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Geschäftsobjekte sichern</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>_SAVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Save Business Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_BOSAVER</CLSNAME>
+     <CMPNAME>_SAVE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Save Business Objects</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DSYS" serializer_version="v2.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>HY</ID>
+      <OBJECT>SIMGISH_TC_CLEARBUFFER</OBJECT>
+      <LANGU>D</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0012</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00016</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DSYS</TDOBJECT>
+      <TDNAME>SIMGISH_TC_CLEARBUFFER</TDNAME>
+      <TDID>HY</TDID>
+      <TDSPRAS>D</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00012</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>In dieser Customizing-Aktivität leeren Sie den Puffer positiver</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Prüfergebnisse des Behandlungsauftrages manuell. Ab dem Zeitpunkt der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Pufferleerung wird das System  bei einem erneuten Zugriff durch die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>betroffenen Benutzer die Behandlungsauftragsprüfung erneut durchführen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>und ein positives Ergebnis in der Puffertabelle hinterlegen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;PRECONDITIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;STANDARD_SETUP&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;ACTIVITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Wenn Sie die Funktion bei gesetztem Kennzeichen &lt;LS&gt;Für alle Benutzer&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ausführen, werden die positiven Ergebnisse aus den</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Behandlungsauftragsprüfungen für alle Benutzer entfernt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Wenn Sie das Kennzeichen &lt;LS&gt;Für alle Benutzer&lt;/&gt; entfernen, erhalten</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Sie die Möglichkeit, gezielt für einen einzelnen oder für mehrere</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Benutzer den Behandlungsauftragspuffer zu leeren.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>HY</ID>
+      <OBJECT>SIMGISH_TC_CLEARBUFFER</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0012</VERSION>
+      <TXTLINES>00010</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DSYS</TDOBJECT>
+      <TDNAME>SIMGISH_TC_CLEARBUFFER</TDNAME>
+      <TDID>HY</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00012</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>In this Customizing activity, you manually empty the buffer containing</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>the positive results of the treatment authorization check. When the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>users in question attempt to access the data after the buffer has been</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>emptied, the system repeats the treatment authorization check and stores</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>a positive result in the buffer table.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;PRECONDITIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;STANDARD_SETUP&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;ACTIVITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>If you select the &lt;LS&gt;For All Users&lt;/&gt; indicator when you execute the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>function, the system removes the positive results from the treatment</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>authorization checks for all users.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>If you deselect the &lt;LS&gt;For All Users&lt;/&gt; indicator, you can empty the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>treatment authorization buffer for selected users.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>HY</ID>
+      <OBJECT>SIMGISH_TC_CLEARBUFFER</OBJECT>
+      <LANGU>S</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0012</VERSION>
+      <TXTLINES>00013</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DSYS</TDOBJECT>
+      <TDNAME>SIMGISH_TC_CLEARBUFFER</TDNAME>
+      <TDID>HY</TDID>
+      <TDSPRAS>S</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00012</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>En esta actividad de Customizing vacíe la memoria intermedia de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>resultados de verificación positivos de la autorización de tratamiento</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>manual. Una vez vaciada la memoria intermedia, al acceder de nuevo el</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>sistema repite la verificación de la autorización de tratamiento y</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>vuelve a grabar un resultado positivo en la tabla de la memoria</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>intermedia.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;PRECONDITIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;STANDARD_SETUP&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;ACTIVITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Si ejecuta la función con el indicador marcado &lt;LS&gt;Para todos los</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>usuarios&lt;/&gt;, los resultados positivos se eliminarán de las</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>verificaciones de la autorización de tratamiento para todos los</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>usuarios.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Si elimina el indicador &lt;LS&gt;Para todos los usuarios&lt;/&gt;, dispone de la</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>posibilidad de vaciar la memoria intermedia de la autorización de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>tratamiento.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

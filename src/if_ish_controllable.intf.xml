@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_INTF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOINTERF>
+    <CLSNAME>IF_ISH_CONTROLLABLE</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: Controllable Object</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <UNICODE>X</UNICODE>
+   </VSEOINTERF>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;MEANING&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>A controllable object includes the following methods:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>REGISTER_OWNER: Registration of an owner object</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>DEREGISTER_OWNER: Deregistration of an owner object</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_OWNER: Returns the owners for a specific action</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>HAS_OWNER: Returns the information as to whether an owner is registered</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>for a specific action</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>A controllable object can have 0-n owners for different actions.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The owners are stored in a global table.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>At certain points in time or when executing certain actions (for</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>example, when saving), the system asks the owner if the action is a</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>llowed/required.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>An owner must implement interface IF_ISH_CONTROLLABLE_OWNER.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;USE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The interface for the owner is &lt;DS:IF.IF_ISH_CONTROLLABLE_OWNER&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>IF_ISH_CONTROLLABLE_OWNER&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;MEANING&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Ein kontrollierbares Objekt umfasst die folgenden Methoden:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>REGISTER_OWNER: Registrierung eines Eigentümer Objekts</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>DEREGISTER_OWNER: Deregistrierung eines Eigentümer Objekts</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_OWNER: Returniert die Eigentümer für eine bestimmte Aktion</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>HAS_OWNER: Returniert, ob ein Eigentümer für eine bestimmet Aktion</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>registriert ist</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Ein kontrollierbares Objekt kann 0-n Eigentümer für verschiedene</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Aktionen haben.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Eigentümer sind in einer globalen Tabelle hinterlegt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Zu bestimmten Zeitpunkten/Aktionen (z.B. beim Speichern) wird der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Eigentümer gefragt, ob die Aktion durchgeführt werden darf/muss.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Ein Eigentümer muss das Interface IF_ISH_CONTROLLABLE_OWNER</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>implementieren.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das Interface des Eigentümers lautet</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_CONTROLLABLE_OWNER&gt;IF_ISH_CONTROLLABLE_OWNER&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CONTROLLABLE</CLSNAME>
+     <CMPNAME>DEREGISTER_OWNER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Deregistriert einen Eigentümer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CONTROLLABLE</CLSNAME>
+     <CMPNAME>DEREGISTER_OWNER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Deregisters an Owner</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CONTROLLABLE</CLSNAME>
+     <CMPNAME>DEREGISTER_OWNER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Deregisters an Owner</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CONTROLLABLE</CLSNAME>
+     <CMPNAME>EV_OWNER_DEREGISTERED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Eigentümer wurde für eine Aktion deregistriert</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CONTROLLABLE</CLSNAME>
+     <CMPNAME>EV_OWNER_DEREGISTERED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Owner was deregistered for an action</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CONTROLLABLE</CLSNAME>
+     <CMPNAME>EV_OWNER_DEREGISTERED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Owner was deregistered for an action</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CONTROLLABLE</CLSNAME>
+     <CMPNAME>EV_OWNER_REGISTERED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Eigentümer wurde für eine Aktion registriert</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CONTROLLABLE</CLSNAME>
+     <CMPNAME>EV_OWNER_REGISTERED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Owner was registered for an action</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CONTROLLABLE</CLSNAME>
+     <CMPNAME>EV_OWNER_REGISTERED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Owner was registered for an action</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CONTROLLABLE</CLSNAME>
+     <CMPNAME>GET_OWNERS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die Eigentümer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CONTROLLABLE</CLSNAME>
+     <CMPNAME>GET_OWNERS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Owners</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CONTROLLABLE</CLSNAME>
+     <CMPNAME>GET_OWNERS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Owners</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CONTROLLABLE</CLSNAME>
+     <CMPNAME>HAS_OWNER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert ob ein Eigentümer registriert ist</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CONTROLLABLE</CLSNAME>
+     <CMPNAME>HAS_OWNER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Whether Owner Is Registered</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CONTROLLABLE</CLSNAME>
+     <CMPNAME>HAS_OWNER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Whether Owner Is Registered</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CONTROLLABLE</CLSNAME>
+     <CMPNAME>REGISTER_OWNER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Registriert einen Eigentümer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CONTROLLABLE</CLSNAME>
+     <CMPNAME>REGISTER_OWNER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Registers an Owner</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_CONTROLLABLE</CLSNAME>
+     <CMPNAME>REGISTER_OWNER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Registers an Owner</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

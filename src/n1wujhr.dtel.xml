@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>N1WUJHR</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>N1C004</DOMNAME>
+    <HEADLEN>04</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>14</SCRLEN2>
+    <SCRLEN3>20</SCRLEN3>
+    <DDTEXT>Desired Time (Year)</DDTEXT>
+    <REPTEXT>DeYr</REPTEXT>
+    <SCRTEXT_S>Dsrd Year</SCRTEXT_S>
+    <SCRTEXT_M>Desired Year</SCRTEXT_M>
+    <SCRTEXT_L>Desired Year</SCRTEXT_L>
+    <DTELMASTER>D</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>D</LANGU>
+    <LANGU>S</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>Wunschzeitpunkt (Jahr)</DDTEXT>
+     <REPTEXT>WuJr</REPTEXT>
+     <SCRTEXT_S>Wunschjahr</SCRTEXT_S>
+     <SCRTEXT_M>Wunsch-Jahr</SCRTEXT_M>
+     <SCRTEXT_L>Gewünschtes Jahr</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>Momento preferente (año)</DDTEXT>
+     <REPTEXT>AñPr</REPTEXT>
+     <SCRTEXT_S>Año pref.</SCRTEXT_S>
+     <SCRTEXT_M>Año preferente</SCRTEXT_M>
+     <SCRTEXT_L>Año preferente</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>DE</ID>
+      <OBJECT>N1WUJHR</OBJECT>
+      <LANGU>D</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0004</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00007</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>N1WUJHR</TDNAME>
+      <TDID>DE</TDID>
+      <TDSPRAS>D</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00004</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEFINITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das Feld &quot;Gewünschtes Jahr&quot; enthält die Jahreszahl, wann eine</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Behandlung stattfinden soll.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Verwendung bei Vormerkungen: Zusammen mit einem Monat und einer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&quot;Circa-Angabe&quot; (Zeitpunktinterpretation) kann ein Zeitbereich angegeben</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>werden, innerhalb dessen ein Behandlungs- oder OP-Termin gewünscht</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>wird.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Beispiel: Anfang Oktober 1998.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>DE</ID>
+      <OBJECT>N1WUJHR</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0004</VERSION>
+      <TXTLINES>00006</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>N1WUJHR</TDNAME>
+      <TDID>DE</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00004</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEFINITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The field &quot;Desired year&quot; contains the year number, when a treament is</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>to take place.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Use with pre-registrations: Together with a month and an &quot;Approx.&quot;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>specification (time interpretation) a time interval can be indicated,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>within which a treatment date or surgery date is required.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Example: Start October 1998.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>DE</ID>
+      <OBJECT>N1WUJHR</OBJECT>
+      <LANGU>S</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0004</VERSION>
+      <TXTLINES>00006</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>N1WUJHR</TDNAME>
+      <TDID>DE</TDID>
+      <TDSPRAS>S</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00004</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEFINITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>El campo &quot;Año deseado&quot; contiene el año en el cual debe realizarse un</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>tratamiento.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Utilización para preadmisiones: Junto con el mes y una &quot;entrada aprox.&quot;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(interpretación de tiempo), se puede indicar un período temporal dentro</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>del cual se desea una citación para un tratamiento o para una IQ.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Ejemplo: Inicio octubre 1998.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

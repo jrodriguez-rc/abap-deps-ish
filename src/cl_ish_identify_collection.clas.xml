@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_IDENTIFY_COLLECTION</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: Collection mit if_ish_identify_object Objects</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_IDENTIFY_COLLECTION</CLSNAME>
+     <CMPNAME>GT_OBJECT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Tabelle mit IF_ISH_IDENTIFY_OBJECT Referenzen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_IDENTIFY_COLLECTION</CLSNAME>
+     <CMPNAME>GT_OBJECT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Table with IF_ISH_IDENTIFY_OBJECT References</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_IDENTIFY_COLLECTION</CLSNAME>
+     <CMPNAME>GT_OBJECT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Table with IF_ISH_IDENTIFY_OBJECT References</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

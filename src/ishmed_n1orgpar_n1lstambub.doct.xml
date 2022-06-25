@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DOCT" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DOC>
+    <item>
+     <DOKIL>
+      <ID>TX</ID>
+      <OBJECT>ISHMED_N1ORGPAR_N1LSTAMBUB</OBJECT>
+      <LANGU>D</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0014</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00028</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ISHMED_N1ORGPAR_N1LSTAMBUB</TDNAME>
+      <TDID>TX</TDID>
+      <TDSPRAS>D</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00014</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>DEFINITION</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Der Parameter N1LSTAMBUB kann dazu verwendet werden um im Sichttyp</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Ambulanz / Leistungsstelle zu steuern, ob Leistungen im Status</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>unbestätigt im Sichttyp angezeigt werden sollen oder nicht.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Zur Erklärung: Aus der Historie von ishmed war es immer eine Bedingung,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>dass nur bestätigte Leistungen auch tatsächlich auf der Leistungsstelle</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>angezeigt werden und für Folgeaktionen zur Verfügung stehen. Unter</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Folgeaktionen wird verstanden dass Leistungen geplant werden, erbracht</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>und dokumentiert werden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Aufgrund von Änderung in Konzepten des Klinischen Auftrags und auch</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>aufgrund von Problemen war es über eine sehr lange Zeitperiode möglich,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>dass auch unbestätigte Leistungen auf der Sicht des Erbringers</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(Leistungsstelle/Ambulanz) sichtbar waren.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE> In vielen Kundenprojekten wurde daraufhin der Workflow zwischen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Erbringer und Anforderer so eingerichtet, dass unbestätigte Leistungen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>auch immer angezeigt werden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Um diesen Bestandskunden weiter diese Möglichkeit zu eröffnen, kann der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Parameter gesetzt werden. I.s.h.med empfiehlt den Weg, immer nur</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>bestätigte Leistungen auf der Sicht anzeigen zu lassen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>Verwendung</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>N1LSTAMBUB = &quot;&quot; (Default): Auf dem Sichttyp Leistungsstelle / Ambulanz</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>werden nur Leistungen angezeigt, die entweder bestätigt sind, oder</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Status darüber gesetzt haben (geplant, erbracht, freigegeben).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>N1LSTAMBUB = &quot;X&quot;: Es werden auch Leistungen angezeigt, die den Status</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&quot;Unbestätigt&quot; haben. Dieser Wert wird nur für Kunden empfohlen, die mit</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>dieser Vorgehensweise auch tatsächlich vertraut sind.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Bitte beachten Sie, dass der Parameter nur einrichtungsweit</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>interpretiert wird (* Eintrag ist zwingend erforderlich)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>TX</ID>
+      <OBJECT>ISHMED_N1ORGPAR_N1LSTAMBUB</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0014</VERSION>
+      <TXTLINES>00027</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ISHMED_N1ORGPAR_N1LSTAMBUB</TDNAME>
+      <TDID>TX</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00014</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>DEFINITION</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>You can use parameter N1LSTAMBUB to control whether services with the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>status Unconfirmed are to be displayed in the Outpatient Clinic/Service</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Facility view type.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Explanation:  Explanation: Due to the history of i.s.h.med, it was</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>always a requirement that only confirmed services were actually d</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>isplayed in the service facility and were available for subsequent</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>actions. By subsequent action we mean that services are planned,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>performed and documented.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Due to the modified concept of the clinical order and also to a number</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>of issues, unconfirmed services too were visible on the performer&apos;s view</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(Outpatient Clinic/Service Facility) over an extensive period of time.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE> As a result, in many customer projects the workflow between performer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>and requester was configured so that unconfirmed services were always</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>also displayed.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>To enable our established customers to continue to use this option, this</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>parameter can be set. i.s.h.med recommends that only confirmed services</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>should be visible in the view.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>Use</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>N1LSTAMBUB = &quot;&quot; (default): The system only displays services that are</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>confirmed or that have a set status (planned, performed, released) in</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>the Outpatient Clinic/Service Facility view type.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>N1LSTAMBUB = &quot;X&quot;: The system also displays services that have the status</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&quot;Unconfirmed&quot;. This value is only recommended for customers who are</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>actually familiar with this approach.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Note that the parameter is only interpreted across the institution (*</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>entry is obligatory).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>TX</ID>
+      <OBJECT>ISHMED_N1ORGPAR_N1LSTAMBUB</OBJECT>
+      <LANGU>S</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0014</VERSION>
+      <TXTLINES>00030</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ISHMED_N1ORGPAR_N1LSTAMBUB</TDNAME>
+      <TDID>TX</TDID>
+      <TDSPRAS>S</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00014</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>DEFINICIÓN</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>El parámetro N1LSTAMBUB se puede utilizar para controlar en el tipo de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>vista Consultas Externas / Servicio de prestaciones si se deben</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>visualizar o no las prestaciones con status no confirmadas en el tipo de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>vista.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Como explicación: a lo largo de la historia de ISHMED siempre ha sido</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>una condición que solamente se muestren las prestaciones confirmadas</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>realmente en el servicio de prestaciones y que estuviesen disponibles</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>para las acciones  Como acción siguiente se entiende que las</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>prestaciones se planifican, se realizan y se documentan.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Debido a la modificación en conceptos de orden clínica y debido a</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>problemas fue posible durante un largo período de tiempo que también las</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>prestaciones no confirmadas estuvieran visibles en la vista del</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>prestatario (servicio de prestaciones/consultas externas).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE> Como consecuencia, en muchos proyectos de cliente se ha instalado un</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>workflow entre el prestatario y el solicitante de modo que siempre se</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>muestren las prestaciones no confirmadas.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Para continuar ofreciendo esta posibilidad a los clientes existentes,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>puede fijar el parámetro. I.s.h.med recomienda la opción de mostrar</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>siempre las prestaciones confirmadas en la vista.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>Utilización</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>N1LSTAMBUB = &quot;&quot; (Default): En el tipo de vista Servicio de prestaciones</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>/ Consultas externas solo se muestran las prestaciones que están</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>confirmadas o que tienen fijado un status (planificada, realizada,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>liberada).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>N1LSTAMBUB = &quot;X&quot;: También se mostrarán las prestaciones que tengan el</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>status &quot;No confirmadas&quot;. Este valor solo se recomienda para los clientes</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>que están realmente familiarizados con este procedimiento.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Tenga en cuenta que el parámetro solamente se interpreta en todos los</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>centros sanitarios (* entrada obligatoria)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </DOC>
+  </asx:values>
+ </asx:abap>
+</abapGit>

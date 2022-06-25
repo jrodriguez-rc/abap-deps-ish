@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_CONNECTIVITY</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: Connectivity (Data Export)</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>This class accommodates data exchange with other systems.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>You can export data(for example, clinical orders, appointments) into</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>other systems.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Diese Klasse dient zum Datenaustausch mit anderen Systemen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Sie können Daten (wie beispielsweise Klinische Aufträge, Termine)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>in andere Systeme exportieren.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CONNECTIVITY</CLSNAME>
+     <CMPNAME>CHECK</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Prüfen der Daten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CONNECTIVITY</CLSNAME>
+     <CMPNAME>CHECK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CONNECTIVITY</CLSNAME>
+     <CMPNAME>CHECK</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Check Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CONNECTIVITY</CLSNAME>
+     <CMPNAME>COMPLETE_CONSTRUCTION</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Finalisiert die Instanzierung</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CONNECTIVITY</CLSNAME>
+     <CMPNAME>COMPLETE_CONSTRUCTION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Finalizes the Instantiation</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CONNECTIVITY</CLSNAME>
+     <CMPNAME>COMPLETE_CONSTRUCTION</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Finalizes the Instantiation</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CONNECTIVITY</CLSNAME>
+     <CMPNAME>CO_OTYPE_CONNECTIVITY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Connectivity (Datenaustausch)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CONNECTIVITY</CLSNAME>
+     <CMPNAME>CO_OTYPE_CONNECTIVITY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Data Exchange</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CONNECTIVITY</CLSNAME>
+     <CMPNAME>CO_OTYPE_CONNECTIVITY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Data Exchange</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CONNECTIVITY</CLSNAME>
+     <CMPNAME>CREATE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Instanz der Klasse erzeugen (statt Constructor!)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CONNECTIVITY</CLSNAME>
+     <CMPNAME>CREATE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Create Instance of Class (Instead of Constructor!)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CONNECTIVITY</CLSNAME>
+     <CMPNAME>CREATE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Create Instance of Class (Instead of Constructor!)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CONNECTIVITY</CLSNAME>
+     <CMPNAME>EXPORT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Exportieren der Daten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CONNECTIVITY</CLSNAME>
+     <CMPNAME>EXPORT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Export Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CONNECTIVITY</CLSNAME>
+     <CMPNAME>EXPORT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Export Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CONNECTIVITY</CLSNAME>
+     <CMPNAME>GET_DATA_FOR_OBJECT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Daten zum Objekt ermitteln</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CONNECTIVITY</CLSNAME>
+     <CMPNAME>GET_DATA_FOR_OBJECT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Data for the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CONNECTIVITY</CLSNAME>
+     <CMPNAME>GET_DATA_FOR_OBJECT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Data for the Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CONNECTIVITY</CLSNAME>
+     <CMPNAME>G_CALLER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Aufrufendes Programm</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CONNECTIVITY</CLSNAME>
+     <CMPNAME>G_CALLER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Calling Program</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CONNECTIVITY</CLSNAME>
+     <CMPNAME>G_CALLER</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Calling Program</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CONNECTIVITY</CLSNAME>
+     <CMPNAME>G_EINRI</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Einrichtung</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CONNECTIVITY</CLSNAME>
+     <CMPNAME>G_EINRI</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Institution</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_CONNECTIVITY</CLSNAME>
+     <CMPNAME>G_EINRI</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Institution</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>N1TC_EMERGENCY_REQUEST</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>ISH_ON_OFF</DOMNAME>
+    <HEADLEN>35</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>15</SCRLEN2>
+    <SCRLEN3>20</SCRLEN3>
+    <DDTEXT>Emergency Application</DDTEXT>
+    <REPTEXT>Application Due to Emergency</REPTEXT>
+    <SCRTEXT_S>Emergency</SCRTEXT_S>
+    <SCRTEXT_M>Emergency</SCRTEXT_M>
+    <SCRTEXT_L>Emerg. Application</SCRTEXT_L>
+    <DTELMASTER>D</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>D</LANGU>
+    <LANGU>S</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>Notfallbeantragung</DDTEXT>
+     <REPTEXT>BEantragung aufgrund eines Notfalls</REPTEXT>
+     <SCRTEXT_S>Notfall</SCRTEXT_S>
+     <SCRTEXT_M>Notfall</SCRTEXT_M>
+     <SCRTEXT_L>Notfallbeantragung</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>Solicitud de episodio de emergencia</DDTEXT>
+     <REPTEXT>Sol.debido a episodio emergencia</REPTEXT>
+     <SCRTEXT_S>EpisEmerg</SCRTEXT_S>
+     <SCRTEXT_M>Epis.emergencia</SCRTEXT_M>
+     <SCRTEXT_L>Sol.episodio emerg.</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

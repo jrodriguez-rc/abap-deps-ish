@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_GUI_COMMAND_REQUEST</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: GUI - Command Query</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_GUI_COMMAND_REQUEST displays the request object for a</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>function code in a &lt;DS:IF.IF_ISH_GUI_APPLICATION&gt;dialog application&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>UT</TDFORMAT>
+     <TDLINE>Methods:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_FCODE</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the function code.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_OKCODE_REQUEST</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the OKCODE request object from which the object originated.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Can be initial.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_GUI_COMMAND_REQUEST inherits from the class</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CL.CL_ISH_GUI_REQUEST&gt;CL_ISH_GUI_REQUEST&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_GUI_COMMAND_REQUEST stellt das Anfrageobjekt zu einem</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Funktionscode in einer &lt;DS:IF.IF_ISH_GUI_APPLICATION&gt;Dialoganwendung&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>dar.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>Methoden:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_FCODE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert den Funktionscode.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_OKCODE_REQUEST</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert das OKCODE-Anfrageobjekt, aus dem das Objekt entstanden ist.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Kann initial sein.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_GUI_COMMAND_REQUEST erbt von der Klasse</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_GUI_REQUEST&gt;CL_ISH_GUI_REQUEST&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_COMMAND_REQUEST</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_COMMAND_REQUEST</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_COMMAND_REQUEST</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_COMMAND_REQUEST</CLSNAME>
+     <CMPNAME>CREATE_BY_FCODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Erzeugt das Objekt aus einem Funktionscode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_COMMAND_REQUEST</CLSNAME>
+     <CMPNAME>CREATE_BY_FCODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Creates Object from a Function Code</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_COMMAND_REQUEST</CLSNAME>
+     <CMPNAME>CREATE_BY_FCODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Creates Object from a Function Code</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_COMMAND_REQUEST</CLSNAME>
+     <CMPNAME>CREATE_BY_OKCODE_REQUEST</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Erzeugt das Objekt aus einer OKCODE Anfrage</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_COMMAND_REQUEST</CLSNAME>
+     <CMPNAME>CREATE_BY_OKCODE_REQUEST</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Creates the Object from an OKCODE Request</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_COMMAND_REQUEST</CLSNAME>
+     <CMPNAME>CREATE_BY_OKCODE_REQUEST</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Creates the Object from an OKCODE Request</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_COMMAND_REQUEST</CLSNAME>
+     <CMPNAME>GET_FCODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den Funktionscode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_COMMAND_REQUEST</CLSNAME>
+     <CMPNAME>GET_FCODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Function Code</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_COMMAND_REQUEST</CLSNAME>
+     <CMPNAME>GET_FCODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Function Code</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_COMMAND_REQUEST</CLSNAME>
+     <CMPNAME>GET_OKCODE_REQUEST</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die OKCODE Anfrage</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_COMMAND_REQUEST</CLSNAME>
+     <CMPNAME>GET_OKCODE_REQUEST</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the OKCODE Request</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_COMMAND_REQUEST</CLSNAME>
+     <CMPNAME>GET_OKCODE_REQUEST</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the OKCODE Request</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_COMMAND_REQUEST</CLSNAME>
+     <CMPNAME>GR_OKCODE_REQUEST</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: GUI - OKCODE Anfrage</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_COMMAND_REQUEST</CLSNAME>
+     <CMPNAME>GR_OKCODE_REQUEST</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: GUI - OKCODE Request</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_COMMAND_REQUEST</CLSNAME>
+     <CMPNAME>GR_OKCODE_REQUEST</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: GUI - OKCODE Request</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_COMMAND_REQUEST</CLSNAME>
+     <CMPNAME>G_FCODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Funktionscode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_COMMAND_REQUEST</CLSNAME>
+     <CMPNAME>G_FCODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Function Code</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_COMMAND_REQUEST</CLSNAME>
+     <CMPNAME>G_FCODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Function Code</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

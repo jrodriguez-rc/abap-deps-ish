@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>N1VPSTARTDATE</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>SYDATS</DOMNAME>
+    <HEADLEN>08</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>14</SCRLEN2>
+    <SCRLEN3>40</SCRLEN3>
+    <DDTEXT>Start Date of a Validity Period</DDTEXT>
+    <REPTEXT>DateFrom</REPTEXT>
+    <SCRTEXT_S>From</SCRTEXT_S>
+    <SCRTEXT_M>Valid From</SCRTEXT_M>
+    <SCRTEXT_L>Valid From</SCRTEXT_L>
+    <DTELMASTER>D</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>D</LANGU>
+    <LANGU>S</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>Beginndatum eines Gültigkeitzeitraums</DDTEXT>
+     <REPTEXT>Dat. von</REPTEXT>
+     <SCRTEXT_S>Von</SCRTEXT_S>
+     <SCRTEXT_M>Gültig von</SCRTEXT_M>
+     <SCRTEXT_L>Gültig von</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>Fecha de inicio de un período de validez</DDTEXT>
+     <REPTEXT>De fecha</REPTEXT>
+     <SCRTEXT_S>De</SCRTEXT_S>
+     <SCRTEXT_M>Válido de</SCRTEXT_M>
+     <SCRTEXT_L>Válido de</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISHMED_LB_PRIO</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Listbox of Priorities (Order/Appointment/Movement/etc.)</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_LB_PRIO</CLSNAME>
+     <CMPNAME>FILL_LISTBOX</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Listbox mit verfügbaren Prioritäten befüllen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_LB_PRIO</CLSNAME>
+     <CMPNAME>FILL_LISTBOX</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Fill Listbox with Available Priorities</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_LB_PRIO</CLSNAME>
+     <CMPNAME>FILL_LISTBOX</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Fill Listbox with Available Priorities</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_LB_PRIO</CLSNAME>
+     <CMPNAME>GT_N1APRI</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Prioritäten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_LB_PRIO</CLSNAME>
+     <CMPNAME>GT_N1APRI</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Priorities</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_LB_PRIO</CLSNAME>
+     <CMPNAME>GT_N1APRI</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Priorities</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_LB_PRIO</CLSNAME>
+     <CMPNAME>G_CORDER_ISNEW_FLAG</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Boolscher Datentyp für ON (= &apos;X&apos;) und OFF (=&apos; &apos;)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_LB_PRIO</CLSNAME>
+     <CMPNAME>G_CORDER_ISNEW_FLAG</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Boolean Data Type for ON (= &quot;X&quot;) and OFF (= &quot; &quot;)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_LB_PRIO</CLSNAME>
+     <CMPNAME>G_CORDER_ISNEW_FLAG</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Boolean Data Type for ON (= &quot;X&quot;) and OFF (= &quot; &quot;)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_LB_PRIO</CLSNAME>
+     <CMPNAME>G_EINRI</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Einrichtung</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_LB_PRIO</CLSNAME>
+     <CMPNAME>G_EINRI</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Institution</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_LB_PRIO</CLSNAME>
+     <CMPNAME>G_EINRI</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Institution</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_LB_PRIO</CLSNAME>
+     <CMPNAME>G_PRIO</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Priorität</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_LB_PRIO</CLSNAME>
+     <CMPNAME>G_PRIO</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Priority</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_LB_PRIO</CLSNAME>
+     <CMPNAME>G_PRIO</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Priority</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_LB_PRIO</CLSNAME>
+     <CMPNAME>G_USE_INT_KEY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Interne Priorität als Key verwenden</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_LB_PRIO</CLSNAME>
+     <CMPNAME>G_USE_INT_KEY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Use Internal Priority as Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISHMED_LB_PRIO</CLSNAME>
+     <CMPNAME>G_USE_INT_KEY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Use Internal Priority as Key</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

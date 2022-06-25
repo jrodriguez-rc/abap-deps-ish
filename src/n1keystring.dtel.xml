@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>N1KEYSTRING</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>N1KEYSTRING</DOMNAME>
+    <HEADLEN>10</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>14</SCRLEN2>
+    <SCRLEN3>25</SCRLEN3>
+    <DDTEXT>Indicator Whether Key With or Without Client</DDTEXT>
+    <REPTEXT>Key String</REPTEXT>
+    <SCRTEXT_S>Key String</SCRTEXT_S>
+    <SCRTEXT_M>Key String</SCRTEXT_M>
+    <SCRTEXT_L>Key String Indicator</SCRTEXT_L>
+    <DTELMASTER>D</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>D</LANGU>
+    <LANGU>S</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>Kennzeichen, ob Schlüssel mit oder ohne Mandant</DDTEXT>
+     <REPTEXT>Keystring</REPTEXT>
+     <SCRTEXT_S>Keystring</SCRTEXT_S>
+     <SCRTEXT_M>Keystring</SCRTEXT_M>
+     <SCRTEXT_L>Kennzeichen Keystring</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>Indica si la clave tiene o no mandante</DDTEXT>
+     <REPTEXT>StringClv</REPTEXT>
+     <SCRTEXT_S>StringClv</SCRTEXT_S>
+     <SCRTEXT_M>String clave</SCRTEXT_M>
+     <SCRTEXT_L>Indicador de string clave</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

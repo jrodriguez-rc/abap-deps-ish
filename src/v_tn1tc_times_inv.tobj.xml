@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TOBJ" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <OBJH>
+    <OBJECTNAME>V_TN1TC_TIMES_IN</OBJECTNAME>
+    <OBJECTTYPE>V</OBJECTTYPE>
+    <CLIDEP>X</CLIDEP>
+    <OBJCATEG>CUST</OBJCATEG>
+    <OBJTRANSP>2</OBJTRANSP>
+    <CURSETTING>X</CURSETTING>
+    <IMPORTABLE>3</IMPORTABLE>
+   </OBJH>
+   <OBJT>
+    <LANGUAGE>E</LANGUAGE>
+    <OBJECTNAME>V_TN1TC_TIMES_IN</OBJECTNAME>
+    <OBJECTTYPE>V</OBJECTTYPE>
+    <DDTEXT>Treatment Auth. Periods for OU Jurisdictions</DDTEXT>
+   </OBJT>
+   <OBJS>
+    <OBJS>
+     <OBJECTNAME>V_TN1TC_TIMES_IN</OBJECTNAME>
+     <OBJECTTYPE>V</OBJECTTYPE>
+     <TABNAME>TN1TC_TIMES_INST</TABNAME>
+     <DDIC>X</DDIC>
+     <PRIM_TABLE>X</PRIM_TABLE>
+    </OBJS>
+   </OBJS>
+   <TOBJ>
+    <TDDAT>
+     <TABNAME>V_TN1TC_TIMES_IN</TABNAME>
+     <CCLASS>NC</CCLASS>
+    </TDDAT>
+    <TVDIR>
+     <TABNAME>V_TN1TC_TIMES_IN</TABNAME>
+     <AREA>0N1TC</AREA>
+     <TYPE>1</TYPE>
+     <LISTE>0500</LISTE>
+    </TVDIR>
+    <TVIMF>
+     <TVIMF>
+      <TABNAME>V_TN1TC_TIMES_IN</TABNAME>
+      <EVENT>01</EVENT>
+      <FORMNAME>Z01_SET_DATA_BEF_SAVE_500</FORMNAME>
+     </TVIMF>
+    </TVIMF>
+   </TOBJ>
+  </asx:values>
+ </asx:abap>
+</abapGit>

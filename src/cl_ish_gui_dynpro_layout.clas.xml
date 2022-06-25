@@ -1,0 +1,574 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: GUI - Layout of a Dynpro</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_GUI_DYNPRO_LAYOUT contains the settings of a</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:IF.IF_ISH_GUI_DYNPRO_VIEW&gt;dynpro interface object&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>UT</TDFORMAT>
+     <TDLINE>Methods:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_DEFAULT_CURSORFIELD</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the name of the dynpro (screen) field on which the cursor is set</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>by default.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_FIELDDEFS</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the field definitions.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>The field definitions consist of a list with field properties.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>See also method GET_FIELDPROP.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_FIELDPROP</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the &lt;DS:DE.N1GUI_DYNPLAY_FIELDPROP&gt;property of a dynpro field</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_VCODE</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the processing mode.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>SET_DEFAULT_CURSORFIELD</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Sets the name of the dynpro (screen) field on which the cursor is set by</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>default.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>SET_FIELDDEFS</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Sets the field definitions.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>SET_FIELDPROP</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Sets the property of a dynpro (screen) field.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ISH_GUI_DYNPRO_LAYOUT inherits from the class</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:CL.CL_ISH_GUI_VIEW_LAYOUT&gt;CL_ISH_GUI_VIEW_LAYOUT&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_GUI_DYNPRO_LAYOUT enthält die Einstellungen eines</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_DYNPRO_VIEW&gt;Dynpro-Oberflächenobjekts&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>Methoden:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_DEFAULT_CURSORFIELD</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert den Namen jenes Dynprofeldes, auf welches der Cursor</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>standardmäßig gesetzt wird.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_FIELDDEFS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert die Felddefinitionen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Die Felddefinitionen bestehen aus einer Liste mit Feldeigenschaften.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Siehe auch Methode GET_FIELDPROP.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_FIELDPROP</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert die &lt;DS:DE.N1GUI_DYNPLAY_FIELDPROP&gt;Eigenschaft eines</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Dynprofeldes&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_VCODE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert den Verarbeitungsmodus.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>SET_DEFAULT_CURSORFIELD</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Setzt den Namen jenes Dynprofeldes, auf welches der Cursor standardmäßig</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>gesetzt wird.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>SET_FIELDDEFS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Setzt die Felddefinitionen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>SET_FIELDPROP</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Setzt die Eigenschaft eines Dynprofeldes.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISH_GUI_DYNPRO_LAYOUT erbt von der Klasse</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:CL.CL_ISH_GUI_VIEW_LAYOUT&gt;CL_ISH_GUI_VIEW_LAYOUT&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>CO_FIELDNAME_DEF_CURSORFIELD</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Feldname</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>CO_FIELDNAME_DEF_CURSORFIELD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Field Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>CO_FIELDNAME_DEF_CURSORFIELD</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Field Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>CO_FIELDNAME_T_FIELDDEF</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Feldname</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>CO_FIELDNAME_T_FIELDDEF</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Field Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>CO_FIELDNAME_T_FIELDDEF</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Field Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>CO_FIELDNAME_VCODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Feldname</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>CO_FIELDNAME_VCODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Field Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>CO_FIELDNAME_VCODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Field Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>CO_FIELDPROP_CAN</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Eigenschaft eines Dynpro Feldes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>CO_FIELDPROP_CAN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Property of a Dynpro Field</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>CO_FIELDPROP_CAN</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Property of a Dynpro Field</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>CO_FIELDPROP_DISPLAY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Eigenschaft eines Dynpro Feldes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>CO_FIELDPROP_DISPLAY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Property of a Dynpro Field</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>CO_FIELDPROP_DISPLAY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Property of a Dynpro Field</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>CO_FIELDPROP_INACTIVE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Eigenschaft eines Dynpro Feldes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>CO_FIELDPROP_INACTIVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Property of a Dynpro Field</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>CO_FIELDPROP_INACTIVE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Property of a Dynpro Field</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>CO_FIELDPROP_MUST</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Eigenschaft eines Dynpro Feldes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>CO_FIELDPROP_MUST</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Property of a Dynpro Field</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>CO_FIELDPROP_MUST</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Property of a Dynpro Field</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>GET_DEFAULT_CURSORFIELD</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert das Default Cursorfeld</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>GET_DEFAULT_CURSORFIELD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Default Cursor Field</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>GET_DEFAULT_CURSORFIELD</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Default Cursor Field</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>GET_FIELDDEFS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die Felddefinitionen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>GET_FIELDDEFS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Field Definitions</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>GET_FIELDDEFS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Field Definitions</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>GET_FIELDPROP</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die Eigenschaft eines Feldes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>GET_FIELDPROP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Field Property</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>GET_FIELDPROP</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Field Property</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>GET_VCODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den Verarbeitungsmodus</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>GET_VCODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Processing Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>GET_VCODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Processing Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>GS_DATA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Daten eines Dynpro View Layouts</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>GS_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Data of a Dynpro View Layout</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>GS_DATA</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Data of a Dynpro View Layout</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>G_VCODE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>IS-H: Verarbeitungsmodus</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>G_VCODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IS-H: Processing Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>G_VCODE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>IS-H: Processing Mode</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>SET_DEFAULT_CURSORFIELD</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt das Default Cursorfeld</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>SET_DEFAULT_CURSORFIELD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets Default Cursor Field</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>SET_DEFAULT_CURSORFIELD</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets Default Cursor Field</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>SET_FIELDDEFS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt die Felddefinitionen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>SET_FIELDDEFS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets Field Definitions</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>SET_FIELDDEFS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets Field Definitions</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>SET_FIELDPROP</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt die Eigenschaft eines Feldes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>SET_FIELDPROP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the Field Property</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>CL_ISH_GUI_DYNPRO_LAYOUT</CLSNAME>
+     <CMPNAME>SET_FIELDPROP</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the Field Property</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

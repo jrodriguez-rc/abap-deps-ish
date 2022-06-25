@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DSYS" serializer_version="v2.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>HY</ID>
+      <OBJECT>SIMGISH_TC_TEST</OBJECT>
+      <LANGU>D</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0008</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00026</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DSYS</TDOBJECT>
+      <TDNAME>SIMGISH_TC_TEST</TDNAME>
+      <TDID>HY</TDID>
+      <TDSPRAS>D</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00008</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>/*</TDFORMAT>
+       <TDLINE>Dieser Text wird nur zu internen Zwecken verwendet.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>In dieser Customizing-Aktivität überprüfen Sie, welche Auswirkungen Ihre</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Einstellungen zum Behandlungsauftrag auf den angemeldeten Benutzer hat,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ohne dass Sie ein komplettes Anwendungsszenario durchlaufen müssen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Testumgebung prüft und zeigt im Ergebnis für den angemeldeten</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Benutzer, wie sich die Behandlungsauftragsprüfung im Zusammenhang mit</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>einem Patienten verhält, auf dessen medizinische Daten zugegriffen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>werden soll.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;PRECONDITIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;STANDARD_SETUP&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;ACTIVITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Prüfen Sie in der Testumgebung für den angemeldeten Benutzer in Bezug</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>auf einen Patienten zum aktuellen Tag das Ergebnis der &lt;LS&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>Zuständigkeits-Matrix&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Sie erhalten die Information,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>ob ein Behandlungsauftrag vorliegen würde</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>ob eine temporäre Beantragung erlaubt wäre</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>ob eine Delegationserlaubnis bestehen würde</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Testen Sie das Ergebnis für die verschiedenen Sicherheitsstufen mit der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Angabe des &lt;LS&gt;Security-Levels&lt;/&gt;, wobei diese Sicherheitsstufen nur</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>simuliert werden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Leeren Sie den tagesgenauen temporären Datenpuffer für vorhandene</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Behandlungsaufträge zum angemeldeten Benutzer, um bei einer erneuten</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Prüfung neue Ergebnisse auf Basis der aktuellen Daten zu erhalten.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>HY</ID>
+      <OBJECT>SIMGISH_TC_TEST</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0008</VERSION>
+      <TXTLINES>00018</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DSYS</TDOBJECT>
+      <TDNAME>SIMGISH_TC_TEST</TDNAME>
+      <TDID>HY</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00008</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>/*</TDFORMAT>
+       <TDLINE>Dieser Text wird nur zu internen Zwecken verwendet.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>In this Customizing activity, you check the effect of your settings for</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>the treatment authorization on the logon user without having to process</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>an entire application scenario.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The test environment checks the behavior of the treatment authorization</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>check for the user in connection with a patient whose medical data is to</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>be accessed, and displays the results of this check.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;PRECONDITIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;STANDARD_SETUP&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;ACTIVITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Check the result of the &lt;LS&gt;jurisdiction matrix&lt;/&gt; in the test</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>environment for this user and a specific patient on the current date.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The test provides you with the following information:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Whether a treatment authorization exists</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Whether a temporary application would be allowed</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Whether a delegation authorization is available</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Test the result for the different &lt;LS&gt;security levels&lt;/&gt;. The security</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>levels are only simulated here.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Empty the temporary data buffer for existing treatment authorizations</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>for the user, so that when you run a new check you receive new results</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>based on the current data.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>HY</ID>
+      <OBJECT>SIMGISH_TC_TEST</OBJECT>
+      <LANGU>S</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0008</VERSION>
+      <TXTLINES>00021</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DSYS</TDOBJECT>
+      <TDNAME>SIMGISH_TC_TEST</TDNAME>
+      <TDID>HY</TDID>
+      <TDSPRAS>S</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00008</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>/*</TDFORMAT>
+       <TDLINE>Dieser Text wird nur zu internen Zwecken verwendet.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>En esta actividad Customizing puede comprobar los efectos de sus</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>parametrizaciones en la autorización de tratamiento en el usuario r</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>egistrado, sin tener que ejecutar un escenario de aplicación completo.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>El entorno de test verifica y muestra en el resultado para el usuario</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>registrado cómo se comporta la verificación de la autorización de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>tratamiento en relación con un paciente a cuyos datos médicos quiere</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>acceder.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;PRECONDITIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;STANDARD_SETUP&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;ACTIVITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Compruebe el resultado de la &lt;LS&gt;matriz de responsabilidad&lt;/&gt; en el</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>entorno de test para el usuario registrado y un paciente en la fecha</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>actual.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Recibirá información sobre</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>si existe una autorización de tratamiento</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>si se permite una solicitud temporal</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>si existe un permiso de delegación</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Compruebe el resultado de los distintos &lt;LS&gt;niveles de seguridad&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Aquí solo se simulan los niveles de seguridad.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Vacíe la memoria intermedia de datos temporales de las autorizaciones de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>tratamiento del usuario registrado existentes, de manera que al ejecutar</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>una nueva comprobación reciba nuevos resultados en función de los datos</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>actuales.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
