@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_INTF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOINTERF>
+    <CLSNAME>IF_ISHMED_API_DOCUMENTATION</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Documentation of API</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <UNICODE>X</UNICODE>
+   </VSEOINTERF>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;MEANING&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>This &lt;DS:GLOS.352A134EC1035CD5E10000009B38F974&gt;interface&lt;/&gt; enables an</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>&lt;DS:GLOS.352A9510AAE85CD5E10000009B38F974&gt;API&lt;/&gt; to describe which</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>documentation is available. The corresponding information is displayed</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>in an API browser.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;USE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The following methods must be implemented:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;DS:IO.IF_ISHMED_API_DOCUMENTATION   GET&gt;GET&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;DS:IO.IF_ISHMED_API_DOCUMENTATION   GET_DESCRIPTION&gt;GET_DESCRIPTION&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;DS:IO.IF_ISHMED_API_DOCUMENTATION   GET_PROGRAM&gt;GET_PROGRAM&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;MEANING&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Dieses</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE> &lt;DS:GLOS.352A134EC1035CD5E10000009B38F974&gt;Interface&lt;/&gt; ermöglicht einem</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE> &lt;DS:GLOS.352A9510AAE85CD5E10000009B38F974&gt;API&lt;/&gt; zu beschreiben, welche</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Dokumentation zur Verfügung steht. Die Anzeige der entsprechenden</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Informationen erfolgt über den API-Browser.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Folgende Methoden müssen implementiert werden:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;DS:IO.IF_ISHMED_API_DOCUMENTATION   GET&gt;GET&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;DS:IO.IF_ISHMED_API_DOCUMENTATION   GET_DESCRIPTION&gt;GET_DESCRIPTION&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&lt;DS:IO.IF_ISHMED_API_DOCUMENTATION   GET_PROGRAM&gt;GET_PROGRAM&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISHMED_API_DOCUMENTATION</CLSNAME>
+     <CMPNAME>GET</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Dokumentation ermitteln</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISHMED_API_DOCUMENTATION</CLSNAME>
+     <CMPNAME>GET</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Documentation</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISHMED_API_DOCUMENTATION</CLSNAME>
+     <CMPNAME>GET</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Documentation</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISHMED_API_DOCUMENTATION</CLSNAME>
+     <CMPNAME>GET_DESCRIPTION</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Beschreibung der API ermitteln</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISHMED_API_DOCUMENTATION</CLSNAME>
+     <CMPNAME>GET_DESCRIPTION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Description of API</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISHMED_API_DOCUMENTATION</CLSNAME>
+     <CMPNAME>GET_DESCRIPTION</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Description of API</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISHMED_API_DOCUMENTATION</CLSNAME>
+     <CMPNAME>GET_PROGRAM</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Beispielprogramme ermitteln</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISHMED_API_DOCUMENTATION</CLSNAME>
+     <CMPNAME>GET_PROGRAM</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Sample Programs</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISHMED_API_DOCUMENTATION</CLSNAME>
+     <CMPNAME>GET_PROGRAM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine Sample Programs</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
