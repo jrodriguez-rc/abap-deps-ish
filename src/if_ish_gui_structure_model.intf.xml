@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_INTF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOINTERF>
+    <CLSNAME>IF_ISH_GUI_STRUCTURE_MODEL</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: GUI - Structure-Type Model</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <UNICODE>X</UNICODE>
+   </VSEOINTERF>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;MEANING&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>*</TDFORMAT>
+     <TDLINE>The interface IF_ISH_GUI_STRUCTURE_MODEL defines the interface of a</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>structure-like model.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>UT</TDFORMAT>
+     <TDLINE>Methods:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_FIELD_CONTENT</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the contents of a field.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_SUPPORTED_FIELDS</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns the names of the supported fields.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>IS_FIELD_SUPPORTED</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns whether a field (specified by field name) is supported.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>SET_FIELD_CONTENT</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Sets the contents of a field.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>UT</TDFORMAT>
+     <TDLINE>Events:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>EV_CHANGED</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>This event is triggered if the content of one or more fields has</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>changed.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;USE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>For more information about models, see the documentation for the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>interface &lt;DS:IF.IF_ISH_GUI_MODEL&gt;IF_ISH_GUI_MODEL&lt;/&gt;.</TDLINE>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;MEANING&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das Interface IF_ISH_GUI_STRUCTURE_MODEL definiert die Schnittstelle</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>eines strukturartigen Models.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>Methoden:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_FIELD_CONTENT</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert den Inhalt eines Feldes.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_SUPPORTED_FIELDS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert die Namen der unterstützten Felder.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>IS_FIELD_SUPPORTED</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert, ob ein Feld (spezifiziert über Feldname) unterstützt wird.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>SET_FIELD_CONTENT</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Setzt den Inhalt eines Feldes.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>Ereignisse:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>EV_CHANGED</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Dieses Ereignis wird ausgelöst, wenn sich ein Feldinhalt oder mehrere</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Feldinhalte geändert haben.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Weitere Informationen zu Models finden Sie in der Dokumentation des</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Interfaces &lt;DS:IF.IF_ISH_GUI_MODEL&gt;IF_ISH_GUI_MODEL&lt;/&gt;.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_STRUCTURE_MODEL</CLSNAME>
+     <CMPNAME>EV_CHANGED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Feld wurde geändert</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_STRUCTURE_MODEL</CLSNAME>
+     <CMPNAME>EV_CHANGED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Was Changed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_STRUCTURE_MODEL</CLSNAME>
+     <CMPNAME>EV_CHANGED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Field Was Changed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_STRUCTURE_MODEL</CLSNAME>
+     <CMPNAME>GET_FIELD_CONTENT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert den Inhalt eines Feldes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_STRUCTURE_MODEL</CLSNAME>
+     <CMPNAME>GET_FIELD_CONTENT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Content of a Field</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_STRUCTURE_MODEL</CLSNAME>
+     <CMPNAME>GET_FIELD_CONTENT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Content of a Field</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_STRUCTURE_MODEL</CLSNAME>
+     <CMPNAME>GET_SUPPORTED_FIELDS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert die unterstützten Felder</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_STRUCTURE_MODEL</CLSNAME>
+     <CMPNAME>GET_SUPPORTED_FIELDS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the Supported Fields</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_STRUCTURE_MODEL</CLSNAME>
+     <CMPNAME>GET_SUPPORTED_FIELDS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns the Supported Fields</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_STRUCTURE_MODEL</CLSNAME>
+     <CMPNAME>IS_FIELD_SUPPORTED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert ob ein Feld unterstützt wird</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_STRUCTURE_MODEL</CLSNAME>
+     <CMPNAME>IS_FIELD_SUPPORTED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns Whether a Field Is Supported</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_STRUCTURE_MODEL</CLSNAME>
+     <CMPNAME>IS_FIELD_SUPPORTED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns Whether a Field Is Supported</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_STRUCTURE_MODEL</CLSNAME>
+     <CMPNAME>SET_FIELD_CONTENT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Setzt den Inhalt eines Feldes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_STRUCTURE_MODEL</CLSNAME>
+     <CMPNAME>SET_FIELD_CONTENT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sets the Content of a Field</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_STRUCTURE_MODEL</CLSNAME>
+     <CMPNAME>SET_FIELD_CONTENT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sets the Content of a Field</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

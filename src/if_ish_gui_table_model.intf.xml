@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_INTF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOINTERF>
+    <CLSNAME>IF_ISH_GUI_TABLE_MODEL</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>IS-H: GUI - Table-Type Model</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <UNICODE>X</UNICODE>
+   </VSEOINTERF>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;MEANING&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The interface IF_ISH_GUI_STRUCTURE_MODEL defines the interface of a</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>table-like model.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>A table-like model manages other models in the form of a list, in which</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>the sequence of the various models is not defined.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>UT</TDFORMAT>
+     <TDLINE>Methods:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>ADD_ENTRY</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Adds a model.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>GET_ENTRIES</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Returns all contained models.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>REMOVE_ENTRY</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>Removes a model.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>UT</TDFORMAT>
+     <TDLINE>Events:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>EV_ENTRY_ADDED</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>This event is triggered if a model has been added.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>EV_ENTRY_REMOVED</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AL</TDFORMAT>
+     <TDLINE>This event is triggered if a model has been removed.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;USE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Enhanced table-like models are used in &lt;DS:IF.IF_ISH_GUI_GRID_VIEW&gt;ALV</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>grid interface objects&lt;/&gt; and &lt;DS:IF.IF_ISH_GUI_TREE_VIEW&gt;ALV tree</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>interface objects&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>For more information about models, see the documentation for the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>interface &lt;DS:IF.IF_ISH_GUI_MODEL&gt;IF_ISH_GUI_MODEL&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>To define the sequence of the various models in the table, use the</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>interface &lt;DS:IF.IF_ISH_GUI_XTABLE_MODEL&gt;IF_ISH_GUI_XTABLE_MODEL&lt;/&gt;.</TDLINE>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;MEANING&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das Interface IF_ISH_GUI_TABLE_MODEL definiert die Schnittstelle eines</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>tabellenartigen Models.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Ein tabellenartiges Model verwaltet andere Models in Form einer Liste,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>wobei die Reihenfolge der einzelnen enthaltenen Models nicht definiert</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ist.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>Methoden:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>ADD_ENTRY</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Fügt ein Model hinzu.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>GET_ENTRIES</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Returniert alle enthaltenen Models.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>REMOVE_ENTRY</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Entfernt ein Model.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>UT</TDFORMAT>
+       <TDLINE>Ereignisse:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>EV_ENTRY_ADDED</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Dieses Ereignis wird ausgelöst, wenn ein Model hinzugefügt wurde.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>EV_ENTRY_REMOVED</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Dieses Ereignis wird ausgelöst, wenn ein Model entfernt wurde.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Erweiterte tabellenartige Models werden in</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_GRID_VIEW&gt;ALV-Grid Oberflächenobjekten&lt;/&gt; und</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_TREE_VIEW&gt;ALV-Tree Oberflächenobjekten&lt;/&gt; verwendet.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Weitere Informationen zu Models finden Sie in der Dokumentation des</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Interfaces &lt;DS:IF.IF_ISH_GUI_MODEL&gt;IF_ISH_GUI_MODEL&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Um die Reihenfolge der einzelnen enthaltenen Models definieren zu</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>können, verwenden Sie das Interface</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:IF.IF_ISH_GUI_XTABLE_MODEL&gt;IF_ISH_GUI_XTABLE_MODEL&lt;/&gt;.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TABLE_MODEL</CLSNAME>
+     <CMPNAME>ADD_ENTRY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Fügt einen Eintrag hinzu</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TABLE_MODEL</CLSNAME>
+     <CMPNAME>ADD_ENTRY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Adds an Entry</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TABLE_MODEL</CLSNAME>
+     <CMPNAME>ADD_ENTRY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Adds an Entry</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TABLE_MODEL</CLSNAME>
+     <CMPNAME>EV_ENTRY_ADDED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Eintrag wurde hinzugefügt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TABLE_MODEL</CLSNAME>
+     <CMPNAME>EV_ENTRY_ADDED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Entry Was Added</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TABLE_MODEL</CLSNAME>
+     <CMPNAME>EV_ENTRY_ADDED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Entry Was Added</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TABLE_MODEL</CLSNAME>
+     <CMPNAME>EV_ENTRY_REMOVED</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Eintrag wurde entfernt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TABLE_MODEL</CLSNAME>
+     <CMPNAME>EV_ENTRY_REMOVED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Entry Was Removed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TABLE_MODEL</CLSNAME>
+     <CMPNAME>EV_ENTRY_REMOVED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Entry Was Removed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TABLE_MODEL</CLSNAME>
+     <CMPNAME>GET_ENTRIES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Returniert alle Einträge</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TABLE_MODEL</CLSNAME>
+     <CMPNAME>GET_ENTRIES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns All Entries</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TABLE_MODEL</CLSNAME>
+     <CMPNAME>GET_ENTRIES</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Returns All Entries</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TABLE_MODEL</CLSNAME>
+     <CMPNAME>REMOVE_ENTRY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Entfernt einen Eintrag</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TABLE_MODEL</CLSNAME>
+     <CMPNAME>REMOVE_ENTRY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Removes an Entry</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>IF_ISH_GUI_TABLE_MODEL</CLSNAME>
+     <CMPNAME>REMOVE_ENTRY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Removes an Entry</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
