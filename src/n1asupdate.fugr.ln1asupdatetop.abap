@@ -1,2 +1,0 @@
-FUNCTION-POOL N1ASUPDATE.              "MESSAGE-ID ..
-
