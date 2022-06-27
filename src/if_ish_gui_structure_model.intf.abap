@@ -1,36 +1,35 @@
 *"* components of interface IF_ISH_GUI_STRUCTURE_MODEL
-interface IF_ISH_GUI_STRUCTURE_MODEL
-  public .
+INTERFACE if_ish_gui_structure_model
+  PUBLIC.
 
 
-  interfaces IF_ISH_GUI_MODEL .
+  INTERFACES if_ish_gui_model.
 
-  events EV_CHANGED
-    exporting
-      value(ET_CHANGED_FIELD) type ISH_T_FIELDNAME optional .
+  EVENTS ev_changed
+    EXPORTING
+      VALUE(et_changed_field) TYPE ish_t_fieldname OPTIONAL.
 
-  methods GET_FIELD_CONTENT
-    importing
-      !I_FIELDNAME type ISH_FIELDNAME
-    changing
-      !C_CONTENT type ANY
-    raising
-      CX_ISH_STATIC_HANDLER .
-  methods GET_SUPPORTED_FIELDS
-    returning
-      value(RT_SUPPORTED_FIELDNAME) type ISH_T_FIELDNAME .
-  type-pools ABAP .
-  methods IS_FIELD_SUPPORTED
-    importing
-      !I_FIELDNAME type ISH_FIELDNAME
-    returning
-      value(R_SUPPORTED) type ABAP_BOOL .
-  methods SET_FIELD_CONTENT
-    importing
-      !I_FIELDNAME type ISH_FIELDNAME
-      !I_CONTENT type ANY
-    returning
-      value(R_CHANGED) type ABAP_BOOL
-    raising
-      CX_ISH_STATIC_HANDLER .
-endinterface.
+  METHODS get_field_content
+    IMPORTING
+      !i_fieldname TYPE ish_fieldname
+    CHANGING
+      !c_content TYPE any
+    RAISING
+      cx_ish_static_handler.
+  METHODS get_supported_fields
+    RETURNING
+      VALUE(rt_supported_fieldname) TYPE ish_t_fieldname.
+  METHODS is_field_supported
+    IMPORTING
+      !i_fieldname TYPE ish_fieldname
+    RETURNING
+      VALUE(r_supported) TYPE abap_bool.
+  METHODS set_field_content
+    IMPORTING
+      !i_fieldname TYPE ish_fieldname
+      !i_content TYPE any
+    RETURNING
+      VALUE(r_changed) TYPE abap_bool
+    RAISING
+      cx_ish_static_handler.
+ENDINTERFACE.

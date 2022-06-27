@@ -1,12 +1,11 @@
-*"* components of interface IF_ISH_GUI_ELEMENT
-interface IF_ISH_GUI_ELEMENT
-  public .
+INTERFACE if_ish_gui_element
+  PUBLIC.
 
 
-  methods GET_ELEMENT_ID
-    returning
-      value(R_ELEMENT_ID) type N1GUI_ELEMENT_ID .
-  methods GET_ELEMENT_NAME
-    returning
-      value(R_ELEMENT_NAME) type N1GUI_ELEMENT_NAME .
-endinterface.
+  METHODS get_element_id
+    RETURNING
+      VALUE(r_element_id) TYPE n1gui_element_id.
+  METHODS get_element_name
+    RETURNING
+      VALUE(r_element_name) TYPE n1gui_element_name.
+ENDINTERFACE.

@@ -181,7 +181,7 @@
     "max_one_statement": true,
     "message_exists": true,
     "method_length": {
-      "errorWhenEmpty": true,
+      "errorWhenEmpty": false,
       "checkForms": true,
       "ignoreTestClasses": false,
       "statements": 100

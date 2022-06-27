@@ -1,318 +1,317 @@
 *"* components of interface IF_ISH_GUI_TREE_VIEW
-interface IF_ISH_GUI_TREE_VIEW
-  public .
+INTERFACE if_ish_gui_tree_view
+  PUBLIC.
 
 
-  interfaces IF_ISH_GUI_CONTROL_VIEW .
+  INTERFACES if_ish_gui_control_view.
 
-  aliases CO_VCODE_DISPLAY
-    for IF_ISH_GUI_CONTROL_VIEW~CO_VCODE_DISPLAY .
-  aliases CO_VCODE_INSERT
-    for IF_ISH_GUI_CONTROL_VIEW~CO_VCODE_INSERT .
-  aliases CO_VCODE_UPDATE
-    for IF_ISH_GUI_CONTROL_VIEW~CO_VCODE_UPDATE .
-  aliases ACTUALIZE_LAYOUT
-    for IF_ISH_GUI_CONTROL_VIEW~ACTUALIZE_LAYOUT .
-  aliases DESTROY
-    for IF_ISH_GUI_CONTROL_VIEW~DESTROY .
-  aliases FIRST_DISPLAY
-    for IF_ISH_GUI_CONTROL_VIEW~FIRST_DISPLAY .
-  aliases GET_APPLICATION
-    for IF_ISH_GUI_CONTROL_VIEW~GET_APPLICATION .
-  aliases GET_CHILD_VIEWS
-    for IF_ISH_GUI_CONTROL_VIEW~GET_CHILD_VIEWS .
-  aliases GET_CHILD_VIEW_BY_ID
-    for IF_ISH_GUI_CONTROL_VIEW~GET_CHILD_VIEW_BY_ID .
-  aliases GET_CHILD_VIEW_BY_NAME
-    for IF_ISH_GUI_CONTROL_VIEW~GET_CHILD_VIEW_BY_NAME .
-  aliases GET_CONTROL
-    for IF_ISH_GUI_CONTROL_VIEW~GET_CONTROL .
-  aliases GET_CONTROLLER
-    for IF_ISH_GUI_CONTROL_VIEW~GET_CONTROLLER .
-  aliases GET_CONTROL_LAYOUT
-    for IF_ISH_GUI_CONTROL_VIEW~GET_CONTROL_LAYOUT .
-  aliases GET_ELEMENT_ID
-    for IF_ISH_GUI_CONTROL_VIEW~GET_ELEMENT_ID .
-  aliases GET_ELEMENT_NAME
-    for IF_ISH_GUI_CONTROL_VIEW~GET_ELEMENT_NAME .
-  aliases GET_LAYOUT
-    for IF_ISH_GUI_CONTROL_VIEW~GET_LAYOUT .
-  aliases GET_PARENT_VIEW
-    for IF_ISH_GUI_CONTROL_VIEW~GET_PARENT_VIEW .
-  aliases GET_VCODE
-    for IF_ISH_GUI_CONTROL_VIEW~GET_VCODE .
-  aliases GET_VISIBILITY
-    for IF_ISH_GUI_CONTROL_VIEW~GET_VISIBILITY .
-  aliases HAS_FOCUS
-    for IF_ISH_GUI_CONTROL_VIEW~HAS_FOCUS .
-  aliases IS_DESTROYED
-    for IF_ISH_GUI_CONTROL_VIEW~IS_DESTROYED .
-  aliases IS_FIRST_DISPLAY_DONE
-    for IF_ISH_GUI_CONTROL_VIEW~IS_FIRST_DISPLAY_DONE .
-  aliases IS_INITIALIZED
-    for IF_ISH_GUI_CONTROL_VIEW~IS_INITIALIZED .
-  aliases IS_IN_DESTROY_MODE
-    for IF_ISH_GUI_CONTROL_VIEW~IS_IN_DESTROY_MODE .
-  aliases IS_IN_FIRST_DISPLAY_MODE
-    for IF_ISH_GUI_CONTROL_VIEW~IS_IN_FIRST_DISPLAY_MODE .
-  aliases IS_IN_INITIALIZATION_MODE
-    for IF_ISH_GUI_CONTROL_VIEW~IS_IN_INITIALIZATION_MODE .
-  aliases PROCESS_REQUEST
-    for IF_ISH_GUI_CONTROL_VIEW~PROCESS_REQUEST .
-  aliases REFRESH_DISPLAY
-    for IF_ISH_GUI_CONTROL_VIEW~REFRESH_DISPLAY .
-  aliases REGISTER_CHILD_VIEW
-    for IF_ISH_GUI_CONTROL_VIEW~REGISTER_CHILD_VIEW .
-  aliases SAVE_LAYOUT
-    for IF_ISH_GUI_CONTROL_VIEW~SAVE_LAYOUT .
-  aliases SET_FOCUS
-    for IF_ISH_GUI_CONTROL_VIEW~SET_FOCUS .
-  aliases SET_VCODE
-    for IF_ISH_GUI_CONTROL_VIEW~SET_VCODE .
-  aliases SET_VISIBILITY
-    for IF_ISH_GUI_CONTROL_VIEW~SET_VISIBILITY .
-  aliases EV_AFTER_DESTROY
-    for IF_ISH_GUI_CONTROL_VIEW~EV_AFTER_DESTROY .
-  aliases EV_BEFORE_DESTROY
-    for IF_ISH_GUI_CONTROL_VIEW~EV_BEFORE_DESTROY .
-  aliases EV_VISIBILITY_CHANGED
-    for IF_ISH_GUI_CONTROL_VIEW~EV_VISIBILITY_CHANGED .
+  ALIASES co_vcode_display
+    FOR if_ish_gui_control_view~co_vcode_display.
+  ALIASES co_vcode_insert
+    FOR if_ish_gui_control_view~co_vcode_insert.
+  ALIASES co_vcode_update
+    FOR if_ish_gui_control_view~co_vcode_update.
+  ALIASES actualize_layout
+    FOR if_ish_gui_control_view~actualize_layout.
+  ALIASES destroy
+    FOR if_ish_gui_control_view~destroy.
+  ALIASES first_display
+    FOR if_ish_gui_control_view~first_display.
+  ALIASES get_application
+    FOR if_ish_gui_control_view~get_application.
+  ALIASES get_child_views
+    FOR if_ish_gui_control_view~get_child_views.
+  ALIASES get_child_view_by_id
+    FOR if_ish_gui_control_view~get_child_view_by_id.
+  ALIASES get_child_view_by_name
+    FOR if_ish_gui_control_view~get_child_view_by_name.
+  ALIASES get_control
+    FOR if_ish_gui_control_view~get_control.
+  ALIASES get_controller
+    FOR if_ish_gui_control_view~get_controller.
+  ALIASES get_control_layout
+    FOR if_ish_gui_control_view~get_control_layout.
+  ALIASES get_element_id
+    FOR if_ish_gui_control_view~get_element_id.
+  ALIASES get_element_name
+    FOR if_ish_gui_control_view~get_element_name.
+  ALIASES get_layout
+    FOR if_ish_gui_control_view~get_layout.
+  ALIASES get_parent_view
+    FOR if_ish_gui_control_view~get_parent_view.
+  ALIASES get_vcode
+    FOR if_ish_gui_control_view~get_vcode.
+  ALIASES get_visibility
+    FOR if_ish_gui_control_view~get_visibility.
+  ALIASES has_focus
+    FOR if_ish_gui_control_view~has_focus.
+  ALIASES is_destroyed
+    FOR if_ish_gui_control_view~is_destroyed.
+  ALIASES is_first_display_done
+    FOR if_ish_gui_control_view~is_first_display_done.
+  ALIASES is_initialized
+    FOR if_ish_gui_control_view~is_initialized.
+  ALIASES is_in_destroy_mode
+    FOR if_ish_gui_control_view~is_in_destroy_mode.
+  ALIASES is_in_first_display_mode
+    FOR if_ish_gui_control_view~is_in_first_display_mode.
+  ALIASES is_in_initialization_mode
+    FOR if_ish_gui_control_view~is_in_initialization_mode.
+  ALIASES process_request
+    FOR if_ish_gui_control_view~process_request.
+  ALIASES refresh_display
+    FOR if_ish_gui_control_view~refresh_display.
+  ALIASES register_child_view
+    FOR if_ish_gui_control_view~register_child_view.
+  ALIASES save_layout
+    FOR if_ish_gui_control_view~save_layout.
+  ALIASES set_focus
+    FOR if_ish_gui_control_view~set_focus.
+  ALIASES set_vcode
+    FOR if_ish_gui_control_view~set_vcode.
+  ALIASES set_visibility
+    FOR if_ish_gui_control_view~set_visibility.
+  ALIASES ev_after_destroy
+    FOR if_ish_gui_control_view~ev_after_destroy.
+  ALIASES ev_before_destroy
+    FOR if_ish_gui_control_view~ev_before_destroy.
+  ALIASES ev_visibility_changed
+    FOR if_ish_gui_control_view~ev_visibility_changed.
 
-  methods CHECK_MODEL
-    importing
-      !IR_MODEL type ref to IF_ISH_GUI_MODEL
-    returning
-      value(RT_CHECKED_NKEY) type LVC_T_NKEY
-    raising
-      CX_ISH_STATIC_HANDLER .
-  methods CHECK_MODELS
-    importing
-      !IT_MODEL type ISH_T_GUI_MODEL_OBJHASH
-    returning
-      value(RT_CHECKED_NKEY) type LVC_T_NKEY
-    raising
-      CX_ISH_STATIC_HANDLER .
-  methods CHECK_NKEY
-    importing
-      !I_NKEY type LVC_NKEY
-    raising
-      CX_ISH_STATIC_HANDLER .
-  methods CHECK_NKEYS
-    importing
-      !IT_NKEY type LVC_T_NKEY optional
-    returning
-      value(RT_CHECKED_NKEY) type LVC_T_NKEY
-    raising
-      CX_ISH_STATIC_HANDLER .
-  methods COLLAPSE_ALL_NODES
-    returning
-      value(RT_NKEY_COLLAPSED) type LVC_T_NKEY
-    raising
-      CX_ISH_STATIC_HANDLER .
-  type-pools ABAP .
-  methods COLLAPSE_NODE
-    importing
-      !I_NKEY type LVC_NKEY
-    returning
-      value(R_COLLAPSED) type ABAP_BOOL
-    raising
-      CX_ISH_STATIC_HANDLER .
-  methods COLLAPSE_NODES
-    importing
-      !IT_NKEY type LVC_T_NKEY
-    returning
-      value(R_COLLAPSED) type ABAP_BOOL
-    raising
-      CX_ISH_STATIC_HANDLER .
-  methods DESELECT_ALL
-    returning
-      value(R_DESELECTED) type ABAP_BOOL .
-  methods EXPAND_ALL_NODES
-    returning
-      value(RT_NKEY_EXPANDED) type LVC_T_NKEY
-    raising
-      CX_ISH_STATIC_HANDLER .
-  methods EXPAND_NODE
-    importing
-      !I_NKEY type LVC_NKEY
-      !I_LEVEL_COUNT type I default 1
-      !I_EXPAND_SUBTREE type ABAP_BOOL default ABAP_FALSE
-    returning
-      value(R_EXPANDED) type ABAP_BOOL
-    raising
-      CX_ISH_STATIC_HANDLER .
-  methods EXPAND_NODES
-    importing
-      !IT_NKEY type LVC_T_NKEY
-      !I_LEVEL_COUNT type I default 1
-      !I_EXPAND_SUBTREE type ABAP_BOOL default ABAP_FALSE
-    returning
-      value(R_EXPANDED) type ABAP_BOOL
-    raising
-      CX_ISH_STATIC_HANDLER .
-  methods GET_ALL_CHECKED_CHILD_MODELS
-    importing
-      !I_NKEY type LVC_NKEY
-    returning
-      value(RT_MODEL) type ISH_T_GUI_MODEL_OBJHASH .
-  methods GET_ALL_CHECKED_CHILD_NKEYS
-    importing
-      !I_NKEY type LVC_NKEY
-    returning
-      value(RT_NKEY) type LVC_T_NKEY .
-  methods GET_ALL_CHILD_NKEYS
-    importing
-      !I_NKEY type LVC_NKEY
-    returning
-      value(RT_NKEY) type LVC_T_NKEY .
-  methods GET_ALV_TREE
-    returning
-      value(RR_ALV_TREE) type ref to CL_GUI_ALV_TREE .
-  methods GET_ALV_TREE_TOOLBAR
-    returning
-      value(RR_TOOLBAR) type ref to CL_GUI_TOOLBAR .
-  methods GET_CHECKED_CHILD_MODELS
-    importing
-      !I_NKEY type LVC_NKEY
-    returning
-      value(RT_MODEL) type ISH_T_GUI_MODEL_OBJHASH .
-  methods GET_CHECKED_CHILD_NKEYS
-    importing
-      !I_NKEY type LVC_NKEY
-    returning
-      value(RT_NKEY) type LVC_T_NKEY .
-  methods GET_CHECKED_MODELS
-    returning
-      value(RT_MODEL) type ISH_T_GUI_MODEL_OBJHASH .
-  methods GET_CHECKED_NKEYS
-    returning
-      value(RT_NKEY) type LVC_T_NKEY .
-  methods GET_CHECKED_PARENT_MODEL
-    importing
-      !I_NKEY type LVC_NKEY
-    returning
-      value(RR_PARENT_MODEL) type ref to IF_ISH_GUI_MODEL .
-  methods GET_CHECKED_PARENT_NKEY
-    importing
-      !I_NKEY type LVC_NKEY
-    returning
-      value(R_PARENT_NKEY) type LVC_NKEY .
-  methods GET_CHILD_NKEYS
-    importing
-      !I_NKEY type LVC_NKEY
-    returning
-      value(RT_NKEY) type LVC_T_NKEY .
-  methods GET_MODEL_BY_NKEY
-    importing
-      !I_NKEY type LVC_NKEY
-    returning
-      value(RR_MODEL) type ref to IF_ISH_GUI_MODEL .
-  methods GET_NKEYS_BY_MODEL
-    importing
-      !IR_MODEL type ref to IF_ISH_GUI_MODEL
-    returning
-      value(RT_NKEY) type LVC_T_NKEY .
-  methods GET_NKEY_BY_CHILD_MODEL
-    importing
-      !I_PARENT_NKEY type LVC_NKEY
-      !IR_CHILD_MODEL type ref to IF_ISH_GUI_MODEL
-    returning
-      value(R_NKEY) type LVC_NKEY .
-  methods GET_PARENT_MODEL_BY_NKEY
-    importing
-      !I_NKEY type LVC_NKEY
-    returning
-      value(RR_MODEL) type ref to IF_ISH_GUI_MODEL .
-  methods GET_PARENT_NKEY
-    importing
-      !I_NKEY type LVC_NKEY
-    returning
-      value(R_PARENT_NKEY) type LVC_NKEY .
-  methods GET_PARENT_NKEYS
-    importing
-      !I_CHILD_NKEY type LVC_NKEY
-    returning
-      value(RT_PARENT_NKEY) type LVC_T_NKEY .
-  methods GET_ROOT_NKEYS
-    returning
-      value(RT_ROOT_NKEY) type LVC_T_NKEY
-    raising
-      CX_ISH_STATIC_HANDLER .
-  methods GET_SELECTED_MODEL
-    returning
-      value(RR_MODEL) type ref to IF_ISH_GUI_MODEL
-    raising
-      CX_ISH_STATIC_HANDLER .
-  methods GET_SELECTED_MODELS
-    returning
-      value(RT_MODEL) type ISH_T_GUI_MODEL_OBJHASH .
-  methods GET_SELECTED_NKEY
-    returning
-      value(R_NKEY) type LVC_NKEY
-    raising
-      CX_ISH_STATIC_HANDLER .
-  methods GET_SELECTED_NKEYS
-    returning
-      value(RT_NKEY) type LVC_T_NKEY .
-  methods GET_TREE_LAYOUT
-    returning
-      value(RR_TREE_LAYOUT) type ref to CL_ISH_GUI_TREE_LAYOUT .
-  methods HAS_PARENT_NKEY
-    importing
-      !I_CHILD_NKEY type LVC_NKEY
-      !I_PARENT_NKEY type LVC_NKEY
-    returning
-      value(R_HAS_PARENT_NKEY) type ABAP_BOOL .
-  methods IS_NKEY_CHECKED
-    importing
-      !I_NKEY type LVC_NKEY
-    returning
-      value(R_CHECKED) type ABAP_BOOL .
-  methods SET_SELECTED_MODEL
-    importing
-      !IR_MODEL type ref to IF_ISH_GUI_MODEL
-    returning
-      value(R_SELECTED) type ABAP_BOOL .
-  methods SET_SELECTED_MODELS
-    importing
-      !IT_MODEL type ISH_T_GUI_MODEL_OBJHASH
-    returning
-      value(R_SELECTED) type ABAP_BOOL .
-  methods SET_SELECTED_NKEY
-    importing
-      !I_NKEY type LVC_NKEY
-    returning
-      value(R_SELECTED) type ABAP_BOOL .
-  methods SET_SELECTED_NKEYS
-    importing
-      !IT_NKEY type LVC_T_NKEY
-    returning
-      value(R_SELECTED) type ABAP_BOOL .
-  methods UNCHECK_MODEL
-    importing
-      !IR_MODEL type ref to IF_ISH_GUI_MODEL
-    returning
-      value(RT_UNCHECKED_NKEY) type LVC_T_NKEY
-    raising
-      CX_ISH_STATIC_HANDLER .
-  methods UNCHECK_MODELS
-    importing
-      !IT_MODEL type ISH_T_GUI_MODEL_OBJHASH
-    returning
-      value(RT_UNCHECKED_NKEY) type LVC_T_NKEY
-    raising
-      CX_ISH_STATIC_HANDLER .
-  methods UNCHECK_NKEY
-    importing
-      !I_NKEY type LVC_NKEY
-    raising
-      CX_ISH_STATIC_HANDLER .
-  methods UNCHECK_NKEYS
-    importing
-      !IT_NKEY type LVC_T_NKEY optional
-    preferred parameter IT_NKEY
-    returning
-      value(RT_UNCHECKED_NKEY) type LVC_T_NKEY
-    raising
-      CX_ISH_STATIC_HANDLER .
-endinterface.
+  METHODS check_model
+    IMPORTING
+      !ir_model TYPE REF TO if_ish_gui_model
+    RETURNING
+      VALUE(rt_checked_nkey) TYPE lvc_t_nkey
+    RAISING
+      cx_ish_static_handler.
+  METHODS check_models
+    IMPORTING
+      !it_model TYPE ish_t_gui_model_objhash
+    RETURNING
+      VALUE(rt_checked_nkey) TYPE lvc_t_nkey
+    RAISING
+      cx_ish_static_handler.
+  METHODS check_nkey
+    IMPORTING
+      !i_nkey TYPE lvc_nkey
+    RAISING
+      cx_ish_static_handler.
+  METHODS check_nkeys
+    IMPORTING
+      !it_nkey TYPE lvc_t_nkey OPTIONAL
+    RETURNING
+      VALUE(rt_checked_nkey) TYPE lvc_t_nkey
+    RAISING
+      cx_ish_static_handler.
+  METHODS collapse_all_nodes
+    RETURNING
+      VALUE(rt_nkey_collapsed) TYPE lvc_t_nkey
+    RAISING
+      cx_ish_static_handler.
+  METHODS collapse_node
+    IMPORTING
+      !i_nkey TYPE lvc_nkey
+    RETURNING
+      VALUE(r_collapsed) TYPE abap_bool
+    RAISING
+      cx_ish_static_handler.
+  METHODS collapse_nodes
+    IMPORTING
+      !it_nkey TYPE lvc_t_nkey
+    RETURNING
+      VALUE(r_collapsed) TYPE abap_bool
+    RAISING
+      cx_ish_static_handler.
+  METHODS deselect_all
+    RETURNING
+      VALUE(r_deselected) TYPE abap_bool.
+  METHODS expand_all_nodes
+    RETURNING
+      VALUE(rt_nkey_expanded) TYPE lvc_t_nkey
+    RAISING
+      cx_ish_static_handler.
+  METHODS expand_node
+    IMPORTING
+      !i_nkey TYPE lvc_nkey
+      !i_level_count TYPE i DEFAULT 1
+      !i_expand_subtree TYPE abap_bool DEFAULT abap_false
+    RETURNING
+      VALUE(r_expanded) TYPE abap_bool
+    RAISING
+      cx_ish_static_handler.
+  METHODS expand_nodes
+    IMPORTING
+      !it_nkey TYPE lvc_t_nkey
+      !i_level_count TYPE i DEFAULT 1
+      !i_expand_subtree TYPE abap_bool DEFAULT abap_false
+    RETURNING
+      VALUE(r_expanded) TYPE abap_bool
+    RAISING
+      cx_ish_static_handler.
+  METHODS get_all_checked_child_models
+    IMPORTING
+      !i_nkey TYPE lvc_nkey
+    RETURNING
+      VALUE(rt_model) TYPE ish_t_gui_model_objhash.
+  METHODS get_all_checked_child_nkeys
+    IMPORTING
+      !i_nkey TYPE lvc_nkey
+    RETURNING
+      VALUE(rt_nkey) TYPE lvc_t_nkey.
+  METHODS get_all_child_nkeys
+    IMPORTING
+      !i_nkey TYPE lvc_nkey
+    RETURNING
+      VALUE(rt_nkey) TYPE lvc_t_nkey.
+  METHODS get_alv_tree
+    RETURNING
+      VALUE(rr_alv_tree) TYPE REF TO cl_gui_alv_tree.
+  METHODS get_alv_tree_toolbar
+    RETURNING
+      VALUE(rr_toolbar) TYPE REF TO cl_gui_toolbar.
+  METHODS get_checked_child_models
+    IMPORTING
+      !i_nkey TYPE lvc_nkey
+    RETURNING
+      VALUE(rt_model) TYPE ish_t_gui_model_objhash.
+  METHODS get_checked_child_nkeys
+    IMPORTING
+      !i_nkey TYPE lvc_nkey
+    RETURNING
+      VALUE(rt_nkey) TYPE lvc_t_nkey.
+  METHODS get_checked_models
+    RETURNING
+      VALUE(rt_model) TYPE ish_t_gui_model_objhash.
+  METHODS get_checked_nkeys
+    RETURNING
+      VALUE(rt_nkey) TYPE lvc_t_nkey.
+  METHODS get_checked_parent_model
+    IMPORTING
+      !i_nkey TYPE lvc_nkey
+    RETURNING
+      VALUE(rr_parent_model) TYPE REF TO if_ish_gui_model.
+  METHODS get_checked_parent_nkey
+    IMPORTING
+      !i_nkey TYPE lvc_nkey
+    RETURNING
+      VALUE(r_parent_nkey) TYPE lvc_nkey.
+  METHODS get_child_nkeys
+    IMPORTING
+      !i_nkey TYPE lvc_nkey
+    RETURNING
+      VALUE(rt_nkey) TYPE lvc_t_nkey.
+  METHODS get_model_by_nkey
+    IMPORTING
+      !i_nkey TYPE lvc_nkey
+    RETURNING
+      VALUE(rr_model) TYPE REF TO if_ish_gui_model.
+  METHODS get_nkeys_by_model
+    IMPORTING
+      !ir_model TYPE REF TO if_ish_gui_model
+    RETURNING
+      VALUE(rt_nkey) TYPE lvc_t_nkey.
+  METHODS get_nkey_by_child_model
+    IMPORTING
+      !i_parent_nkey TYPE lvc_nkey
+      !ir_child_model TYPE REF TO if_ish_gui_model
+    RETURNING
+      VALUE(r_nkey) TYPE lvc_nkey.
+  METHODS get_parent_model_by_nkey
+    IMPORTING
+      !i_nkey TYPE lvc_nkey
+    RETURNING
+      VALUE(rr_model) TYPE REF TO if_ish_gui_model.
+  METHODS get_parent_nkey
+    IMPORTING
+      !i_nkey TYPE lvc_nkey
+    RETURNING
+      VALUE(r_parent_nkey) TYPE lvc_nkey.
+  METHODS get_parent_nkeys
+    IMPORTING
+      !i_child_nkey TYPE lvc_nkey
+    RETURNING
+      VALUE(rt_parent_nkey) TYPE lvc_t_nkey.
+  METHODS get_root_nkeys
+    RETURNING
+      VALUE(rt_root_nkey) TYPE lvc_t_nkey
+    RAISING
+      cx_ish_static_handler.
+  METHODS get_selected_model
+    RETURNING
+      VALUE(rr_model) TYPE REF TO if_ish_gui_model
+    RAISING
+      cx_ish_static_handler.
+  METHODS get_selected_models
+    RETURNING
+      VALUE(rt_model) TYPE ish_t_gui_model_objhash.
+  METHODS get_selected_nkey
+    RETURNING
+      VALUE(r_nkey) TYPE lvc_nkey
+    RAISING
+      cx_ish_static_handler.
+  METHODS get_selected_nkeys
+    RETURNING
+      VALUE(rt_nkey) TYPE lvc_t_nkey.
+  METHODS get_tree_layout
+    RETURNING
+      VALUE(rr_tree_layout) TYPE REF TO cl_ish_gui_tree_layout.
+  METHODS has_parent_nkey
+    IMPORTING
+      !i_child_nkey TYPE lvc_nkey
+      !i_parent_nkey TYPE lvc_nkey
+    RETURNING
+      VALUE(r_has_parent_nkey) TYPE abap_bool.
+  METHODS is_nkey_checked
+    IMPORTING
+      !i_nkey TYPE lvc_nkey
+    RETURNING
+      VALUE(r_checked) TYPE abap_bool.
+  METHODS set_selected_model
+    IMPORTING
+      !ir_model TYPE REF TO if_ish_gui_model
+    RETURNING
+      VALUE(r_selected) TYPE abap_bool.
+  METHODS set_selected_models
+    IMPORTING
+      !it_model TYPE ish_t_gui_model_objhash
+    RETURNING
+      VALUE(r_selected) TYPE abap_bool.
+  METHODS set_selected_nkey
+    IMPORTING
+      !i_nkey TYPE lvc_nkey
+    RETURNING
+      VALUE(r_selected) TYPE abap_bool.
+  METHODS set_selected_nkeys
+    IMPORTING
+      !it_nkey TYPE lvc_t_nkey
+    RETURNING
+      VALUE(r_selected) TYPE abap_bool.
+  METHODS uncheck_model
+    IMPORTING
+      !ir_model TYPE REF TO if_ish_gui_model
+    RETURNING
+      VALUE(rt_unchecked_nkey) TYPE lvc_t_nkey
+    RAISING
+      cx_ish_static_handler.
+  METHODS uncheck_models
+    IMPORTING
+      !it_model TYPE ish_t_gui_model_objhash
+    RETURNING
+      VALUE(rt_unchecked_nkey) TYPE lvc_t_nkey
+    RAISING
+      cx_ish_static_handler.
+  METHODS uncheck_nkey
+    IMPORTING
+      !i_nkey TYPE lvc_nkey
+    RAISING
+      cx_ish_static_handler.
+  METHODS uncheck_nkeys
+    IMPORTING
+      !it_nkey TYPE lvc_t_nkey OPTIONAL
+    PREFERRED PARAMETER it_nkey
+    RETURNING
+      VALUE(rt_unchecked_nkey) TYPE lvc_t_nkey
+    RAISING
+      cx_ish_static_handler.
+ENDINTERFACE.

@@ -1,9 +1,7 @@
-interface IF_ISHMED_API_DESCRIPTOR
-  public .
+INTERFACE if_ishmed_api_descriptor
+  PUBLIC.
 
-
-  type-pools ABAP .
-  methods IS_SINGLETON
-    returning
-      value(R_VALUE) type ABAP_BOOL .
-endinterface.
+  METHODS is_singleton
+    RETURNING
+      VALUE(r_value) TYPE abap_bool.
+ENDINTERFACE.

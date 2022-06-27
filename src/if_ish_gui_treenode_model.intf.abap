@@ -1,13 +1,10 @@
-*"* components of interface IF_ISH_GUI_TREENODE_MODEL
-interface IF_ISH_GUI_TREENODE_MODEL
-  public .
+INTERFACE if_ish_gui_treenode_model
+  PUBLIC.
 
-  type-pools ICON .
-
-  methods GET_NODE_ICON
-    returning
-      value(R_NODE_ICON) type TV_IMAGE .
-  methods GET_NODE_TEXT
-    returning
-      value(R_NODE_TEXT) type LVC_VALUE .
-endinterface.
+  METHODS get_node_icon
+    RETURNING
+      VALUE(r_node_icon) TYPE tv_image.
+  METHODS get_node_text
+    RETURNING
+      VALUE(r_node_text) TYPE lvc_value.
+ENDINTERFACE.

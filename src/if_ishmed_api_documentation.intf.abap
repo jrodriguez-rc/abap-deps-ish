@@ -1,15 +1,14 @@
-interface IF_ISHMED_API_DOCUMENTATION
-  public .
+INTERFACE if_ishmed_api_documentation
+  PUBLIC.
 
-
-  methods GET
-    exporting
-      !E_ID type DOKU_ID
-      !E_OBJECT type DOKU_OBJ .
-  methods GET_DESCRIPTION
-    returning
-      value(R_VALUE) type N1API_DESCRIPTION .
-  methods GET_PROGRAM
-    exporting
-      !ET_VALUE type PROGRAMT .
-endinterface.
+  METHODS get
+    EXPORTING
+      !e_id TYPE doku_id
+      !e_object TYPE doku_obj.
+  METHODS get_description
+    RETURNING
+      VALUE(r_value) TYPE n1api_description.
+  METHODS get_program
+    EXPORTING
+      !et_value TYPE programt.
+ENDINTERFACE.

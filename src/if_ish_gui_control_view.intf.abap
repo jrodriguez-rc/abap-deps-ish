@@ -1,100 +1,97 @@
-*"* components of interface IF_ISH_GUI_CONTROL_VIEW
-interface IF_ISH_GUI_CONTROL_VIEW
-  public .
+INTERFACE if_ish_gui_control_view
+  PUBLIC.
 
+  INTERFACES if_ish_gui_view.
 
-  interfaces IF_ISH_GUI_VIEW .
+  ALIASES co_vcode_display
+    FOR if_ish_gui_view~co_vcode_display.
+  ALIASES co_vcode_insert
+    FOR if_ish_gui_view~co_vcode_insert.
+  ALIASES co_vcode_update
+    FOR if_ish_gui_view~co_vcode_update.
+  ALIASES actualize_layout
+    FOR if_ish_gui_view~actualize_layout.
+  ALIASES destroy
+    FOR if_ish_gui_view~destroy.
+  ALIASES get_application
+    FOR if_ish_gui_view~get_application.
+  ALIASES get_child_views
+    FOR if_ish_gui_view~get_child_views.
+  ALIASES get_child_view_by_id
+    FOR if_ish_gui_view~get_child_view_by_id.
+  ALIASES get_child_view_by_name
+    FOR if_ish_gui_view~get_child_view_by_name.
+  ALIASES get_controller
+    FOR if_ish_gui_view~get_controller.
+  ALIASES get_element_id
+    FOR if_ish_gui_view~get_element_id.
+  ALIASES get_element_name
+    FOR if_ish_gui_view~get_element_name.
+  ALIASES get_layout
+    FOR if_ish_gui_view~get_layout.
+  ALIASES get_parent_view
+    FOR if_ish_gui_view~get_parent_view.
+  ALIASES get_vcode
+    FOR if_ish_gui_view~get_vcode.
+  ALIASES has_focus
+    FOR if_ish_gui_view~has_focus.
+  ALIASES is_destroyed
+    FOR if_ish_gui_view~is_destroyed.
+  ALIASES is_first_display_done
+    FOR if_ish_gui_view~is_first_display_done.
+  ALIASES is_initialized
+    FOR if_ish_gui_view~is_initialized.
+  ALIASES is_in_destroy_mode
+    FOR if_ish_gui_view~is_in_destroy_mode.
+  ALIASES is_in_first_display_mode
+    FOR if_ish_gui_view~is_in_first_display_mode.
+  ALIASES is_in_initialization_mode
+    FOR if_ish_gui_view~is_in_initialization_mode.
+  ALIASES process_request
+    FOR if_ish_gui_view~process_request.
+  ALIASES register_child_view
+    FOR if_ish_gui_view~register_child_view.
+  ALIASES save_layout
+    FOR if_ish_gui_view~save_layout.
+  ALIASES set_focus
+    FOR if_ish_gui_view~set_focus.
+  ALIASES set_vcode
+    FOR if_ish_gui_view~set_vcode.
+  ALIASES ev_after_destroy
+    FOR if_ish_gui_view~ev_after_destroy.
+  ALIASES ev_before_destroy
+    FOR if_ish_gui_view~ev_before_destroy.
 
-  aliases CO_VCODE_DISPLAY
-    for IF_ISH_GUI_VIEW~CO_VCODE_DISPLAY .
-  aliases CO_VCODE_INSERT
-    for IF_ISH_GUI_VIEW~CO_VCODE_INSERT .
-  aliases CO_VCODE_UPDATE
-    for IF_ISH_GUI_VIEW~CO_VCODE_UPDATE .
-  aliases ACTUALIZE_LAYOUT
-    for IF_ISH_GUI_VIEW~ACTUALIZE_LAYOUT .
-  aliases DESTROY
-    for IF_ISH_GUI_VIEW~DESTROY .
-  aliases GET_APPLICATION
-    for IF_ISH_GUI_VIEW~GET_APPLICATION .
-  aliases GET_CHILD_VIEWS
-    for IF_ISH_GUI_VIEW~GET_CHILD_VIEWS .
-  aliases GET_CHILD_VIEW_BY_ID
-    for IF_ISH_GUI_VIEW~GET_CHILD_VIEW_BY_ID .
-  aliases GET_CHILD_VIEW_BY_NAME
-    for IF_ISH_GUI_VIEW~GET_CHILD_VIEW_BY_NAME .
-  aliases GET_CONTROLLER
-    for IF_ISH_GUI_VIEW~GET_CONTROLLER .
-  aliases GET_ELEMENT_ID
-    for IF_ISH_GUI_VIEW~GET_ELEMENT_ID .
-  aliases GET_ELEMENT_NAME
-    for IF_ISH_GUI_VIEW~GET_ELEMENT_NAME .
-  aliases GET_LAYOUT
-    for IF_ISH_GUI_VIEW~GET_LAYOUT .
-  aliases GET_PARENT_VIEW
-    for IF_ISH_GUI_VIEW~GET_PARENT_VIEW .
-  aliases GET_VCODE
-    for IF_ISH_GUI_VIEW~GET_VCODE .
-  aliases HAS_FOCUS
-    for IF_ISH_GUI_VIEW~HAS_FOCUS .
-  aliases IS_DESTROYED
-    for IF_ISH_GUI_VIEW~IS_DESTROYED .
-  aliases IS_FIRST_DISPLAY_DONE
-    for IF_ISH_GUI_VIEW~IS_FIRST_DISPLAY_DONE .
-  aliases IS_INITIALIZED
-    for IF_ISH_GUI_VIEW~IS_INITIALIZED .
-  aliases IS_IN_DESTROY_MODE
-    for IF_ISH_GUI_VIEW~IS_IN_DESTROY_MODE .
-  aliases IS_IN_FIRST_DISPLAY_MODE
-    for IF_ISH_GUI_VIEW~IS_IN_FIRST_DISPLAY_MODE .
-  aliases IS_IN_INITIALIZATION_MODE
-    for IF_ISH_GUI_VIEW~IS_IN_INITIALIZATION_MODE .
-  aliases PROCESS_REQUEST
-    for IF_ISH_GUI_VIEW~PROCESS_REQUEST .
-  aliases REGISTER_CHILD_VIEW
-    for IF_ISH_GUI_VIEW~REGISTER_CHILD_VIEW .
-  aliases SAVE_LAYOUT
-    for IF_ISH_GUI_VIEW~SAVE_LAYOUT .
-  aliases SET_FOCUS
-    for IF_ISH_GUI_VIEW~SET_FOCUS .
-  aliases SET_VCODE
-    for IF_ISH_GUI_VIEW~SET_VCODE .
-  aliases EV_AFTER_DESTROY
-    for IF_ISH_GUI_VIEW~EV_AFTER_DESTROY .
-  aliases EV_BEFORE_DESTROY
-    for IF_ISH_GUI_VIEW~EV_BEFORE_DESTROY .
+  EVENTS ev_visibility_changed
+    EXPORTING
+      VALUE(e_visible) TYPE abap_bool.
 
-  type-pools ABAP .
-  events EV_VISIBILITY_CHANGED
-    exporting
-      value(E_VISIBLE) type ABAP_BOOL .
-
-  methods FIRST_DISPLAY
-    importing
-      !I_WITH_CHILD_VIEWS type ABAP_BOOL default ABAP_FALSE
-    raising
-      CX_ISH_STATIC_HANDLER .
-  methods GET_CONTROL
-    returning
-      value(RR_CONTROL) type ref to CL_GUI_CONTROL .
-  methods GET_CONTROL_LAYOUT
-    returning
-      value(RR_CONTROL_LAYOUT) type ref to CL_ISH_GUI_CONTROL_LAYOUT .
-  methods GET_VISIBILITY
-    returning
-      value(R_VISIBLE) type ABAP_BOOL .
-  methods REFRESH_DISPLAY
-    importing
-      !I_FORCE type ABAP_BOOL default ABAP_FALSE
-      !I_WITH_CHILD_VIEWS type ABAP_BOOL default ABAP_FALSE
-    preferred parameter I_FORCE
-    raising
-      CX_ISH_STATIC_HANDLER .
-  methods SET_VISIBILITY
-    importing
-      !I_VISIBLE type ABAP_BOOL default ABAP_TRUE
-    returning
-      value(R_CHANGED) type ABAP_BOOL
-    raising
-      CX_ISH_STATIC_HANDLER .
-endinterface.
+  METHODS first_display
+    IMPORTING
+      !i_with_child_views TYPE abap_bool DEFAULT abap_false
+    RAISING
+      cx_ish_static_handler.
+  METHODS get_control
+    RETURNING
+      VALUE(rr_control) TYPE REF TO cl_gui_control.
+  METHODS get_control_layout
+    RETURNING
+      VALUE(rr_control_layout) TYPE REF TO cl_ish_gui_control_layout.
+  METHODS get_visibility
+    RETURNING
+      VALUE(r_visible) TYPE abap_bool.
+  METHODS refresh_display
+    IMPORTING
+      !i_force TYPE abap_bool DEFAULT abap_false
+      !i_with_child_views TYPE abap_bool DEFAULT abap_false
+    PREFERRED PARAMETER i_force
+    RAISING
+      cx_ish_static_handler.
+  METHODS set_visibility
+    IMPORTING
+      !i_visible TYPE abap_bool DEFAULT abap_true
+    RETURNING
+      VALUE(r_changed) TYPE abap_bool
+    RAISING
+      cx_ish_static_handler.
+ENDINTERFACE.

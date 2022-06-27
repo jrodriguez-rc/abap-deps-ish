@@ -1,14 +1,13 @@
-interface IF_ISHMED_API
-  public .
+INTERFACE if_ishmed_api
+  PUBLIC.
 
+  INTERFACES if_ishmed_api_descriptor.
+  INTERFACES if_ishmed_api_documentation.
 
-  interfaces IF_ISHMED_API_DESCRIPTOR .
-  interfaces IF_ISHMED_API_DOCUMENTATION .
-
-  methods GET_TYPE
-    returning
-      value(R_VALUE) type N1API_TYPE .
-  methods GET_VERSION
-    returning
-      value(R_VALUE) type N1API_VERSION .
-endinterface.
+  METHODS get_type
+    RETURNING
+      VALUE(r_value) TYPE n1api_type.
+  METHODS get_version
+    RETURNING
+      VALUE(r_value) TYPE n1api_version.
+ENDINTERFACE.

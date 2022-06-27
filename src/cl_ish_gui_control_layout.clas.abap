@@ -1,35 +1,27 @@
-class CL_ISH_GUI_CONTROL_LAYOUT definition
-  public
-  inheriting from CL_ISH_GUI_VIEW_LAYOUT
-  create public .
+CLASS cl_ish_gui_control_layout DEFINITION
+  PUBLIC
+  INHERITING FROM cl_ish_gui_view_layout
+  CREATE PUBLIC.
 
-*"* public components of class CL_ISH_GUI_CONTROL_LAYOUT
-*"* do not include other source files here!!!
-public section.
+  PUBLIC SECTION.
 
-  methods CONSTRUCTOR
-    importing
-      !I_ELEMENT_NAME type N1GUI_ELEMENT_NAME optional
-      !I_LAYOUT_NAME type N1GUI_LAYOUT_NAME optional
-    preferred parameter I_ELEMENT_NAME .
-protected section.
-*"* protected components of class CL_ISH_GUI_CONTROL_LAYOUT
-*"* do not include other source files here!!!
-private section.
-*"* private components of class CL_ISH_GUI_CONTROL_LAYOUT
-*"* do not include other source files here!!!
+    METHODS constructor
+      IMPORTING
+        !i_element_name TYPE n1gui_element_name OPTIONAL
+        !i_layout_name TYPE n1gui_layout_name OPTIONAL
+      PREFERRED PARAMETER i_element_name.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
 ENDCLASS.
 
 
 
-CLASS CL_ISH_GUI_CONTROL_LAYOUT IMPLEMENTATION.
+CLASS cl_ish_gui_control_layout IMPLEMENTATION.
 
 
-METHOD constructor.
+  METHOD constructor.
 
-  super->constructor(
-      i_element_name        = i_element_name
-      i_layout_name         = i_layout_name ).
+  ENDMETHOD.
 
-ENDMETHOD.
+
 ENDCLASS.

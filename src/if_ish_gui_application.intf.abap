@@ -1,156 +1,154 @@
 *"* components of interface IF_ISH_GUI_APPLICATION
-interface IF_ISH_GUI_APPLICATION
-  public .
+INTERFACE if_ish_gui_application
+  PUBLIC.
 
+  INTERFACES if_ish_destroyable.
+  INTERFACES if_ish_gui_element.
+  INTERFACES if_ish_gui_request_processor.
+  INTERFACES if_ish_gui_request_sender.
 
-  interfaces IF_ISH_DESTROYABLE .
-  interfaces IF_ISH_GUI_ELEMENT .
-  interfaces IF_ISH_GUI_REQUEST_PROCESSOR .
-  interfaces IF_ISH_GUI_REQUEST_SENDER .
+  ALIASES destroy
+    FOR if_ish_destroyable~destroy.
+  ALIASES get_element_id
+    FOR if_ish_gui_element~get_element_id.
+  ALIASES get_element_name
+    FOR if_ish_gui_element~get_element_name.
+  ALIASES is_destroyed
+    FOR if_ish_destroyable~is_destroyed.
+  ALIASES is_in_destroy_mode
+    FOR if_ish_destroyable~is_in_destroy_mode.
+  ALIASES process_request
+    FOR if_ish_gui_request_processor~process_request.
+  ALIASES ev_after_destroy
+    FOR if_ish_destroyable~ev_after_destroy.
+  ALIASES ev_before_destroy
+    FOR if_ish_destroyable~ev_before_destroy.
 
-  aliases DESTROY
-    for IF_ISH_DESTROYABLE~DESTROY .
-  aliases GET_ELEMENT_ID
-    for IF_ISH_GUI_ELEMENT~GET_ELEMENT_ID .
-  aliases GET_ELEMENT_NAME
-    for IF_ISH_GUI_ELEMENT~GET_ELEMENT_NAME .
-  aliases IS_DESTROYED
-    for IF_ISH_DESTROYABLE~IS_DESTROYED .
-  aliases IS_IN_DESTROY_MODE
-    for IF_ISH_DESTROYABLE~IS_IN_DESTROY_MODE .
-  aliases PROCESS_REQUEST
-    for IF_ISH_GUI_REQUEST_PROCESSOR~PROCESS_REQUEST .
-  aliases EV_AFTER_DESTROY
-    for IF_ISH_DESTROYABLE~EV_AFTER_DESTROY .
-  aliases EV_BEFORE_DESTROY
-    for IF_ISH_DESTROYABLE~EV_BEFORE_DESTROY .
+  CONSTANTS co_ucomm_back TYPE syucomm VALUE 'BACK'. "#EC NOTEXT
+  CONSTANTS co_ucomm_cancel TYPE syucomm VALUE 'CANCEL'. "#EC NOTEXT
+  CONSTANTS co_ucomm_check TYPE syucomm VALUE 'CHECK'. "#EC NOTEXT
+  CONSTANTS co_ucomm_config_layout TYPE syucomm VALUE 'CONFIG_LAYOUT'. "#EC NOTEXT
+  CONSTANTS co_ucomm_delete TYPE syucomm VALUE 'DELETE'. "#EC NOTEXT
+  CONSTANTS co_ucomm_end TYPE syucomm VALUE 'END'. "#EC NOTEXT
+  CONSTANTS co_ucomm_enter TYPE syucomm VALUE 'ENTER'. "#EC NOTEXT
+  CONSTANTS co_ucomm_save TYPE syucomm VALUE 'SAVE'. "#EC NOTEXT
+  CONSTANTS co_ucomm_swi2dis TYPE syucomm VALUE 'SWI2DIS'. "#EC NOTEXT
+  CONSTANTS co_ucomm_swi2upd TYPE syucomm VALUE 'SWI2UPD'. "#EC NOTEXT
+  CONSTANTS co_ucomm_transport TYPE syucomm VALUE 'TRANSPORT'. "#EC NOTEXT
 
-  constants CO_UCOMM_BACK type SYUCOMM value 'BACK'. "#EC NOTEXT
-  constants CO_UCOMM_CANCEL type SYUCOMM value 'CANCEL'. "#EC NOTEXT
-  constants CO_UCOMM_CHECK type SYUCOMM value 'CHECK'. "#EC NOTEXT
-  constants CO_UCOMM_CONFIG_LAYOUT type SYUCOMM value 'CONFIG_LAYOUT'. "#EC NOTEXT
-  constants CO_UCOMM_DELETE type SYUCOMM value 'DELETE'. "#EC NOTEXT
-  constants CO_UCOMM_END type SYUCOMM value 'END'. "#EC NOTEXT
-  constants CO_UCOMM_ENTER type SYUCOMM value 'ENTER'. "#EC NOTEXT
-  constants CO_UCOMM_SAVE type SYUCOMM value 'SAVE'. "#EC NOTEXT
-  constants CO_UCOMM_SWI2DIS type SYUCOMM value 'SWI2DIS'. "#EC NOTEXT
-  constants CO_UCOMM_SWI2UPD type SYUCOMM value 'SWI2UPD'. "#EC NOTEXT
-  constants CO_UCOMM_TRANSPORT type SYUCOMM value 'TRANSPORT'. "#EC NOTEXT
-
-  methods BUILD_ALV_VARIANT_REPORT
-    importing
-      !IR_VIEW type ref to IF_ISH_GUI_VIEW optional
-    returning
-      value(R_REPORT) type REPID .
-  methods CANCEL_NEXT_MDYEVT_PROC .
-  methods CLEAR_CRSPOS_MESSAGE .
-  methods GET_ALV_VARIANT_REPORT_PREFIX
-    importing
-      !IR_VIEW type ref to IF_ISH_GUI_VIEW optional
-    returning
-      value(R_PREFIX) type STRING .
-  methods GET_CRSPOS_MESSAGE
-    returning
-      value(RS_CRSPOS_MESSAGE) type RN1MESSAGE .
-  methods GET_FOCUSSED_VIEW
-    returning
-      value(RR_VIEW) type ref to IF_ISH_GUI_VIEW .
-  methods GET_LAYOUT
-    returning
-      value(RR_LAYOUT) type ref to CL_ISH_GUI_APPL_LAYOUT .
-  methods GET_MAIN_CONTROLLER
-    returning
-      value(RR_MAIN_CONTROLLER) type ref to IF_ISH_GUI_MAIN_CONTROLLER .
-  methods GET_STARTUP_SETTINGS
-    returning
-      value(RR_STARTUP_SETTINGS) type ref to CL_ISH_GUI_STARTUP_SETTINGS .
-  methods GET_VCODE
-    returning
-      value(R_VCODE) type TNDYM-VCODE .
-  type-pools ABAP .
-  methods IS_EMBEDDED
-    returning
-      value(R_EMBEDDED) type ABAP_BOOL .
-  methods IS_INITIALIZED
-    returning
-      value(R_INITIALIZED) type ABAP_BOOL .
-  methods IS_IN_INITIALIZATION_MODE
-    returning
-      value(R_INITIALIZATION_MODE) type ABAP_BOOL .
-  methods IS_ISH_SCRM_SUPPORTED
-    importing
-      !IR_VIEW type ref to IF_ISH_GUI_DYNPRO_VIEW optional
-    returning
-      value(R_SUPPORTED) type ABAP_BOOL .
-  methods IS_NEXT_MDYEVT_PROC_CANCELLED
-    returning
-      value(R_CANCELLED) type ABAP_BOOL .
-  methods IS_PAI_IN_PROCESS
-    returning
-      value(R_PAI_IN_PROCESS) type ABAP_BOOL .
-  methods IS_PBO_IN_PROCESS
-    returning
-      value(R_PBO_IN_PROCESS) type ABAP_BOOL .
-  methods IS_RUNNING
-    returning
-      value(R_RUNNING) type ABAP_BOOL .
-  methods LOAD_LAYOUT
-    importing
-      !I_LAYOUT_NAME type N1GUI_LAYOUT_NAME
-      !I_USERNAME type USERNAME default SY-UNAME
-    returning
-      value(RR_LAYOUT) type ref to CL_ISH_GUI_LAYOUT
-    raising
-      CX_ISH_STATIC_HANDLER .
-  methods LOAD_VIEW_LAYOUT
-    importing
-      !IR_VIEW type ref to IF_ISH_GUI_VIEW
-      !IR_CONTROLLER type ref to IF_ISH_GUI_CONTROLLER optional
-      !IR_PARENT_VIEW type ref to IF_ISH_GUI_VIEW optional
-      !I_LAYOUT_NAME type N1GUI_LAYOUT_NAME optional
-      !I_USERNAME type USERNAME default SY-UNAME
-    returning
-      value(RR_LAYOUT) type ref to CL_ISH_GUI_LAYOUT
-    raising
-      CX_ISH_STATIC_HANDLER .
-  methods RUN
-    returning
-      value(RR_RESULT) type ref to CL_ISH_GUI_APPL_RESULT
-    raising
-      CX_ISH_STATIC_HANDLER .
-  methods SAVE_LAYOUT
-    importing
-      !IR_LAYOUT type ref to CL_ISH_GUI_LAYOUT
-      !I_USERNAME type USERNAME default SY-UNAME
-      !I_ERDAT type RI_ERDAT default SY-DATUM
-      !I_ERTIM type RI_ERTIM default SY-UZEIT
-      !I_ERUSR type RI_ERNAM default SY-UNAME
-    returning
-      value(R_SAVED) type ABAP_BOOL
-    raising
-      CX_ISH_STATIC_HANDLER .
-  methods SAVE_VIEW_LAYOUT
-    importing
-      !IR_VIEW type ref to IF_ISH_GUI_VIEW
-      !I_EXPLICIT type ABAP_BOOL
-      !I_USERNAME type USERNAME default SY-UNAME
-      !I_ERDAT type RI_ERDAT default SY-DATUM
-      !I_ERTIM type RI_ERTIM default SY-UZEIT
-      !I_ERUSR type RI_ERNAM default SY-UNAME
-    returning
-      value(R_SAVED) type ABAP_BOOL
-    raising
-      CX_ISH_STATIC_HANDLER .
-  methods SET_FOCUSSED_VIEW
-    importing
-      !IR_VIEW type ref to IF_ISH_GUI_VIEW
-    returning
-      value(R_SUCCESS) type ABAP_BOOL .
-  methods SET_VCODE
-    importing
-      !I_VCODE type ISH_VCODE
-    returning
-      value(R_CHANGED) type ABAP_BOOL
-    raising
-      CX_ISH_STATIC_HANDLER .
-endinterface.
+  METHODS build_alv_variant_report
+    IMPORTING
+      !ir_view TYPE REF TO if_ish_gui_view OPTIONAL
+    RETURNING
+      VALUE(r_report) TYPE repid.
+  METHODS cancel_next_mdyevt_proc.
+  METHODS clear_crspos_message.
+  METHODS get_alv_variant_report_prefix
+    IMPORTING
+      !ir_view TYPE REF TO if_ish_gui_view OPTIONAL
+    RETURNING
+      VALUE(r_prefix) TYPE string.
+  METHODS get_crspos_message
+    RETURNING
+      VALUE(rs_crspos_message) TYPE rn1message.
+  METHODS get_focussed_view
+    RETURNING
+      VALUE(rr_view) TYPE REF TO if_ish_gui_view.
+  METHODS get_layout
+    RETURNING
+      VALUE(rr_layout) TYPE REF TO cl_ish_gui_appl_layout.
+  METHODS get_main_controller
+    RETURNING
+      VALUE(rr_main_controller) TYPE REF TO if_ish_gui_main_controller.
+  METHODS get_startup_settings
+    RETURNING
+      VALUE(rr_startup_settings) TYPE REF TO cl_ish_gui_startup_settings.
+  METHODS get_vcode
+    RETURNING
+      VALUE(r_vcode) TYPE tndym-vcode.
+  METHODS is_embedded
+    RETURNING
+      VALUE(r_embedded) TYPE abap_bool.
+  METHODS is_initialized
+    RETURNING
+      VALUE(r_initialized) TYPE abap_bool.
+  METHODS is_in_initialization_mode
+    RETURNING
+      VALUE(r_initialization_mode) TYPE abap_bool.
+  METHODS is_ish_scrm_supported
+    IMPORTING
+      !ir_view TYPE REF TO if_ish_gui_dynpro_view OPTIONAL
+    RETURNING
+      VALUE(r_supported) TYPE abap_bool.
+  METHODS is_next_mdyevt_proc_cancelled
+    RETURNING
+      VALUE(r_cancelled) TYPE abap_bool.
+  METHODS is_pai_in_process
+    RETURNING
+      VALUE(r_pai_in_process) TYPE abap_bool.
+  METHODS is_pbo_in_process
+    RETURNING
+      VALUE(r_pbo_in_process) TYPE abap_bool.
+  METHODS is_running
+    RETURNING
+      VALUE(r_running) TYPE abap_bool.
+  METHODS load_layout
+    IMPORTING
+      !i_layout_name TYPE n1gui_layout_name
+      !i_username TYPE username DEFAULT sy-uname
+    RETURNING
+      VALUE(rr_layout) TYPE REF TO cl_ish_gui_layout
+    RAISING
+      cx_ish_static_handler.
+  METHODS load_view_layout
+    IMPORTING
+      !ir_view TYPE REF TO if_ish_gui_view
+      !ir_controller TYPE REF TO if_ish_gui_controller OPTIONAL
+      !ir_parent_view TYPE REF TO if_ish_gui_view OPTIONAL
+      !i_layout_name TYPE n1gui_layout_name OPTIONAL
+      !i_username TYPE username DEFAULT sy-uname
+    RETURNING
+      VALUE(rr_layout) TYPE REF TO cl_ish_gui_layout
+    RAISING
+      cx_ish_static_handler.
+  METHODS run
+    RETURNING
+      VALUE(rr_result) TYPE REF TO cl_ish_gui_appl_result
+    RAISING
+      cx_ish_static_handler.
+  METHODS save_layout
+    IMPORTING
+      !ir_layout TYPE REF TO cl_ish_gui_layout
+      !i_username TYPE username DEFAULT sy-uname
+      !i_erdat TYPE ri_erdat DEFAULT sy-datum
+      !i_ertim TYPE ri_ertim DEFAULT sy-uzeit
+      !i_erusr TYPE ri_ernam DEFAULT sy-uname
+    RETURNING
+      VALUE(r_saved) TYPE abap_bool
+    RAISING
+      cx_ish_static_handler.
+  METHODS save_view_layout
+    IMPORTING
+      !ir_view TYPE REF TO if_ish_gui_view
+      !i_explicit TYPE abap_bool
+      !i_username TYPE username DEFAULT sy-uname
+      !i_erdat TYPE ri_erdat DEFAULT sy-datum
+      !i_ertim TYPE ri_ertim DEFAULT sy-uzeit
+      !i_erusr TYPE ri_ernam DEFAULT sy-uname
+    RETURNING
+      VALUE(r_saved) TYPE abap_bool
+    RAISING
+      cx_ish_static_handler.
+  METHODS set_focussed_view
+    IMPORTING
+      !ir_view TYPE REF TO if_ish_gui_view
+    RETURNING
+      VALUE(r_success) TYPE abap_bool.
+  METHODS set_vcode
+    IMPORTING
+      !i_vcode TYPE ish_vcode
+    RETURNING
+      VALUE(r_changed) TYPE abap_bool
+    RAISING
+      cx_ish_static_handler.
+ENDINTERFACE.

@@ -1,35 +1,33 @@
-*"* components of interface IF_ISH_GUI_TABLE_MODEL
-interface IF_ISH_GUI_TABLE_MODEL
-  public .
+INTERFACE if_ish_gui_table_model
+  PUBLIC.
 
 
-  interfaces IF_ISH_GUI_MODEL .
+  INTERFACES if_ish_gui_model.
 
-  events EV_ENTRY_ADDED
-    exporting
-      value(ER_ENTRY) type ref to IF_ISH_GUI_MODEL .
-  events EV_ENTRY_REMOVED
-    exporting
-      value(ER_ENTRY) type ref to IF_ISH_GUI_MODEL .
+  EVENTS ev_entry_added
+    EXPORTING
+      VALUE(er_entry) TYPE REF TO if_ish_gui_model.
+  EVENTS ev_entry_removed
+    EXPORTING
+      VALUE(er_entry) TYPE REF TO if_ish_gui_model.
 
-  type-pools ABAP .
-  methods ADD_ENTRY
-    importing
-      !IR_ENTRY type ref to IF_ISH_GUI_MODEL
-    returning
-      value(R_ADDED) type ABAP_BOOL
-    raising
-      CX_ISH_STATIC_HANDLER .
-  methods GET_ENTRIES
-    returning
-      value(RT_ENTRY) type ISH_T_GUI_MODEL_OBJHASH
-    raising
-      CX_ISH_STATIC_HANDLER .
-  methods REMOVE_ENTRY
-    importing
-      !IR_ENTRY type ref to IF_ISH_GUI_MODEL
-    returning
-      value(R_REMOVED) type ABAP_BOOL
-    raising
-      CX_ISH_STATIC_HANDLER .
-endinterface.
+  METHODS add_entry
+    IMPORTING
+      !ir_entry TYPE REF TO if_ish_gui_model
+    RETURNING
+      VALUE(r_added) TYPE abap_bool
+    RAISING
+      cx_ish_static_handler.
+  METHODS get_entries
+    RETURNING
+      VALUE(rt_entry) TYPE ish_t_gui_model_objhash
+    RAISING
+      cx_ish_static_handler.
+  METHODS remove_entry
+    IMPORTING
+      !ir_entry TYPE REF TO if_ish_gui_model
+    RETURNING
+      VALUE(r_removed) TYPE abap_bool
+    RAISING
+      cx_ish_static_handler.
+ENDINTERFACE.

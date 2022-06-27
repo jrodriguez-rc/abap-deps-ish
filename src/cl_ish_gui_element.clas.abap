@@ -1,89 +1,45 @@
-class CL_ISH_GUI_ELEMENT definition
-  public
-  abstract
-  create public .
+CLASS cl_ish_gui_element DEFINITION
+  PUBLIC
+  ABSTRACT
+  CREATE PUBLIC.
 
-*"* public components of class CL_ISH_GUI_ELEMENT
-*"* do not include other source files here!!!
-public section.
+  PUBLIC SECTION.
 
-  interfaces IF_ISH_GUI_ELEMENT
-      final methods GET_ELEMENT_ID
-                    GET_ELEMENT_NAME .
+    INTERFACES if_ish_gui_element
+      FINAL METHODS get_element_id
+                    get_element_name.
 
-  aliases GET_ELEMENT_ID
-    for IF_ISH_GUI_ELEMENT~GET_ELEMENT_ID .
-  aliases GET_ELEMENT_NAME
-    for IF_ISH_GUI_ELEMENT~GET_ELEMENT_NAME .
+    ALIASES get_element_id FOR if_ish_gui_element~get_element_id.
+    ALIASES get_element_name FOR if_ish_gui_element~get_element_name.
 
-  constants CO_FIELDNAME_ELEMENT_ID type ISH_FIELDNAME value 'ELEMENT_ID'. "#EC NOTEXT
-  constants CO_FIELDNAME_ELEMENT_NAME type ISH_FIELDNAME value 'ELEMENT_NAME'. "#EC NOTEXT
+    CONSTANTS co_fieldname_element_id TYPE ish_fieldname VALUE 'ELEMENT_ID'. "#EC NOTEXT
+    CONSTANTS co_fieldname_element_name TYPE ish_fieldname VALUE 'ELEMENT_NAME'. "#EC NOTEXT
 
-  methods CONSTRUCTOR
-    importing
-      !I_ELEMENT_NAME type N1GUI_ELEMENT_NAME optional .
-protected section.
-*"* protected components of class CL_ISH_GUI_ELEMENT
-*"* do not include other source files here!!!
-private section.
-*"* private components of class CL_ISH_GUI_ELEMENT
-*"* do not include other source files here!!!
-
-  data G_ELEMENT_ID type N1GUI_ELEMENT_ID .
-  data G_ELEMENT_NAME type N1GUI_ELEMENT_NAME .
+    METHODS constructor
+      IMPORTING
+        !i_element_name TYPE n1gui_element_name OPTIONAL.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
 ENDCLASS.
 
 
 
-CLASS CL_ISH_GUI_ELEMENT IMPLEMENTATION.
+CLASS cl_ish_gui_element IMPLEMENTATION.
 
 
-METHOD constructor.
+  METHOD constructor.
 
-  super->constructor( ).
-
-  g_element_id   = cl_ish_utl_base=>generate_uuid( ).
-  IF i_element_name IS INITIAL.
-    g_element_name = cl_ish_utl_rtti=>get_class_name( me ).
-  ELSE.
-    g_element_name = i_element_name.
-  ENDIF.
-
-ENDMETHOD.
+  ENDMETHOD.
 
 
-METHOD if_ish_gui_element~get_element_id.
+  METHOD if_ish_gui_element~get_element_id.
 
-  DATA lr_layout            TYPE REF TO cl_ish_gui_layout.
-
-  IF g_element_id IS INITIAL.
-    TRY.
-        lr_layout ?= me.
-        g_element_id = lr_layout->__get_layout_elemid( ).
-      CATCH cx_sy_move_cast_error.
-        RETURN.
-    ENDTRY.
-  ENDIF.
-
-  r_element_id = g_element_id.
-
-ENDMETHOD.
+  ENDMETHOD.
 
 
-METHOD if_ish_gui_element~get_element_name.
+  METHOD if_ish_gui_element~get_element_name.
 
-  DATA lr_layout            TYPE REF TO cl_ish_gui_layout.
+  ENDMETHOD.
 
-  IF g_element_name IS INITIAL.
-    TRY.
-        lr_layout ?= me.
-        g_element_name = lr_layout->__get_layout_elemname( ).
-      CATCH cx_sy_move_cast_error.
-        RETURN.
-    ENDTRY.
-  ENDIF.
 
-  r_element_name = g_element_name.
-
-ENDMETHOD.
 ENDCLASS.

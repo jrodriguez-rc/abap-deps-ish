@@ -1,19 +1,18 @@
 *"* components of interface IF_ISH_DESTROYABLE
-interface IF_ISH_DESTROYABLE
-  public .
+INTERFACE if_ish_destroyable
+  PUBLIC.
 
 
-  events EV_AFTER_DESTROY .
-  events EV_BEFORE_DESTROY .
+  EVENTS ev_after_destroy.
+  EVENTS ev_before_destroy.
 
-  type-pools ABAP .
-  methods DESTROY
-    returning
-      value(R_DESTROYED) type ABAP_BOOL .
-  methods IS_DESTROYED
-    returning
-      value(R_DESTROYED) type ABAP_BOOL .
-  methods IS_IN_DESTROY_MODE
-    returning
-      value(R_DESTROY_MODE) type ABAP_BOOL .
-endinterface.
+  METHODS destroy
+    RETURNING
+      VALUE(r_destroyed) TYPE abap_bool.
+  METHODS is_destroyed
+    RETURNING
+      VALUE(r_destroyed) TYPE abap_bool.
+  METHODS is_in_destroy_mode
+    RETURNING
+      VALUE(r_destroy_mode) TYPE abap_bool.
+ENDINTERFACE.

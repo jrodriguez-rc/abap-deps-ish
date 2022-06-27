@@ -1,5 +1,4 @@
-*"* components of interface IF_ISH_GUI_MODEL
-interface IF_ISH_GUI_MODEL
-  public .
+INTERFACE if_ish_gui_model
+  PUBLIC.
 
-endinterface.
+ENDINTERFACE.

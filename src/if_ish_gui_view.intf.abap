@@ -1,139 +1,137 @@
-*"* components of interface IF_ISH_GUI_VIEW
-interface IF_ISH_GUI_VIEW
-  public .
+INTERFACE if_ish_gui_view
+  PUBLIC.
 
 
-  interfaces IF_ISH_DESTROYABLE .
-  interfaces IF_ISH_GUI_ELEMENT .
-  interfaces IF_ISH_GUI_REQUEST_PROCESSOR .
-  interfaces IF_ISH_GUI_REQUEST_SENDER .
+  INTERFACES if_ish_destroyable.
+  INTERFACES if_ish_gui_element.
+  INTERFACES if_ish_gui_request_processor.
+  INTERFACES if_ish_gui_request_sender.
 
-  aliases DESTROY
-    for IF_ISH_DESTROYABLE~DESTROY .
-  aliases GET_ELEMENT_ID
-    for IF_ISH_GUI_ELEMENT~GET_ELEMENT_ID .
-  aliases GET_ELEMENT_NAME
-    for IF_ISH_GUI_ELEMENT~GET_ELEMENT_NAME .
-  aliases IS_DESTROYED
-    for IF_ISH_DESTROYABLE~IS_DESTROYED .
-  aliases IS_IN_DESTROY_MODE
-    for IF_ISH_DESTROYABLE~IS_IN_DESTROY_MODE .
-  aliases PROCESS_REQUEST
-    for IF_ISH_GUI_REQUEST_PROCESSOR~PROCESS_REQUEST .
-  aliases EV_AFTER_DESTROY
-    for IF_ISH_DESTROYABLE~EV_AFTER_DESTROY .
-  aliases EV_BEFORE_DESTROY
-    for IF_ISH_DESTROYABLE~EV_BEFORE_DESTROY .
+  ALIASES destroy
+    FOR if_ish_destroyable~destroy.
+  ALIASES get_element_id
+    FOR if_ish_gui_element~get_element_id.
+  ALIASES get_element_name
+    FOR if_ish_gui_element~get_element_name.
+  ALIASES is_destroyed
+    FOR if_ish_destroyable~is_destroyed.
+  ALIASES is_in_destroy_mode
+    FOR if_ish_destroyable~is_in_destroy_mode.
+  ALIASES process_request
+    FOR if_ish_gui_request_processor~process_request.
+  ALIASES ev_after_destroy
+    FOR if_ish_destroyable~ev_after_destroy.
+  ALIASES ev_before_destroy
+    FOR if_ish_destroyable~ev_before_destroy.
 
-  constants CO_VCODE_DISPLAY type TNDYM-VCODE value 'DIS'. "#EC NOTEXT
-  constants CO_VCODE_INSERT type TNDYM-VCODE value 'INS'. "#EC NOTEXT
-  constants CO_VCODE_UPDATE type TNDYM-VCODE value 'UPD'. "#EC NOTEXT
+  CONSTANTS co_vcode_display TYPE tndym-vcode VALUE 'DIS'. "#EC NOTEXT
+  CONSTANTS co_vcode_insert TYPE tndym-vcode VALUE 'INS'. "#EC NOTEXT
+  CONSTANTS co_vcode_update TYPE tndym-vcode VALUE 'UPD'. "#EC NOTEXT
 
-  methods ACTUALIZE_LAYOUT
-    raising
-      CX_ISH_STATIC_HANDLER .
-  methods GET_ALV_VARIANT_REPORT_SUFFIX
-    returning
-      value(R_SUFFIX) type STRING .
-  methods GET_APPLICATION
-    returning
-      value(RR_APPLICATION) type ref to IF_ISH_GUI_APPLICATION .
-  type-pools ABAP .
-  methods GET_CHILD_VIEWS
-    importing
-      !I_WITH_SUBCHILDREN type ABAP_BOOL default ABAP_FALSE
-    returning
-      value(RT_CHILD_VIEW) type ISH_T_GUI_VIEWID_HASH .
-  methods GET_CHILD_VIEW_BY_ID
-    importing
-      !I_VIEW_ID type N1GUI_ELEMENT_ID
-      !I_WITH_SUBCHILDREN type ABAP_BOOL default ABAP_FALSE
-    returning
-      value(RR_CHILD_VIEW) type ref to IF_ISH_GUI_VIEW .
-  methods GET_CHILD_VIEW_BY_NAME
-    importing
-      !I_VIEW_NAME type N1GUI_ELEMENT_NAME
-    returning
-      value(RR_CHILD_VIEW) type ref to IF_ISH_GUI_VIEW .
-  methods GET_CONTROLLER
-    returning
-      value(RR_CONTROLLER) type ref to IF_ISH_GUI_CONTROLLER .
-  methods GET_ERRORFIELD_MESSAGES
-    importing
-      !I_WITH_CHILD_VIEWS type ABAP_BOOL default ABAP_FALSE
-      !IR_MODEL type ref to IF_ISH_GUI_MODEL optional
-      !I_FIELDNAME type ISH_FIELDNAME optional
-    preferred parameter IR_MODEL
-    returning
-      value(RR_MESSAGES) type ref to CL_ISHMED_ERRORHANDLING .
-  methods GET_LAYOUT
-    returning
-      value(RR_LAYOUT) type ref to CL_ISH_GUI_VIEW_LAYOUT .
-  methods GET_PARENT_VIEW
-    returning
-      value(RR_PARENT_VIEW) type ref to IF_ISH_GUI_VIEW .
-  methods GET_T_ERRORFIELD
-    importing
-      !IR_MODEL type ref to IF_ISH_GUI_MODEL optional
-      !I_FIELDNAME type ISH_FIELDNAME optional
-    returning
-      value(RT_ERRORFIELD) type ISHMED_T_GUI_ERRORFIELD_H .
-  methods GET_T_VIEW_ERRORFIELDS
-    importing
-      !IR_MODEL type ref to IF_ISH_GUI_MODEL optional
-      !I_FIELDNAME type ISH_FIELDNAME optional
-    returning
-      value(RT_VIEW_ERRORFIELDS) type ISHMED_T_GV_ERRORFIELDS_H .
-  methods GET_VCODE
-    returning
-      value(R_VCODE) type TNDYM-VCODE .
-  methods HAS_ERRORFIELDS
-    importing
-      !I_WITH_CHILD_VIEWS type ABAP_BOOL default ABAP_FALSE
-      !IR_MODEL type ref to IF_ISH_GUI_MODEL optional
-      !I_FIELDNAME type ISH_FIELDNAME optional
-    preferred parameter IR_MODEL
-    returning
-      value(R_HAS_ERRORFIELDS) type ABAP_BOOL .
-  methods HAS_FOCUS
-    returning
-      value(R_HAS_FOCUS) type ABAP_BOOL .
-  methods IS_FIRST_DISPLAY_DONE
-    returning
-      value(R_DONE) type ABAP_BOOL .
-  methods IS_INITIALIZED
-    returning
-      value(R_INITIALIZED) type ABAP_BOOL .
-  methods IS_IN_FIRST_DISPLAY_MODE
-    returning
-      value(R_FIRST_DISPLAY_MODE) type ABAP_BOOL .
-  methods IS_IN_INITIALIZATION_MODE
-    returning
-      value(R_INITIALIZATION_MODE) type ABAP_BOOL .
-  methods REGISTER_CHILD_VIEW
-    importing
-      !IR_CHILD_VIEW type ref to IF_ISH_GUI_VIEW
-    raising
-      CX_ISH_STATIC_HANDLER .
-  methods SAVE_LAYOUT
-    importing
-      !I_USERNAME type USERNAME default SY-UNAME
-      !I_ERDAT type RI_ERDAT default SY-DATUM
-      !I_ERTIM type RI_ERTIM default SY-UZEIT
-      !I_ERUSR type RI_ERNAM default SY-UNAME
-    returning
-      value(R_SAVED) type ABAP_BOOL
-    raising
-      CX_ISH_STATIC_HANDLER .
-  methods SET_FOCUS
-    returning
-      value(R_SUCCESS) type ABAP_BOOL .
-  methods SET_VCODE
-    importing
-      !I_VCODE type TNDYM-VCODE
-      !I_WITH_CHILD_VIEWS type ABAP_BOOL default ABAP_FALSE
-    returning
-      value(R_CHANGED) type ABAP_BOOL
-    raising
-      CX_ISH_STATIC_HANDLER .
-endinterface.
+  METHODS actualize_layout
+    RAISING
+      cx_ish_static_handler.
+  METHODS get_alv_variant_report_suffix
+    RETURNING
+      VALUE(r_suffix) TYPE string.
+  METHODS get_application
+    RETURNING
+      VALUE(rr_application) TYPE REF TO if_ish_gui_application.
+  METHODS get_child_views
+    IMPORTING
+      !i_with_subchildren TYPE abap_bool DEFAULT abap_false
+    RETURNING
+      VALUE(rt_child_view) TYPE ish_t_gui_viewid_hash.
+  METHODS get_child_view_by_id
+    IMPORTING
+      !i_view_id TYPE n1gui_element_id
+      !i_with_subchildren TYPE abap_bool DEFAULT abap_false
+    RETURNING
+      VALUE(rr_child_view) TYPE REF TO if_ish_gui_view.
+  METHODS get_child_view_by_name
+    IMPORTING
+      !i_view_name TYPE n1gui_element_name
+    RETURNING
+      VALUE(rr_child_view) TYPE REF TO if_ish_gui_view.
+  METHODS get_controller
+    RETURNING
+      VALUE(rr_controller) TYPE REF TO if_ish_gui_controller.
+  METHODS get_errorfield_messages
+    IMPORTING
+      !i_with_child_views TYPE abap_bool DEFAULT abap_false
+      !ir_model TYPE REF TO if_ish_gui_model OPTIONAL
+      !i_fieldname TYPE ish_fieldname OPTIONAL
+    PREFERRED PARAMETER ir_model
+    RETURNING
+      VALUE(rr_messages) TYPE REF TO cl_ishmed_errorhandling.
+  METHODS get_layout
+    RETURNING
+      VALUE(rr_layout) TYPE REF TO cl_ish_gui_view_layout.
+  METHODS get_parent_view
+    RETURNING
+      VALUE(rr_parent_view) TYPE REF TO if_ish_gui_view.
+  METHODS get_t_errorfield
+    IMPORTING
+      !ir_model TYPE REF TO if_ish_gui_model OPTIONAL
+      !i_fieldname TYPE ish_fieldname OPTIONAL
+    RETURNING
+      VALUE(rt_errorfield) TYPE ishmed_t_gui_errorfield_h.
+  METHODS get_t_view_errorfields
+    IMPORTING
+      !ir_model TYPE REF TO if_ish_gui_model OPTIONAL
+      !i_fieldname TYPE ish_fieldname OPTIONAL
+    RETURNING
+      VALUE(rt_view_errorfields) TYPE ishmed_t_gv_errorfields_h.
+  METHODS get_vcode
+    RETURNING
+      VALUE(r_vcode) TYPE tndym-vcode.
+  METHODS has_errorfields
+    IMPORTING
+      !i_with_child_views TYPE abap_bool DEFAULT abap_false
+      !ir_model TYPE REF TO if_ish_gui_model OPTIONAL
+      !i_fieldname TYPE ish_fieldname OPTIONAL
+    PREFERRED PARAMETER ir_model
+    RETURNING
+      VALUE(r_has_errorfields) TYPE abap_bool.
+  METHODS has_focus
+    RETURNING
+      VALUE(r_has_focus) TYPE abap_bool.
+  METHODS is_first_display_done
+    RETURNING
+      VALUE(r_done) TYPE abap_bool.
+  METHODS is_initialized
+    RETURNING
+      VALUE(r_initialized) TYPE abap_bool.
+  METHODS is_in_first_display_mode
+    RETURNING
+      VALUE(r_first_display_mode) TYPE abap_bool.
+  METHODS is_in_initialization_mode
+    RETURNING
+      VALUE(r_initialization_mode) TYPE abap_bool.
+  METHODS register_child_view
+    IMPORTING
+      !ir_child_view TYPE REF TO if_ish_gui_view
+    RAISING
+      cx_ish_static_handler.
+  METHODS save_layout
+    IMPORTING
+      !i_username TYPE username DEFAULT sy-uname
+      !i_erdat TYPE ri_erdat DEFAULT sy-datum
+      !i_ertim TYPE ri_ertim DEFAULT sy-uzeit
+      !i_erusr TYPE ri_ernam DEFAULT sy-uname
+    RETURNING
+      VALUE(r_saved) TYPE abap_bool
+    RAISING
+      cx_ish_static_handler.
+  METHODS set_focus
+    RETURNING
+      VALUE(r_success) TYPE abap_bool.
+  METHODS set_vcode
+    IMPORTING
+      !i_vcode TYPE tndym-vcode
+      !i_with_child_views TYPE abap_bool DEFAULT abap_false
+    RETURNING
+      VALUE(r_changed) TYPE abap_bool
+    RAISING
+      cx_ish_static_handler.
+ENDINTERFACE.

@@ -1,82 +1,81 @@
 *"* components of interface IF_ISH_GUI_CONTROLLER
-interface IF_ISH_GUI_CONTROLLER
-  public .
+INTERFACE if_ish_gui_controller
+  PUBLIC.
 
 
-  interfaces IF_ISH_DESTROYABLE .
-  interfaces IF_ISH_GUI_ELEMENT .
-  interfaces IF_ISH_GUI_REQUEST_PROCESSOR .
-  interfaces IF_ISH_GUI_REQUEST_SENDER .
+  INTERFACES if_ish_destroyable.
+  INTERFACES if_ish_gui_element.
+  INTERFACES if_ish_gui_request_processor.
+  INTERFACES if_ish_gui_request_sender.
 
-  aliases DESTROY
-    for IF_ISH_DESTROYABLE~DESTROY .
-  aliases GET_ELEMENT_ID
-    for IF_ISH_GUI_ELEMENT~GET_ELEMENT_ID .
-  aliases GET_ELEMENT_NAME
-    for IF_ISH_GUI_ELEMENT~GET_ELEMENT_NAME .
-  aliases IS_DESTROYED
-    for IF_ISH_DESTROYABLE~IS_DESTROYED .
-  aliases IS_IN_DESTROY_MODE
-    for IF_ISH_DESTROYABLE~IS_IN_DESTROY_MODE .
-  aliases PROCESS_REQUEST
-    for IF_ISH_GUI_REQUEST_PROCESSOR~PROCESS_REQUEST .
-  aliases EV_AFTER_DESTROY
-    for IF_ISH_DESTROYABLE~EV_AFTER_DESTROY .
-  aliases EV_BEFORE_DESTROY
-    for IF_ISH_DESTROYABLE~EV_BEFORE_DESTROY .
+  ALIASES destroy
+    FOR if_ish_destroyable~destroy.
+  ALIASES get_element_id
+    FOR if_ish_gui_element~get_element_id.
+  ALIASES get_element_name
+    FOR if_ish_gui_element~get_element_name.
+  ALIASES is_destroyed
+    FOR if_ish_destroyable~is_destroyed.
+  ALIASES is_in_destroy_mode
+    FOR if_ish_destroyable~is_in_destroy_mode.
+  ALIASES process_request
+    FOR if_ish_gui_request_processor~process_request.
+  ALIASES ev_after_destroy
+    FOR if_ish_destroyable~ev_after_destroy.
+  ALIASES ev_before_destroy
+    FOR if_ish_destroyable~ev_before_destroy.
 
-  methods GET_APPLICATION
-    returning
-      value(RR_APPLICATION) type ref to IF_ISH_GUI_APPLICATION .
-  type-pools ABAP .
-  methods GET_CHILD_CONTROLLERS
-    importing
-      !I_WITH_SUBCHILDREN type ABAP_BOOL default ABAP_FALSE
-    returning
-      value(RT_CHILD_CONTROLLER) type ISH_T_GUI_CTRID_HASH .
-  methods GET_CHILD_CONTROLLER_BY_ID
-    importing
-      !I_CONTROLLER_ID type N1GUI_ELEMENT_ID
-      !I_WITH_SUBCHILDREN type ABAP_BOOL default ABAP_FALSE
-    returning
-      value(RR_CHILD_CONTROLLER) type ref to IF_ISH_GUI_CONTROLLER .
-  methods GET_CHILD_CONTROLLER_BY_NAME
-    importing
-      !I_CONTROLLER_NAME type N1GUI_ELEMENT_NAME
-    returning
-      value(RR_CHILD_CONTROLLER) type ref to IF_ISH_GUI_CONTROLLER .
-  methods GET_MAIN_CONTROLLER
-    returning
-      value(RR_MAIN_CONTROLLER) type ref to IF_ISH_GUI_MAIN_CONTROLLER .
-  methods GET_MODEL
-    returning
-      value(RR_MODEL) type ref to IF_ISH_GUI_MODEL .
-  methods GET_PARENT_CONTROLLER
-    returning
-      value(RR_PARENT_CONTROLLER) type ref to IF_ISH_GUI_CONTROLLER .
-  methods GET_VCODE
-    returning
-      value(R_VCODE) type TNDYM-VCODE .
-  methods GET_VIEW
-    returning
-      value(RR_VIEW) type ref to IF_ISH_GUI_VIEW .
-  methods IS_INITIALIZED
-    returning
-      value(R_INITIALIZED) type ABAP_BOOL .
-  methods IS_IN_INITIALIZATION_MODE
-    returning
-      value(R_INITIALIZATION_MODE) type ABAP_BOOL .
-  methods REGISTER_CHILD_CONTROLLER
-    importing
-      !IR_CHILD_CONTROLLER type ref to IF_ISH_GUI_CONTROLLER
-    raising
-      CX_ISH_STATIC_HANDLER .
-  methods SET_VCODE
-    importing
-      !I_VCODE type TNDYM-VCODE
-      !I_WITH_CHILD_CONTROLLERS type ABAP_BOOL default ABAP_FALSE
-    returning
-      value(R_CHANGED) type ABAP_BOOL
-    raising
-      CX_ISH_STATIC_HANDLER .
-endinterface.
+  METHODS get_application
+    RETURNING
+      VALUE(rr_application) TYPE REF TO if_ish_gui_application.
+  METHODS get_child_controllers
+    IMPORTING
+      !i_with_subchildren TYPE abap_bool DEFAULT abap_false
+    RETURNING
+      VALUE(rt_child_controller) TYPE ish_t_gui_ctrid_hash.
+  METHODS get_child_controller_by_id
+    IMPORTING
+      !i_controller_id TYPE n1gui_element_id
+      !i_with_subchildren TYPE abap_bool DEFAULT abap_false
+    RETURNING
+      VALUE(rr_child_controller) TYPE REF TO if_ish_gui_controller.
+  METHODS get_child_controller_by_name
+    IMPORTING
+      !i_controller_name TYPE n1gui_element_name
+    RETURNING
+      VALUE(rr_child_controller) TYPE REF TO if_ish_gui_controller.
+  METHODS get_main_controller
+    RETURNING
+      VALUE(rr_main_controller) TYPE REF TO if_ish_gui_main_controller.
+  METHODS get_model
+    RETURNING
+      VALUE(rr_model) TYPE REF TO if_ish_gui_model.
+  METHODS get_parent_controller
+    RETURNING
+      VALUE(rr_parent_controller) TYPE REF TO if_ish_gui_controller.
+  METHODS get_vcode
+    RETURNING
+      VALUE(r_vcode) TYPE tndym-vcode.
+  METHODS get_view
+    RETURNING
+      VALUE(rr_view) TYPE REF TO if_ish_gui_view.
+  METHODS is_initialized
+    RETURNING
+      VALUE(r_initialized) TYPE abap_bool.
+  METHODS is_in_initialization_mode
+    RETURNING
+      VALUE(r_initialization_mode) TYPE abap_bool.
+  METHODS register_child_controller
+    IMPORTING
+      !ir_child_controller TYPE REF TO if_ish_gui_controller
+    RAISING
+      cx_ish_static_handler.
+  METHODS set_vcode
+    IMPORTING
+      !i_vcode TYPE tndym-vcode
+      !i_with_child_controllers TYPE abap_bool DEFAULT abap_false
+    RETURNING
+      VALUE(r_changed) TYPE abap_bool
+    RAISING
+      cx_ish_static_handler.
+ENDINTERFACE.

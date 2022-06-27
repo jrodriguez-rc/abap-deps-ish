@@ -1,16 +1,15 @@
 *"* components of interface IF_ISH_GUI_CB_STRUCTURE_MODEL
-interface IF_ISH_GUI_CB_STRUCTURE_MODEL
-  public .
+INTERFACE if_ish_gui_cb_structure_model
+  PUBLIC.
 
+  METHODS cb_set_field_content
+    IMPORTING
+      !ir_model TYPE REF TO if_ish_gui_structure_model
+      !i_fieldname TYPE ish_fieldname
+      !i_content TYPE any
+    RETURNING
+      VALUE(r_continue) TYPE abap_bool
+    RAISING
+      cx_ish_static_handler.
 
-  type-pools ABAP .
-  methods CB_SET_FIELD_CONTENT
-    importing
-      !IR_MODEL type ref to IF_ISH_GUI_STRUCTURE_MODEL
-      !I_FIELDNAME type ISH_FIELDNAME
-      !I_CONTENT type ANY
-    returning
-      value(R_CONTINUE) type ABAP_BOOL
-    raising
-      CX_ISH_STATIC_HANDLER .
-endinterface.
+ENDINTERFACE.
